@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_MHzPYFTVEeODIvpCmSWK3Q" name="model">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Xi3kgFTVEeODIvpCmSWK3Q" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Zse8YFTVEeODIvpCmSWK3Q" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_bnq2sFTVEeODIvpCmSWK3Q" name="context">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hsHscFTVEeODIvpCmSWK3Q" name="ApplicationContextAware">
+          <ownedOperation xmi:id="_pS53oFTVEeODIvpCmSWK3Q" name="setApplicationContext">
+            <ownedParameter xmi:id="_w8EocFTVEeODIvpCmSWK3Q" type="_tpZ90FTVEeODIvpCmSWK3Q" direction="return"/>
+            <ownedParameter xmi:id="_3v-lMFTVEeODIvpCmSWK3Q" name="applicationContext" type="_lzJzQFTVEeODIvpCmSWK3Q"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lzJzQFTVEeODIvpCmSWK3Q" name="ApplicationContext"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_w93UAFTcEeODIvpCmSWK3Q" name="support">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0vUMYFTcEeODIvpCmSWK3Q" name="PropertySourcesPlaceholderConfigurer"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tpZ90FTVEeODIvpCmSWK3Q" name="void"/>
+</uml:Model>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_SUnYUDo5EeOc5JJV1BgsAQ" name="model">
+  <packageImport xmi:id="_DNNogE97EeOaH-j49z2GKg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/StandardL3.profile.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oKsTwDo5EeOc5JJV1BgsAQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qVgzQDo-EeOc5JJV1BgsAQ" name="lang">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_1xgVcDo-EeOc5JJV1BgsAQ" name="Appendable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_34NjQDo-EeOc5JJV1BgsAQ" name="AutoCloseable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_8G0RsDo-EeOc5JJV1BgsAQ" name="CharSequence"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_9CLGsDo-EeOc5JJV1BgsAQ" name="Cloneable">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1Md4UE9_EeOaH-j49z2GKg" name="B"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="__E82wDo-EeOc5JJV1BgsAQ" name="Comparable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_BNB9kDo_EeOc5JJV1BgsAQ" name="Iterable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_CZHWMDo_EeOc5JJV1BgsAQ" name="Readable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_GJDysDo_EeOc5JJV1BgsAQ" name="Runnable"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OgU_oDo_EeOc5JJV1BgsAQ" name="Boolean"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PvrusDo_EeOc5JJV1BgsAQ" name="Byte"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QzgjMDo_EeOc5JJV1BgsAQ" name="Character">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6jzHUDpgEeOEEZAkIA9aBQ" name="Subset"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_8XhuwDpgEeOEEZAkIA9aBQ" name="UnicodeBlock"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_t_fcwDphEeOEEZAkIA9aBQ" name="UnicodeScript"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UHcZIDo_EeOc5JJV1BgsAQ" name="Class"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VNc-8Do_EeOc5JJV1BgsAQ" name="ClassLoader"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WY3CIDo_EeOc5JJV1BgsAQ" name="ClassValue"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XhCLIDo_EeOc5JJV1BgsAQ" name="Compiler"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YsfRoDo_EeOc5JJV1BgsAQ" name="Double"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_anx5oDo_EeOc5JJV1BgsAQ" name="Enum"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_b-cKkDo_EeOc5JJV1BgsAQ" name="Float"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Sn6noDphEeOEEZAkIA9aBQ" name="InheritableThreadLocal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ff0moDo_EeOc5JJV1BgsAQ" name="Integer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_g18sEDo_EeOc5JJV1BgsAQ" name="Long"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iHSYIDo_EeOc5JJV1BgsAQ" name="Math"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_k_sIoDo_EeOc5JJV1BgsAQ" name="Number"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l-eFEDo_EeOc5JJV1BgsAQ" name="Object"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_m8biIDo_EeOc5JJV1BgsAQ" name="Package"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_n94YEDo_EeOc5JJV1BgsAQ" name="Process"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pCyKoDo_EeOc5JJV1BgsAQ" name="ProcessBuilder">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gTyhwDphEeOEEZAkIA9aBQ" name="Redirect">
+          <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_oUV30DphEeOEEZAkIA9aBQ" name="Type"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rF7HEDo_EeOc5JJV1BgsAQ" name="Runtime"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sRW_cDo_EeOc5JJV1BgsAQ" name="RuntimePermission"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uHezkDo_EeOc5JJV1BgsAQ" name="SecurityManager"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vUYrkDo_EeOc5JJV1BgsAQ" name="Short"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wUs5EDo_EeOc5JJV1BgsAQ" name="StackTraceElement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xXw4kDo_EeOc5JJV1BgsAQ" name="StrictMath"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yZTOEDo_EeOc5JJV1BgsAQ" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_zjODgDo_EeOc5JJV1BgsAQ" name="StringBuffer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0k474Do_EeOc5JJV1BgsAQ" name="StringBuilder"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1v59gDo_EeOc5JJV1BgsAQ" name="System"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_22B4EDo_EeOc5JJV1BgsAQ" name="Thread">
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_pc5QwDpgEeOEEZAkIA9aBQ" name="UncaughtExceptionHandler"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_z9KVEDphEeOEEZAkIA9aBQ" name="State"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3_aiADo_EeOc5JJV1BgsAQ" name="ThreadGroup"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5APs4Do_EeOc5JJV1BgsAQ" name="ThreadLocal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6HTbkDo_EeOc5JJV1BgsAQ" name="Throwable"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7LgDgDo_EeOc5JJV1BgsAQ" name="Void"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_enam4DpeEeOEEZAkIA9aBQ" name="ArithmeticException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hSqsMDpeEeOEEZAkIA9aBQ" name="ArrayIndexOutOfBoundsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jV9ZoDpeEeOEEZAkIA9aBQ" name="ArrayStoreException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kh3zIDpeEeOEEZAkIA9aBQ" name="ClassCastException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l0ppoDpeEeOEEZAkIA9aBQ" name="ClassNotFoundException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nC3JMDpeEeOEEZAkIA9aBQ" name="CloneNotSupportedException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oMGCIDpeEeOEEZAkIA9aBQ" name="EnumConstantNotPresentException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aZpwgDpfEeOEEZAkIA9aBQ" name="Exception"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bheUMDpfEeOEEZAkIA9aBQ" name="IllegalAccessException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_clEfMDpfEeOEEZAkIA9aBQ" name="IllegalArgumentException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eHG5sDpfEeOEEZAkIA9aBQ" name="IllegalMonitorStateException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fqbtoDpfEeOEEZAkIA9aBQ" name="IllegalStateException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hExksDpfEeOEEZAkIA9aBQ" name="IllegalThreadStateException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iSD3MDpfEeOEEZAkIA9aBQ" name="IndexOutOfBoundsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_j1FwMDpfEeOEEZAkIA9aBQ" name="InstantiationException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lNhiwDpfEeOEEZAkIA9aBQ" name="InterruptedException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mK7mMDpfEeOEEZAkIA9aBQ" name="NegativeArraySizeException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_n77CsDpfEeOEEZAkIA9aBQ" name="NoSuchFieldException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_psTbMDpfEeOEEZAkIA9aBQ" name="NoSuchMethodException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rFL5sDpfEeOEEZAkIA9aBQ" name="NullPointerException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sd6nMDpfEeOEEZAkIA9aBQ" name="NumberFormatException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uAfNMDpfEeOEEZAkIA9aBQ" name="ReflectiveOperationException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vDPqsDpfEeOEEZAkIA9aBQ" name="RuntimeException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wAgkMDpfEeOEEZAkIA9aBQ" name="SecurityException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_x976MDpfEeOEEZAkIA9aBQ" name="StringIndexOutOfBoundsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_zc7AsDpfEeOEEZAkIA9aBQ" name="TypeNotPresentException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0edWMDpfEeOEEZAkIA9aBQ" name="UnsupportedOperationException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2qYbMDpfEeOEEZAkIA9aBQ" name="AbstractMethodError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4WQuMDpfEeOEEZAkIA9aBQ" name="AssertionError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_59WAwDpfEeOEEZAkIA9aBQ" name="BootstrapMethodError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7C-MEDpfEeOEEZAkIA9aBQ" name="ClassCircularityError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8LeFMDpfEeOEEZAkIA9aBQ" name="ClassFormatError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9TutwDpfEeOEEZAkIA9aBQ" name="Error"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-b0XMDpfEeOEEZAkIA9aBQ" name="ExceptionInInitializerError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__hPuMDpfEeOEEZAkIA9aBQ" name="IllegalAccessError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ArQDMDpgEeOEEZAkIA9aBQ" name="IncompatibleClassChangeError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BzvVQDpgEeOEEZAkIA9aBQ" name="InstantiationError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_H7bFMDpgEeOEEZAkIA9aBQ" name="InternalError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JqcLwDpgEeOEEZAkIA9aBQ" name="LinkageError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LEXMEDpgEeOEEZAkIA9aBQ" name="NoClassDefFoundError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MDZnMDpgEeOEEZAkIA9aBQ" name="NoSuchFieldError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OSEeMDpgEeOEEZAkIA9aBQ" name="NoSuchMethodError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Pd1GsDpgEeOEEZAkIA9aBQ" name="OutOfMemoryError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QjVWMDpgEeOEEZAkIA9aBQ" name="StackOverflowError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RwjXQDpgEeOEEZAkIA9aBQ" name="ThreadDeath"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Sv3fMDpgEeOEEZAkIA9aBQ" name="UnknownError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UA-hwDpgEeOEEZAkIA9aBQ" name="UnsatisfiedLinkError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VZZGMDpgEeOEEZAkIA9aBQ" name="UnsupportedClassVersionError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Wl6jsDpgEeOEEZAkIA9aBQ" name="VerifyError"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XvYtMDpgEeOEEZAkIA9aBQ" name="VirtualMachineError"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YO064DpjEeOEEZAkIA9aBQ" name="math">
+      <packagedElement xmi:type="uml:Class" xmi:id="_dm_SYDpjEeOEEZAkIA9aBQ" name="BigDecimal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fV65YDpjEeOEEZAkIA9aBQ" name="BigInteger"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_g9q6UDpjEeOEEZAkIA9aBQ" name="MathContext"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_j__b0DpjEeOEEZAkIA9aBQ" name="RoundingMode"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Z3CZYDpkEeOEEZAkIA9aBQ" name="sql">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_d8lScDpkEeOEEZAkIA9aBQ" name="Array"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fgq7YDpkEeOEEZAkIA9aBQ" name="Blob"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gq1ocDpkEeOEEZAkIA9aBQ" name="CallableStatement"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_iKRa4DpkEeOEEZAkIA9aBQ" name="Clob"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_jbw38DpkEeOEEZAkIA9aBQ" name="Connection"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_k3OwYDpkEeOEEZAkIA9aBQ" name="DatabaseMetaData"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_mPzs4DpkEeOEEZAkIA9aBQ" name="Driver"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_nkp_8DpkEeOEEZAkIA9aBQ" name="NClob"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_ovHn8DpkEeOEEZAkIA9aBQ" name="ParameterMetaData"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_qCkz4DpkEeOEEZAkIA9aBQ" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_rVqzcDpkEeOEEZAkIA9aBQ" name="Ref"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_sfDdYDpkEeOEEZAkIA9aBQ" name="ResultSet"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_uDiu8DpkEeOEEZAkIA9aBQ" name="ResultSetMetaData"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_vVKu4DpkEeOEEZAkIA9aBQ" name="RowId"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_wh2kcDpkEeOEEZAkIA9aBQ" name="Savepoint"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_xy3gYDpkEeOEEZAkIA9aBQ" name="SQLData"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_zeTHcDpkEeOEEZAkIA9aBQ" name="SQLInput"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_0qM54DpkEeOEEZAkIA9aBQ" name="SQLOutput"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_18Jp8DpkEeOEEZAkIA9aBQ" name="SQLXML"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_3HrB4DpkEeOEEZAkIA9aBQ" name="Statement"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_4Mps8DpkEeOEEZAkIA9aBQ" name="Struct"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_5TmG4DpkEeOEEZAkIA9aBQ" name="Wrapper"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6-CPcDpkEeOEEZAkIA9aBQ" name="Date"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8Gg6cDpkEeOEEZAkIA9aBQ" name="DriverManager"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9SlE8DpkEeOEEZAkIA9aBQ" name="DriverPropertyInfo"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-Xih4DpkEeOEEZAkIA9aBQ" name="SQLPermission"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__xWNcDpkEeOEEZAkIA9aBQ" name="Time"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_A6vecDplEeOEEZAkIA9aBQ" name="Timestamp"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CZpscDplEeOEEZAkIA9aBQ" name="Types"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_EG5RYDplEeOEEZAkIA9aBQ" name="ClientInfoStatus"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_F1rucDplEeOEEZAkIA9aBQ" name="PseudoColumnUsage"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ICxREDplEeOEEZAkIA9aBQ" name="RowIdLifetime"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JsBt4DplEeOEEZAkIA9aBQ" name="BatchUpdateException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LF1ZcDplEeOEEZAkIA9aBQ" name="DataTruncation"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Mhna8DplEeOEEZAkIA9aBQ" name="SQLClientInfoException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OVqLcDplEeOEEZAkIA9aBQ" name="SQLDataException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PrVk8DplEeOEEZAkIA9aBQ" name="SQLException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RCOfYDplEeOEEZAkIA9aBQ" name="SQLFeatureNotSupportedException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SWXn0DplEeOEEZAkIA9aBQ" name="SQLIntegrityConstraintViolationException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TrJpcDplEeOEEZAkIA9aBQ" name="SQLInvalidAuthorizationSpecException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VRFFcDplEeOEEZAkIA9aBQ" name="SQLNonTransientConnectionException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XdOz8DplEeOEEZAkIA9aBQ" name="SQLNonTransientException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y4ZxcDplEeOEEZAkIA9aBQ" name="SQLRecoverableException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aTMUcDplEeOEEZAkIA9aBQ" name="SQLSyntaxErrorException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bgZucDplEeOEEZAkIA9aBQ" name="SQLTimeoutException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_c8pC8DplEeOEEZAkIA9aBQ" name="SQLTransactionRollbackException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eWvpcDplEeOEEZAkIA9aBQ" name="SQLTransientConnectionException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4ZpcDplEeOEEZAkIA9aBQ" name="SQLTransientException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hPTK8DplEeOEEZAkIA9aBQ" name="SQLWarning"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Csg8cDrFEeOrJYWW0tjQSQ" name="util">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_IY-I8DrFEeOrJYWW0tjQSQ" name="Collection">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_vlW7UE9-EeOaH-j49z2GKg" name="RedefinableTemplateSignature1" parameter="_HFV-YE-AEeOaH-j49z2GKg">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_HFV-YE-AEeOaH-j49z2GKg"/>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_J8r-cDrFEeOrJYWW0tjQSQ" name="Comparator"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_KI-RgDrGEeOrJYWW0tjQSQ" name="Deque"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_MQKngDrGEeOrJYWW0tjQSQ" name="Enumeration"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_OAUWgDrGEeOrJYWW0tjQSQ" name="EventListener"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_PL6m8DrGEeOrJYWW0tjQSQ" name="Formattable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_QSRLADrGEeOrJYWW0tjQSQ" name="Iterator"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_JJWYAE6EEeOSO7xF-ZF34g" name="List">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ls92sE96EeOaH-j49z2GKg" name="RedefinableTemplateSignature1" parameter="_8c2VsE9_EeOaH-j49z2GKg">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8c2VsE9_EeOaH-j49z2GKg" parameteredElement="_F3LiIE-AEeOaH-j49z2GKg">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_F3LiIE-AEeOaH-j49z2GKg" name="E" templateParameter="_8c2VsE9_EeOaH-j49z2GKg"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TIZqoDrGEeOrJYWW0tjQSQ" name="ListIterator"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_UPToUDrGEeOrJYWW0tjQSQ" name="Map">
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_XDxUADrGEeOrJYWW0tjQSQ" name="Entry"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_bo0MgDrGEeOrJYWW0tjQSQ" name="NavigableMap"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dYqZgDrGEeOrJYWW0tjQSQ" name="NavigableSet"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fGX4gDrGEeOrJYWW0tjQSQ" name="Observer"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gRN7ADrGEeOrJYWW0tjQSQ" name="Queue"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_hlg0cDrGEeOrJYWW0tjQSQ" name="RandomAccess"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_iq36ADrGEeOrJYWW0tjQSQ" name="Set"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_jzZoUDrGEeOrJYWW0tjQSQ" name="SortedMap"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_lAo3gDrGEeOrJYWW0tjQSQ" name="SortedSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_n3vngDrGEeOrJYWW0tjQSQ" name="AbstractCollection"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pEMMgDrGEeOrJYWW0tjQSQ" name="AbstractList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p_FugDrGEeOrJYWW0tjQSQ" name="AbstractMap">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_sLOO4DrGEeOrJYWW0tjQSQ" name="SimpleEntry"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_u3SMgDrGEeOrJYWW0tjQSQ" name="SimpleImmutableEntry"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wdv0ADrGEeOrJYWW0tjQSQ" name="AbstractQueue"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xYMqEDrGEeOrJYWW0tjQSQ" name="AbstractSequentialList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yRQZADrGEeOrJYWW0tjQSQ" name="AbstractSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_zNOSADrGEeOrJYWW0tjQSQ" name="ArrayDeque"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0NKFADrGEeOrJYWW0tjQSQ" name="ArrayList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1TMgADrGEeOrJYWW0tjQSQ" name="Arrays"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2lcyEDrGEeOrJYWW0tjQSQ" name="BitSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3iykEDrGEeOrJYWW0tjQSQ" name="Calendar"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4mTPgDrGEeOrJYWW0tjQSQ" name="Collections"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5qScEDrGEeOrJYWW0tjQSQ" name="Currency"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_64yPgDrGEeOrJYWW0tjQSQ" name="Date"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8DkAkDrGEeOrJYWW0tjQSQ" name="Dictionary"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Fo4VADrHEeOrJYWW0tjQSQ" name="EnumMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Gj6Z4DrHEeOrJYWW0tjQSQ" name="EnumSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HjBtgDrHEeOrJYWW0tjQSQ" name="EventListenerProxy"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JnQPEDrHEeOrJYWW0tjQSQ" name="EventObject"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kg7CADrHEeOrJYWW0tjQSQ" name="FormattableFlags"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_La6lEDrHEeOrJYWW0tjQSQ" name="Formatter">
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_OWqvEDrIEeOrJYWW0tjQSQ" name="BigDecimalLayoutForm"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MY8TkDrHEeOrJYWW0tjQSQ" name="GregorianCalendar"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NoblgDrHEeOrJYWW0tjQSQ" name="HashMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Of1HkDrHEeOrJYWW0tjQSQ" name="HashSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PdFaADrHEeOrJYWW0tjQSQ" name="Hashtable"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QeP8EDrHEeOrJYWW0tjQSQ" name="IdentityHashMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RY_tEDrHEeOrJYWW0tjQSQ" name="LinkedHashMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SUz1EDrHEeOrJYWW0tjQSQ" name="LinkedHashSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TUX0oDrHEeOrJYWW0tjQSQ" name="LinkedList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_USKSkDrHEeOrJYWW0tjQSQ" name="ListResourceBundle"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VohokDrHEeOrJYWW0tjQSQ" name="Locale">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_aBqzEDrHEeOrJYWW0tjQSQ" name="Builder"/>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_SawPkDrIEeOrJYWW0tjQSQ" name="Category"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bVDtkDrHEeOrJYWW0tjQSQ" name="Objects"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cdFFkDrHEeOrJYWW0tjQSQ" name="Observable"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ddKpkDrHEeOrJYWW0tjQSQ" name="PriorityQueue"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ek4fkDrHEeOrJYWW0tjQSQ" name="Properties"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gvIJkDrHEeOrJYWW0tjQSQ" name="PropertyPermission"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hyV6EDrHEeOrJYWW0tjQSQ" name="PropertyResourceBundle"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ivJgkDrHEeOrJYWW0tjQSQ" name="Random"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_j5YfEDrHEeOrJYWW0tjQSQ" name="ResourceBundle">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lejGEDrHEeOrJYWW0tjQSQ" name="Control"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mwfPEDrHEeOrJYWW0tjQSQ" name="Scanner"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uMo3kDrHEeOrJYWW0tjQSQ" name="ServiceLoader"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vRm7kDrHEeOrJYWW0tjQSQ" name="SimpleTimeZone"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wbTukDrHEeOrJYWW0tjQSQ" name="Stack"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xfvnEDrHEeOrJYWW0tjQSQ" name="StringTokenizer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_y7JOEDrHEeOrJYWW0tjQSQ" name="Timer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_z932YDrHEeOrJYWW0tjQSQ" name="TimerTask"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1Xi_EDrHEeOrJYWW0tjQSQ" name="TimeZone"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4HIKwDrHEeOrJYWW0tjQSQ" name="TreeMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7RvFkDrHEeOrJYWW0tjQSQ" name="TreeSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HFF-4DrIEeOrJYWW0tjQSQ" name="UUID"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IQlhoDrIEeOrJYWW0tjQSQ" name="Vector"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JWbvYDrIEeOrJYWW0tjQSQ" name="WeakHashMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VUEmEDrIEeOrJYWW0tjQSQ" name="ConcurrentModificationException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WUFRkDrIEeOrJYWW0tjQSQ" name="DuplicateFormatFlagsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XRR5oDrIEeOrJYWW0tjQSQ" name="EmptyStackException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YuHrEDrIEeOrJYWW0tjQSQ" name="FormatFlagsConversionMismatchException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_asO9kDrIEeOrJYWW0tjQSQ" name="FormatterClosedException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_b7K14DrIEeOrJYWW0tjQSQ" name="IllegalFormatCodePointException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_c6m5oDrIEeOrJYWW0tjQSQ" name="IllegalFormatConversionException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_d9bBgDrIEeOrJYWW0tjQSQ" name="IllegalFormatException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_e67yoDrIEeOrJYWW0tjQSQ" name="IllegalFormatFlagsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f6ekEDrIEeOrJYWW0tjQSQ" name="IllegalFormatPrecisionException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_g5zTEDrIEeOrJYWW0tjQSQ" name="IllegalFormatWidthException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h5NhoDrIEeOrJYWW0tjQSQ" name="IllformedLocaleException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jKwpEDrIEeOrJYWW0tjQSQ" name="InputMismatchException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kKoKoDrIEeOrJYWW0tjQSQ" name="InvalidPropertiesFormatException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lRazkDrIEeOrJYWW0tjQSQ" name="MissingFormatArgumentException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mTCBkDrIEeOrJYWW0tjQSQ" name="MissingFormatWidthException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nZxAIDrIEeOrJYWW0tjQSQ" name="MissingResourceException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o5RrEDrIEeOrJYWW0tjQSQ" name="NoSuchElementException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qij9EDrIEeOrJYWW0tjQSQ" name="TooManyListenersException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rndvoDrIEeOrJYWW0tjQSQ" name="UnknownFormatConversionException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_s34OoDrIEeOrJYWW0tjQSQ" name="UnknownFormatFlagsException"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uMpCIDrIEeOrJYWW0tjQSQ" name="ServiceConfigurationError"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

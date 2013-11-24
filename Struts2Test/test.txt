@@ -1,0 +1,4 @@
+org.eclipse.uml2.uml.internal.impl.PackageImpl@7b668e6d (name: ch0, visibility: <unset>) (URI: null)org.eclipse.uml2.uml.internal.impl.PackageImpl@7051d52f (name: apress, visibility: <unset>) (URI: null)
+
+	org.eclipse.uml2.uml.internal.impl.PackageImpl@7b668e6d (name: ch0, visibility: <unset>) (URI: null)
+	org.eclipse.uml2.uml.internal.impl.PackageImpl@7051d52f (name: apress, visibility: <unset>) (URI: null)
