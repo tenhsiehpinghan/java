@@ -1,0 +1,3309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="queryClassifier" nsURI="idv::hsiehpinghan::acceleo::java::template::query::queryClassifier" startHeaderPosition="77" endHeaderPosition="285">
+    <documentation xsi:type="mtl:ModuleDocumentation">
+      <body startPosition="33" endPosition="73" value="&#xD;&#xA;負責產生templateClassifier所需的query。&#xD;&#xA;&#xD;&#xA;"/>
+    </documentation>
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="155" endPosition="215" value="---------------------------public---------------------------"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryOwnedComments" visibility="Public" type="/3/Set(Comment)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="230" endPosition="285" value="&#xD;&#xA;取得anElement的ownedComments&#xD;&#xA;@param anElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="anElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="anElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp" eType="/3/Set(Comment)">
+        <source xsi:type="ocl.ecore:VariableExp" name="anElement" referredVariable="/0/queryOwnedComments/anElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/ownedComment"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryCommentBody" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="396" endPosition="439" value="&#xD;&#xA;取得comment的body&#xD;&#xA;@param aComment&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aComment">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aComment">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aComment" referredVariable="/0/queryCommentBody/aComment">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment/body"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryName" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="533" endPosition="586" value="&#xD;&#xA;取得namedElement的name&#xD;&#xA;@param aNamedElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aNamedElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aNamedElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/queryName/aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryQualifiedName" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="687" endPosition="749" value="&#xD;&#xA;取得namedElement的qualifiedName&#xD;&#xA;@param aNamedElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aNamedElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aNamedElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/queryQualifiedName/aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/qualifiedName"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryVisibilityKind" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="868" endPosition="931" value="&#xD;&#xA;取得namedElement的visibilityKind&#xD;&#xA;@param aNamedElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aNamedElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aNamedElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/4.0.0/UML#//VisibilityKind"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aNamedElement" referredVariable="/0/queryVisibilityKind/aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/visibility"/>
+      </expression>
+      <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/4.0.0/UML#//VisibilityKind"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryIsStatic" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1056" endPosition="1103" value="&#xD;&#xA;取得feature是否為static&#xD;&#xA;@param aFeature&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aFeature">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aFeature">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aFeature" referredVariable="/0/queryIsStatic/aFeature">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature/isStatic"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryIsReadOnly" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1198" endPosition="1267" value="&#xD;&#xA;取得structuralFeature是否為readOnly&#xD;&#xA;@param aStructuralFeature&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aStructuralFeature">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aStructuralFeature">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aStructuralFeature" referredVariable="/0/queryIsReadOnly/aStructuralFeature">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature/isReadOnly"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryIsLeft" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1396" endPosition="1463" value="&#xD;&#xA;取得redefinableElement是否為leaf&#xD;&#xA;@param aRedefinableElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aRedefinableElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aRedefinableElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aRedefinableElement" referredVariable="/0/queryIsLeft/aRedefinableElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement/isLeaf"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryPackage" visibility="Public" type="/3/Sequence(String)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1587" endPosition="1647" value="&#xD;&#xA;取得某個type的package的Sequence(String)。&#xD;&#xA;@param aType&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aType">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aType">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(OclAny)" referredOperation="/1/Collection(T)_Class/sep">
+        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Sequence(String)">
+          <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/Sequence(T)_Class/reverse">
+            <source xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Sequence(Package)">
+              <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/EObject_Class/ancestors">
+                <source xsi:type="ocl.ecore:VariableExp" name="aType" referredVariable="/0/queryPackage/aType">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+                </source>
+                <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Package">
+                  <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                </argument>
+              </source>
+              <body xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/queryPackage/%.1/collect/%/reject/aPackage">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                </source>
+                <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Model">
+                  <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+              </body>
+              <iterator xsi:type="ocl.ecore:Variable" name="aPackage">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </iterator>
+            </source>
+          </source>
+          <body xsi:type="mtl:QueryInvocation" definition="/0/queryName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryPackage/%.1/collect/temp1">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </argument>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="temp1">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+          </iterator>
+        </source>
+        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </argument>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryType" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1842" endPosition="1895" value="&#xD;&#xA;取得typedElement的type&#xD;&#xA;@param aTypedElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aTypedElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aTypedElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aTypedElement" referredVariable="/0/queryType/aTypedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement/type"/>
+      </expression>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryTypeName" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1994" endPosition="2051" value="&#xD;&#xA;取得typedElement的typeName&#xD;&#xA;@param aTypedElement&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aTypedElement">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aTypedElement">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="mtl:QueryInvocation" definition="/0/queryType">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="aTypedElement" referredVariable="/0/queryTypeName/aTypedElement">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+          </argument>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryType" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2168" endPosition="2215" value="&#xD;&#xA;取得operation的type&#xD;&#xA;@param aOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aOperation">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aOperation">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aOperation" referredVariable="/0/queryType.1/aOperation">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation/type"/>
+      </expression>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryTypeName" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2305" endPosition="2356" value="&#xD;&#xA;取得operation的typeName&#xD;&#xA;@param aOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aOperation">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aOperation">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="mtl:QueryInvocation" definition="/0/queryType.1">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="aOperation" referredVariable="/0/queryTypeName.1/aOperation">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+          </argument>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryParameters" visibility="Public" type="/3/Set(Parameter)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2464" endPosition="2522" value="&#xD;&#xA;取得某個operation有那些parameter。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="anOperation">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="anOperation">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/OrderedSet(Parameter)">
+        <source xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(Parameter)">
+          <source xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/queryParameters/anOperation">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//BehavioralFeature/ownedParameter"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterDirectionKind"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aParameter" referredVariable="/0/queryParameters/select/aParameter">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter/direction"/>
+          </source>
+          <argument xsi:type="ocl.ecore:EnumLiteralExp">
+            <eType xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterDirectionKind"/>
+            <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterDirectionKind/in"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aParameter">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryQualifiedName" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2725" endPosition="2783" value="&#xD;&#xA;取得classifier的qualifiedName&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryQualifiedName.1/aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/qualifiedName"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryDefaultValue" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2896" endPosition="2955" value="&#xD;&#xA;取得property的valueSpecification&#xD;&#xA;@param aProperty&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aProperty">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aProperty">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ValueSpecification"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/queryDefaultValue/aProperty">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property/defaultValue"/>
+      </expression>
+      <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ValueSpecification"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryDefault" visibility="Public">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3072" endPosition="3120" value="&#xD;&#xA;取得property的default&#xD;&#xA;@param aProperty&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aProperty">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aProperty">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/queryDefault/aProperty">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property/default"/>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryClassifierImports" visibility="Public" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3215" endPosition="3266" value="&#xD;&#xA;取得有那些class需要import。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="mtl:QueryInvocation" eType="/3/Collection(Classifier)" definition="/0/filterClassifiers">
+        <argument xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryUsedClassifiersInDifferentPackages">
+          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryClassifierImports/aClassifier">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </argument>
+        </argument>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryClassifierExtends" visibility="Public" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3444" endPosition="3515" value="&#xD;&#xA;取得某個classifier generalize了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryClassifierExtends/aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/getGenerals"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryProperties" visibility="Public" type="/3/Set(Property)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3641" endPosition="3699" value="&#xD;&#xA;取得某個classifier有那些property。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp" eType="/3/Set(Property)">
+        <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryProperties/aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/attribute"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryOperations" visibility="Public" type="/3/Set(Operation)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3812" endPosition="3871" value="&#xD;&#xA;取得某個classifier有那些operation。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Operation)">
+        <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryOperations/aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/getOperations"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="filterClassifiers" visibility="Protected" type="/3/Collection(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="3991" endPosition="4079" value="&#xD;&#xA;過濾不要的classifier。(排除java.lang及default package的classifier)&#xD;&#xA;@param aCollection&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aCollection">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aCollection" eType="/3/Set(Classifier)"/>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Set(Classifier)">
+          <source xsi:type="ocl.ecore:VariableExp" name="aCollection" eType="/3/Set(Classifier)" referredVariable="/0/filterClassifiers/aCollection"/>
+          <body xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Sequence(String)">
+              <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/Sequence(T)_Class/reverse">
+                <source xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Sequence(Package)">
+                  <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/EObject_Class/ancestors">
+                    <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/filterClassifiers/reject/reject/aClassifier">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Package">
+                      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                    </argument>
+                  </source>
+                  <body xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/filterClassifiers/reject/reject/%/collect/%/reject/aPackage">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Model">
+                      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+                  </body>
+                  <iterator xsi:type="ocl.ecore:Variable" name="aPackage">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                  </iterator>
+                </source>
+              </source>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/filterClassifiers/reject/reject/%/collect/temp2">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+              </body>
+              <iterator xsi:type="ocl.ecore:Variable" name="temp2">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </iterator>
+            </source>
+            <argument xsi:type="ocl.ecore:CollectionLiteralExp" eType="/3/Sequence(String)" kind="Sequence">
+              <part xsi:type="ocl.ecore:CollectionItem">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <item xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </item>
+              </part>
+              <part xsi:type="ocl.ecore:CollectionItem">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <item xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="lang">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </item>
+              </part>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/=.1"/>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="aClassifier">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </iterator>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Sequence(String)">
+            <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/Sequence(T)_Class/reverse">
+              <source xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Sequence(Package)">
+                <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Sequence(Package)" referredOperation="/1/EObject_Class/ancestors">
+                  <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/filterClassifiers/reject/aClassifier">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Package">
+                    <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                  </argument>
+                </source>
+                <body xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/filterClassifiers/reject/%/collect/%/reject/aPackage">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Model">
+                    <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+                </body>
+                <iterator xsi:type="ocl.ecore:Variable" name="aPackage">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+                </iterator>
+              </source>
+            </source>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/filterClassifiers/reject/%/collect/temp3">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp3">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </iterator>
+          </source>
+          <argument xsi:type="ocl.ecore:CollectionLiteralExp" eType="/3/Sequence(OclVoid)" kind="Sequence"/>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/=.1"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="4537" endPosition="4597" value="--------------------------protected-------------------------"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="4622" endPosition="4682" value="---------------------------private--------------------------"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryUsedClassifiers" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="4697" endPosition="4750" value="&#xD;&#xA;取得有那些classifier有被使用到。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+          <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+            <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+              <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+                <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+                  <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+                    <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+                      <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)" referredOperation="/1/Collection(T)_Class/addAll">
+                        <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryClassifierExtends">
+                          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                          </argument>
+                        </source>
+                        <argument xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryPropertiesClassifiers">
+                          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                          </argument>
+                        </argument>
+                      </source>
+                      <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+                        <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryPropertiesClassifiers">
+                          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                          </argument>
+                        </source>
+                        <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryRedefinedClassifier">
+                          <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/temp4">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                          </argument>
+                        </body>
+                        <iterator xsi:type="ocl.ecore:Variable" name="temp4">
+                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                        </iterator>
+                      </argument>
+                    </source>
+                    <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+                      <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryPropertiesClassifiers">
+                        <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                        </argument>
+                      </source>
+                      <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryParameterSubstitution">
+                        <argument xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/temp5">
+                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                        </argument>
+                      </body>
+                      <iterator xsi:type="ocl.ecore:Variable" name="temp5">
+                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                      </iterator>
+                    </argument>
+                  </source>
+                  <argument xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsClassifiers">
+                    <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                    </argument>
+                  </argument>
+                </source>
+                <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+                  <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsClassifiers">
+                    <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                    </argument>
+                  </source>
+                  <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryRedefinedClassifier">
+                    <argument xsi:type="ocl.ecore:VariableExp" name="temp3" referredVariable="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/temp6">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                    </argument>
+                  </body>
+                  <iterator xsi:type="ocl.ecore:Variable" name="temp6">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                  </iterator>
+                </argument>
+              </source>
+              <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+                <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsClassifiers">
+                  <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                  </argument>
+                </source>
+                <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryParameterSubstitution">
+                  <argument xsi:type="ocl.ecore:VariableExp" name="temp4" referredVariable="/0/queryUsedClassifiers/%.1/%/%/%/collect/temp7">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                  </argument>
+                </body>
+                <iterator xsi:type="ocl.ecore:Variable" name="temp7">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                </iterator>
+              </argument>
+            </source>
+            <argument xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsParametersClassifiers">
+              <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </argument>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+            <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsParametersClassifiers">
+              <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </argument>
+            </source>
+            <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryRedefinedClassifier">
+              <argument xsi:type="ocl.ecore:VariableExp" name="temp5" referredVariable="/0/queryUsedClassifiers/%.1/%/collect/temp8">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </argument>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp8">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+            </iterator>
+          </argument>
+        </source>
+        <argument xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Classifier)">
+          <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryOperationsParametersClassifiers">
+            <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiers/aClassifier">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+            </argument>
+          </source>
+          <body xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryParameterSubstitution">
+            <argument xsi:type="ocl.ecore:VariableExp" name="temp6" referredVariable="/0/queryUsedClassifiers/%.1/collect/temp9">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+            </argument>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="temp9">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </iterator>
+        </argument>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryOperationsParametersClassifiers" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5561" endPosition="5634" value="&#xD;&#xA;取得某個classifier的operations使用了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Bag(Classifier)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Type)">
+            <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Parameter)">
+              <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Operation)" definition="/0/queryOperations">
+                <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryOperationsParametersClassifiers/aClassifier">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+                </argument>
+              </source>
+              <body xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(Parameter)">
+                <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/temp10">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//BehavioralFeature/ownedParameter"/>
+              </body>
+              <iterator xsi:type="ocl.ecore:Variable" name="temp10">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+              </iterator>
+            </source>
+            <body xsi:type="mtl:QueryInvocation" definition="/0/queryType">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/queryOperationsParametersClassifiers/%.1/%/collect/temp11">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+              </argument>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp11">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+            </iterator>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Classifier">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </argument>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryOperationsClassifiers" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5835" endPosition="5911" value="&#xD;&#xA;取得某個classifier的operations的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Bag(Classifier)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Type)">
+            <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Operation)" definition="/0/queryOperations">
+              <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryOperationsClassifiers/aClassifier">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </argument>
+            </source>
+            <body xsi:type="mtl:QueryInvocation" definition="/0/queryType.1">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryOperationsClassifiers/%.1/%/collect/temp12">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+              </argument>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp12">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+            </iterator>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Classifier">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </argument>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryPropertiesClassifiers" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="6087" endPosition="6163" value="&#xD;&#xA;取得某個classifier的properties的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Bag(Classifier)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(Type)">
+            <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Property)" definition="/0/queryProperties">
+              <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryPropertiesClassifiers/aClassifier">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </argument>
+            </source>
+            <body xsi:type="mtl:QueryInvocation" definition="/0/queryType">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryPropertiesClassifiers/%.1/%/collect/temp13">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+              </argument>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp13">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+            </iterator>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Classifier">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </argument>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryParameterSubstitution" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="6339" endPosition="6411" value="&#xD;&#xA;取得某個classifier的parameterSubstitution有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(ParameterableElement)">
+        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(ParameterableElement)">
+          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Bag(TemplateParameterSubstitution)">
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/3/Set(TemplateBinding)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryParameterSubstitution/aClassifier">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateableElement/templateBinding"/>
+            </source>
+            <body xsi:type="ocl.ecore:PropertyCallExp" eType="/3/Set(TemplateParameterSubstitution)">
+              <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryParameterSubstitution/%.1/collect/collect/temp14">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding/parameterSubstitution"/>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp14">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding"/>
+            </iterator>
+          </source>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterableElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/queryParameterSubstitution/%.1/collect/temp15">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateParameterSubstitution"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateParameterSubstitution/actual"/>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" name="temp15">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateParameterSubstitution"/>
+          </iterator>
+        </source>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryRedefinedClassifier" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="6584" endPosition="6654" value="&#xD;&#xA;取得某個classifier的redefinedClassifier有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:PropertyCallExp" eType="/3/Set(Classifier)">
+        <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryRedefinedClassifier/aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </source>
+        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/redefinedClassifier"/>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryUsedClassifiersInDifferentPackages" type="/3/Set(Classifier)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="6789" endPosition="6852" value="&#xD;&#xA;取得不在同一個package但有使用到的classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClassifier">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClassifier">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/3/Set(Classifier)">
+        <source xsi:type="mtl:QueryInvocation" eType="/3/Set(Classifier)" definition="/0/queryUsedClassifiers">
+          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiersInDifferentPackages/aClassifier">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+          </argument>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="mtl:QueryInvocation" eType="/3/Sequence(String)" definition="/0/queryPackage">
+            <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/queryUsedClassifiersInDifferentPackages/aClassifier">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+            </argument>
+          </source>
+          <argument xsi:type="mtl:QueryInvocation" eType="/3/Sequence(String)" definition="/0/queryPackage">
+            <argument xsi:type="ocl.ecore:VariableExp" name="aUsedClassifier" referredVariable="/0/queryUsedClassifiersInDifferentPackages/reject/aUsedClassifier">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+            </argument>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/=.1"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aUsedClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="ancestors">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="http://www.eclipse.org/acceleo/mtl/3.0/mtlnonstdlib.ecore#//Sequence(OclAny)"/>
+        <eParameters name="filter">
+          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryOwnedComments" eType="/3/Set(Comment)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryOwnedComments"/>
+        <eParameters name="anElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryCommentBody">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryCommentBody"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aComment">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryName"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryQualifiedName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryQualifiedName"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryVisibilityKind">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryVisibilityKind"/>
+        <eType xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/4.0.0/UML#//VisibilityKind"/>
+        <eParameters name="aNamedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryIsStatic">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryIsStatic"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="aFeature">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryIsReadOnly">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryIsReadOnly"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="aStructuralFeature">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryIsLeft">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryIsLeft"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="aRedefinableElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryPackage" eType="/3/Sequence(String)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryPackage"/>
+        <eParameters name="aType">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryType">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryType"/>
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+        <eParameters name="aTypedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryTypeName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryTypeName"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aTypedElement">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryType">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryType.1"/>
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+        <eParameters name="aOperation">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryTypeName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryTypeName.1"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aOperation">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryParameters" eType="/3/Set(Parameter)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryParameters"/>
+        <eParameters name="anOperation">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryQualifiedName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryQualifiedName.1"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryDefaultValue">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryDefaultValue"/>
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ValueSpecification"/>
+        <eParameters name="aProperty">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryDefault">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryDefault"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aProperty">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryClassifierImports" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryClassifierImports"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryClassifierExtends" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryClassifierExtends"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryProperties" eType="/3/Set(Property)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryProperties"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryOperations" eType="/3/Set(Operation)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryOperations"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="filterClassifiers" eType="/3/Collection(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/filterClassifiers"/>
+        <eParameters name="aCollection" eType="/3/Set(Classifier)"/>
+      </eOperations>
+      <eOperations name="queryUsedClassifiers" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryUsedClassifiers"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryOperationsParametersClassifiers" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryOperationsParametersClassifiers"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryOperationsClassifiers" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryOperationsClassifiers"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryPropertiesClassifiers" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryPropertiesClassifiers"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryParameterSubstitution" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryParameterSubstitution"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryRedefinedClassifier" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryRedefinedClassifier"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryUsedClassifiersInDifferentPackages" eType="/3/Set(Classifier)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryUsedClassifiersInDifferentPackages"/>
+        <eParameters name="aClassifier">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+      <eOperations name="sep">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="http://www.eclipse.org/acceleo/mtl/3.0/mtlnonstdlib.ecore#//Sequence(OclAny)"/>
+        <eParameters name="separatorString">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="filter">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+        <eParameters name="filter">
+          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="addAll">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+        <eParameters name="otherCollection">
+          <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+      <eOperations name="reverse">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Element_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Comment_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="NamedElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Feature_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="StructuralFeature_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RedefinableElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Type_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="TypedElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Operation_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Classifier_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Property_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Set(Classifier)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL" references="/3/Set(Classifier)"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Comment)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(String)" instanceClassName="java.util.List">
+      <elementType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Parameter)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Classifier)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Property)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Operation)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:CollectionType" name="Collection(Classifier)">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(OclAny)" instanceClassName="java.util.List">
+      <elementType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(Package)" instanceClassName="java.util.List">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Parameter)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:CollectionType" name="Collection(String)">
+      <elementType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(OclVoid)" instanceClassName="java.util.List">
+      <elementType xsi:type="ocl.ecore:VoidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclVoid"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Classifier)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Parameter)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Type)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(TemplateBinding)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(TemplateParameterSubstitution)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateParameterSubstitution"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(TemplateParameterSubstitution)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateParameterSubstitution"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(ParameterableElement)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterableElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(ParameterableElement)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//ParameterableElement"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Comment"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Feature"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//StructuralFeature"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//RedefinableElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Package">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Model">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Classifier">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TypedElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self" eType="/3/Set(Classifier)"/>
+  <ocl.ecore:Variable name="self" eType="/3/Set(Classifier)"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="30"/>
+      <details key="end" value="75"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/%.1">
+      <details key="start" value="146"/>
+      <details key="end" value="225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/queryOwnedComments">
+      <details key="start" value="289"/>
+      <details key="end" value="389"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/queryOwnedComments/%">
+      <details key="start" value="227"/>
+      <details key="end" value="287"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/queryOwnedComments/%/anElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/queryOwnedComments/anElement">
+      <details key="start" value="322"/>
+      <details key="end" value="341"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/queryOwnedComments/%.1">
+      <details key="start" value="363"/>
+      <details key="end" value="385"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/queryOwnedComments/%.1/anElement">
+      <details key="start" value="363"/>
+      <details key="end" value="372"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/queryCommentBody">
+      <details key="start" value="443"/>
+      <details key="end" value="526"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/queryCommentBody/%">
+      <details key="start" value="393"/>
+      <details key="end" value="441"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/queryCommentBody/%/aComment">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/queryCommentBody/aComment">
+      <details key="start" value="474"/>
+      <details key="end" value="492"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/queryCommentBody/%.1">
+      <details key="start" value="508"/>
+      <details key="end" value="522"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/queryCommentBody/%.1/aComment">
+      <details key="start" value="508"/>
+      <details key="end" value="516"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/queryName">
+      <details key="start" value="590"/>
+      <details key="end" value="680"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/queryName/%">
+      <details key="start" value="530"/>
+      <details key="end" value="588"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/queryName/%/aNamedElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/queryName/aNamedElement">
+      <details key="start" value="614"/>
+      <details key="end" value="642"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/queryName/%.1">
+      <details key="start" value="658"/>
+      <details key="end" value="676"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/queryName/%.1/aNamedElement">
+      <details key="start" value="658"/>
+      <details key="end" value="671"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/queryQualifiedName">
+      <details key="start" value="753"/>
+      <details key="end" value="861"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/queryQualifiedName/%">
+      <details key="start" value="684"/>
+      <details key="end" value="751"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/queryQualifiedName/%/aNamedElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/queryQualifiedName/aNamedElement">
+      <details key="start" value="786"/>
+      <details key="end" value="814"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/queryQualifiedName/%.1">
+      <details key="start" value="830"/>
+      <details key="end" value="857"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/queryQualifiedName/%.1/aNamedElement">
+      <details key="start" value="830"/>
+      <details key="end" value="843"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/queryVisibilityKind">
+      <details key="start" value="935"/>
+      <details key="end" value="1049"/>
+      <details key="line" value="44"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/queryVisibilityKind/%">
+      <details key="start" value="865"/>
+      <details key="end" value="933"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/queryVisibilityKind/%/aNamedElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/queryVisibilityKind/aNamedElement">
+      <details key="start" value="969"/>
+      <details key="end" value="997"/>
+      <details key="line" value="44"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/queryVisibilityKind/%.1">
+      <details key="start" value="1021"/>
+      <details key="end" value="1045"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/queryVisibilityKind/%.1/aNamedElement">
+      <details key="start" value="1021"/>
+      <details key="end" value="1034"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/queryIsStatic">
+      <details key="start" value="1107"/>
+      <details key="end" value="1191"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/queryIsStatic/%">
+      <details key="start" value="1053"/>
+      <details key="end" value="1105"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/queryIsStatic/%/aFeature">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/queryIsStatic/aFeature">
+      <details key="start" value="1135"/>
+      <details key="end" value="1153"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/queryIsStatic/%.1">
+      <details key="start" value="1170"/>
+      <details key="end" value="1187"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/queryIsStatic/%.1/aFeature">
+      <details key="start" value="1170"/>
+      <details key="end" value="1178"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/queryIsReadOnly">
+      <details key="start" value="1271"/>
+      <details key="end" value="1389"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/queryIsReadOnly/%">
+      <details key="start" value="1195"/>
+      <details key="end" value="1269"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/queryIsReadOnly/%/aStructuralFeature">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/queryIsReadOnly/aStructuralFeature">
+      <details key="start" value="1301"/>
+      <details key="end" value="1339"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/queryIsReadOnly/%.1">
+      <details key="start" value="1356"/>
+      <details key="end" value="1385"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/queryIsReadOnly/%.1/aStructuralFeature">
+      <details key="start" value="1356"/>
+      <details key="end" value="1374"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/queryIsLeft">
+      <details key="start" value="1467"/>
+      <details key="end" value="1580"/>
+      <details key="line" value="68"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/queryIsLeft/%">
+      <details key="start" value="1393"/>
+      <details key="end" value="1465"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/queryIsLeft/%/aRedefinableElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/queryIsLeft/aRedefinableElement">
+      <details key="start" value="1493"/>
+      <details key="end" value="1533"/>
+      <details key="line" value="68"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/queryIsLeft/%.1">
+      <details key="start" value="1550"/>
+      <details key="end" value="1576"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/queryIsLeft/%.1/aRedefinableElement">
+      <details key="start" value="1550"/>
+      <details key="end" value="1569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/queryPackage">
+      <details key="start" value="1651"/>
+      <details key="end" value="1835"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/queryPackage/%">
+      <details key="start" value="1584"/>
+      <details key="end" value="1649"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/queryPackage/%/aType">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/queryPackage/aType">
+      <details key="start" value="1678"/>
+      <details key="end" value="1690"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/queryPackage/%.1">
+      <details key="start" value="1716"/>
+      <details key="end" value="1831"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/queryPackage/%.1/collect">
+      <details key="start" value="1716"/>
+      <details key="end" value="1821"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/queryPackage/%.1/collect/%">
+      <details key="start" value="1716"/>
+      <details key="end" value="1809"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/queryPackage/%.1/collect/%/reject">
+      <details key="start" value="1716"/>
+      <details key="end" value="1798"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/queryPackage/%.1/collect/%/reject/%">
+      <details key="start" value="1716"/>
+      <details key="end" value="1740"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/queryPackage/%.1/collect/%/reject/%/aType">
+      <details key="start" value="1716"/>
+      <details key="end" value="1721"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/queryPackage/%.1/collect/%/reject/%/%">
+      <details key="start" value="1732"/>
+      <details key="end" value="1739"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/queryPackage/%.1/collect/%/reject/%.1">
+      <details key="start" value="1770"/>
+      <details key="end" value="1797"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/queryPackage/%.1/collect/%/reject/%.1/aPackage">
+      <details key="start" value="1770"/>
+      <details key="end" value="1778"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/queryPackage/%.1/collect/%/reject/%.1/%">
+      <details key="start" value="1791"/>
+      <details key="end" value="1796"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/queryPackage/%.1/collect/%/reject/aPackage">
+      <details key="start" value="1749"/>
+      <details key="end" value="1767"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/queryPackage/%.1/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/queryPackage/%.1/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/queryPackage/%.1/collect/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/queryPackage/%.1/%">
+      <details key="start" value="1827"/>
+      <details key="end" value="1830"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/queryType">
+      <details key="start" value="1899"/>
+      <details key="end" value="1987"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/queryType/%">
+      <details key="start" value="1839"/>
+      <details key="end" value="1897"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/queryType/%/aTypedElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/queryType/aTypedElement">
+      <details key="start" value="1923"/>
+      <details key="end" value="1951"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/queryType/%.1">
+      <details key="start" value="1965"/>
+      <details key="end" value="1983"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/queryType/%.1/aTypedElement">
+      <details key="start" value="1965"/>
+      <details key="end" value="1978"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/queryTypeName">
+      <details key="start" value="2055"/>
+      <details key="end" value="2161"/>
+      <details key="line" value="92"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/queryTypeName/%">
+      <details key="start" value="1991"/>
+      <details key="end" value="2053"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/queryTypeName/%/aTypedElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/queryTypeName/aTypedElement">
+      <details key="start" value="2083"/>
+      <details key="end" value="2111"/>
+      <details key="line" value="92"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/queryTypeName/%.1">
+      <details key="start" value="2127"/>
+      <details key="end" value="2157"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/queryTypeName/%.1/%">
+      <details key="start" value="2127"/>
+      <details key="end" value="2152"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/queryTypeName/%.1/%/aTypedElement">
+      <details key="start" value="2127"/>
+      <details key="end" value="2140"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/queryType.1">
+      <details key="start" value="2219"/>
+      <details key="end" value="2298"/>
+      <details key="line" value="100"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/queryType.1/%">
+      <details key="start" value="2165"/>
+      <details key="end" value="2217"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/queryType.1/%/aOperation">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/queryType.1/aOperation">
+      <details key="start" value="2243"/>
+      <details key="end" value="2265"/>
+      <details key="line" value="100"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/queryType.1/%.1">
+      <details key="start" value="2279"/>
+      <details key="end" value="2294"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/queryType.1/%.1/aOperation">
+      <details key="start" value="2279"/>
+      <details key="end" value="2289"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/queryTypeName.1">
+      <details key="start" value="2360"/>
+      <details key="end" value="2457"/>
+      <details key="line" value="108"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/queryTypeName.1/%">
+      <details key="start" value="2302"/>
+      <details key="end" value="2358"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/queryTypeName.1/%/aOperation">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/queryTypeName.1/aOperation">
+      <details key="start" value="2388"/>
+      <details key="end" value="2410"/>
+      <details key="line" value="108"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/queryTypeName.1/%.1">
+      <details key="start" value="2426"/>
+      <details key="end" value="2453"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/queryTypeName.1/%.1/%">
+      <details key="start" value="2426"/>
+      <details key="end" value="2448"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/queryTypeName.1/%.1/%/aOperation">
+      <details key="start" value="2426"/>
+      <details key="end" value="2436"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/queryParameters">
+      <details key="start" value="2526"/>
+      <details key="end" value="2718"/>
+      <details key="line" value="116"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/queryParameters/%">
+      <details key="start" value="2461"/>
+      <details key="end" value="2524"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/queryParameters/%/anOperation">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/queryParameters/anOperation">
+      <details key="start" value="2556"/>
+      <details key="end" value="2579"/>
+      <details key="line" value="116"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/queryParameters/select">
+      <details key="start" value="2603"/>
+      <details key="end" value="2714"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/queryParameters/select/%">
+      <details key="start" value="2603"/>
+      <details key="end" value="2629"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/queryParameters/select/%/anOperation">
+      <details key="start" value="2603"/>
+      <details key="end" value="2614"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/queryParameters/select/%.1">
+      <details key="start" value="2663"/>
+      <details key="end" value="2713"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/queryParameters/select/%.1/%">
+      <details key="start" value="2663"/>
+      <details key="end" value="2683"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/queryParameters/select/%.1/%/aParameter">
+      <details key="start" value="2663"/>
+      <details key="end" value="2673"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/queryParameters/select/%.1/%.1">
+      <details key="start" value="2686"/>
+      <details key="end" value="2713"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/queryParameters/select/aParameter">
+      <details key="start" value="2638"/>
+      <details key="end" value="2660"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/queryQualifiedName.1">
+      <details key="start" value="2787"/>
+      <details key="end" value="2889"/>
+      <details key="line" value="124"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/queryQualifiedName.1/%">
+      <details key="start" value="2722"/>
+      <details key="end" value="2785"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/queryQualifiedName.1/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/queryQualifiedName.1/aClassifier">
+      <details key="start" value="2820"/>
+      <details key="end" value="2844"/>
+      <details key="line" value="124"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/queryQualifiedName.1/%.1">
+      <details key="start" value="2860"/>
+      <details key="end" value="2885"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/queryQualifiedName.1/%.1/aClassifier">
+      <details key="start" value="2860"/>
+      <details key="end" value="2871"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/queryDefaultValue">
+      <details key="start" value="2959"/>
+      <details key="end" value="3065"/>
+      <details key="line" value="132"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/queryDefaultValue/%">
+      <details key="start" value="2893"/>
+      <details key="end" value="2957"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/queryDefaultValue/%/aProperty">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/queryDefaultValue/aProperty">
+      <details key="start" value="2991"/>
+      <details key="end" value="3011"/>
+      <details key="line" value="132"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/queryDefaultValue/%.1">
+      <details key="start" value="3039"/>
+      <details key="end" value="3061"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/queryDefaultValue/%.1/aProperty">
+      <details key="start" value="3039"/>
+      <details key="end" value="3048"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/queryDefault">
+      <details key="start" value="3124"/>
+      <details key="end" value="3208"/>
+      <details key="line" value="140"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/queryDefault/%">
+      <details key="start" value="3069"/>
+      <details key="end" value="3122"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/queryDefault/%/aProperty">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/queryDefault/aProperty">
+      <details key="start" value="3151"/>
+      <details key="end" value="3171"/>
+      <details key="line" value="140"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/queryDefault/%.1">
+      <details key="start" value="3187"/>
+      <details key="end" value="3204"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/queryDefault/%.1/aProperty">
+      <details key="start" value="3187"/>
+      <details key="end" value="3196"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/queryClassifierImports">
+      <details key="start" value="3270"/>
+      <details key="end" value="3437"/>
+      <details key="line" value="148"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/queryClassifierImports/%">
+      <details key="start" value="3212"/>
+      <details key="end" value="3268"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/queryClassifierImports/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/queryClassifierImports/aClassifier">
+      <details key="start" value="3307"/>
+      <details key="end" value="3331"/>
+      <details key="line" value="148"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/queryClassifierImports/%.1">
+      <details key="start" value="3356"/>
+      <details key="end" value="3433"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/queryClassifierImports/%.1/%">
+      <details key="start" value="3356"/>
+      <details key="end" value="3409"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/queryClassifierImports/%.1/%/aClassifier">
+      <details key="start" value="3356"/>
+      <details key="end" value="3367"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/queryClassifierExtends">
+      <details key="start" value="3519"/>
+      <details key="end" value="3634"/>
+      <details key="line" value="157"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/queryClassifierExtends/%">
+      <details key="start" value="3441"/>
+      <details key="end" value="3517"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/queryClassifierExtends/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/queryClassifierExtends/aClassifier">
+      <details key="start" value="3556"/>
+      <details key="end" value="3580"/>
+      <details key="line" value="157"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/queryClassifierExtends/%.1">
+      <details key="start" value="3605"/>
+      <details key="end" value="3630"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/queryClassifierExtends/%.1/aClassifier">
+      <details key="start" value="3605"/>
+      <details key="end" value="3616"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/queryProperties">
+      <details key="start" value="3703"/>
+      <details key="end" value="3805"/>
+      <details key="line" value="165"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/queryProperties/%">
+      <details key="start" value="3638"/>
+      <details key="end" value="3701"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/queryProperties/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/queryProperties/aClassifier">
+      <details key="start" value="3733"/>
+      <details key="end" value="3757"/>
+      <details key="line" value="165"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/queryProperties/%.1">
+      <details key="start" value="3780"/>
+      <details key="end" value="3801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/queryProperties/%.1/aClassifier">
+      <details key="start" value="3780"/>
+      <details key="end" value="3791"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/queryOperations">
+      <details key="start" value="3875"/>
+      <details key="end" value="3984"/>
+      <details key="line" value="173"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/queryOperations/%">
+      <details key="start" value="3809"/>
+      <details key="end" value="3873"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/queryOperations/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/queryOperations/aClassifier">
+      <details key="start" value="3905"/>
+      <details key="end" value="3929"/>
+      <details key="line" value="173"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/queryOperations/%.1">
+      <details key="start" value="3953"/>
+      <details key="end" value="3980"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/queryOperations/%.1/aClassifier">
+      <details key="start" value="3953"/>
+      <details key="end" value="3964"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/filterClassifiers">
+      <details key="start" value="4083"/>
+      <details key="end" value="4522"/>
+      <details key="line" value="181"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/filterClassifiers/%">
+      <details key="start" value="3988"/>
+      <details key="end" value="4081"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/filterClassifiers/%/aCollection">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/filterClassifiers/aCollection">
+      <details key="start" value="4118"/>
+      <details key="end" value="4147"/>
+      <details key="line" value="181"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/filterClassifiers/reject">
+      <details key="start" value="4179"/>
+      <details key="end" value="4518"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/filterClassifiers/reject/reject">
+      <details key="start" value="4179"/>
+      <details key="end" value="4361"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/filterClassifiers/reject/reject/aCollection">
+      <details key="start" value="4179"/>
+      <details key="end" value="4190"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/filterClassifiers/reject/reject/%">
+      <details key="start" value="4229"/>
+      <details key="end" value="4360"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/filterClassifiers/reject/reject/%/collect">
+      <details key="start" value="4229"/>
+      <details key="end" value="4333"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/filterClassifiers/reject/reject/%/collect/%">
+      <details key="start" value="4229"/>
+      <details key="end" value="4328"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/filterClassifiers/reject/reject/%/collect/%/reject">
+      <details key="start" value="4229"/>
+      <details key="end" value="4317"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%">
+      <details key="start" value="4229"/>
+      <details key="end" value="4259"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%/aClassifier">
+      <details key="start" value="4229"/>
+      <details key="end" value="4240"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%/%">
+      <details key="start" value="4251"/>
+      <details key="end" value="4258"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1">
+      <details key="start" value="4289"/>
+      <details key="end" value="4316"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1/aPackage">
+      <details key="start" value="4289"/>
+      <details key="end" value="4297"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1/%">
+      <details key="start" value="4310"/>
+      <details key="end" value="4315"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/aPackage">
+      <details key="start" value="4268"/>
+      <details key="end" value="4286"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.168" references="/0/filterClassifiers/reject/reject/%/collect/%.1">
+      <details key="start" value="4329"/>
+      <details key="end" value="4333"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.169" references="/0/filterClassifiers/reject/reject/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.170" references="/0/filterClassifiers/reject/reject/%/collect/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.171" references="/0/filterClassifiers/reject/reject/%/%">
+      <details key="start" value="4336"/>
+      <details key="end" value="4360"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.172" references="/0/filterClassifiers/reject/reject/%/%/%/%">
+      <details key="start" value="4345"/>
+      <details key="end" value="4351"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.173" references="/0/filterClassifiers/reject/reject/%/%/%.1/%">
+      <details key="start" value="4353"/>
+      <details key="end" value="4359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.174" references="/0/filterClassifiers/reject/reject/aClassifier">
+      <details key="start" value="4202"/>
+      <details key="end" value="4226"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.175" references="/0/filterClassifiers/reject/%">
+      <details key="start" value="4400"/>
+      <details key="end" value="4517"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.176" references="/0/filterClassifiers/reject/%/collect">
+      <details key="start" value="4400"/>
+      <details key="end" value="4504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.177" references="/0/filterClassifiers/reject/%/collect/%">
+      <details key="start" value="4400"/>
+      <details key="end" value="4499"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.178" references="/0/filterClassifiers/reject/%/collect/%/reject">
+      <details key="start" value="4400"/>
+      <details key="end" value="4488"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.179" references="/0/filterClassifiers/reject/%/collect/%/reject/%">
+      <details key="start" value="4400"/>
+      <details key="end" value="4430"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.180" references="/0/filterClassifiers/reject/%/collect/%/reject/%/aClassifier">
+      <details key="start" value="4400"/>
+      <details key="end" value="4411"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.181" references="/0/filterClassifiers/reject/%/collect/%/reject/%/%">
+      <details key="start" value="4422"/>
+      <details key="end" value="4429"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.182" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1">
+      <details key="start" value="4460"/>
+      <details key="end" value="4487"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.183" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1/aPackage">
+      <details key="start" value="4460"/>
+      <details key="end" value="4468"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.184" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1/%">
+      <details key="start" value="4481"/>
+      <details key="end" value="4486"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.185" references="/0/filterClassifiers/reject/%/collect/%/reject/aPackage">
+      <details key="start" value="4439"/>
+      <details key="end" value="4457"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.186" references="/0/filterClassifiers/reject/%/collect/%.1">
+      <details key="start" value="4500"/>
+      <details key="end" value="4504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.187" references="/0/filterClassifiers/reject/%/collect/%.1/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.188" references="/0/filterClassifiers/reject/%/collect/temp3">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.189" references="/0/filterClassifiers/reject/%/%">
+      <details key="start" value="4507"/>
+      <details key="end" value="4517"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.190" references="/0/filterClassifiers/reject/aClassifier">
+      <details key="start" value="4373"/>
+      <details key="end" value="4397"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.191" references="/0/%.2">
+      <details key="start" value="4528"/>
+      <details key="end" value="4607"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.192" references="/0/%.3">
+      <details key="start" value="4613"/>
+      <details key="end" value="4692"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.193" references="/0/queryUsedClassifiers">
+      <details key="start" value="4754"/>
+      <details key="end" value="5554"/>
+      <details key="line" value="196"/>
+    </eAnnotations>
+    <eAnnotations source="positions.194" references="/0/queryUsedClassifiers/%">
+      <details key="start" value="4694"/>
+      <details key="end" value="4752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.195" references="/0/queryUsedClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.196" references="/0/queryUsedClassifiers/aClassifier">
+      <details key="start" value="4790"/>
+      <details key="end" value="4814"/>
+      <details key="line" value="196"/>
+    </eAnnotations>
+    <eAnnotations source="positions.197" references="/0/queryUsedClassifiers/%.1">
+      <details key="start" value="4839"/>
+      <details key="end" value="5550"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.198" references="/0/queryUsedClassifiers/%.1/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5458"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.199" references="/0/queryUsedClassifiers/%.1/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5368"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.200" references="/0/queryUsedClassifiers/%.1/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.201" references="/0/queryUsedClassifiers/%.1/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5223"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.202" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5143"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.203" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5090"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.204" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="5008"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.205" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="4928"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.206" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%">
+      <details key="start" value="4839"/>
+      <details key="end" value="4875"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.207" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/aClassifier">
+      <details key="start" value="4839"/>
+      <details key="end" value="4850"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.208" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%.1">
+      <details key="start" value="4887"/>
+      <details key="end" value="4927"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.209" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%.1/aClassifier">
+      <details key="start" value="4887"/>
+      <details key="end" value="4898"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.210" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect">
+      <details key="start" value="4940"/>
+      <details key="end" value="5007"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.211" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="4940"/>
+      <details key="end" value="4980"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.212" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="4940"/>
+      <details key="end" value="4951"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.213" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.214" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.215" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/temp4">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.216" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect">
+      <details key="start" value="5020"/>
+      <details key="end" value="5089"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.217" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/%">
+      <details key="start" value="5020"/>
+      <details key="end" value="5060"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.218" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="5020"/>
+      <details key="end" value="5031"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.219" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.220" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/%.1/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.221" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/collect/temp5">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.222" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%.1">
+      <details key="start" value="5102"/>
+      <details key="end" value="5142"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.223" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%.1/aClassifier">
+      <details key="start" value="5102"/>
+      <details key="end" value="5113"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.224" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect">
+      <details key="start" value="5155"/>
+      <details key="end" value="5222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.225" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%">
+      <details key="start" value="5155"/>
+      <details key="end" value="5195"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.226" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="5155"/>
+      <details key="end" value="5166"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.227" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.228" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1/temp3">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.229" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.230" references="/0/queryUsedClassifiers/%.1/%/%/%/collect">
+      <details key="start" value="5235"/>
+      <details key="end" value="5304"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.231" references="/0/queryUsedClassifiers/%.1/%/%/%/collect/%">
+      <details key="start" value="5235"/>
+      <details key="end" value="5275"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.232" references="/0/queryUsedClassifiers/%.1/%/%/%/collect/%/aClassifier">
+      <details key="start" value="5235"/>
+      <details key="end" value="5246"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.233" references="/0/queryUsedClassifiers/%.1/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.234" references="/0/queryUsedClassifiers/%.1/%/%/%/collect/%.1/temp4">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.235" references="/0/queryUsedClassifiers/%.1/%/%/%/collect/temp7">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.236" references="/0/queryUsedClassifiers/%.1/%/%/%.1">
+      <details key="start" value="5317"/>
+      <details key="end" value="5367"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.237" references="/0/queryUsedClassifiers/%.1/%/%/%.1/aClassifier">
+      <details key="start" value="5317"/>
+      <details key="end" value="5328"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.238" references="/0/queryUsedClassifiers/%.1/%/collect">
+      <details key="start" value="5380"/>
+      <details key="end" value="5457"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.239" references="/0/queryUsedClassifiers/%.1/%/collect/%">
+      <details key="start" value="5380"/>
+      <details key="end" value="5430"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.240" references="/0/queryUsedClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="5380"/>
+      <details key="end" value="5391"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.241" references="/0/queryUsedClassifiers/%.1/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.242" references="/0/queryUsedClassifiers/%.1/%/collect/%.1/temp5">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.243" references="/0/queryUsedClassifiers/%.1/%/collect/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.244" references="/0/queryUsedClassifiers/%.1/collect">
+      <details key="start" value="5470"/>
+      <details key="end" value="5549"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.245" references="/0/queryUsedClassifiers/%.1/collect/%">
+      <details key="start" value="5470"/>
+      <details key="end" value="5520"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.246" references="/0/queryUsedClassifiers/%.1/collect/%/aClassifier">
+      <details key="start" value="5470"/>
+      <details key="end" value="5481"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.247" references="/0/queryUsedClassifiers/%.1/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.248" references="/0/queryUsedClassifiers/%.1/collect/%.1/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.249" references="/0/queryUsedClassifiers/%.1/collect/temp9">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.250" references="/0/queryOperationsParametersClassifiers">
+      <details key="start" value="5638"/>
+      <details key="end" value="5828"/>
+      <details key="line" value="213"/>
+    </eAnnotations>
+    <eAnnotations source="positions.251" references="/0/queryOperationsParametersClassifiers/%">
+      <details key="start" value="5558"/>
+      <details key="end" value="5636"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.252" references="/0/queryOperationsParametersClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.253" references="/0/queryOperationsParametersClassifiers/aClassifier">
+      <details key="start" value="5690"/>
+      <details key="end" value="5714"/>
+      <details key="line" value="213"/>
+    </eAnnotations>
+    <eAnnotations source="positions.254" references="/0/queryOperationsParametersClassifiers/%.1">
+      <details key="start" value="5739"/>
+      <details key="end" value="5824"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.255" references="/0/queryOperationsParametersClassifiers/%.1/%">
+      <details key="start" value="5739"/>
+      <details key="end" value="5815"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.256" references="/0/queryOperationsParametersClassifiers/%.1/%/collect">
+      <details key="start" value="5739"/>
+      <details key="end" value="5795"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.257" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect">
+      <details key="start" value="5739"/>
+      <details key="end" value="5783"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.258" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%">
+      <details key="start" value="5739"/>
+      <details key="end" value="5768"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.259" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%/aClassifier">
+      <details key="start" value="5739"/>
+      <details key="end" value="5750"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.260" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1">
+      <details key="start" value="5769"/>
+      <details key="end" value="5783"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.261" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.262" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/temp10">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.263" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.264" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.265" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/temp11">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.266" references="/0/queryOperationsParametersClassifiers/%.1/%/%">
+      <details key="start" value="5804"/>
+      <details key="end" value="5814"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.267" references="/0/queryOperationsClassifiers">
+      <details key="start" value="5915"/>
+      <details key="end" value="6080"/>
+      <details key="line" value="221"/>
+    </eAnnotations>
+    <eAnnotations source="positions.268" references="/0/queryOperationsClassifiers/%">
+      <details key="start" value="5832"/>
+      <details key="end" value="5913"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.269" references="/0/queryOperationsClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.270" references="/0/queryOperationsClassifiers/aClassifier">
+      <details key="start" value="5957"/>
+      <details key="end" value="5981"/>
+      <details key="line" value="221"/>
+    </eAnnotations>
+    <eAnnotations source="positions.271" references="/0/queryOperationsClassifiers/%.1">
+      <details key="start" value="6006"/>
+      <details key="end" value="6076"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.272" references="/0/queryOperationsClassifiers/%.1/%">
+      <details key="start" value="6006"/>
+      <details key="end" value="6067"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.273" references="/0/queryOperationsClassifiers/%.1/%/collect">
+      <details key="start" value="6006"/>
+      <details key="end" value="6047"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.274" references="/0/queryOperationsClassifiers/%.1/%/collect/%">
+      <details key="start" value="6006"/>
+      <details key="end" value="6035"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.275" references="/0/queryOperationsClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="6006"/>
+      <details key="end" value="6017"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.276" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.277" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.278" references="/0/queryOperationsClassifiers/%.1/%/collect/temp12">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.279" references="/0/queryOperationsClassifiers/%.1/%/%">
+      <details key="start" value="6056"/>
+      <details key="end" value="6066"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.280" references="/0/queryPropertiesClassifiers">
+      <details key="start" value="6167"/>
+      <details key="end" value="6332"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.281" references="/0/queryPropertiesClassifiers/%">
+      <details key="start" value="6084"/>
+      <details key="end" value="6165"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.282" references="/0/queryPropertiesClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.283" references="/0/queryPropertiesClassifiers/aClassifier">
+      <details key="start" value="6209"/>
+      <details key="end" value="6233"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.284" references="/0/queryPropertiesClassifiers/%.1">
+      <details key="start" value="6258"/>
+      <details key="end" value="6328"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.285" references="/0/queryPropertiesClassifiers/%.1/%">
+      <details key="start" value="6258"/>
+      <details key="end" value="6319"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.286" references="/0/queryPropertiesClassifiers/%.1/%/collect">
+      <details key="start" value="6258"/>
+      <details key="end" value="6299"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.287" references="/0/queryPropertiesClassifiers/%.1/%/collect/%">
+      <details key="start" value="6258"/>
+      <details key="end" value="6287"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.288" references="/0/queryPropertiesClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="6258"/>
+      <details key="end" value="6269"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.289" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.290" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.291" references="/0/queryPropertiesClassifiers/%.1/%/collect/temp13">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.292" references="/0/queryPropertiesClassifiers/%.1/%/%">
+      <details key="start" value="6308"/>
+      <details key="end" value="6318"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.293" references="/0/queryParameterSubstitution">
+      <details key="start" value="6415"/>
+      <details key="end" value="6577"/>
+      <details key="line" value="237"/>
+    </eAnnotations>
+    <eAnnotations source="positions.294" references="/0/queryParameterSubstitution/%">
+      <details key="start" value="6336"/>
+      <details key="end" value="6413"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.295" references="/0/queryParameterSubstitution/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.296" references="/0/queryParameterSubstitution/aClassifier">
+      <details key="start" value="6457"/>
+      <details key="end" value="6481"/>
+      <details key="line" value="237"/>
+    </eAnnotations>
+    <eAnnotations source="positions.297" references="/0/queryParameterSubstitution/%.1">
+      <details key="start" value="6506"/>
+      <details key="end" value="6573"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.298" references="/0/queryParameterSubstitution/%.1/collect">
+      <details key="start" value="6506"/>
+      <details key="end" value="6564"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.299" references="/0/queryParameterSubstitution/%.1/collect/collect">
+      <details key="start" value="6507"/>
+      <details key="end" value="6556"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.300" references="/0/queryParameterSubstitution/%.1/collect/collect/%">
+      <details key="start" value="6507"/>
+      <details key="end" value="6534"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.301" references="/0/queryParameterSubstitution/%.1/collect/collect/%/aClassifier">
+      <details key="start" value="6507"/>
+      <details key="end" value="6518"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.302" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1">
+      <details key="start" value="6535"/>
+      <details key="end" value="6556"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.303" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.304" references="/0/queryParameterSubstitution/%.1/collect/collect/temp14">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.305" references="/0/queryParameterSubstitution/%.1/collect/%">
+      <details key="start" value="6557"/>
+      <details key="end" value="6563"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.306" references="/0/queryParameterSubstitution/%.1/collect/%/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.307" references="/0/queryParameterSubstitution/%.1/collect/temp15">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.308" references="/0/queryRedefinedClassifier">
+      <details key="start" value="6658"/>
+      <details key="end" value="6782"/>
+      <details key="line" value="245"/>
+    </eAnnotations>
+    <eAnnotations source="positions.309" references="/0/queryRedefinedClassifier/%">
+      <details key="start" value="6581"/>
+      <details key="end" value="6656"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.310" references="/0/queryRedefinedClassifier/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.311" references="/0/queryRedefinedClassifier/aClassifier">
+      <details key="start" value="6698"/>
+      <details key="end" value="6722"/>
+      <details key="line" value="245"/>
+    </eAnnotations>
+    <eAnnotations source="positions.312" references="/0/queryRedefinedClassifier/%.1">
+      <details key="start" value="6747"/>
+      <details key="end" value="6778"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.313" references="/0/queryRedefinedClassifier/%.1/aClassifier">
+      <details key="start" value="6747"/>
+      <details key="end" value="6758"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.314" references="/0/queryUsedClassifiersInDifferentPackages">
+      <details key="start" value="6856"/>
+      <details key="end" value="7101"/>
+      <details key="line" value="253"/>
+    </eAnnotations>
+    <eAnnotations source="positions.315" references="/0/queryUsedClassifiersInDifferentPackages/%">
+      <details key="start" value="6786"/>
+      <details key="end" value="6854"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.316" references="/0/queryUsedClassifiersInDifferentPackages/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.317" references="/0/queryUsedClassifiersInDifferentPackages/aClassifier">
+      <details key="start" value="6911"/>
+      <details key="end" value="6935"/>
+      <details key="line" value="253"/>
+    </eAnnotations>
+    <eAnnotations source="positions.318" references="/0/queryUsedClassifiersInDifferentPackages/reject">
+      <details key="start" value="6960"/>
+      <details key="end" value="7097"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.319" references="/0/queryUsedClassifiersInDifferentPackages/reject/%">
+      <details key="start" value="6960"/>
+      <details key="end" value="6994"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.320" references="/0/queryUsedClassifiersInDifferentPackages/reject/%/aClassifier">
+      <details key="start" value="6960"/>
+      <details key="end" value="6971"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.321" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1">
+      <details key="start" value="7037"/>
+      <details key="end" value="7096"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.322" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%">
+      <details key="start" value="7037"/>
+      <details key="end" value="7063"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.323" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%/aClassifier">
+      <details key="start" value="7037"/>
+      <details key="end" value="7048"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.324" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1">
+      <details key="start" value="7066"/>
+      <details key="end" value="7096"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.325" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1/aUsedClassifier">
+      <details key="start" value="7066"/>
+      <details key="end" value="7081"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.326" references="/0/queryUsedClassifiersInDifferentPackages/reject/aUsedClassifier">
+      <details key="start" value="7006"/>
+      <details key="end" value="7034"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

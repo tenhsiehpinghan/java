@@ -1,0 +1,64 @@
+[comment encoding = UTF-8 /]
+[**
+ * 負責產生templateClassJava所需的query。
+ */]
+[module queryClassJava('http://www.eclipse.org/uml2/4.0.0/UML') extends idv::hsiehpinghan::acceleo::java::template::query::queryClassifier]
+
+[comment]---------------------------public---------------------------[/comment]
+[**
+ * 取得某個class realize了那些interface。
+ * @param aClass
+ */]
+[query public queryClassImplements(aClass : Class) : Set(Interface) = 
+	aClass.getAllImplementedInterfaces()
+/]
+
+[**
+ * 取得某個class需實做的interface operations。
+ * @param aClass
+ */]
+[query public queryClassImplementsOperations(aClass : Class) : Set(Operation) = 
+	aClass.queryClassImplements().queryOperations()->flatten()->asSet()
+/]
+
+[**
+ * 取得有那些class需要import。
+ * @param aClassifier
+ */]
+[query public queryClassImports(aClass : Class) : Set(Classifier) = 
+	aClass.queryUsedClassInDifferentPackages()
+	->filterClassifiers()
+/]
+
+[**
+ * 取得那個class擁有這個operation。
+ * @param anOperation
+ */]
+[query public queryClass(anOperation : Operation) : Class = 
+	anOperation.class
+/]
+[comment]--------------------------protected-------------------------[/comment]
+
+
+[comment]---------------------------private--------------------------[/comment]
+[**
+ * 取得有那些classi有被使用到。
+ * @param aClass
+ */]
+[query private queryUsedClassifiers(aClass : Class) : Set(Classifier) = 
+	aClass.queryClassifierImports()
+	->addAll(aClass.queryClassImplements())
+	->addAll(aClass.queryClassImplements().queryOperations().ownedParameter.queryType()->filter(Classifier))
+	->addAll(aClass.getAppliedStereotypes())
+	->addAll(aClass.queryClassImplements().queryOperations().getAppliedStereotypes())
+	->addAll(aClass.queryOperations().getAppliedStereotypes())
+/]
+
+[**
+ * 取得不在同一個package但有使用到的class。
+ * @param aClass
+ */]
+[query private queryUsedClassInDifferentPackages(aClass : Class) : Set(Classifier) = 
+	aClass.queryUsedClassifiers()
+	->reject(aClassifier : Classifier | aClass.queryPackage() = aClassifier.queryPackage())
+/]

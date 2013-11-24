@@ -1,0 +1,242 @@
+[comment encoding = UTF-8 /]
+[module templateClassJava('http://www.eclipse.org/uml2/4.0.0/UML') extends idv::hsiehpinghan::acceleo::java::template::templateClassifier]
+
+[import idv::hsiehpinghan::acceleo::java::template::query::queryClassJava /]
+
+[comment]---------------------------public---------------------------[/comment]
+[**
+ * 產生class的template。
+ * @param aClass
+ */]
+[template public templateClassJava(aClass : Class)]
+[aClass.templatePackageSection() /]
+
+[aClass.templateClassImportSection() /]
+
+[aClass.templateClassSection() /]
+[/template]
+
+[comment]--------------------------protected-------------------------[/comment]
+
+
+[comment]---------------------------private--------------------------[/comment]
+[**
+ * 產生class的javadocSection。
+ * @param aClass
+ */]
+[template private templateClassJavadocSection(aClass : Class)]
+/**
+[if (aClass.queryOwnedComments()->isEmpty() = false)]
+ [aClass.templateJavadocCommentsSection() /]
+[/if]
+ *
+ * @generated NOT
+ */
+[/template]
+
+[**
+ * 產生java檔案中的class部份。
+ * @param aClass
+ */]
+[template private templateClassSection(aClass : Class)]
+[aClass.templateClassJavadocSection() /]
+[if (aClass.getAppliedStereotypes()->isEmpty() = false)]
+[aClass.templateClassAnnotationSection() /]
+[/if]
+[aClass.templateVisibilityName() /]class [aClass.queryName() /][aClass.templateExtendsSection() /][aClass.templateImplementsSection() /] {
+[aClass.templatePropertiesSection() /]
+[aClass.templateOperationsSection() /]
+}
+[/template]
+
+[**
+ * 產生java檔案中的implements部份。
+ * @param aClass
+ */]
+[template protected templateImplementsSection(aClass : Class)]
+[for (anInterface : Interface | aClass.queryClassImplements()) before (' implements ') separator (', ') after (' ')][anInterface.queryName() /][/for]
+[/template]
+
+[**
+ * 產生java檔案中的property部份。
+ * @param aClass
+ */]
+[template private templatePropertiesSection(aClass : Class)]
+[for (aProperty : Property | aClass.queryProperties())]
+	[aProperty.templatePropertyJavadocSection() /]
+	[aProperty.templatePropertyModifiersSection() /][aProperty.templatePropertySectionWithoutModifiers() /]
+[/for]
+[/template]
+
+[**
+ * 產生java檔案中的operations部份。
+ * @param anOperation
+ */]
+[template private templateOperationsSection(aClass : Class)]
+[for (anOperation : Operation | aClass.queryOperations())]
+	[anOperation.templateOperationJavadocSection() /]
+	[if (anOperation.getAppliedStereotypes()->isEmpty() = false)]
+	[anOperation.templateOperationAnnotationSection() /]
+	[/if]
+	[if (aClass.queryName() = anOperation.queryName())][anOperation.templateOperationSectionWithoutTypeName() /][else][anOperation.templateOperationSection() /][/if] [anOperation.templateOperationBodySection() /]
+[/for]
+
+[comment]realize interface所需實做的operation[/comment]
+	/***********************
+	 * Implemented methods *
+	 **********************/
+[for (anOperation : Operation | aClass.queryClassImplementsOperations())]
+	@Override
+	[if (anOperation.getAppliedStereotypes()->isEmpty() = false)]
+	[anOperation.templateOperationAnnotationSection() /]
+	[/if]
+	[anOperation.templateOperationSection() /] [anOperation.templateOperationBodySection() /]
+[/for]
+[/template]
+
+[**
+ * 產生java檔案中的import部份。
+ * @param aClassifier
+ */]
+[template private templateClassImportSection(aClass : Class) post(self.trim())]
+// [protected ('for import section')]
+[for (aClassifier : Classifier | aClass.queryClassImports())]
+[aClassifier.templateImportSection() /]
+[/for]
+// [/protected]
+[/template]
+
+[**
+ * 產生class的annotationSection。
+ * @param aClass
+ */]
+[template private templateClassAnnotationSection(aClass : Class) post (self.trim())]
+[for (aStereotype : Stereotype | aClass.getAppliedStereotypes())]
+	[if (aStereotype.queryQualifiedName() = 'org::springframework::stereotype::Service')]
+[aClass.templateClassServiceAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Configuration')]
+[aClass.templateClassConfigurationAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::ComponentScan')]
+[aClass.templateClassComponentScanAnnotation(aStereotype) /]
+	[else]
+ERROR
+	[/if]
+[/for]
+[/template]
+
+[**
+ * 產生class的serviceAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassServiceAnnotation(aClass : Class)]
+@Service("[aClass.templateClassifierFullName() /]")
+[/template]
+
+[**
+ * 產生class的configurationAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassConfigurationAnnotation(aClass : Class)]
+@Configuration
+[/template]
+
+[**
+ * 產生class的componentAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassComponentScanAnnotation(aClass : Class, aStereotype : Stereotype)]
+@ComponentScan(basePackages = {
+[for (aPackage : Package | aClass.getValue(aStereotype, 'basePackages')) separator (',')]
+	"[aPackage.templatePackageFullName() /]"
+[/for]
+})
+[/template]
+
+[**
+ * 產生java檔案中的operation部份。
+ * @param anOperation
+ */]
+[template private templateOperationSection(anOperation : Operation) ]
+[anOperation.templateOperationModifiersSection() /][anOperation.templateOperationSectionWithoutModifiers() /]
+[/template]
+
+[**
+ * 產生java檔案中的operation body部份。
+ * @param anOperation
+ */]
+[template private templateOperationBodySection(anOperation : Operation)] 
+{
+	// TODO : need be to implemented
+	[anOperation.templateOperationBodyReturnSection() /]
+}
+
+[/template]
+
+[**
+ * 產生java檔案中的operation body的return部份。
+ * @param anOperation
+ */]
+[template private templateOperationBodyReturnSection(anOperation : Operation) post(self.trim())] 
+	[if (anOperation.queryType().oclIsUndefined() = true or anOperation.queryTypeName() = 'void')]
+	[else]
+return null;
+	[/if]
+[/template]
+
+[**
+ * 產生operation的annotationSection。
+ * @param anOperation
+ */]
+[template private templateOperationAnnotationSection(anOperation : Operation) post (self.trim())]
+[for (aStereotype : Stereotype | anOperation.getAppliedStereotypes())]
+	[if (aStereotype.queryQualifiedName() = 'javax::annotation::Resource')]
+[anOperation.templateOperationResourceAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Value')]
+[anOperation.templateOperationValueAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Bean')]
+[anOperation.templateOperationBeanAnnotation() /]
+	[else]
+ERROR
+	[/if]
+[/for]
+[/template]
+
+[**
+ * 產生operation的resourceAnnotation。
+ * @param anOperation, aStereotype
+ */]
+[template private templateOperationResourceAnnotation(anOperation : Operation, aStereotype : Stereotype)]
+@Resource(name="[anOperation.templateOperationResourceAnnotationNameElement(aStereotype) /]")
+[/template]
+
+[**
+ * 產生operation的resourceAnnotation的name元素內容。
+ * @param anOperation, aStereotype
+ */]
+[template private templateOperationResourceAnnotationNameElement(anOperation : Operation, aStereotype : Stereotype) post (self.trim())]
+[if (anOperation.getValue(aStereotype, 'name').oclIsUndefined() = true)]
+	[for (aType : Type | anOperation.queryParameters().queryType())]
+		[aType.queryPackage()->append('.')->append('implement')->append('.')->append(aType.queryName().concat('Implement')) /]
+	[/for]
+[else]
+	[let aClass : Class = anOperation.getValue(aStereotype, 'name').oclAsType(Class)]
+		[aClass.queryPackage()->append('.') /][aClass.queryName() /]
+	[/let]
+[/if]
+[/template]
+
+[**
+ * 產生operation的valueAnnotation。
+ * @param anOperation, aStereotype
+ */]
+[template private templateOperationValueAnnotation(anOperation : Operation, aStereotype : Stereotype)]
+@Value("[anOperation.getValue(aStereotype, 'value') /]")
+[/template]
+
+[**
+ * 產生operation的beanAnnotation。
+ * @param anOperation
+ */]
+[template private templateOperationBeanAnnotation(anOperation : Operation)]
+@Bean
+[/template]
