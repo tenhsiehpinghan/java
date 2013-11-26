@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generateSpringFiles" nsURI="idv::hsiehpinghan::acceleo::spring::generateSpringFiles" startHeaderPosition="58" endHeaderPosition="203">
+  <mtl:Module name="generateSpringFiles" nsURI="idv::hsiehpinghan::acceleo::spring::generateSpringFiles" startHeaderPosition="58" endHeaderPosition="212">
     <documentation xsi:type="mtl:ModuleDocumentation">
       <body startPosition="32" endPosition="55" value="&#xD;&#xA;負責產生spring相關的檔案。&#xD;&#xA;&#xD;&#xA;"/>
     </documentation>
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <imports href="generateApplicationcontextXml.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="138" endPosition="214" value="[import idv::hsiehpinghan::acceleo::spring::generateApplicationcontextXml /]"/>
+    </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateSpringFiles" visibility="Public">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
-      <body xsi:type="mtl:TemplateInvocation">
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="generateApplicationcontextXml.emtl#/0/generateApplicationcontextXml"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/6">
-          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
-        </argument>
-      </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="210" endPosition="250" value="&#xD;&#xA;產生spring相關的檔案。&#xD;&#xA;@param anOclAny&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="229" endPosition="269" value="&#xD;&#xA;產生spring相關的檔案。&#xD;&#xA;@param anOclAny&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOclAny">
           <body value=""/>
         </parametersDocumentation>
@@ -53,18 +47,6 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/generateSpringFiles"/>
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="anOclAny">
-          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
-        </eParameters>
-      </eOperations>
-      <eOperations name="generateApplicationcontextXml">
-        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-          <contents xsi:type="ocl.ecore:Constraint"/>
-        </eAnnotations>
-        <eAnnotations source="MTL">
-          <references href="generateApplicationcontextXml.emtl#/0/generateApplicationcontextXml"/>
-        </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOclAny">
           <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
@@ -105,9 +87,6 @@
     <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
@@ -116,39 +95,29 @@
       <details key="end" value="57"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.1" references="/0/generateSpringFiles">
-      <details key="start" value="253"/>
-      <details key="end" value="358"/>
+    <eAnnotations source="positions.1" references="/0/%.1">
+      <details key="start" value="129"/>
+      <details key="end" value="224"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateSpringFiles">
+      <details key="start" value="272"/>
+      <details key="end" value="396"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateSpringFiles/%">
-      <details key="start" value="310"/>
-      <details key="end" value="311"/>
-      <details key="line" value="14"/>
-    </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateSpringFiles/%.1">
-      <details key="start" value="312"/>
-      <details key="end" value="343"/>
+    <eAnnotations source="positions.3" references="/0/generateSpringFiles/%">
+      <details key="start" value="226"/>
+      <details key="end" value="271"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateSpringFiles/%.1/self">
+    <eAnnotations source="positions.4" references="/0/generateSpringFiles/%/anOclAny">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateSpringFiles/%.2">
-      <details key="start" value="207"/>
-      <details key="end" value="252"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateSpringFiles/%.2/anOclAny">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateSpringFiles/anOclAny">
-      <details key="start" value="290"/>
-      <details key="end" value="307"/>
+    <eAnnotations source="positions.5" references="/0/generateSpringFiles/anOclAny">
+      <details key="start" value="309"/>
+      <details key="end" value="326"/>
       <details key="line" value="13"/>
     </eAnnotations>
   </ecore:EAnnotation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_OnIfMFavEeOeZfQylqZysA" name="model">
+  <packagedElement xmi:type="uml:Package" xmi:id="_YNwbMFavEeOeZfQylqZysA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_aQJJsFavEeOeZfQylqZysA" name="sql">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dvVNYFavEeOeZfQylqZysA" name="CommonDataSource"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_kjzx4FavEeOeZfQylqZysA" name="ConnectionEventListener"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_mBuhYFavEeOeZfQylqZysA" name="ConnectionPoolDataSource"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pfXF4FavEeOeZfQylqZysA" name="DataSource"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_rZpoUFavEeOeZfQylqZysA" name="PooledConnection"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_tmKjMFavEeOeZfQylqZysA" name="RowSet"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_vgFSMFavEeOeZfQylqZysA" name="RowSetInternal"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_x5xGYFavEeOeZfQylqZysA" name="RowSetListener"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_z34Y4FavEeOeZfQylqZysA" name="RowSetMetaData"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_1Rmk4FavEeOeZfQylqZysA" name="RowSetReader"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_25XM4FavEeOeZfQylqZysA" name="RowSetWriter"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_4QHkcFavEeOeZfQylqZysA" name="StatementEventListener"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_6G3qsFavEeOeZfQylqZysA" name="XAConnection"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_7h1z4FavEeOeZfQylqZysA" name="XADataSource"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9U5F4FavEeOeZfQylqZysA" name="ConnectionEvent"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-mEZ4FavEeOeZfQylqZysA" name="RowSetEvent"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__UEvYFavEeOeZfQylqZysA" name="StatementEvent"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

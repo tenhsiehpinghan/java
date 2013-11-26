@@ -307,6 +307,8 @@ public class Main extends AbstractAcceleoGenerator {
     	propertiesFiles.add("java.properties");
     	propertiesFiles.add("pomXml.properties");
     	propertiesFiles.add("spring.properties");
+    	propertiesFiles.add("database.properties");
+    	
     	
     	propertiesFiles.add("struts2.properties");
     	propertiesFiles.add("web.properties");

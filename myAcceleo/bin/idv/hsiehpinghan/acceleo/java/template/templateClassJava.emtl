@@ -4,15 +4,15 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <extends href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0"/>
+    <extends href="templateClassifier.emtl#/0"/>
+    <imports href="query/queryClassJava.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="261" endPosition="321" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateClassJava" visibility="Public">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
+        <definition href="templateClassifier.emtl#/0/templatePackageSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassJava/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
@@ -53,7 +53,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <definition href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassJavadocSection/aClass">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
           </argument>
@@ -64,7 +64,7 @@
           <source xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Comment)">
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOwnedComments"/>
+              <definition href="query/queryClassifier.emtl#/0/queryOwnedComments"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassJavadocSection/aClass">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
               </argument>
@@ -124,7 +124,7 @@
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
+        <definition href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassSection/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
@@ -132,14 +132,14 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="class "/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+        <definition href="query/queryClassifier.emtl#/0/queryName"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassSection/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
+        <definition href="templateClassifier.emtl#/0/templateExtendsSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassSection/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
@@ -179,7 +179,7 @@
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+          <definition href="query/queryClassifier.emtl#/0/queryName"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateImplementsSection/%/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -188,7 +188,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Interface)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImplements"/>
+          <definition href="query/queryClassJava.emtl#/0/queryClassImplements"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateImplementsSection/aClass">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
           </argument>
@@ -218,7 +218,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
+          <definition href="templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -226,14 +226,14 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyModifiersSection"/>
+          <definition href="templateClassifier.emtl#/0/templatePropertyModifiersSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
         </body>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <definition href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -243,7 +243,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Property)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryProperties"/>
+          <definition href="query/queryClassifier.emtl#/0/queryProperties"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templatePropertiesSection/aClass">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
           </argument>
@@ -264,7 +264,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationJavadocSection"/>
+          <definition href="templateClassifier.emtl#/0/templateOperationJavadocSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationsSection/%/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
           </argument>
@@ -301,7 +301,7 @@
         <body xsi:type="mtl:IfBlock">
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutTypeName"/>
+            <definition href="templateClassifier.emtl#/0/templateOperationSectionWithoutTypeName"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationsSection/%/anOperation">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
             </argument>
@@ -310,14 +310,14 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+              <definition href="query/queryClassifier.emtl#/0/queryName"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateOperationsSection/aClass">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
               </argument>
             </source>
             <argument xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+              <definition href="query/queryClassifier.emtl#/0/queryName"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationsSection/%/anOperation">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
               </argument>
@@ -345,7 +345,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Operation)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOperations"/>
+          <definition href="query/queryClassifier.emtl#/0/queryOperations"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateOperationsSection/aClass">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
           </argument>
@@ -401,7 +401,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Operation)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImplementsOperations"/>
+          <definition href="query/queryClassJava.emtl#/0/queryClassImplementsOperations"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateOperationsSection/aClass">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
           </argument>
@@ -424,7 +424,7 @@
         <body xsi:type="mtl:ForBlock">
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
+            <definition href="templateClassifier.emtl#/0/templateImportSection"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateClassImportSection/%.1/%.1/aClassifier">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
             </argument>
@@ -434,7 +434,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
           </loopVariable>
           <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Classifier)">
-            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImports"/>
+            <definition href="query/queryClassJava.emtl#/0/queryClassImports"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassImportSection/aClass">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
             </argument>
@@ -475,7 +475,7 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+              <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateClassAnnotationSection/%/aStereotype">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
               </argument>
@@ -500,7 +500,7 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+                <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateClassAnnotationSection/%/aStereotype">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
                 </argument>
@@ -526,12 +526,35 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+                <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateClassAnnotationSection/%/aStereotype">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
                 </argument>
               </source>
               <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="org::springframework::context::annotation::ComponentScan">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+            </ifExpr>
+          </elseIf>
+          <elseIf>
+            <body xsi:type="mtl:TemplateInvocation" definition="/0/templateClassEnableTransactionManagementScanAnnotation">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateClassAnnotationSection/%/aStereotype">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+              </argument>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="mtl:QueryInvocation">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+                <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateClassAnnotationSection/%/aStereotype">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+                </argument>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="org::springframework::transaction::annotation::EnableTransactionManagement">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
               </argument>
               <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
@@ -568,14 +591,14 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="@Service(&quot;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateClassifierFullName"/>
+        <definition href="templateClassifier.emtl#/0/templateClassifierFullName"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateClassServiceAnnotation/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4240" endPosition="4306" value="&#xD;&#xA;產生class的serviceAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="4445" endPosition="4511" value="&#xD;&#xA;產生class的serviceAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClass,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -587,7 +610,7 @@
     <ownedModuleElement xsi:type="mtl:Template" name="templateClassConfigurationAnnotation">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="@Configuration"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4448" endPosition="4520" value="&#xD;&#xA;產生class的configurationAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="4653" endPosition="4725" value="&#xD;&#xA;產生class的configurationAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClass,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -602,7 +625,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&quot;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageFullName"/>
+          <definition href="templateClassifier.emtl#/0/templatePackageFullName"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/templateClassComponentScanAnnotation/%.1/aPackage">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
           </argument>
@@ -630,7 +653,7 @@
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="})"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4631" endPosition="4699" value="&#xD;&#xA;產生class的componentAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="4836" endPosition="4904" value="&#xD;&#xA;產生class的componentAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClass,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -642,23 +665,35 @@
         <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
       </parameter>
     </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="templateClassEnableTransactionManagementScanAnnotation">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="@EnableTransactionManagement"/>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5204" endPosition="5276" value="&#xD;&#xA;產生class的configurationAnnotation。&#xD;&#xA;@param aClass, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClass,">
+          <body value=" aStereotype"/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aClass">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+      </parameter>
+    </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateOperationSection">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationModifiersSection"/>
+        <definition href="templateClassifier.emtl#/0/templateOperationModifiersSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationSection/anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </argument>
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+        <definition href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationSection/anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </argument>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4999" endPosition="5053" value="&#xD;&#xA;產生java檔案中的operation部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="5419" endPosition="5473" value="&#xD;&#xA;產生java檔案中的operation部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -677,7 +712,7 @@
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;}&#xD;&#xA;"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="5257" endPosition="5316" value="&#xD;&#xA;產生java檔案中的operation body部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="5677" endPosition="5736" value="&#xD;&#xA;產生java檔案中的operation body部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -696,7 +731,7 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryType.1"/>
+                <definition href="query/queryClassifier.emtl#/0/queryType.1"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationBodyReturnSection/anOperation">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
                 </argument>
@@ -712,7 +747,7 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryTypeName.1"/>
+              <definition href="query/queryClassifier.emtl#/0/queryTypeName.1"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationBodyReturnSection/anOperation">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
               </argument>
@@ -729,7 +764,7 @@
         </else>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="5511" endPosition="5577" value="&#xD;&#xA;產生java檔案中的operation body的return部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="5931" endPosition="5997" value="&#xD;&#xA;產生java檔案中的operation body的return部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -739,7 +774,7 @@
       </parameter>
       <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/134">
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/140">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </source>
       </post>
@@ -761,7 +796,7 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+              <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateOperationAnnotationSection/%/aStereotype">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
               </argument>
@@ -789,7 +824,7 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+                <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateOperationAnnotationSection/%/aStereotype">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
                 </argument>
@@ -812,7 +847,7 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+                <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/templateOperationAnnotationSection/%/aStereotype">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
                 </argument>
@@ -835,7 +870,7 @@
         </iterSet>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="5826" endPosition="5888" value="&#xD;&#xA;產生operation的annotationSection。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="6246" endPosition="6308" value="&#xD;&#xA;產生operation的annotationSection。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -845,7 +880,7 @@
       </parameter>
       <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/140">
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/146">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </source>
       </post>
@@ -863,7 +898,7 @@
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="6570" endPosition="6646" value="&#xD;&#xA;產生operation的resourceAnnotation。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="6990" endPosition="7066" value="&#xD;&#xA;產生operation的resourceAnnotation。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -884,7 +919,7 @@
               <source xsi:type="ocl.ecore:OperationCallExp" eType="/13/Sequence(String)">
                 <source xsi:type="ocl.ecore:OperationCallExp" eType="/13/Sequence(String)">
                   <source xsi:type="mtl:QueryInvocation" eType="/13/Sequence(String)">
-                    <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryPackage"/>
+                    <definition href="query/queryClassifier.emtl#/0/queryPackage"/>
                     <argument xsi:type="ocl.ecore:VariableExp" name="aType" referredVariable="/0/templateOperationResourceAnnotationNameElement/%/%/aType">
                       <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
                     </argument>
@@ -908,7 +943,7 @@
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
               <source xsi:type="mtl:QueryInvocation">
                 <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+                <definition href="query/queryClassifier.emtl#/0/queryName"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aType" referredVariable="/0/templateOperationResourceAnnotationNameElement/%/%/aType">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
                 </argument>
@@ -926,14 +961,14 @@
           </loopVariable>
           <iterSet xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/13/Bag(Type)">
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Parameter)">
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryParameters"/>
+              <definition href="query/queryClassifier.emtl#/0/queryParameters"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationResourceAnnotationNameElement/anOperation">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
               </argument>
             </source>
             <body xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryType"/>
+              <definition href="query/queryClassifier.emtl#/0/queryType"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/templateOperationResourceAnnotationNameElement/%/%/collect/temp1">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
               </argument>
@@ -972,7 +1007,7 @@
             <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
             <body xsi:type="ocl.ecore:OperationCallExp" eType="/13/Sequence(String)">
               <source xsi:type="mtl:QueryInvocation" eType="/13/Sequence(String)">
-                <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryPackage"/>
+                <definition href="query/queryClassifier.emtl#/0/queryPackage"/>
                 <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
                 </argument>
@@ -984,7 +1019,7 @@
             </body>
             <body xsi:type="mtl:QueryInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+              <definition href="query/queryClassifier.emtl#/0/queryName"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
               </argument>
@@ -1007,7 +1042,7 @@
                   </argument>
                   <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/getValue"/>
                 </source>
-                <argument xsi:type="ocl.ecore:TypeExp" eType="/168/Class">
+                <argument xsi:type="ocl.ecore:TypeExp" eType="/174/Class">
                   <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
                 </argument>
                 <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
@@ -1017,7 +1052,7 @@
         </else>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="6870" endPosition="6955" value="&#xD;&#xA;產生operation的resourceAnnotation的name元素內容。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="7290" endPosition="7375" value="&#xD;&#xA;產生operation的resourceAnnotation的name元素內容。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -1030,7 +1065,7 @@
       </parameter>
       <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/160">
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/166">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </source>
       </post>
@@ -1052,7 +1087,7 @@
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7558" endPosition="7631" value="&#xD;&#xA;產生operation的valueAnnotation。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="7978" endPosition="8051" value="&#xD;&#xA;產生operation的valueAnnotation。&#xD;&#xA;@param anOperation, aStereotype&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation,">
           <body value=" aStereotype"/>
         </parametersDocumentation>
@@ -1067,7 +1102,7 @@
     <ownedModuleElement xsi:type="mtl:Template" name="templateOperationBeanAnnotation">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="@Bean"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7815" endPosition="7874" value="&#xD;&#xA;產生operation的beanAnnotation。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8235" endPosition="8294" value="&#xD;&#xA;產生operation的beanAnnotation。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -1214,6 +1249,16 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
         </eParameters>
       </eOperations>
+      <eOperations name="templateClassEnableTransactionManagementScanAnnotation">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/templateClassEnableTransactionManagementScanAnnotation"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+        </eParameters>
+      </eOperations>
       <eOperations name="templateOperationSection">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
@@ -1308,9 +1353,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImplements"/>
+          <references href="query/queryClassJava.emtl#/0/queryClassImplements"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SetType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/3/Set(Interface)"/>
+        <eType xsi:type="ocl.ecore:SetType" href="query/queryClassJava.emtl#/3/Set(Interface)"/>
         <eParameters name="aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </eParameters>
@@ -1320,9 +1365,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImplementsOperations"/>
+          <references href="query/queryClassJava.emtl#/0/queryClassImplementsOperations"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SetType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/3/Set(Operation)"/>
+        <eType xsi:type="ocl.ecore:SetType" href="query/queryClassJava.emtl#/3/Set(Operation)"/>
         <eParameters name="aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </eParameters>
@@ -1332,9 +1377,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/0/queryClassImports"/>
+          <references href="query/queryClassJava.emtl#/0/queryClassImports"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SetType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassJava.emtl#/3/Set(Classifier)"/>
+        <eType xsi:type="ocl.ecore:SetType" href="query/queryClassJava.emtl#/3/Set(Classifier)"/>
         <eParameters name="aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </eParameters>
@@ -1344,7 +1389,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <references href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anElement">
@@ -1356,7 +1401,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
+          <references href="templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -1368,7 +1413,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationJavadocSection"/>
+          <references href="templateClassifier.emtl#/0/templateOperationJavadocSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -1380,7 +1425,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyModifiersSection"/>
+          <references href="templateClassifier.emtl#/0/templatePropertyModifiersSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -1392,7 +1437,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationModifiersSection"/>
+          <references href="templateClassifier.emtl#/0/templateOperationModifiersSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aOperation">
@@ -1404,7 +1449,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <references href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -1416,7 +1461,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+          <references href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -1428,7 +1473,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutTypeName"/>
+          <references href="templateClassifier.emtl#/0/templateOperationSectionWithoutTypeName"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -1440,7 +1485,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
+          <references href="templateClassifier.emtl#/0/templatePackageSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1452,7 +1497,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
+          <references href="templateClassifier.emtl#/0/templateImportSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1464,7 +1509,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateClassifierFullName"/>
+          <references href="templateClassifier.emtl#/0/templateClassifierFullName"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1476,7 +1521,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
+          <references href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1488,7 +1533,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
+          <references href="templateClassifier.emtl#/0/templateExtendsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1500,7 +1545,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageFullName"/>
+          <references href="templateClassifier.emtl#/0/templatePackageFullName"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aPackage">
@@ -1912,6 +1957,12 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
@@ -1973,6 +2024,18 @@
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -3030,17 +3093,17 @@
     </eAnnotations>
     <eAnnotations source="positions.173" references="/0/templateClassAnnotationSection">
       <details key="start" value="3578"/>
-      <details key="end" value="4233"/>
+      <details key="end" value="4438"/>
       <details key="line" value="113"/>
     </eAnnotations>
     <eAnnotations source="positions.174" references="/0/templateClassAnnotationSection/%">
       <details key="start" value="3664"/>
-      <details key="end" value="4220"/>
+      <details key="end" value="4425"/>
       <details key="line" value="114"/>
     </eAnnotations>
     <eAnnotations source="positions.175" references="/0/templateClassAnnotationSection/%/%">
       <details key="start" value="3732"/>
-      <details key="end" value="4212"/>
+      <details key="end" value="4417"/>
       <details key="line" value="115"/>
     </eAnnotations>
     <eAnnotations source="positions.176" references="/0/templateClassAnnotationSection/%/%/%">
@@ -3079,14 +3142,14 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.183" references="/0/templateClassAnnotationSection/%/%/%.3">
-      <details key="start" value="4191"/>
-      <details key="end" value="4207"/>
-      <details key="line" value="121"/>
+      <details key="start" value="4396"/>
+      <details key="end" value="4412"/>
+      <details key="line" value="123"/>
     </eAnnotations>
     <eAnnotations source="positions.184" references="/0/templateClassAnnotationSection/%/%/%.3/%">
-      <details key="start" value="4199"/>
-      <details key="end" value="4206"/>
-      <details key="line" value="122"/>
+      <details key="start" value="4404"/>
+      <details key="end" value="4411"/>
+      <details key="line" value="124"/>
     </eAnnotations>
     <eAnnotations source="positions.185" references="/0/templateClassAnnotationSection/%/%/%.4">
       <details key="start" value="3865"/>
@@ -3173,970 +3236,1035 @@
       <details key="end" value="4124"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.202" references="/0/templateClassAnnotationSection/%/aStereotype">
+    <eAnnotations source="positions.202" references="/0/templateClassAnnotationSection/%/%/%.6">
+      <details key="start" value="4191"/>
+      <details key="end" value="4396"/>
+      <details key="line" value="121"/>
+    </eAnnotations>
+    <eAnnotations source="positions.203" references="/0/templateClassAnnotationSection/%/%/%.6/%">
+      <details key="start" value="4316"/>
+      <details key="end" value="4390"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.204" references="/0/templateClassAnnotationSection/%/%/%.6/%/aStereotype">
+      <details key="start" value="4378"/>
+      <details key="end" value="4389"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.205" references="/0/templateClassAnnotationSection/%/%/%.6/%.1">
+      <details key="start" value="4393"/>
+      <details key="end" value="4395"/>
+      <details key="line" value="123"/>
+    </eAnnotations>
+    <eAnnotations source="positions.206" references="/0/templateClassAnnotationSection/%/%/%.6/%.2">
+      <details key="start" value="4199"/>
+      <details key="end" value="4312"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.207" references="/0/templateClassAnnotationSection/%/%/%.6/%.2/%">
+      <details key="start" value="4200"/>
+      <details key="end" value="4232"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.208" references="/0/templateClassAnnotationSection/%/%/%.6/%.2/%/aStereotype">
+      <details key="start" value="4200"/>
+      <details key="end" value="4211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.209" references="/0/templateClassAnnotationSection/%/%/%.6/%.2/%.1">
+      <details key="start" value="4235"/>
+      <details key="end" value="4311"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.210" references="/0/templateClassAnnotationSection/%/aStereotype">
       <details key="start" value="3670"/>
       <details key="end" value="3694"/>
       <details key="line" value="114"/>
     </eAnnotations>
-    <eAnnotations source="positions.203" references="/0/templateClassAnnotationSection/%/%.1">
+    <eAnnotations source="positions.211" references="/0/templateClassAnnotationSection/%/%.1">
       <details key="start" value="3697"/>
       <details key="end" value="3727"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.204" references="/0/templateClassAnnotationSection/%/%.1/aClass">
+    <eAnnotations source="positions.212" references="/0/templateClassAnnotationSection/%/%.1/aClass">
       <details key="start" value="3697"/>
       <details key="end" value="3703"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.205" references="/0/templateClassAnnotationSection/%.1">
+    <eAnnotations source="positions.213" references="/0/templateClassAnnotationSection/%.1">
       <details key="start" value="3518"/>
       <details key="end" value="3576"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.206" references="/0/templateClassAnnotationSection/%.1/aClass">
+    <eAnnotations source="positions.214" references="/0/templateClassAnnotationSection/%.1/aClass">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.207" references="/0/templateClassAnnotationSection/aClass">
+    <eAnnotations source="positions.215" references="/0/templateClassAnnotationSection/aClass">
       <details key="start" value="3627"/>
       <details key="end" value="3641"/>
       <details key="line" value="113"/>
     </eAnnotations>
-    <eAnnotations source="positions.208" references="/0/templateClassAnnotationSection/%.2">
+    <eAnnotations source="positions.216" references="/0/templateClassAnnotationSection/%.2">
       <details key="start" value="3649"/>
       <details key="end" value="3660"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.209" references="/0/templateClassAnnotationSection/%.2/self">
+    <eAnnotations source="positions.217" references="/0/templateClassAnnotationSection/%.2/self">
       <details key="start" value="3649"/>
       <details key="end" value="3653"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.210" references="/0/templateClassServiceAnnotation">
-      <details key="start" value="4310"/>
-      <details key="end" value="4441"/>
-      <details key="line" value="131"/>
+    <eAnnotations source="positions.218" references="/0/templateClassServiceAnnotation">
+      <details key="start" value="4515"/>
+      <details key="end" value="4646"/>
+      <details key="line" value="133"/>
     </eAnnotations>
-    <eAnnotations source="positions.211" references="/0/templateClassServiceAnnotation/%">
-      <details key="start" value="4377"/>
-      <details key="end" value="4387"/>
-      <details key="line" value="132"/>
+    <eAnnotations source="positions.219" references="/0/templateClassServiceAnnotation/%">
+      <details key="start" value="4582"/>
+      <details key="end" value="4592"/>
+      <details key="line" value="134"/>
     </eAnnotations>
-    <eAnnotations source="positions.212" references="/0/templateClassServiceAnnotation/%.1">
-      <details key="start" value="4388"/>
-      <details key="end" value="4423"/>
+    <eAnnotations source="positions.220" references="/0/templateClassServiceAnnotation/%.1">
+      <details key="start" value="4593"/>
+      <details key="end" value="4628"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.213" references="/0/templateClassServiceAnnotation/%.1/aClass">
-      <details key="start" value="4388"/>
-      <details key="end" value="4394"/>
+    <eAnnotations source="positions.221" references="/0/templateClassServiceAnnotation/%.1/aClass">
+      <details key="start" value="4593"/>
+      <details key="end" value="4599"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.214" references="/0/templateClassServiceAnnotation/%.2">
-      <details key="start" value="4426"/>
-      <details key="end" value="4428"/>
-      <details key="line" value="132"/>
+    <eAnnotations source="positions.222" references="/0/templateClassServiceAnnotation/%.2">
+      <details key="start" value="4631"/>
+      <details key="end" value="4633"/>
+      <details key="line" value="134"/>
     </eAnnotations>
-    <eAnnotations source="positions.215" references="/0/templateClassServiceAnnotation/%.3">
-      <details key="start" value="4237"/>
-      <details key="end" value="4308"/>
+    <eAnnotations source="positions.223" references="/0/templateClassServiceAnnotation/%.3">
+      <details key="start" value="4442"/>
+      <details key="end" value="4513"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.216" references="/0/templateClassServiceAnnotation/%.3/aClass%2C">
+    <eAnnotations source="positions.224" references="/0/templateClassServiceAnnotation/%.3/aClass%2C">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.217" references="/0/templateClassServiceAnnotation/aClass">
-      <details key="start" value="4359"/>
-      <details key="end" value="4373"/>
-      <details key="line" value="131"/>
+    <eAnnotations source="positions.225" references="/0/templateClassServiceAnnotation/aClass">
+      <details key="start" value="4564"/>
+      <details key="end" value="4578"/>
+      <details key="line" value="133"/>
     </eAnnotations>
-    <eAnnotations source="positions.218" references="/0/templateClassConfigurationAnnotation">
-      <details key="start" value="4524"/>
-      <details key="end" value="4624"/>
-      <details key="line" value="139"/>
+    <eAnnotations source="positions.226" references="/0/templateClassConfigurationAnnotation">
+      <details key="start" value="4729"/>
+      <details key="end" value="4829"/>
+      <details key="line" value="141"/>
     </eAnnotations>
-    <eAnnotations source="positions.219" references="/0/templateClassConfigurationAnnotation/%">
-      <details key="start" value="4597"/>
-      <details key="end" value="4611"/>
-      <details key="line" value="140"/>
-    </eAnnotations>
-    <eAnnotations source="positions.220" references="/0/templateClassConfigurationAnnotation/%.1">
-      <details key="start" value="4445"/>
-      <details key="end" value="4522"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.221" references="/0/templateClassConfigurationAnnotation/%.1/aClass%2C">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.222" references="/0/templateClassConfigurationAnnotation/aClass">
-      <details key="start" value="4579"/>
-      <details key="end" value="4593"/>
-      <details key="line" value="139"/>
-    </eAnnotations>
-    <eAnnotations source="positions.223" references="/0/templateClassComponentScanAnnotation">
-      <details key="start" value="4703"/>
-      <details key="end" value="4992"/>
-      <details key="line" value="147"/>
-    </eAnnotations>
-    <eAnnotations source="positions.224" references="/0/templateClassComponentScanAnnotation/%">
+    <eAnnotations source="positions.227" references="/0/templateClassConfigurationAnnotation/%">
       <details key="start" value="4802"/>
-      <details key="end" value="4835"/>
-      <details key="line" value="148"/>
+      <details key="end" value="4816"/>
+      <details key="line" value="142"/>
     </eAnnotations>
-    <eAnnotations source="positions.225" references="/0/templateClassComponentScanAnnotation/%.1">
-      <details key="start" value="4835"/>
-      <details key="end" value="4975"/>
-      <details key="line" value="149"/>
-    </eAnnotations>
-    <eAnnotations source="positions.226" references="/0/templateClassComponentScanAnnotation/%.1/%">
-      <details key="start" value="4926"/>
-      <details key="end" value="4928"/>
-      <details key="line" value="150"/>
-    </eAnnotations>
-    <eAnnotations source="positions.227" references="/0/templateClassComponentScanAnnotation/%.1/%.1">
-      <details key="start" value="4929"/>
-      <details key="end" value="4963"/>
+    <eAnnotations source="positions.228" references="/0/templateClassConfigurationAnnotation/%.1">
+      <details key="start" value="4650"/>
+      <details key="end" value="4727"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.228" references="/0/templateClassComponentScanAnnotation/%.1/%.1/aPackage">
-      <details key="start" value="4929"/>
-      <details key="end" value="4937"/>
+    <eAnnotations source="positions.229" references="/0/templateClassConfigurationAnnotation/%.1/aClass%2C">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.229" references="/0/templateClassComponentScanAnnotation/%.1/%.2">
-      <details key="start" value="4966"/>
-      <details key="end" value="4969"/>
-      <details key="line" value="150"/>
+    <eAnnotations source="positions.230" references="/0/templateClassConfigurationAnnotation/aClass">
+      <details key="start" value="4784"/>
+      <details key="end" value="4798"/>
+      <details key="line" value="141"/>
     </eAnnotations>
-    <eAnnotations source="positions.230" references="/0/templateClassComponentScanAnnotation/%.1/aPackage">
-      <details key="start" value="4841"/>
-      <details key="end" value="4859"/>
+    <eAnnotations source="positions.231" references="/0/templateClassComponentScanAnnotation">
+      <details key="start" value="4908"/>
+      <details key="end" value="5197"/>
       <details key="line" value="149"/>
     </eAnnotations>
-    <eAnnotations source="positions.231" references="/0/templateClassComponentScanAnnotation/%.1/%.3">
-      <details key="start" value="4862"/>
+    <eAnnotations source="positions.232" references="/0/templateClassComponentScanAnnotation/%">
+      <details key="start" value="5007"/>
+      <details key="end" value="5040"/>
+      <details key="line" value="150"/>
+    </eAnnotations>
+    <eAnnotations source="positions.233" references="/0/templateClassComponentScanAnnotation/%.1">
+      <details key="start" value="5040"/>
+      <details key="end" value="5180"/>
+      <details key="line" value="151"/>
+    </eAnnotations>
+    <eAnnotations source="positions.234" references="/0/templateClassComponentScanAnnotation/%.1/%">
+      <details key="start" value="5131"/>
+      <details key="end" value="5133"/>
+      <details key="line" value="152"/>
+    </eAnnotations>
+    <eAnnotations source="positions.235" references="/0/templateClassComponentScanAnnotation/%.1/%.1">
+      <details key="start" value="5134"/>
+      <details key="end" value="5168"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.236" references="/0/templateClassComponentScanAnnotation/%.1/%.1/aPackage">
+      <details key="start" value="5134"/>
+      <details key="end" value="5142"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.237" references="/0/templateClassComponentScanAnnotation/%.1/%.2">
+      <details key="start" value="5171"/>
+      <details key="end" value="5174"/>
+      <details key="line" value="152"/>
+    </eAnnotations>
+    <eAnnotations source="positions.238" references="/0/templateClassComponentScanAnnotation/%.1/aPackage">
+      <details key="start" value="5046"/>
+      <details key="end" value="5064"/>
+      <details key="line" value="151"/>
+    </eAnnotations>
+    <eAnnotations source="positions.239" references="/0/templateClassComponentScanAnnotation/%.1/%.3">
+      <details key="start" value="5067"/>
+      <details key="end" value="5111"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.240" references="/0/templateClassComponentScanAnnotation/%.1/%.3/aClass">
+      <details key="start" value="5067"/>
+      <details key="end" value="5073"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.241" references="/0/templateClassComponentScanAnnotation/%.1/%.3/aStereotype">
+      <details key="start" value="5083"/>
+      <details key="end" value="5094"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.242" references="/0/templateClassComponentScanAnnotation/%.1/%.3/%">
+      <details key="start" value="5096"/>
+      <details key="end" value="5110"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.243" references="/0/templateClassComponentScanAnnotation/%.1/%.4">
+      <details key="start" value="5124"/>
+      <details key="end" value="5127"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.244" references="/0/templateClassComponentScanAnnotation/%.2">
+      <details key="start" value="5182"/>
+      <details key="end" value="5184"/>
+      <details key="line" value="154"/>
+    </eAnnotations>
+    <eAnnotations source="positions.245" references="/0/templateClassComponentScanAnnotation/%.3">
+      <details key="start" value="4833"/>
       <details key="end" value="4906"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.232" references="/0/templateClassComponentScanAnnotation/%.1/%.3/aClass">
-      <details key="start" value="4862"/>
-      <details key="end" value="4868"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.233" references="/0/templateClassComponentScanAnnotation/%.1/%.3/aStereotype">
-      <details key="start" value="4878"/>
-      <details key="end" value="4889"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.234" references="/0/templateClassComponentScanAnnotation/%.1/%.3/%">
-      <details key="start" value="4891"/>
-      <details key="end" value="4905"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.235" references="/0/templateClassComponentScanAnnotation/%.1/%.4">
-      <details key="start" value="4919"/>
-      <details key="end" value="4922"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.236" references="/0/templateClassComponentScanAnnotation/%.2">
-      <details key="start" value="4977"/>
-      <details key="end" value="4979"/>
-      <details key="line" value="152"/>
-    </eAnnotations>
-    <eAnnotations source="positions.237" references="/0/templateClassComponentScanAnnotation/%.3">
-      <details key="start" value="4628"/>
-      <details key="end" value="4701"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.238" references="/0/templateClassComponentScanAnnotation/%.3/aClass%2C">
+    <eAnnotations source="positions.246" references="/0/templateClassComponentScanAnnotation/%.3/aClass%2C">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.239" references="/0/templateClassComponentScanAnnotation/aClass">
-      <details key="start" value="4758"/>
-      <details key="end" value="4772"/>
-      <details key="line" value="147"/>
+    <eAnnotations source="positions.247" references="/0/templateClassComponentScanAnnotation/aClass">
+      <details key="start" value="4963"/>
+      <details key="end" value="4977"/>
+      <details key="line" value="149"/>
     </eAnnotations>
-    <eAnnotations source="positions.240" references="/0/templateClassComponentScanAnnotation/aStereotype">
-      <details key="start" value="4774"/>
-      <details key="end" value="4798"/>
-      <details key="line" value="147"/>
+    <eAnnotations source="positions.248" references="/0/templateClassComponentScanAnnotation/aStereotype">
+      <details key="start" value="4979"/>
+      <details key="end" value="5003"/>
+      <details key="line" value="149"/>
     </eAnnotations>
-    <eAnnotations source="positions.241" references="/0/templateOperationSection">
-      <details key="start" value="5057"/>
-      <details key="end" value="5250"/>
-      <details key="line" value="159"/>
+    <eAnnotations source="positions.249" references="/0/templateClassEnableTransactionManagementScanAnnotation">
+      <details key="start" value="5280"/>
+      <details key="end" value="5412"/>
+      <details key="line" value="161"/>
     </eAnnotations>
-    <eAnnotations source="positions.242" references="/0/templateOperationSection/%">
-      <details key="start" value="5129"/>
-      <details key="end" value="5176"/>
+    <eAnnotations source="positions.250" references="/0/templateClassEnableTransactionManagementScanAnnotation/%">
+      <details key="start" value="5371"/>
+      <details key="end" value="5399"/>
+      <details key="line" value="162"/>
+    </eAnnotations>
+    <eAnnotations source="positions.251" references="/0/templateClassEnableTransactionManagementScanAnnotation/%.1">
+      <details key="start" value="5201"/>
+      <details key="end" value="5278"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.243" references="/0/templateOperationSection/%/anOperation">
-      <details key="start" value="5129"/>
-      <details key="end" value="5140"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.244" references="/0/templateOperationSection/%.1">
-      <details key="start" value="5180"/>
-      <details key="end" value="5234"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.245" references="/0/templateOperationSection/%.1/anOperation">
-      <details key="start" value="5180"/>
-      <details key="end" value="5191"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.246" references="/0/templateOperationSection/%.2">
-      <details key="start" value="4996"/>
-      <details key="end" value="5055"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.247" references="/0/templateOperationSection/%.2/anOperation">
+    <eAnnotations source="positions.252" references="/0/templateClassEnableTransactionManagementScanAnnotation/%.1/aClass%2C">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.248" references="/0/templateOperationSection/anOperation">
-      <details key="start" value="5100"/>
-      <details key="end" value="5123"/>
-      <details key="line" value="159"/>
+    <eAnnotations source="positions.253" references="/0/templateClassEnableTransactionManagementScanAnnotation/aClass">
+      <details key="start" value="5353"/>
+      <details key="end" value="5367"/>
+      <details key="line" value="161"/>
     </eAnnotations>
-    <eAnnotations source="positions.249" references="/0/templateOperationBodySection">
-      <details key="start" value="5320"/>
-      <details key="end" value="5504"/>
-      <details key="line" value="167"/>
+    <eAnnotations source="positions.254" references="/0/templateOperationSection">
+      <details key="start" value="5477"/>
+      <details key="end" value="5670"/>
+      <details key="line" value="169"/>
     </eAnnotations>
-    <eAnnotations source="positions.250" references="/0/templateOperationBodySection/%">
-      <details key="start" value="5395"/>
-      <details key="end" value="5434"/>
-      <details key="line" value="167"/>
-    </eAnnotations>
-    <eAnnotations source="positions.251" references="/0/templateOperationBodySection/%.1">
-      <details key="start" value="5435"/>
-      <details key="end" value="5483"/>
+    <eAnnotations source="positions.255" references="/0/templateOperationSection/%">
+      <details key="start" value="5549"/>
+      <details key="end" value="5596"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.252" references="/0/templateOperationBodySection/%.1/anOperation">
-      <details key="start" value="5435"/>
-      <details key="end" value="5446"/>
+    <eAnnotations source="positions.256" references="/0/templateOperationSection/%/anOperation">
+      <details key="start" value="5549"/>
+      <details key="end" value="5560"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.253" references="/0/templateOperationBodySection/%.2">
-      <details key="start" value="5486"/>
-      <details key="end" value="5491"/>
-      <details key="line" value="171"/>
-    </eAnnotations>
-    <eAnnotations source="positions.254" references="/0/templateOperationBodySection/%.3">
-      <details key="start" value="5254"/>
-      <details key="end" value="5318"/>
+    <eAnnotations source="positions.257" references="/0/templateOperationSection/%.1">
+      <details key="start" value="5600"/>
+      <details key="end" value="5654"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.255" references="/0/templateOperationBodySection/%.3/anOperation">
+    <eAnnotations source="positions.258" references="/0/templateOperationSection/%.1/anOperation">
+      <details key="start" value="5600"/>
+      <details key="end" value="5611"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.259" references="/0/templateOperationSection/%.2">
+      <details key="start" value="5416"/>
+      <details key="end" value="5475"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.260" references="/0/templateOperationSection/%.2/anOperation">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.256" references="/0/templateOperationBodySection/anOperation">
-      <details key="start" value="5367"/>
-      <details key="end" value="5390"/>
-      <details key="line" value="167"/>
+    <eAnnotations source="positions.261" references="/0/templateOperationSection/anOperation">
+      <details key="start" value="5520"/>
+      <details key="end" value="5543"/>
+      <details key="line" value="169"/>
     </eAnnotations>
-    <eAnnotations source="positions.257" references="/0/templateOperationBodyReturnSection">
-      <details key="start" value="5581"/>
-      <details key="end" value="5819"/>
-      <details key="line" value="179"/>
+    <eAnnotations source="positions.262" references="/0/templateOperationBodySection">
+      <details key="start" value="5740"/>
+      <details key="end" value="5924"/>
+      <details key="line" value="177"/>
     </eAnnotations>
-    <eAnnotations source="positions.258" references="/0/templateOperationBodyReturnSection/%">
-      <details key="start" value="5681"/>
-      <details key="end" value="5806"/>
-      <details key="line" value="180"/>
+    <eAnnotations source="positions.263" references="/0/templateOperationBodySection/%">
+      <details key="start" value="5815"/>
+      <details key="end" value="5854"/>
+      <details key="line" value="177"/>
     </eAnnotations>
-    <eAnnotations source="positions.259" references="/0/templateOperationBodyReturnSection/%/%">
-      <details key="start" value="5685"/>
-      <details key="end" value="5774"/>
+    <eAnnotations source="positions.264" references="/0/templateOperationBodySection/%.1">
+      <details key="start" value="5855"/>
+      <details key="end" value="5903"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.260" references="/0/templateOperationBodyReturnSection/%/%/%">
-      <details key="start" value="5686"/>
-      <details key="end" value="5733"/>
+    <eAnnotations source="positions.265" references="/0/templateOperationBodySection/%.1/anOperation">
+      <details key="start" value="5855"/>
+      <details key="end" value="5866"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.261" references="/0/templateOperationBodyReturnSection/%/%/%/%">
-      <details key="start" value="5686"/>
-      <details key="end" value="5726"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.262" references="/0/templateOperationBodyReturnSection/%/%/%/%/%">
-      <details key="start" value="5686"/>
-      <details key="end" value="5709"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.263" references="/0/templateOperationBodyReturnSection/%/%/%/%/%/anOperation">
-      <details key="start" value="5686"/>
-      <details key="end" value="5697"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.264" references="/0/templateOperationBodyReturnSection/%/%/%/%.1">
-      <details key="start" value="5729"/>
-      <details key="end" value="5733"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.265" references="/0/templateOperationBodyReturnSection/%/%/%.1">
-      <details key="start" value="5737"/>
-      <details key="end" value="5773"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.266" references="/0/templateOperationBodyReturnSection/%/%/%.1/%">
-      <details key="start" value="5737"/>
-      <details key="end" value="5764"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.267" references="/0/templateOperationBodyReturnSection/%/%/%.1/%/anOperation">
-      <details key="start" value="5737"/>
-      <details key="end" value="5748"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.268" references="/0/templateOperationBodyReturnSection/%/%/%.1/%.1">
-      <details key="start" value="5767"/>
-      <details key="end" value="5773"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.269" references="/0/templateOperationBodyReturnSection/%/%.1">
-      <details key="start" value="5778"/>
-      <details key="end" value="5801"/>
+    <eAnnotations source="positions.266" references="/0/templateOperationBodySection/%.2">
+      <details key="start" value="5906"/>
+      <details key="end" value="5911"/>
       <details key="line" value="181"/>
     </eAnnotations>
-    <eAnnotations source="positions.270" references="/0/templateOperationBodyReturnSection/%/%.1/%">
-      <details key="start" value="5786"/>
-      <details key="end" value="5800"/>
-      <details key="line" value="182"/>
-    </eAnnotations>
-    <eAnnotations source="positions.271" references="/0/templateOperationBodyReturnSection/%.1">
-      <details key="start" value="5508"/>
-      <details key="end" value="5579"/>
+    <eAnnotations source="positions.267" references="/0/templateOperationBodySection/%.3">
+      <details key="start" value="5674"/>
+      <details key="end" value="5738"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.272" references="/0/templateOperationBodyReturnSection/%.1/anOperation">
+    <eAnnotations source="positions.268" references="/0/templateOperationBodySection/%.3/anOperation">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.273" references="/0/templateOperationBodyReturnSection/anOperation">
-      <details key="start" value="5634"/>
-      <details key="end" value="5657"/>
-      <details key="line" value="179"/>
+    <eAnnotations source="positions.269" references="/0/templateOperationBodySection/anOperation">
+      <details key="start" value="5787"/>
+      <details key="end" value="5810"/>
+      <details key="line" value="177"/>
     </eAnnotations>
-    <eAnnotations source="positions.274" references="/0/templateOperationBodyReturnSection/%.2">
-      <details key="start" value="5664"/>
-      <details key="end" value="5675"/>
-      <details key="line" value="0"/>
+    <eAnnotations source="positions.270" references="/0/templateOperationBodyReturnSection">
+      <details key="start" value="6001"/>
+      <details key="end" value="6239"/>
+      <details key="line" value="189"/>
     </eAnnotations>
-    <eAnnotations source="positions.275" references="/0/templateOperationBodyReturnSection/%.2/self">
-      <details key="start" value="5664"/>
-      <details key="end" value="5668"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.276" references="/0/templateOperationAnnotationSection">
-      <details key="start" value="5892"/>
-      <details key="end" value="6563"/>
+    <eAnnotations source="positions.271" references="/0/templateOperationBodyReturnSection/%">
+      <details key="start" value="6101"/>
+      <details key="end" value="6226"/>
       <details key="line" value="190"/>
     </eAnnotations>
-    <eAnnotations source="positions.277" references="/0/templateOperationAnnotationSection/%">
-      <details key="start" value="5991"/>
-      <details key="end" value="6550"/>
+    <eAnnotations source="positions.272" references="/0/templateOperationBodyReturnSection/%/%">
+      <details key="start" value="6105"/>
+      <details key="end" value="6194"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.273" references="/0/templateOperationBodyReturnSection/%/%/%">
+      <details key="start" value="6106"/>
+      <details key="end" value="6153"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.274" references="/0/templateOperationBodyReturnSection/%/%/%/%">
+      <details key="start" value="6106"/>
+      <details key="end" value="6146"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.275" references="/0/templateOperationBodyReturnSection/%/%/%/%/%">
+      <details key="start" value="6106"/>
+      <details key="end" value="6129"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.276" references="/0/templateOperationBodyReturnSection/%/%/%/%/%/anOperation">
+      <details key="start" value="6106"/>
+      <details key="end" value="6117"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.277" references="/0/templateOperationBodyReturnSection/%/%/%/%.1">
+      <details key="start" value="6149"/>
+      <details key="end" value="6153"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.278" references="/0/templateOperationBodyReturnSection/%/%/%.1">
+      <details key="start" value="6157"/>
+      <details key="end" value="6193"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.279" references="/0/templateOperationBodyReturnSection/%/%/%.1/%">
+      <details key="start" value="6157"/>
+      <details key="end" value="6184"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.280" references="/0/templateOperationBodyReturnSection/%/%/%.1/%/anOperation">
+      <details key="start" value="6157"/>
+      <details key="end" value="6168"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.281" references="/0/templateOperationBodyReturnSection/%/%/%.1/%.1">
+      <details key="start" value="6187"/>
+      <details key="end" value="6193"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.282" references="/0/templateOperationBodyReturnSection/%/%.1">
+      <details key="start" value="6198"/>
+      <details key="end" value="6221"/>
       <details key="line" value="191"/>
     </eAnnotations>
-    <eAnnotations source="positions.278" references="/0/templateOperationAnnotationSection/%/%">
-      <details key="start" value="6064"/>
-      <details key="end" value="6542"/>
+    <eAnnotations source="positions.283" references="/0/templateOperationBodyReturnSection/%/%.1/%">
+      <details key="start" value="6206"/>
+      <details key="end" value="6220"/>
       <details key="line" value="192"/>
     </eAnnotations>
-    <eAnnotations source="positions.279" references="/0/templateOperationAnnotationSection/%/%/%">
-      <details key="start" value="6138"/>
-      <details key="end" value="6198"/>
+    <eAnnotations source="positions.284" references="/0/templateOperationBodyReturnSection/%.1">
+      <details key="start" value="5928"/>
+      <details key="end" value="5999"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.280" references="/0/templateOperationAnnotationSection/%/%/%/anOperation">
-      <details key="start" value="6138"/>
-      <details key="end" value="6149"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.281" references="/0/templateOperationAnnotationSection/%/%/%/aStereotype">
-      <details key="start" value="6186"/>
-      <details key="end" value="6197"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.282" references="/0/templateOperationAnnotationSection/%/%/%.1">
-      <details key="start" value="6201"/>
-      <details key="end" value="6203"/>
-      <details key="line" value="194"/>
-    </eAnnotations>
-    <eAnnotations source="positions.283" references="/0/templateOperationAnnotationSection/%/%/%.2">
-      <details key="start" value="6068"/>
-      <details key="end" value="6134"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.284" references="/0/templateOperationAnnotationSection/%/%/%.2/%">
-      <details key="start" value="6069"/>
-      <details key="end" value="6101"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.285" references="/0/templateOperationAnnotationSection/%/%/%.2/%/aStereotype">
-      <details key="start" value="6069"/>
-      <details key="end" value="6080"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.286" references="/0/templateOperationAnnotationSection/%/%/%.2/%.1">
-      <details key="start" value="6104"/>
-      <details key="end" value="6133"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.287" references="/0/templateOperationAnnotationSection/%/%/%.3">
-      <details key="start" value="6521"/>
-      <details key="end" value="6537"/>
-      <details key="line" value="198"/>
-    </eAnnotations>
-    <eAnnotations source="positions.288" references="/0/templateOperationAnnotationSection/%/%/%.3/%">
-      <details key="start" value="6529"/>
-      <details key="end" value="6536"/>
-      <details key="line" value="199"/>
-    </eAnnotations>
-    <eAnnotations source="positions.289" references="/0/templateOperationAnnotationSection/%/%/%.4">
-      <details key="start" value="6204"/>
-      <details key="end" value="6372"/>
-      <details key="line" value="194"/>
-    </eAnnotations>
-    <eAnnotations source="positions.290" references="/0/templateOperationAnnotationSection/%/%/%.4/%">
-      <details key="start" value="6309"/>
-      <details key="end" value="6366"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.291" references="/0/templateOperationAnnotationSection/%/%/%.4/%/anOperation">
-      <details key="start" value="6309"/>
-      <details key="end" value="6320"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.292" references="/0/templateOperationAnnotationSection/%/%/%.4/%/aStereotype">
-      <details key="start" value="6354"/>
-      <details key="end" value="6365"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.293" references="/0/templateOperationAnnotationSection/%/%/%.4/%.1">
-      <details key="start" value="6369"/>
-      <details key="end" value="6371"/>
-      <details key="line" value="196"/>
-    </eAnnotations>
-    <eAnnotations source="positions.294" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2">
-      <details key="start" value="6212"/>
-      <details key="end" value="6306"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.295" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%">
-      <details key="start" value="6213"/>
-      <details key="end" value="6245"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.296" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%/aStereotype">
-      <details key="start" value="6213"/>
-      <details key="end" value="6224"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.297" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%.1">
-      <details key="start" value="6248"/>
-      <details key="end" value="6305"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.298" references="/0/templateOperationAnnotationSection/%/%/%.5">
-      <details key="start" value="6372"/>
-      <details key="end" value="6521"/>
-      <details key="line" value="196"/>
-    </eAnnotations>
-    <eAnnotations source="positions.299" references="/0/templateOperationAnnotationSection/%/%/%.5/%">
-      <details key="start" value="6470"/>
-      <details key="end" value="6515"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.300" references="/0/templateOperationAnnotationSection/%/%/%.5/%/anOperation">
-      <details key="start" value="6470"/>
-      <details key="end" value="6481"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.301" references="/0/templateOperationAnnotationSection/%/%/%.5/%.1">
-      <details key="start" value="6518"/>
-      <details key="end" value="6520"/>
-      <details key="line" value="198"/>
-    </eAnnotations>
-    <eAnnotations source="positions.302" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2">
-      <details key="start" value="6380"/>
-      <details key="end" value="6466"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.303" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%">
-      <details key="start" value="6381"/>
-      <details key="end" value="6413"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.304" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%/aStereotype">
-      <details key="start" value="6381"/>
-      <details key="end" value="6392"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.305" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%.1">
-      <details key="start" value="6416"/>
-      <details key="end" value="6465"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.306" references="/0/templateOperationAnnotationSection/%/aStereotype">
-      <details key="start" value="5997"/>
-      <details key="end" value="6021"/>
-      <details key="line" value="191"/>
-    </eAnnotations>
-    <eAnnotations source="positions.307" references="/0/templateOperationAnnotationSection/%/%.1">
-      <details key="start" value="6024"/>
-      <details key="end" value="6059"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.308" references="/0/templateOperationAnnotationSection/%/%.1/anOperation">
-      <details key="start" value="6024"/>
-      <details key="end" value="6035"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.309" references="/0/templateOperationAnnotationSection/%.1">
-      <details key="start" value="5823"/>
-      <details key="end" value="5890"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.310" references="/0/templateOperationAnnotationSection/%.1/anOperation">
+    <eAnnotations source="positions.285" references="/0/templateOperationBodyReturnSection/%.1/anOperation">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.311" references="/0/templateOperationAnnotationSection/anOperation">
-      <details key="start" value="5945"/>
-      <details key="end" value="5968"/>
-      <details key="line" value="190"/>
+    <eAnnotations source="positions.286" references="/0/templateOperationBodyReturnSection/anOperation">
+      <details key="start" value="6054"/>
+      <details key="end" value="6077"/>
+      <details key="line" value="189"/>
     </eAnnotations>
-    <eAnnotations source="positions.312" references="/0/templateOperationAnnotationSection/%.2">
-      <details key="start" value="5976"/>
-      <details key="end" value="5987"/>
+    <eAnnotations source="positions.287" references="/0/templateOperationBodyReturnSection/%.2">
+      <details key="start" value="6084"/>
+      <details key="end" value="6095"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.313" references="/0/templateOperationAnnotationSection/%.2/self">
-      <details key="start" value="5976"/>
-      <details key="end" value="5980"/>
+    <eAnnotations source="positions.288" references="/0/templateOperationBodyReturnSection/%.2/self">
+      <details key="start" value="6084"/>
+      <details key="end" value="6088"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.314" references="/0/templateOperationResourceAnnotation">
-      <details key="start" value="6650"/>
-      <details key="end" value="6863"/>
+    <eAnnotations source="positions.289" references="/0/templateOperationAnnotationSection">
+      <details key="start" value="6312"/>
+      <details key="end" value="6983"/>
+      <details key="line" value="200"/>
+    </eAnnotations>
+    <eAnnotations source="positions.290" references="/0/templateOperationAnnotationSection/%">
+      <details key="start" value="6411"/>
+      <details key="end" value="6970"/>
+      <details key="line" value="201"/>
+    </eAnnotations>
+    <eAnnotations source="positions.291" references="/0/templateOperationAnnotationSection/%/%">
+      <details key="start" value="6484"/>
+      <details key="end" value="6962"/>
+      <details key="line" value="202"/>
+    </eAnnotations>
+    <eAnnotations source="positions.292" references="/0/templateOperationAnnotationSection/%/%/%">
+      <details key="start" value="6558"/>
+      <details key="end" value="6618"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.293" references="/0/templateOperationAnnotationSection/%/%/%/anOperation">
+      <details key="start" value="6558"/>
+      <details key="end" value="6569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.294" references="/0/templateOperationAnnotationSection/%/%/%/aStereotype">
+      <details key="start" value="6606"/>
+      <details key="end" value="6617"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.295" references="/0/templateOperationAnnotationSection/%/%/%.1">
+      <details key="start" value="6621"/>
+      <details key="end" value="6623"/>
+      <details key="line" value="204"/>
+    </eAnnotations>
+    <eAnnotations source="positions.296" references="/0/templateOperationAnnotationSection/%/%/%.2">
+      <details key="start" value="6488"/>
+      <details key="end" value="6554"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.297" references="/0/templateOperationAnnotationSection/%/%/%.2/%">
+      <details key="start" value="6489"/>
+      <details key="end" value="6521"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.298" references="/0/templateOperationAnnotationSection/%/%/%.2/%/aStereotype">
+      <details key="start" value="6489"/>
+      <details key="end" value="6500"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.299" references="/0/templateOperationAnnotationSection/%/%/%.2/%.1">
+      <details key="start" value="6524"/>
+      <details key="end" value="6553"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.300" references="/0/templateOperationAnnotationSection/%/%/%.3">
+      <details key="start" value="6941"/>
+      <details key="end" value="6957"/>
       <details key="line" value="208"/>
     </eAnnotations>
-    <eAnnotations source="positions.315" references="/0/templateOperationResourceAnnotation/%">
-      <details key="start" value="6757"/>
-      <details key="end" value="6773"/>
+    <eAnnotations source="positions.301" references="/0/templateOperationAnnotationSection/%/%/%.3/%">
+      <details key="start" value="6949"/>
+      <details key="end" value="6956"/>
       <details key="line" value="209"/>
     </eAnnotations>
-    <eAnnotations source="positions.316" references="/0/templateOperationResourceAnnotation/%.1">
-      <details key="start" value="6774"/>
-      <details key="end" value="6845"/>
+    <eAnnotations source="positions.302" references="/0/templateOperationAnnotationSection/%/%/%.4">
+      <details key="start" value="6624"/>
+      <details key="end" value="6792"/>
+      <details key="line" value="204"/>
+    </eAnnotations>
+    <eAnnotations source="positions.303" references="/0/templateOperationAnnotationSection/%/%/%.4/%">
+      <details key="start" value="6729"/>
+      <details key="end" value="6786"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.317" references="/0/templateOperationResourceAnnotation/%.1/anOperation">
+    <eAnnotations source="positions.304" references="/0/templateOperationAnnotationSection/%/%/%.4/%/anOperation">
+      <details key="start" value="6729"/>
+      <details key="end" value="6740"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.305" references="/0/templateOperationAnnotationSection/%/%/%.4/%/aStereotype">
       <details key="start" value="6774"/>
       <details key="end" value="6785"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.318" references="/0/templateOperationResourceAnnotation/%.1/aStereotype">
-      <details key="start" value="6833"/>
-      <details key="end" value="6844"/>
+    <eAnnotations source="positions.306" references="/0/templateOperationAnnotationSection/%/%/%.4/%.1">
+      <details key="start" value="6789"/>
+      <details key="end" value="6791"/>
+      <details key="line" value="206"/>
+    </eAnnotations>
+    <eAnnotations source="positions.307" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2">
+      <details key="start" value="6632"/>
+      <details key="end" value="6726"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.319" references="/0/templateOperationResourceAnnotation/%.2">
-      <details key="start" value="6848"/>
-      <details key="end" value="6850"/>
-      <details key="line" value="209"/>
-    </eAnnotations>
-    <eAnnotations source="positions.320" references="/0/templateOperationResourceAnnotation/%.3">
-      <details key="start" value="6567"/>
-      <details key="end" value="6648"/>
+    <eAnnotations source="positions.308" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%">
+      <details key="start" value="6633"/>
+      <details key="end" value="6665"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.321" references="/0/templateOperationResourceAnnotation/%.3/anOperation%2C">
+    <eAnnotations source="positions.309" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%/aStereotype">
+      <details key="start" value="6633"/>
+      <details key="end" value="6644"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.310" references="/0/templateOperationAnnotationSection/%/%/%.4/%.2/%.1">
+      <details key="start" value="6668"/>
+      <details key="end" value="6725"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.311" references="/0/templateOperationAnnotationSection/%/%/%.5">
+      <details key="start" value="6792"/>
+      <details key="end" value="6941"/>
+      <details key="line" value="206"/>
+    </eAnnotations>
+    <eAnnotations source="positions.312" references="/0/templateOperationAnnotationSection/%/%/%.5/%">
+      <details key="start" value="6890"/>
+      <details key="end" value="6935"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.313" references="/0/templateOperationAnnotationSection/%/%/%.5/%/anOperation">
+      <details key="start" value="6890"/>
+      <details key="end" value="6901"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.314" references="/0/templateOperationAnnotationSection/%/%/%.5/%.1">
+      <details key="start" value="6938"/>
+      <details key="end" value="6940"/>
+      <details key="line" value="208"/>
+    </eAnnotations>
+    <eAnnotations source="positions.315" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2">
+      <details key="start" value="6800"/>
+      <details key="end" value="6886"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.316" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%">
+      <details key="start" value="6801"/>
+      <details key="end" value="6833"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.317" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%/aStereotype">
+      <details key="start" value="6801"/>
+      <details key="end" value="6812"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.318" references="/0/templateOperationAnnotationSection/%/%/%.5/%.2/%.1">
+      <details key="start" value="6836"/>
+      <details key="end" value="6885"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.319" references="/0/templateOperationAnnotationSection/%/aStereotype">
+      <details key="start" value="6417"/>
+      <details key="end" value="6441"/>
+      <details key="line" value="201"/>
+    </eAnnotations>
+    <eAnnotations source="positions.320" references="/0/templateOperationAnnotationSection/%/%.1">
+      <details key="start" value="6444"/>
+      <details key="end" value="6479"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.321" references="/0/templateOperationAnnotationSection/%/%.1/anOperation">
+      <details key="start" value="6444"/>
+      <details key="end" value="6455"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.322" references="/0/templateOperationAnnotationSection/%.1">
+      <details key="start" value="6243"/>
+      <details key="end" value="6310"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.323" references="/0/templateOperationAnnotationSection/%.1/anOperation">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.322" references="/0/templateOperationResourceAnnotation/anOperation">
-      <details key="start" value="6704"/>
-      <details key="end" value="6727"/>
-      <details key="line" value="208"/>
+    <eAnnotations source="positions.324" references="/0/templateOperationAnnotationSection/anOperation">
+      <details key="start" value="6365"/>
+      <details key="end" value="6388"/>
+      <details key="line" value="200"/>
     </eAnnotations>
-    <eAnnotations source="positions.323" references="/0/templateOperationResourceAnnotation/aStereotype">
-      <details key="start" value="6729"/>
-      <details key="end" value="6753"/>
-      <details key="line" value="208"/>
+    <eAnnotations source="positions.325" references="/0/templateOperationAnnotationSection/%.2">
+      <details key="start" value="6396"/>
+      <details key="end" value="6407"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.324" references="/0/templateOperationResourceAnnotationNameElement">
-      <details key="start" value="6959"/>
-      <details key="end" value="7551"/>
-      <details key="line" value="216"/>
+    <eAnnotations source="positions.326" references="/0/templateOperationAnnotationSection/%.2/self">
+      <details key="start" value="6396"/>
+      <details key="end" value="6400"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.325" references="/0/templateOperationResourceAnnotationNameElement/%">
-      <details key="start" value="7096"/>
-      <details key="end" value="7538"/>
-      <details key="line" value="217"/>
-    </eAnnotations>
-    <eAnnotations source="positions.326" references="/0/templateOperationResourceAnnotationNameElement/%/%">
-      <details key="start" value="7171"/>
-      <details key="end" value="7366"/>
+    <eAnnotations source="positions.327" references="/0/templateOperationResourceAnnotation">
+      <details key="start" value="7070"/>
+      <details key="end" value="7283"/>
       <details key="line" value="218"/>
     </eAnnotations>
-    <eAnnotations source="positions.327" references="/0/templateOperationResourceAnnotationNameElement/%/%/%">
-      <details key="start" value="7237"/>
-      <details key="end" value="7239"/>
+    <eAnnotations source="positions.328" references="/0/templateOperationResourceAnnotation/%">
+      <details key="start" value="7177"/>
+      <details key="end" value="7193"/>
       <details key="line" value="219"/>
     </eAnnotations>
-    <eAnnotations source="positions.328" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1">
-      <details key="start" value="7240"/>
-      <details key="end" value="7354"/>
+    <eAnnotations source="positions.329" references="/0/templateOperationResourceAnnotation/%.1">
+      <details key="start" value="7194"/>
+      <details key="end" value="7265"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.329" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%">
-      <details key="start" value="7240"/>
-      <details key="end" value="7307"/>
+    <eAnnotations source="positions.330" references="/0/templateOperationResourceAnnotation/%.1/anOperation">
+      <details key="start" value="7194"/>
+      <details key="end" value="7205"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.330" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%">
-      <details key="start" value="7240"/>
-      <details key="end" value="7294"/>
+    <eAnnotations source="positions.331" references="/0/templateOperationResourceAnnotation/%.1/aStereotype">
+      <details key="start" value="7253"/>
+      <details key="end" value="7264"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.331" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%">
-      <details key="start" value="7240"/>
-      <details key="end" value="7273"/>
+    <eAnnotations source="positions.332" references="/0/templateOperationResourceAnnotation/%.2">
+      <details key="start" value="7268"/>
+      <details key="end" value="7270"/>
+      <details key="line" value="219"/>
+    </eAnnotations>
+    <eAnnotations source="positions.333" references="/0/templateOperationResourceAnnotation/%.3">
+      <details key="start" value="6987"/>
+      <details key="end" value="7068"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.332" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%">
-      <details key="start" value="7240"/>
-      <details key="end" value="7260"/>
+    <eAnnotations source="positions.334" references="/0/templateOperationResourceAnnotation/%.3/anOperation%2C">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.333" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%/aType">
-      <details key="start" value="7240"/>
-      <details key="end" value="7245"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.334" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%.1">
-      <details key="start" value="7269"/>
-      <details key="end" value="7272"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.335" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%.1">
-      <details key="start" value="7282"/>
-      <details key="end" value="7293"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.336" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%.1">
-      <details key="start" value="7303"/>
-      <details key="end" value="7306"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.337" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1">
-      <details key="start" value="7316"/>
-      <details key="end" value="7353"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.338" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%">
-      <details key="start" value="7316"/>
-      <details key="end" value="7333"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.339" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%/aType">
-      <details key="start" value="7316"/>
-      <details key="end" value="7321"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.340" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%.1">
-      <details key="start" value="7341"/>
-      <details key="end" value="7352"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.341" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.2">
-      <details key="start" value="7357"/>
-      <details key="end" value="7359"/>
-      <details key="line" value="220"/>
-    </eAnnotations>
-    <eAnnotations source="positions.342" references="/0/templateOperationResourceAnnotationNameElement/%/%/aType">
-      <details key="start" value="7177"/>
-      <details key="end" value="7189"/>
+    <eAnnotations source="positions.335" references="/0/templateOperationResourceAnnotation/anOperation">
+      <details key="start" value="7124"/>
+      <details key="end" value="7147"/>
       <details key="line" value="218"/>
     </eAnnotations>
-    <eAnnotations source="positions.343" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect">
-      <details key="start" value="7192"/>
-      <details key="end" value="7233"/>
+    <eAnnotations source="positions.336" references="/0/templateOperationResourceAnnotation/aStereotype">
+      <details key="start" value="7149"/>
+      <details key="end" value="7173"/>
+      <details key="line" value="218"/>
+    </eAnnotations>
+    <eAnnotations source="positions.337" references="/0/templateOperationResourceAnnotationNameElement">
+      <details key="start" value="7379"/>
+      <details key="end" value="7971"/>
+      <details key="line" value="226"/>
+    </eAnnotations>
+    <eAnnotations source="positions.338" references="/0/templateOperationResourceAnnotationNameElement/%">
+      <details key="start" value="7516"/>
+      <details key="end" value="7958"/>
+      <details key="line" value="227"/>
+    </eAnnotations>
+    <eAnnotations source="positions.339" references="/0/templateOperationResourceAnnotationNameElement/%/%">
+      <details key="start" value="7591"/>
+      <details key="end" value="7786"/>
+      <details key="line" value="228"/>
+    </eAnnotations>
+    <eAnnotations source="positions.340" references="/0/templateOperationResourceAnnotationNameElement/%/%/%">
+      <details key="start" value="7657"/>
+      <details key="end" value="7659"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.341" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1">
+      <details key="start" value="7660"/>
+      <details key="end" value="7774"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.344" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%">
-      <details key="start" value="7192"/>
-      <details key="end" value="7221"/>
+    <eAnnotations source="positions.342" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%">
+      <details key="start" value="7660"/>
+      <details key="end" value="7727"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.345" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%/anOperation">
-      <details key="start" value="7192"/>
-      <details key="end" value="7203"/>
+    <eAnnotations source="positions.343" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%">
+      <details key="start" value="7660"/>
+      <details key="end" value="7714"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.346" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%.1">
+    <eAnnotations source="positions.344" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%">
+      <details key="start" value="7660"/>
+      <details key="end" value="7693"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.345" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%">
+      <details key="start" value="7660"/>
+      <details key="end" value="7680"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.346" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%/aType">
+      <details key="start" value="7660"/>
+      <details key="end" value="7665"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.347" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%/%.1">
+      <details key="start" value="7689"/>
+      <details key="end" value="7692"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.348" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%/%.1">
+      <details key="start" value="7702"/>
+      <details key="end" value="7713"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.349" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%/%.1">
+      <details key="start" value="7723"/>
+      <details key="end" value="7726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.350" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1">
+      <details key="start" value="7736"/>
+      <details key="end" value="7773"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.351" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%">
+      <details key="start" value="7736"/>
+      <details key="end" value="7753"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.352" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%/aType">
+      <details key="start" value="7736"/>
+      <details key="end" value="7741"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.353" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.1/%.1/%.1">
+      <details key="start" value="7761"/>
+      <details key="end" value="7772"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.354" references="/0/templateOperationResourceAnnotationNameElement/%/%/%.2">
+      <details key="start" value="7777"/>
+      <details key="end" value="7779"/>
+      <details key="line" value="230"/>
+    </eAnnotations>
+    <eAnnotations source="positions.355" references="/0/templateOperationResourceAnnotationNameElement/%/%/aType">
+      <details key="start" value="7597"/>
+      <details key="end" value="7609"/>
+      <details key="line" value="228"/>
+    </eAnnotations>
+    <eAnnotations source="positions.356" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect">
+      <details key="start" value="7612"/>
+      <details key="end" value="7653"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.357" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%">
+      <details key="start" value="7612"/>
+      <details key="end" value="7641"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.358" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%/anOperation">
+      <details key="start" value="7612"/>
+      <details key="end" value="7623"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.359" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.347" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%.1/temp1">
+    <eAnnotations source="positions.360" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.348" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/temp1">
+    <eAnnotations source="positions.361" references="/0/templateOperationResourceAnnotationNameElement/%/%/collect/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.349" references="/0/templateOperationResourceAnnotationNameElement/%/%.1">
-      <details key="start" value="7100"/>
-      <details key="end" value="7167"/>
+    <eAnnotations source="positions.362" references="/0/templateOperationResourceAnnotationNameElement/%/%.1">
+      <details key="start" value="7520"/>
+      <details key="end" value="7587"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.350" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%">
-      <details key="start" value="7101"/>
-      <details key="end" value="7159"/>
+    <eAnnotations source="positions.363" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%">
+      <details key="start" value="7521"/>
+      <details key="end" value="7579"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.351" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%">
-      <details key="start" value="7101"/>
-      <details key="end" value="7142"/>
+    <eAnnotations source="positions.364" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%">
+      <details key="start" value="7521"/>
+      <details key="end" value="7562"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.352" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/anOperation">
-      <details key="start" value="7101"/>
-      <details key="end" value="7112"/>
+    <eAnnotations source="positions.365" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/anOperation">
+      <details key="start" value="7521"/>
+      <details key="end" value="7532"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.353" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/aStereotype">
-      <details key="start" value="7122"/>
-      <details key="end" value="7133"/>
+    <eAnnotations source="positions.366" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/aStereotype">
+      <details key="start" value="7542"/>
+      <details key="end" value="7553"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.354" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/%">
-      <details key="start" value="7135"/>
-      <details key="end" value="7141"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.355" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%.1">
-      <details key="start" value="7162"/>
-      <details key="end" value="7166"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.356" references="/0/templateOperationResourceAnnotationNameElement/%/%.2">
-      <details key="start" value="7368"/>
-      <details key="end" value="7533"/>
-      <details key="line" value="221"/>
-    </eAnnotations>
-    <eAnnotations source="positions.357" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%">
-      <details key="start" value="7377"/>
-      <details key="end" value="7531"/>
-      <details key="line" value="222"/>
-    </eAnnotations>
-    <eAnnotations source="positions.358" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%">
-      <details key="start" value="7460"/>
-      <details key="end" value="7462"/>
-      <details key="line" value="223"/>
-    </eAnnotations>
-    <eAnnotations source="positions.359" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1">
-      <details key="start" value="7463"/>
-      <details key="end" value="7497"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.360" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%">
-      <details key="start" value="7463"/>
-      <details key="end" value="7484"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.361" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%/aClass">
-      <details key="start" value="7463"/>
-      <details key="end" value="7469"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.362" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%.1">
-      <details key="start" value="7493"/>
-      <details key="end" value="7496"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.363" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.2">
-      <details key="start" value="7501"/>
-      <details key="end" value="7519"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.364" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.2/aClass">
-      <details key="start" value="7501"/>
-      <details key="end" value="7507"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.365" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.3">
-      <details key="start" value="7522"/>
-      <details key="end" value="7524"/>
-      <details key="line" value="224"/>
-    </eAnnotations>
-    <eAnnotations source="positions.366" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass">
-      <details key="start" value="7382"/>
-      <details key="end" value="7457"/>
-      <details key="line" value="222"/>
-    </eAnnotations>
-    <eAnnotations source="positions.367" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%">
-      <details key="start" value="7400"/>
-      <details key="end" value="7458"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.368" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%">
-      <details key="start" value="7400"/>
-      <details key="end" value="7441"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.369" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/anOperation">
-      <details key="start" value="7400"/>
-      <details key="end" value="7411"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.370" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/aStereotype">
-      <details key="start" value="7421"/>
-      <details key="end" value="7432"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.371" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/%">
-      <details key="start" value="7434"/>
-      <details key="end" value="7440"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.372" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%.1">
-      <details key="start" value="7452"/>
-      <details key="end" value="7457"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.373" references="/0/templateOperationResourceAnnotationNameElement/%.1">
-      <details key="start" value="6867"/>
-      <details key="end" value="6957"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.374" references="/0/templateOperationResourceAnnotationNameElement/%.1/anOperation%2C">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.375" references="/0/templateOperationResourceAnnotationNameElement/anOperation">
-      <details key="start" value="7024"/>
-      <details key="end" value="7047"/>
-      <details key="line" value="216"/>
-    </eAnnotations>
-    <eAnnotations source="positions.376" references="/0/templateOperationResourceAnnotationNameElement/aStereotype">
-      <details key="start" value="7049"/>
-      <details key="end" value="7073"/>
-      <details key="line" value="216"/>
-    </eAnnotations>
-    <eAnnotations source="positions.377" references="/0/templateOperationResourceAnnotationNameElement/%.2">
-      <details key="start" value="7081"/>
-      <details key="end" value="7092"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.378" references="/0/templateOperationResourceAnnotationNameElement/%.2/self">
-      <details key="start" value="7081"/>
-      <details key="end" value="7085"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.379" references="/0/templateOperationValueAnnotation">
-      <details key="start" value="7635"/>
-      <details key="end" value="7808"/>
-      <details key="line" value="232"/>
-    </eAnnotations>
-    <eAnnotations source="positions.380" references="/0/templateOperationValueAnnotation/%">
-      <details key="start" value="7739"/>
-      <details key="end" value="7747"/>
-      <details key="line" value="233"/>
-    </eAnnotations>
-    <eAnnotations source="positions.381" references="/0/templateOperationValueAnnotation/%.1">
-      <details key="start" value="7748"/>
-      <details key="end" value="7790"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.382" references="/0/templateOperationValueAnnotation/%.1/anOperation">
-      <details key="start" value="7748"/>
-      <details key="end" value="7759"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.383" references="/0/templateOperationValueAnnotation/%.1/aStereotype">
-      <details key="start" value="7769"/>
-      <details key="end" value="7780"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.384" references="/0/templateOperationValueAnnotation/%.1/%">
-      <details key="start" value="7782"/>
-      <details key="end" value="7789"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.385" references="/0/templateOperationValueAnnotation/%.2">
-      <details key="start" value="7793"/>
-      <details key="end" value="7795"/>
-      <details key="line" value="233"/>
-    </eAnnotations>
-    <eAnnotations source="positions.386" references="/0/templateOperationValueAnnotation/%.3">
+    <eAnnotations source="positions.367" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%/%/%">
       <details key="start" value="7555"/>
-      <details key="end" value="7633"/>
+      <details key="end" value="7561"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.387" references="/0/templateOperationValueAnnotation/%.3/anOperation%2C">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.368" references="/0/templateOperationResourceAnnotationNameElement/%/%.1/%.1">
+      <details key="start" value="7582"/>
+      <details key="end" value="7586"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.388" references="/0/templateOperationValueAnnotation/anOperation">
-      <details key="start" value="7686"/>
-      <details key="end" value="7709"/>
-      <details key="line" value="232"/>
+    <eAnnotations source="positions.369" references="/0/templateOperationResourceAnnotationNameElement/%/%.2">
+      <details key="start" value="7788"/>
+      <details key="end" value="7953"/>
+      <details key="line" value="231"/>
     </eAnnotations>
-    <eAnnotations source="positions.389" references="/0/templateOperationValueAnnotation/aStereotype">
-      <details key="start" value="7711"/>
-      <details key="end" value="7735"/>
-      <details key="line" value="232"/>
-    </eAnnotations>
-    <eAnnotations source="positions.390" references="/0/templateOperationBeanAnnotation">
-      <details key="start" value="7878"/>
-      <details key="end" value="7973"/>
-      <details key="line" value="240"/>
-    </eAnnotations>
-    <eAnnotations source="positions.391" references="/0/templateOperationBeanAnnotation/%">
-      <details key="start" value="7955"/>
-      <details key="end" value="7960"/>
-      <details key="line" value="241"/>
-    </eAnnotations>
-    <eAnnotations source="positions.392" references="/0/templateOperationBeanAnnotation/%.1">
-      <details key="start" value="7812"/>
-      <details key="end" value="7876"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.393" references="/0/templateOperationBeanAnnotation/%.1/anOperation">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.394" references="/0/templateOperationBeanAnnotation/anOperation">
-      <details key="start" value="7928"/>
+    <eAnnotations source="positions.370" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%">
+      <details key="start" value="7797"/>
       <details key="end" value="7951"/>
-      <details key="line" value="240"/>
+      <details key="line" value="232"/>
+    </eAnnotations>
+    <eAnnotations source="positions.371" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%">
+      <details key="start" value="7880"/>
+      <details key="end" value="7882"/>
+      <details key="line" value="233"/>
+    </eAnnotations>
+    <eAnnotations source="positions.372" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1">
+      <details key="start" value="7883"/>
+      <details key="end" value="7917"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.373" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%">
+      <details key="start" value="7883"/>
+      <details key="end" value="7904"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.374" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%/aClass">
+      <details key="start" value="7883"/>
+      <details key="end" value="7889"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.375" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.1/%.1">
+      <details key="start" value="7913"/>
+      <details key="end" value="7916"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.376" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.2">
+      <details key="start" value="7921"/>
+      <details key="end" value="7939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.377" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.2/aClass">
+      <details key="start" value="7921"/>
+      <details key="end" value="7927"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.378" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/%.3">
+      <details key="start" value="7942"/>
+      <details key="end" value="7944"/>
+      <details key="line" value="234"/>
+    </eAnnotations>
+    <eAnnotations source="positions.379" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass">
+      <details key="start" value="7802"/>
+      <details key="end" value="7877"/>
+      <details key="line" value="232"/>
+    </eAnnotations>
+    <eAnnotations source="positions.380" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%">
+      <details key="start" value="7820"/>
+      <details key="end" value="7878"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.381" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%">
+      <details key="start" value="7820"/>
+      <details key="end" value="7861"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.382" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/anOperation">
+      <details key="start" value="7820"/>
+      <details key="end" value="7831"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.383" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/aStereotype">
+      <details key="start" value="7841"/>
+      <details key="end" value="7852"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.384" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%/%">
+      <details key="start" value="7854"/>
+      <details key="end" value="7860"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.385" references="/0/templateOperationResourceAnnotationNameElement/%/%.2/%/aClass/%/%.1">
+      <details key="start" value="7872"/>
+      <details key="end" value="7877"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.386" references="/0/templateOperationResourceAnnotationNameElement/%.1">
+      <details key="start" value="7287"/>
+      <details key="end" value="7377"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.387" references="/0/templateOperationResourceAnnotationNameElement/%.1/anOperation%2C">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.388" references="/0/templateOperationResourceAnnotationNameElement/anOperation">
+      <details key="start" value="7444"/>
+      <details key="end" value="7467"/>
+      <details key="line" value="226"/>
+    </eAnnotations>
+    <eAnnotations source="positions.389" references="/0/templateOperationResourceAnnotationNameElement/aStereotype">
+      <details key="start" value="7469"/>
+      <details key="end" value="7493"/>
+      <details key="line" value="226"/>
+    </eAnnotations>
+    <eAnnotations source="positions.390" references="/0/templateOperationResourceAnnotationNameElement/%.2">
+      <details key="start" value="7501"/>
+      <details key="end" value="7512"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.391" references="/0/templateOperationResourceAnnotationNameElement/%.2/self">
+      <details key="start" value="7501"/>
+      <details key="end" value="7505"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.392" references="/0/templateOperationValueAnnotation">
+      <details key="start" value="8055"/>
+      <details key="end" value="8228"/>
+      <details key="line" value="242"/>
+    </eAnnotations>
+    <eAnnotations source="positions.393" references="/0/templateOperationValueAnnotation/%">
+      <details key="start" value="8159"/>
+      <details key="end" value="8167"/>
+      <details key="line" value="243"/>
+    </eAnnotations>
+    <eAnnotations source="positions.394" references="/0/templateOperationValueAnnotation/%.1">
+      <details key="start" value="8168"/>
+      <details key="end" value="8210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.395" references="/0/templateOperationValueAnnotation/%.1/anOperation">
+      <details key="start" value="8168"/>
+      <details key="end" value="8179"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.396" references="/0/templateOperationValueAnnotation/%.1/aStereotype">
+      <details key="start" value="8189"/>
+      <details key="end" value="8200"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.397" references="/0/templateOperationValueAnnotation/%.1/%">
+      <details key="start" value="8202"/>
+      <details key="end" value="8209"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.398" references="/0/templateOperationValueAnnotation/%.2">
+      <details key="start" value="8213"/>
+      <details key="end" value="8215"/>
+      <details key="line" value="243"/>
+    </eAnnotations>
+    <eAnnotations source="positions.399" references="/0/templateOperationValueAnnotation/%.3">
+      <details key="start" value="7975"/>
+      <details key="end" value="8053"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.400" references="/0/templateOperationValueAnnotation/%.3/anOperation%2C">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.401" references="/0/templateOperationValueAnnotation/anOperation">
+      <details key="start" value="8106"/>
+      <details key="end" value="8129"/>
+      <details key="line" value="242"/>
+    </eAnnotations>
+    <eAnnotations source="positions.402" references="/0/templateOperationValueAnnotation/aStereotype">
+      <details key="start" value="8131"/>
+      <details key="end" value="8155"/>
+      <details key="line" value="242"/>
+    </eAnnotations>
+    <eAnnotations source="positions.403" references="/0/templateOperationBeanAnnotation">
+      <details key="start" value="8298"/>
+      <details key="end" value="8393"/>
+      <details key="line" value="250"/>
+    </eAnnotations>
+    <eAnnotations source="positions.404" references="/0/templateOperationBeanAnnotation/%">
+      <details key="start" value="8375"/>
+      <details key="end" value="8380"/>
+      <details key="line" value="251"/>
+    </eAnnotations>
+    <eAnnotations source="positions.405" references="/0/templateOperationBeanAnnotation/%.1">
+      <details key="start" value="8232"/>
+      <details key="end" value="8296"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.406" references="/0/templateOperationBeanAnnotation/%.1/anOperation">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.407" references="/0/templateOperationBeanAnnotation/anOperation">
+      <details key="start" value="8348"/>
+      <details key="end" value="8371"/>
+      <details key="line" value="250"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>

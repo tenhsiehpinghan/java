@@ -118,6 +118,8 @@
 [aClass.templateClassConfigurationAnnotation() /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::ComponentScan')]
 [aClass.templateClassComponentScanAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::EnableTransactionManagement')]
+[aClass.templateClassEnableTransactionManagementScanAnnotation(aStereotype) /]
 	[else]
 ERROR
 	[/if]
@@ -150,6 +152,14 @@ ERROR
 	"[aPackage.templatePackageFullName() /]"
 [/for]
 })
+[/template]
+
+[**
+ * 產生class的configurationAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassEnableTransactionManagementScanAnnotation(aClass : Class)]
+@EnableTransactionManagement
 [/template]
 
 [**

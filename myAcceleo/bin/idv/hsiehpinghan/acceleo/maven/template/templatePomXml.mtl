@@ -26,6 +26,9 @@
 		<maven.compiler.source>[queryProperty('java', 'version') /]</maven.compiler.source>
 		<maven.compiler.target>[queryProperty('java', 'version') /]</maven.compiler.target>
 		<spring.version>[queryProperty('spring', 'version') /].RELEASE</spring.version>
+[if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+		[templateDatabaseDriverClassVersion() /]
+[/if]
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -34,6 +37,9 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+[if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+[templateDatabaseDriverClassDependency() /]
+[/if]
 	</dependencies>
 	<build>
 		<finalName>[queryProperty('pomXml', 'artifactId') /]</finalName>
@@ -44,5 +50,30 @@
 
 
 [comment]---------------------------private--------------------------[/comment]
+[**
+ * 產生資料庫driverClass的版本。
+ * @param anOclAny
+ */]
+[template private templateDatabaseDriverClassVersion(anOclAny : OclAny) post(self.trim())]
+	[if (queryProperty('database', 'databaseType') = 'MSSQL')]
+		<jtds.version>[queryProperty('database', 'jtdsVersion') /]</jtds.version>
+	[else]
+		ERROR
+	[/if]
+[/template]
 
-
+[**
+ * 產生資料庫driverClass的dependency。
+ * @param anOclAny
+ */]
+[template private templateDatabaseDriverClassDependency(anOclAny : OclAny)]
+	[if (queryProperty('database', 'databaseType') = 'MSSQL')]
+		<dependency>
+			<groupId>net.sourceforge.jtds</groupId>
+			<artifactId>jtds</artifactId>
+			<version>${jtds.version}</version>
+		</dependency>
+	[else]
+		ERROR
+	[/if]
+[/template]

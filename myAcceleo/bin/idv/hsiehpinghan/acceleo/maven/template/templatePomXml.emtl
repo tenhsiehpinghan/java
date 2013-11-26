@@ -7,7 +7,7 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <imports href="../../utility/propertyUtility.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="209" endPosition="269" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
@@ -15,7 +15,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#xD;&#xA;&#x9;xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;>&#xD;&#xA;&#x9;&lt;modelVersion>4.0.0&lt;/modelVersion>&#xD;&#xA;&#x9;&lt;groupId>idv.hsiehpinghan&lt;/groupId>&#xD;&#xA;&#x9;&lt;artifactId>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pomXml">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -26,7 +26,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/artifactId>&#xD;&#xA;&#x9;&lt;packaging>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="main">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -37,7 +37,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/packaging>&#xD;&#xA;&#x9;&lt;version>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pomXml">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -48,7 +48,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/version>&#xD;&#xA;&#x9;&lt;name>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pomXml">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -59,7 +59,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/name>&#xD;&#xA;&#x9;&lt;url>http://maven.apache.org&lt;/url>&#xD;&#xA;&#x9;&lt;properties>&#xD;&#xA;&#x9;&#x9;&lt;project.build.sourceEncoding>UTF-8&lt;/project.build.sourceEncoding>&#xD;&#xA;&#x9;&#x9;&lt;maven.compiler.source>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -70,7 +70,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/maven.compiler.source>&#xD;&#xA;&#x9;&#x9;&lt;maven.compiler.target>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -81,7 +81,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/maven.compiler.target>&#xD;&#xA;&#x9;&#x9;&lt;spring.version>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="spring">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -89,10 +89,65 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".RELEASE&lt;/spring.version>&#xD;&#xA;&#x9;&lt;/properties>&#xD;&#xA;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&lt;!-- Spring -->&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-context&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${spring.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;&#x9;&lt;/dependencies>&#xD;&#xA;&#x9;&lt;build>&#xD;&#xA;&#x9;&#x9;&lt;finalName>"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".RELEASE&lt;/spring.version>&#xD;&#xA;"/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/templateDatabaseDriverClassVersion">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/14">
+            <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="mtl:QueryInvocation">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="database">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="isDatabaseActive">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Y">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </ifExpr>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/properties>&#xD;&#xA;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&lt;!-- Spring -->&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-context&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${spring.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/templateDatabaseDriverClassDependency">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/16">
+            <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="mtl:QueryInvocation">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="database">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="isDatabaseActive">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Y">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </ifExpr>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/dependencies>&#xD;&#xA;&#x9;&lt;build>&#xD;&#xA;&#x9;&#x9;&lt;finalName>"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="pomXml">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
@@ -112,10 +167,95 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="1656" endPosition="1716" value="--------------------------protected-------------------------"/>
+      <body startPosition="1879" endPosition="1939" value="--------------------------protected-------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="1741" endPosition="1801" value="---------------------------private--------------------------"/>
+      <body startPosition="1964" endPosition="2024" value="---------------------------private--------------------------"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="templateDatabaseDriverClassVersion">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;jtds.version>"/>
+        <body xsi:type="mtl:QueryInvocation">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="database">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="jtdsVersion">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/jtds.version>&#xD;&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="mtl:QueryInvocation">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="database">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="databaseType">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="MSSQL">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </ifExpr>
+        <else>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;ERROR&#xA;"/>
+        </else>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2039" endPosition="2088" value="&#xD;&#xA;產生資料庫driverClass的版本。&#xD;&#xA;@param anOclAny&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="anOclAny">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="anOclAny">
+        <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </parameter>
+      <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/21">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </source>
+      </post>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="templateDatabaseDriverClassDependency">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>net.sourceforge.jtds&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>jtds&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${jtds.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="mtl:QueryInvocation">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="database">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="databaseType">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="MSSQL">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </ifExpr>
+        <else>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;ERROR&#xD;&#xA;"/>
+        </else>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="2363" endPosition="2420" value="&#xD;&#xA;產生資料庫driverClass的dependency。&#xD;&#xA;@param anOclAny&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="anOclAny">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="anOclAny">
+        <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </parameter>
     </ownedModuleElement>
   </mtl:Module>
   <ecore:EPackage name="additions">
@@ -123,6 +263,10 @@
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
       </eAnnotations>
+      <eOperations name="trim">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
@@ -148,12 +292,32 @@
           <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
         </eParameters>
       </eOperations>
+      <eOperations name="templateDatabaseDriverClassVersion">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/templateDatabaseDriverClassVersion"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="anOclAny">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="templateDatabaseDriverClassDependency">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/templateDatabaseDriverClassDependency"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="anOclAny">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
       <eOperations name="queryProperty">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../../utility/propertyUtility.emtl#/0/queryProperty"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="propertiesFileName">
@@ -222,6 +386,54 @@
     <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
@@ -237,7 +449,7 @@
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/templatePomXml">
       <details key="start" value="334"/>
-      <details key="end" value="1645"/>
+      <details key="end" value="1868"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/templatePomXml/%">
@@ -382,53 +594,318 @@
     </eAnnotations>
     <eAnnotations source="positions.31" references="/0/templatePomXml/%.14">
       <details key="start" value="1275"/>
-      <details key="end" value="1556"/>
+      <details key="end" value="1302"/>
       <details key="line" value="28"/>
     </eAnnotations>
     <eAnnotations source="positions.32" references="/0/templatePomXml/%.15">
-      <details key="start" value="1557"/>
-      <details key="end" value="1594"/>
-      <details key="line" value="0"/>
+      <details key="start" value="1302"/>
+      <details key="end" value="1411"/>
+      <details key="line" value="29"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/templatePomXml/%.15/%">
-      <details key="start" value="1571"/>
-      <details key="end" value="1579"/>
-      <details key="line" value="0"/>
+      <details key="start" value="1362"/>
+      <details key="end" value="1364"/>
+      <details key="line" value="30"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/templatePomXml/%.15/%.1">
-      <details key="start" value="1581"/>
-      <details key="end" value="1593"/>
+      <details key="start" value="1365"/>
+      <details key="end" value="1401"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/templatePomXml/%.16">
-      <details key="start" value="1597"/>
-      <details key="end" value="1632"/>
-      <details key="line" value="39"/>
-    </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/templatePomXml/%.17">
-      <details key="start" value="281"/>
-      <details key="end" value="332"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/templatePomXml/%.17/anOclAny">
+    <eAnnotations source="positions.35" references="/0/templatePomXml/%.15/%.1/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/templatePomXml/anOclAny">
+    <eAnnotations source="positions.36" references="/0/templatePomXml/%.15/%.2">
+      <details key="start" value="1404"/>
+      <details key="end" value="1406"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/templatePomXml/%.15/%.3">
+      <details key="start" value="1306"/>
+      <details key="end" value="1359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/templatePomXml/%.15/%.3/%">
+      <details key="start" value="1307"/>
+      <details key="end" value="1352"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/templatePomXml/%.15/%.3/%/%">
+      <details key="start" value="1321"/>
+      <details key="end" value="1331"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/templatePomXml/%.15/%.3/%/%.1">
+      <details key="start" value="1333"/>
+      <details key="end" value="1351"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/templatePomXml/%.15/%.3/%.1">
+      <details key="start" value="1355"/>
+      <details key="end" value="1358"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/templatePomXml/%.16">
+      <details key="start" value="1413"/>
+      <details key="end" value="1626"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/templatePomXml/%.17">
+      <details key="start" value="1626"/>
+      <details key="end" value="1736"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/templatePomXml/%.17/%">
+      <details key="start" value="1687"/>
+      <details key="end" value="1726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/templatePomXml/%.17/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/templatePomXml/%.17/%.1">
+      <details key="start" value="1729"/>
+      <details key="end" value="1731"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/templatePomXml/%.17/%.2">
+      <details key="start" value="1630"/>
+      <details key="end" value="1683"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/templatePomXml/%.17/%.2/%">
+      <details key="start" value="1631"/>
+      <details key="end" value="1676"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/templatePomXml/%.17/%.2/%/%">
+      <details key="start" value="1645"/>
+      <details key="end" value="1655"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/templatePomXml/%.17/%.2/%/%.1">
+      <details key="start" value="1657"/>
+      <details key="end" value="1675"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/templatePomXml/%.17/%.2/%.1">
+      <details key="start" value="1679"/>
+      <details key="end" value="1682"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/templatePomXml/%.18">
+      <details key="start" value="1738"/>
+      <details key="end" value="1779"/>
+      <details key="line" value="43"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/templatePomXml/%.19">
+      <details key="start" value="1780"/>
+      <details key="end" value="1817"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/templatePomXml/%.19/%">
+      <details key="start" value="1794"/>
+      <details key="end" value="1802"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/templatePomXml/%.19/%.1">
+      <details key="start" value="1804"/>
+      <details key="end" value="1816"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/templatePomXml/%.20">
+      <details key="start" value="1820"/>
+      <details key="end" value="1855"/>
+      <details key="line" value="45"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/templatePomXml/%.21">
+      <details key="start" value="281"/>
+      <details key="end" value="332"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/templatePomXml/%.21/anOclAny">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/templatePomXml/anOclAny">
       <details key="start" value="366"/>
       <details key="end" value="383"/>
       <details key="line" value="14"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/%.2">
-      <details key="start" value="1647"/>
-      <details key="end" value="1726"/>
+    <eAnnotations source="positions.60" references="/0/%.2">
+      <details key="start" value="1870"/>
+      <details key="end" value="1949"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/%.3">
-      <details key="start" value="1732"/>
-      <details key="end" value="1811"/>
+    <eAnnotations source="positions.61" references="/0/%.3">
+      <details key="start" value="1955"/>
+      <details key="end" value="2034"/>
       <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/templateDatabaseDriverClassVersion">
+      <details key="start" value="2092"/>
+      <details key="end" value="2356"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/templateDatabaseDriverClassVersion/%">
+      <details key="start" value="2185"/>
+      <details key="end" value="2343"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/templateDatabaseDriverClassVersion/%/%">
+      <details key="start" value="2244"/>
+      <details key="end" value="2260"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/templateDatabaseDriverClassVersion/%/%.1">
+      <details key="start" value="2261"/>
+      <details key="end" value="2301"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/templateDatabaseDriverClassVersion/%/%.1/%">
+      <details key="start" value="2275"/>
+      <details key="end" value="2285"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/templateDatabaseDriverClassVersion/%/%.1/%.1">
+      <details key="start" value="2287"/>
+      <details key="end" value="2300"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/templateDatabaseDriverClassVersion/%/%.2">
+      <details key="start" value="2304"/>
+      <details key="end" value="2321"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/templateDatabaseDriverClassVersion/%/%.3">
+      <details key="start" value="2189"/>
+      <details key="end" value="2242"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/templateDatabaseDriverClassVersion/%/%.3/%">
+      <details key="start" value="2190"/>
+      <details key="end" value="2231"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/templateDatabaseDriverClassVersion/%/%.3/%/%">
+      <details key="start" value="2204"/>
+      <details key="end" value="2214"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/templateDatabaseDriverClassVersion/%/%.3/%/%.1">
+      <details key="start" value="2216"/>
+      <details key="end" value="2230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/templateDatabaseDriverClassVersion/%/%.3/%.1">
+      <details key="start" value="2234"/>
+      <details key="end" value="2241"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/templateDatabaseDriverClassVersion/%/%.4">
+      <details key="start" value="2322"/>
+      <details key="end" value="2338"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/templateDatabaseDriverClassVersion/%/%.4/%">
+      <details key="start" value="2329"/>
+      <details key="end" value="2337"/>
+      <details key="line" value="61"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/templateDatabaseDriverClassVersion/%.1">
+      <details key="start" value="2036"/>
+      <details key="end" value="2090"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/templateDatabaseDriverClassVersion/%.1/anOclAny">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/templateDatabaseDriverClassVersion/anOclAny">
+      <details key="start" value="2145"/>
+      <details key="end" value="2162"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/templateDatabaseDriverClassVersion/%.2">
+      <details key="start" value="2169"/>
+      <details key="end" value="2180"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/templateDatabaseDriverClassVersion/%.2/self">
+      <details key="start" value="2169"/>
+      <details key="end" value="2173"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/templateDatabaseDriverClassDependency">
+      <details key="start" value="2424"/>
+      <details key="end" value="2749"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/templateDatabaseDriverClassDependency/%">
+      <details key="start" value="2502"/>
+      <details key="end" value="2736"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/templateDatabaseDriverClassDependency/%/%">
+      <details key="start" value="2562"/>
+      <details key="end" value="2712"/>
+      <details key="line" value="71"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/templateDatabaseDriverClassDependency/%/%.1">
+      <details key="start" value="2506"/>
+      <details key="end" value="2559"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/templateDatabaseDriverClassDependency/%/%.1/%">
+      <details key="start" value="2507"/>
+      <details key="end" value="2548"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/templateDatabaseDriverClassDependency/%/%.1/%/%">
+      <details key="start" value="2521"/>
+      <details key="end" value="2531"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/templateDatabaseDriverClassDependency/%/%.1/%/%.1">
+      <details key="start" value="2533"/>
+      <details key="end" value="2547"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/templateDatabaseDriverClassDependency/%/%.1/%.1">
+      <details key="start" value="2551"/>
+      <details key="end" value="2558"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/templateDatabaseDriverClassDependency/%/%.2">
+      <details key="start" value="2713"/>
+      <details key="end" value="2731"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/templateDatabaseDriverClassDependency/%/%.2/%">
+      <details key="start" value="2721"/>
+      <details key="end" value="2730"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/templateDatabaseDriverClassDependency/%.1">
+      <details key="start" value="2360"/>
+      <details key="end" value="2422"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/templateDatabaseDriverClassDependency/%.1/anOclAny">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/templateDatabaseDriverClassDependency/anOclAny">
+      <details key="start" value="2480"/>
+      <details key="end" value="2497"/>
+      <details key="line" value="69"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>
