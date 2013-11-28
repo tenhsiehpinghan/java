@@ -16,21 +16,17 @@
  * @param aModel
  */]
 [template public main_test(aClass : Class) ? (aClass.name = 'AppConfig')]
-
+[comment @main /]
 [file ('test.txt', false, 'UTF-8')]
-[comment][aClass.getApplicableStereotypes() /][/comment]
-[((aClass.getValue(aClass.getApplicableStereotype('org::springframework::context::annotation::ComponentScan'), 'basePackages'))->asSequence()) /]
-[comment][aClass.getAppliedStereotypes() /][/comment]
-
-[for (aPackage : Package | aClass.getValue(aClass.getApplicableStereotype('org::springframework::context::annotation::ComponentScan'), 'basePackages'))]
-	[aPackage /]
-[/for]
+hh
+	[aClass.name /]
+	[aClass.getApplicableStereotypes() /]
 [/file]
 [/template]
 
 
 [template public main(aModel : Model) ? (aModel.owner.oclIsUndefined())]
-[comment @main /]
+
 [generateMavenFiles() /]
 [if (queryProperty('main', 'applicationType') = 'war')]
 	[generateWebFiles() /]

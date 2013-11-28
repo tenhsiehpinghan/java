@@ -1,4 +1,3 @@
-org.eclipse.uml2.uml.internal.impl.PackageImpl@7b668e6d (name: ch0, visibility: <unset>) (URI: null)org.eclipse.uml2.uml.internal.impl.PackageImpl@7051d52f (name: apress, visibility: <unset>) (URI: null)
-
-	org.eclipse.uml2.uml.internal.impl.PackageImpl@7b668e6d (name: ch0, visibility: <unset>) (URI: null)
-	org.eclipse.uml2.uml.internal.impl.PackageImpl@7051d52f (name: apress, visibility: <unset>) (URI: null)
+hh
+	AppConfig
+	org.eclipse.uml2.uml.internal.impl.StereotypeImpl@cb6452b (name: Configuration, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@4c60ef58 (name: ComponentScan, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@58f541d9 (name: Service, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@4fbfff5a (name: EnableTransactionManagement, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)

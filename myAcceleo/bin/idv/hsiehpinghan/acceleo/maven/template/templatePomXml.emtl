@@ -117,7 +117,7 @@
           <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
         </ifExpr>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/properties>&#xD;&#xA;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&lt;!-- Spring -->&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-context&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${spring.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/properties>&#xD;&#xA;&#x9;&lt;dependencies>&#xD;&#xA;&#x9;&#x9;&lt;!-- spring -->&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>org.springframework&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>spring-context&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${spring.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
       <body xsi:type="mtl:IfBlock">
         <body xsi:type="mtl:TemplateInvocation" definition="/0/templateDatabaseDriverClassDependency">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -225,7 +225,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateDatabaseDriverClassDependency">
       <body xsi:type="mtl:IfBlock">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>net.sourceforge.jtds&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>jtds&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${jtds.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;!-- jtds -->&#xD;&#xA;&#x9;&#x9;&lt;dependency>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;groupId>net.sourceforge.jtds&lt;/groupId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;artifactId>jtds&lt;/artifactId>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;version>${jtds.version}&lt;/version>&#xD;&#xA;&#x9;&#x9;&lt;/dependency>&#xD;&#xA;"/>
         <ifExpr xsi:type="ocl.ecore:OperationCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="mtl:QueryInvocation">
@@ -844,17 +844,17 @@
     </eAnnotations>
     <eAnnotations source="positions.81" references="/0/templateDatabaseDriverClassDependency">
       <details key="start" value="2424"/>
-      <details key="end" value="2749"/>
+      <details key="end" value="2766"/>
       <details key="line" value="69"/>
     </eAnnotations>
     <eAnnotations source="positions.82" references="/0/templateDatabaseDriverClassDependency/%">
       <details key="start" value="2502"/>
-      <details key="end" value="2736"/>
+      <details key="end" value="2753"/>
       <details key="line" value="70"/>
     </eAnnotations>
     <eAnnotations source="positions.83" references="/0/templateDatabaseDriverClassDependency/%/%">
       <details key="start" value="2562"/>
-      <details key="end" value="2712"/>
+      <details key="end" value="2729"/>
       <details key="line" value="71"/>
     </eAnnotations>
     <eAnnotations source="positions.84" references="/0/templateDatabaseDriverClassDependency/%/%.1">
@@ -883,14 +883,14 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.89" references="/0/templateDatabaseDriverClassDependency/%/%.2">
-      <details key="start" value="2713"/>
-      <details key="end" value="2731"/>
-      <details key="line" value="76"/>
+      <details key="start" value="2730"/>
+      <details key="end" value="2748"/>
+      <details key="line" value="77"/>
     </eAnnotations>
     <eAnnotations source="positions.90" references="/0/templateDatabaseDriverClassDependency/%/%.2/%">
-      <details key="start" value="2721"/>
-      <details key="end" value="2730"/>
-      <details key="line" value="77"/>
+      <details key="start" value="2738"/>
+      <details key="end" value="2747"/>
+      <details key="line" value="78"/>
     </eAnnotations>
     <eAnnotations source="positions.91" references="/0/templateDatabaseDriverClassDependency/%.1">
       <details key="start" value="2360"/>

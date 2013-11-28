@@ -31,7 +31,7 @@
 [/if]
 	</properties>
 	<dependencies>
-		<!-- Spring -->
+		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -68,6 +68,7 @@
  */]
 [template private templateDatabaseDriverClassDependency(anOclAny : OclAny)]
 	[if (queryProperty('database', 'databaseType') = 'MSSQL')]
+		<!-- jtds -->
 		<dependency>
 			<groupId>net.sourceforge.jtds</groupId>
 			<artifactId>jtds</artifactId>

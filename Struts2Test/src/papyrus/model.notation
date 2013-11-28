@@ -14,11 +14,11 @@
           </eAnnotations>
           <children xmi:type="notation:Shape" xmi:id="_cV_N4VTYEeODIvpCmSWK3Q" type="3010">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kXjQk1TYEeODIvpCmSWK3Q" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kXjQlFTYEeODIvpCmSWK3Q" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kXjQlVTYEeODIvpCmSWK3Q" key="StereotypeList" value="org::springframework::stereotype::Service"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kXjQllTYEeODIvpCmSWK3Q" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kXjQl1TYEeODIvpCmSWK3Q" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kXjQmFTYEeODIvpCmSWK3Q" key="StereotypePropertyLocation" value="Compartment"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qd8xwFgzEeOfT4xm_A-5YA" key="StereotypeWithQualifiedNameList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qd8xwVgzEeOfT4xm_A-5YA" key="StereotypeList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qd8xwlgzEeOfT4xm_A-5YA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qd8xw1gzEeOfT4xm_A-5YA" key="PropStereoDisplay" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qd8xxFgzEeOfT4xm_A-5YA" key="StereotypePropertyLocation" value="Compartment"/>
             </eAnnotations>
             <children xmi:type="notation:DecorationNode" xmi:id="_cV_N41TYEeODIvpCmSWK3Q" type="5014"/>
             <children xmi:type="notation:BasicCompartment" xmi:id="_cV_N5FTYEeODIvpCmSWK3Q" type="7011">
@@ -146,11 +146,11 @@
           </children>
           <children xmi:type="notation:Shape" xmi:id="_vY43EFTYEeODIvpCmSWK3Q" type="3007">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AY3mQFTZEeODIvpCmSWK3Q" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AY3mQVTZEeODIvpCmSWK3Q" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AY3mQlTZEeODIvpCmSWK3Q" key="StereotypeList" value="org::springframework::beans::factory::annotation::Value"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AY3mQ1TZEeODIvpCmSWK3Q" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AY3mRFTZEeODIvpCmSWK3Q" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AY3mRVTZEeODIvpCmSWK3Q" key="StereotypePropertyLocation" value="Compartment"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeQ60FgzEeOfT4xm_A-5YA" key="StereotypeWithQualifiedNameList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeQ60VgzEeOfT4xm_A-5YA" key="StereotypeList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeQ60lgzEeOfT4xm_A-5YA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeQ601gzEeOfT4xm_A-5YA" key="PropStereoDisplay" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeQ61FgzEeOfT4xm_A-5YA" key="StereotypePropertyLocation" value="Compartment"/>
             </eAnnotations>
             <element xmi:type="uml:Operation" href="model.uml#_vYSaIFTYEeODIvpCmSWK3Q"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_vY43EVTYEeODIvpCmSWK3Q"/>
@@ -200,11 +200,11 @@
           </children>
           <children xmi:type="notation:Shape" xmi:id="_IX35oVTYEeODIvpCmSWK3Q" type="3007">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BGkkUFTaEeODIvpCmSWK3Q" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGkkUVTaEeODIvpCmSWK3Q" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGkkUlTaEeODIvpCmSWK3Q" key="StereotypeList" value="javax::annotation::Resource"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGkkU1TaEeODIvpCmSWK3Q" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGkkVFTaEeODIvpCmSWK3Q" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BGkkVVTaEeODIvpCmSWK3Q" key="StereotypePropertyLocation" value="Compartment"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeSwAFgzEeOfT4xm_A-5YA" key="StereotypeWithQualifiedNameList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeSwAVgzEeOfT4xm_A-5YA" key="StereotypeList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeSwAlgzEeOfT4xm_A-5YA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeSwA1gzEeOfT4xm_A-5YA" key="PropStereoDisplay" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeSwBFgzEeOfT4xm_A-5YA" key="StereotypePropertyLocation" value="Compartment"/>
             </eAnnotations>
             <element xmi:type="uml:Operation" href="model.uml#_IX35oFTYEeODIvpCmSWK3Q"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_IX35olTYEeODIvpCmSWK3Q"/>
@@ -245,11 +245,11 @@
           </eAnnotations>
           <children xmi:type="notation:Shape" xmi:id="_zYkRUVTbEeODIvpCmSWK3Q" type="3010">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iIABE1TeEeOhuJVujfLXyA" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kDL7Y1TeEeOhuJVujfLXyA" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kDL7ZFTeEeOhuJVujfLXyA" key="StereotypeList" value="org::springframework::context::annotation::Configuration,org::springframework::context::annotation::ComponentScan"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kDL7ZVTeEeOhuJVujfLXyA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kDL7ZlTeEeOhuJVujfLXyA" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kDL7Z1TeEeOhuJVujfLXyA" key="StereotypePropertyLocation" value="Compartment"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_webakFhAEeOO4qs33P4Tgg" key="StereotypeWithQualifiedNameList" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_webakVhAEeOO4qs33P4Tgg" key="StereotypeList" value=",org::springframework::context::annotation::ComponentScan,org::springframework::context::annotation::Configuration,org::springframework::stereotype::Service"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_webaklhAEeOO4qs33P4Tgg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_webak1hAEeOO4qs33P4Tgg" key="PropStereoDisplay" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_webalFhAEeOO4qs33P4Tgg" key="StereotypePropertyLocation" value="Compartment"/>
             </eAnnotations>
             <children xmi:type="notation:DecorationNode" xmi:id="_zYkRU1TbEeODIvpCmSWK3Q" type="5014"/>
             <children xmi:type="notation:BasicCompartment" xmi:id="_zYkRVFTbEeODIvpCmSWK3Q" type="7011">
@@ -271,11 +271,11 @@
               </eAnnotations>
               <children xmi:type="notation:Shape" xmi:id="_XkqQEVTcEeODIvpCmSWK3Q" type="3013">
                 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5M_cIFTdEeOhuJVujfLXyA" source="Stereotype_Annotation">
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5M_cIVTdEeOhuJVujfLXyA" key="StereotypeWithQualifiedNameList" value=""/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5M_cIlTdEeOhuJVujfLXyA" key="StereotypeList" value="org::springframework::context::annotation::Bean"/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5M_cI1TdEeOhuJVujfLXyA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5M_cJFTdEeOhuJVujfLXyA" key="PropStereoDisplay" value=""/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5M_cJVTdEeOhuJVujfLXyA" key="StereotypePropertyLocation" value="Compartment"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeinoFgzEeOfT4xm_A-5YA" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeinoVgzEeOfT4xm_A-5YA" key="StereotypeList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qeinolgzEeOfT4xm_A-5YA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qejOsFgzEeOfT4xm_A-5YA" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qejOsVgzEeOfT4xm_A-5YA" key="StereotypePropertyLocation" value="Compartment"/>
                 </eAnnotations>
                 <element xmi:type="uml:Operation" href="model.uml#_XkqQEFTcEeODIvpCmSWK3Q"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_XkqQElTcEeODIvpCmSWK3Q"/>
