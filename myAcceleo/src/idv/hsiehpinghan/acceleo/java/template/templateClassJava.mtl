@@ -120,6 +120,8 @@
 [aClass.templateClassComponentScanAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::EnableTransactionManagement')]
 [aClass.templateClassEnableTransactionManagementScanAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::PropertySource')]
+[aClass.templateClassPropertySourceAnnotation(aStereotype) /]
 	[else]
 ERROR
 	[/if]
@@ -160,6 +162,18 @@ ERROR
  */]
 [template private templateClassEnableTransactionManagementScanAnnotation(aClass : Class)]
 @EnableTransactionManagement
+[/template]
+
+[**
+ * 產生class的propertySourceAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassPropertySourceAnnotation(aClass : Class, aStereotype : Stereotype)]
+@PropertySource({
+[for (aString : String | aClass.getValue(aStereotype, 'value')) separator (',')]
+	"[aString /]"
+[/for]
+})
 [/template]
 
 [**

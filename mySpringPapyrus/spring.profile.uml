@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_Dwz0gEVZEeOJQ7MMJvWMaA" name="org" metaclassReference="_hwCy8EVaEeOJQ7MMJvWMaA _hwDaAEVaEeOJQ7MMJvWMaA _hwDaAUVaEeOJQ7MMJvWMaA _hwEBEEVaEeOJQ7MMJvWMaA _hwEBEUVaEeOJQ7MMJvWMaA _hwEBEkVaEeOJQ7MMJvWMaA _hwEoIEVaEeOJQ7MMJvWMaA _sOOCAEVaEeOJQ7MMJvWMaA">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hn_sAEVaEeOJQ7MMJvWMaA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_BL9NUVk9EeO2Uo-v-XmjOg" name="org" nsURI="http:///schemas/org/_BL9NUFk9EeO2Uo-v-XmjOg/22" nsPrefix="org">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL9NUlk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_Z64C8EVZEeOJQ7MMJvWMaA"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMAQplk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQp1k9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQqFk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQqVk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQqlk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQq1k9EeO2Uo-v-XmjOg" key="Author" value=""/>
+      </eAnnotations>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_35EssVk8EeO2Uo-v-XmjOg" name="org" nsURI="http:///schemas/org/_35EssFk8EeO2Uo-v-XmjOg/21" nsPrefix="org">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35Esslk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_Z64C8EVZEeOJQ7MMJvWMaA"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HJClk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HJC1k8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HJDFk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HJDVk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HJDlk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HJD1k8EeO2Uo-v-XmjOg" key="Author" value=""/>
+      </eAnnotations>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_wpwRMFk6EeO2Uo-v-XmjOg" name="org" nsURI="http:///schemas/org/_wpvqIFk6EeO2Uo-v-XmjOg/20" nsPrefix="org">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpwRMVk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_Z64C8EVZEeOJQ7MMJvWMaA"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp2-4Fk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-4Vk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-4lk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-41k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-5Fk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-5Vk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+      </eAnnotations>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_t9cf8FadEeOeZfQylqZysA" name="org" nsURI="http:///schemas/org/_t9b44FadEeOeZfQylqZysA/19" nsPrefix="org">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9cf8VadEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_Z64C8EVZEeOJQ7MMJvWMaA"/>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9kbwFadEeOeZfQylqZysA" source="PapyrusVersion">
@@ -231,6 +261,36 @@
   </packageImport>
   <packagedElement xmi:type="uml:Profile" xmi:id="_Z64C8EVZEeOJQ7MMJvWMaA" name="springframework">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HoATFUVaEeOJQ7MMJvWMaA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_BL90YVk9EeO2Uo-v-XmjOg" name="springframework" nsURI="http://org/schemas/springframework/_BL90YFk9EeO2Uo-v-XmjOg/22" nsPrefix="springframework">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL90Ylk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_iOlhwFRQEeOq541rAuwblw"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMAQrFk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQrVk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQrlk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQr1k9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQsFk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQsVk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+        </eAnnotations>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_35EstFk8EeO2Uo-v-XmjOg" name="springframework" nsURI="http://org/schemas/springframework/_35Ess1k8EeO2Uo-v-XmjOg/21" nsPrefix="springframework">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35FTwFk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_iOlhwFRQEeOq541rAuwblw"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwAFk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwAVk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwAlk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwA1k8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwBFk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwBVk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+        </eAnnotations>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_wpw4QVk6EeO2Uo-v-XmjOg" name="springframework" nsURI="http://org/schemas/springframework/_wpw4QFk6EeO2Uo-v-XmjOg/20" nsPrefix="springframework">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpw4Qlk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_iOlhwFRQEeOq541rAuwblw"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp2-5lk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-51k6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-6Fk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-6Vk6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-6lk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp2-61k6EeO2Uo-v-XmjOg" key="Author" value=""/>
+        </eAnnotations>
+      </contents>
       <contents xmi:type="ecore:EPackage" xmi:id="_t9dHAVadEeOeZfQylqZysA" name="springframework" nsURI="http://org/schemas/springframework/_t9dHAFadEeOeZfQylqZysA/19" nsPrefix="springframework">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9dHAladEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_iOlhwFRQEeOq541rAuwblw"/>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9kbxladEeOeZfQylqZysA" source="PapyrusVersion">
@@ -434,6 +494,51 @@
     </eAnnotations>
     <packagedElement xmi:type="uml:Profile" xmi:id="_iOlhwFRQEeOq541rAuwblw" name="stereotype">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yc2gIFRQEeOq541rAuwblw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_BL90ZFk9EeO2Uo-v-XmjOg" name="stereotype" nsURI="http://org.springframework/schemas/stereotype/_BL90Y1k9EeO2Uo-v-XmjOg/12" nsPrefix="stereotype">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMAQs1k9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQtFk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQtVk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQtlk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQt1k9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQuFk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL90ZVk9EeO2Uo-v-XmjOg" name="Service">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL90Zlk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7oihsFRSEeOq541rAuwblw"/>
+            <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL90Z1k9EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_35FTwlk8EeO2Uo-v-XmjOg" name="stereotype" nsURI="http://org.springframework/schemas/stereotype/_35FTwVk8EeO2Uo-v-XmjOg/11" nsPrefix="stereotype">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwB1k8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwCFk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwCVk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwClk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwC1k8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwDFk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_35FTw1k8EeO2Uo-v-XmjOg" name="Service">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35FTxFk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7oihsFRSEeOq541rAuwblw"/>
+            <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35FTxVk8EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_wpytcFk6EeO2Uo-v-XmjOg" name="stereotype" nsURI="http://org.springframework/schemas/stereotype/_wpyGYFk6EeO2Uo-v-XmjOg/10" nsPrefix="stereotype">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp3l8Fk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l8Vk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l8lk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l81k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l9Fk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l9Vk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+          <eClassifiers xmi:type="ecore:EClass" xmi:id="_wpytcVk6EeO2Uo-v-XmjOg" name="Service">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpytclk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7oihsFRSEeOq541rAuwblw"/>
+            <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wpytc1k6EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+              <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+        </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_t9fjQFadEeOeZfQylqZysA" name="stereotype" nsURI="http://org.springframework/schemas/stereotype/_t9e8MFadEeOeZfQylqZysA/9" nsPrefix="stereotype">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9lC0VadEeOeZfQylqZysA" source="PapyrusVersion">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t9lC0ladEeOeZfQylqZysA" key="Version" value="0.0.20"/>
@@ -596,6 +701,36 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Profile" xmi:id="_nbH6QFRfEeOtTvtvygUeqQ" name="beans">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5WkzMVRfEeOtTvtvygUeqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_BL-bcVk9EeO2Uo-v-XmjOg" name="beans" nsURI="http://org.springframework/schemas/beans/_BL-bcFk9EeO2Uo-v-XmjOg/10" nsPrefix="beans">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL-bclk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_qpbCQFRfEeOtTvtvygUeqQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMAQuVk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQulk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQu1k9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQvFk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQvVk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMAQvlk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_35FTyFk8EeO2Uo-v-XmjOg" name="beans" nsURI="http://org.springframework/schemas/beans/_35FTx1k8EeO2Uo-v-XmjOg/9" nsPrefix="beans">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35FTyVk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_qpbCQFRfEeOtTvtvygUeqQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwDVk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwDlk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwD1k8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwEFk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwEVk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwElk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_wpzUgFk6EeO2Uo-v-XmjOg" name="beans" nsURI="http://org.springframework/schemas/beans/_wpytdVk6EeO2Uo-v-XmjOg/8" nsPrefix="beans">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpzUgVk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_qpbCQFRfEeOtTvtvygUeqQ"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp3l9lk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l91k6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l-Fk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l-Vk6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l-lk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l-1k6EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_t9gKUVadEeOeZfQylqZysA" name="beans" nsURI="http://org.springframework/schemas/beans/_t9gKUFadEeOeZfQylqZysA/7" nsPrefix="beans">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9gKUladEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_qpbCQFRfEeOtTvtvygUeqQ"/>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9lC11adEeOeZfQylqZysA" source="PapyrusVersion">
@@ -682,6 +817,36 @@
       </ownedComment>
       <packagedElement xmi:type="uml:Profile" xmi:id="_qpbCQFRfEeOtTvtvygUeqQ" name="factory">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5WkzNVRfEeOtTvtvygUeqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <contents xmi:type="ecore:EPackage" xmi:id="_BL-bdFk9EeO2Uo-v-XmjOg" name="factory" nsURI="http://org.springframework.beans/schemas/factory/_BL-bc1k9EeO2Uo-v-XmjOg/10" nsPrefix="factory">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL-bdVk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_tKZxQFRfEeOtTvtvygUeqQ"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMA3sFk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3sVk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3slk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3s1k9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3tFk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3tVk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_35F60Vk8EeO2Uo-v-XmjOg" name="factory" nsURI="http://org.springframework.beans/schemas/factory/_35F60Fk8EeO2Uo-v-XmjOg/9" nsPrefix="factory">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35F60lk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_tKZxQFRfEeOtTvtvygUeqQ"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwE1k8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwFFk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwFVk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwFlk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwF1k8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwGFk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_wpzUg1k6EeO2Uo-v-XmjOg" name="factory" nsURI="http://org.springframework.beans/schemas/factory/_wpzUglk6EeO2Uo-v-XmjOg/8" nsPrefix="factory">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpzUhFk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_tKZxQFRfEeOtTvtvygUeqQ"/>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp3l_Fk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l_Vk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l_lk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3l_1k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mAFk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mAVk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+          </contents>
           <contents xmi:type="ecore:EPackage" xmi:id="_t9gKVFadEeOeZfQylqZysA" name="factory" nsURI="http://org.springframework.beans/schemas/factory/_t9gKU1adEeOeZfQylqZysA/7" nsPrefix="factory">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9gKVVadEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_tKZxQFRfEeOtTvtvygUeqQ"/>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9lp4FadEeOeZfQylqZysA" source="PapyrusVersion">
@@ -765,6 +930,60 @@
         </eAnnotations>
         <packagedElement xmi:type="uml:Profile" xmi:id="_tKZxQFRfEeOtTvtvygUeqQ" name="annotation">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5WkzOVRfEeOtTvtvygUeqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <contents xmi:type="ecore:EPackage" xmi:id="_BL_CgFk9EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.beans.factory/schemas/annotation/_BL-bdlk9EeO2Uo-v-XmjOg/10" nsPrefix="annotation">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMA3t1k9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3uFk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3uVk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3ulk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3u1k9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3vFk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+              </eAnnotations>
+              <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL_CgVk9EeO2Uo-v-XmjOg" name="Value">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_Cglk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zy5vQFRfEeOtTvtvygUeqQ"/>
+                <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_Cg1k9EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_BL_ChVk9EeO2Uo-v-XmjOg" name="value" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+                </eStructuralFeatures>
+              </eClassifiers>
+            </contents>
+            <contents xmi:type="ecore:EPackage" xmi:id="_35F61Fk8EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.beans.factory/schemas/annotation/_35F601k8EeO2Uo-v-XmjOg/9" nsPrefix="annotation">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwGlk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwG1k8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwHFk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwHVk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwHlk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwH1k8EeO2Uo-v-XmjOg" key="Author" value=""/>
+              </eAnnotations>
+              <eClassifiers xmi:type="ecore:EClass" xmi:id="_35F61Vk8EeO2Uo-v-XmjOg" name="Value">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35F61lk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zy5vQFRfEeOtTvtvygUeqQ"/>
+                <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35F611k8EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_35F62Vk8EeO2Uo-v-XmjOg" name="value" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+                </eStructuralFeatures>
+              </eClassifiers>
+            </contents>
+            <contents xmi:type="ecore:EPackage" xmi:id="_wpz7kVk6EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.beans.factory/schemas/annotation/_wpz7kFk6EeO2Uo-v-XmjOg/8" nsPrefix="annotation">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp3mA1k6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mBFk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mBVk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mBlk6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mB1k6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp3mCFk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+              </eAnnotations>
+              <eClassifiers xmi:type="ecore:EClass" xmi:id="_wpz7klk6EeO2Uo-v-XmjOg" name="Value">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wpz7k1k6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zy5vQFRfEeOtTvtvygUeqQ"/>
+                <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wpz7lFk6EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_wpz7llk6EeO2Uo-v-XmjOg" name="value" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+                </eStructuralFeatures>
+              </eClassifiers>
+            </contents>
             <contents xmi:type="ecore:EPackage" xmi:id="_t9hYcFadEeOeZfQylqZysA" name="annotation" nsURI="http://org.springframework.beans.factory/schemas/annotation/_t9gxYFadEeOeZfQylqZysA/7" nsPrefix="annotation">
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9lp51adEeOeZfQylqZysA" source="PapyrusVersion">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t9lp6FadEeOeZfQylqZysA" key="Version" value="0.0.20"/>
@@ -917,6 +1136,36 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Profile" xmi:id="_3i5p8FS-EeOumf_KnQcSsw" name="context">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KuIvyFS_EeOumf_KnQcSsw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_BL_CiFk9EeO2Uo-v-XmjOg" name="context" nsURI="http://org.springframework/schemas/context/_BL_Ch1k9EeO2Uo-v-XmjOg/7" nsPrefix="context">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_CiVk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DsQocFS_EeOumf_KnQcSsw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMA3vVk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3vlk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3v1k9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3wFk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3wVk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMA3wlk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_35Gh4Vk8EeO2Uo-v-XmjOg" name="context" nsURI="http://org.springframework/schemas/context/_35Gh4Fk8EeO2Uo-v-XmjOg/6" nsPrefix="context">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35Gh4lk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DsQocFS_EeOumf_KnQcSsw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HwIFk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwIVk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwIlk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwI1k8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwJFk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35HwJVk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_wp0ioVk6EeO2Uo-v-XmjOg" name="context" nsURI="http://org.springframework/schemas/context/_wp0ioFk6EeO2Uo-v-XmjOg/5" nsPrefix="context">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp0iolk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DsQocFS_EeOumf_KnQcSsw"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp4NAFk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NAVk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NAlk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NA1k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NBFk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NBVk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_t9hYeFadEeOeZfQylqZysA" name="context" nsURI="http://org.springframework/schemas/context/_t9hYd1adEeOeZfQylqZysA/4" nsPrefix="context">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9hYeVadEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_DsQocFS_EeOumf_KnQcSsw"/>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9lp7VadEeOeZfQylqZysA" source="PapyrusVersion">
@@ -970,6 +1219,111 @@
       </eAnnotations>
       <packagedElement xmi:type="uml:Profile" xmi:id="_DsQocFS_EeOumf_KnQcSsw" name="annotation">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KuJW01S_EeOumf_KnQcSsw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <contents xmi:type="ecore:EPackage" xmi:id="_BL_pkVk9EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.context/schemas/annotation/_BL_pkFk9EeO2Uo-v-XmjOg/7" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMBewFk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBewVk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBewlk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBew1k9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBexFk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBexVk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL_pklk9EeO2Uo-v-XmjOg" name="Configuration">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_pk1k9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_G9JKYFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_plFk9EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL_pllk9EeO2Uo-v-XmjOg" name="ComponentScan">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_pl1k9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bm7R0FS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_pmFk9EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_pmlk9EeO2Uo-v-XmjOg" name="basePackages" upperBound="-1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL_pnFk9EeO2Uo-v-XmjOg" name="Bean">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_pnVk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0zdywFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_pnlk9EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_BL_poFk9EeO2Uo-v-XmjOg" name="PropertySource">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_poVk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_uRj_4Fk8EeO2Uo-v-XmjOg"/>
+              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_BL_polk9EeO2Uo-v-XmjOg" name="value" ordered="false" upperBound="-1">
+                <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+              </eStructuralFeatures>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BL_ppFk9EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_35Gh5Fk8EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.context/schemas/annotation/_35Gh41k8EeO2Uo-v-XmjOg/6" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35IXFFk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXFVk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXFlk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXF1k8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXGFk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXGVk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_35Gh5Vk8EeO2Uo-v-XmjOg" name="Configuration">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HI8Fk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_G9JKYFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35HI8Vk8EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_35HI81k8EeO2Uo-v-XmjOg" name="ComponentScan">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HI9Fk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bm7R0FS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35HI9Vk8EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35HI91k8EeO2Uo-v-XmjOg" name="basePackages" upperBound="-1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_35HI-Vk8EeO2Uo-v-XmjOg" name="Bean">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HI-lk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0zdywFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35HI-1k8EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_35HI_Vk8EeO2Uo-v-XmjOg" name="PropertySource">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HI_lk8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_uRj_4Fk8EeO2Uo-v-XmjOg"/>
+              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_35HI_1k8EeO2Uo-v-XmjOg" name="value" ordered="false" upperBound="-1">
+                <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_wp1JsVk6EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.context/schemas/annotation/_wp1JsFk6EeO2Uo-v-XmjOg/5" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp4NClk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NC1k6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NDFk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NDVk6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4NDlk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp4ND1k6EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_wp1Jslk6EeO2Uo-v-XmjOg" name="Configuration">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1Js1k6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_G9JKYFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1JtFk6EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_wp1Jtlk6EeO2Uo-v-XmjOg" name="ComponentScan">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1Jt1k6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bm7R0FS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1JuFk6EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1Julk6EeO2Uo-v-XmjOg" name="basePackages" upperBound="-1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_wp1JvFk6EeO2Uo-v-XmjOg" name="Bean">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1JvVk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0zdywFS_EeOumf_KnQcSsw"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1Jvlk6EeO2Uo-v-XmjOg" name="base_Operation" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
           <contents xmi:type="ecore:EPackage" xmi:id="_t9h_gVadEeOeZfQylqZysA" name="annotation" nsURI="http://org.springframework.context/schemas/annotation/_t9h_gFadEeOeZfQylqZysA/4" nsPrefix="annotation">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9mQ81adEeOeZfQylqZysA" source="PapyrusVersion">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t9mQ9FadEeOeZfQylqZysA" key="Version" value="0.0.20"/>
@@ -1129,10 +1483,56 @@
         <packagedElement xmi:type="uml:Extension" xmi:id="_QRR3IVTeEeOhuJVujfLXyA" name="E_ComponentScan_Class1" memberEnd="_QRR3IlTeEeOhuJVujfLXyA _QRR3IFTeEeOhuJVujfLXyA">
           <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QRR3IlTeEeOhuJVujfLXyA" name="extension_ComponentScan" type="_bm7R0FS_EeOumf_KnQcSsw" aggregation="composite" association="_QRR3IVTeEeOhuJVujfLXyA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_uRj_4Fk8EeO2Uo-v-XmjOg" name="PropertySource">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yawp4Fk8EeO2Uo-v-XmjOg" name="value" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yr6EQFk8EeO2Uo-v-XmjOg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yr6EQVk8EeO2Uo-v-XmjOg" value="*"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_yr7SYFk8EeO2Uo-v-XmjOg">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Arj2AFk9EeO2Uo-v-XmjOg" name="base_Class" association="_ArkdEFk9EeO2Uo-v-XmjOg">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_ArkdEFk9EeO2Uo-v-XmjOg" name="E_PropertySource_Class1" memberEnd="_ArkdEVk9EeO2Uo-v-XmjOg _Arj2AFk9EeO2Uo-v-XmjOg">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ArkdEVk9EeO2Uo-v-XmjOg" name="extension_PropertySource" type="_uRj_4Fk8EeO2Uo-v-XmjOg" aggregation="composite" association="_ArkdEFk9EeO2Uo-v-XmjOg"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Profile" xmi:id="_fqFvEFadEeOeZfQylqZysA" name="transaction">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9immVadEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <contents xmi:type="ecore:EPackage" xmi:id="_BL_pp1k9EeO2Uo-v-XmjOg" name="transaction" nsURI="http://org.springframework/schemas/transaction/_BL_pplk9EeO2Uo-v-XmjOg/3" nsPrefix="transaction">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL_pqFk9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_hXKU4FadEeOeZfQylqZysA"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMBexlk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBex1k9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBeyFk9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBeyVk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBeylk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBey1k9EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_35HJAlk8EeO2Uo-v-XmjOg" name="transaction" nsURI="http://org.springframework/schemas/transaction/_35HJAVk8EeO2Uo-v-XmjOg/2" nsPrefix="transaction">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HJA1k8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_hXKU4FadEeOeZfQylqZysA"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35IXGlk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXG1k8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXHFk8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXHVk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXHlk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXH1k8EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
+        <contents xmi:type="ecore:EPackage" xmi:id="_wp1JwVk6EeO2Uo-v-XmjOg" name="transaction" nsURI="http://org.springframework/schemas/transaction/_wp1JwFk6EeO2Uo-v-XmjOg/1" nsPrefix="transaction">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1Jwlk6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_hXKU4FadEeOeZfQylqZysA"/>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp40EFk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40EVk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40Elk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40E1k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40FFk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40FVk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+          </eAnnotations>
+        </contents>
         <contents xmi:type="ecore:EPackage" xmi:id="_t9jNoFadEeOeZfQylqZysA" name="transaction" nsURI="http://org.springframework/schemas/transaction/_t9immFadEeOeZfQylqZysA/0" nsPrefix="transaction">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9jNoVadEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_hXKU4FadEeOeZfQylqZysA"/>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9mQ-VadEeOeZfQylqZysA" source="PapyrusVersion">
@@ -1146,6 +1546,60 @@
       </eAnnotations>
       <packagedElement xmi:type="uml:Profile" xmi:id="_hXKU4FadEeOeZfQylqZysA" name="annotation">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9jNo1adEeOeZfQylqZysA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <contents xmi:type="ecore:EPackage" xmi:id="_BMAQoVk9EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.transaction/schemas/annotation/_BMAQoFk9EeO2Uo-v-XmjOg/3" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMBezVk9EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBezlk9EeO2Uo-v-XmjOg" key="Version" value="0.0.23"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBez1k9EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBe0Fk9EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBe0Vk9EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BMBe0lk9EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_BMAQolk9EeO2Uo-v-XmjOg" name="EnableTransactionManagement">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BMAQo1k9EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_m_ku4FadEeOeZfQylqZysA"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_BMAQpFk9EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_35HJBVk8EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.transaction/schemas/annotation/_35HJBFk8EeO2Uo-v-XmjOg/2" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35IXIVk8EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXIlk8EeO2Uo-v-XmjOg" key="Version" value="0.0.22"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXI1k8EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXJFk8EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXJVk8EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_35IXJlk8EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_35HJBlk8EeO2Uo-v-XmjOg" name="EnableTransactionManagement">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_35HJB1k8EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_m_ku4FadEeOeZfQylqZysA"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_35HJCFk8EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
+          <contents xmi:type="ecore:EPackage" xmi:id="_wp1wwVk6EeO2Uo-v-XmjOg" name="annotation" nsURI="http://org.springframework.transaction/schemas/annotation/_wp1wwFk6EeO2Uo-v-XmjOg/1" nsPrefix="annotation">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp40GFk6EeO2Uo-v-XmjOg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40GVk6EeO2Uo-v-XmjOg" key="Version" value="0.0.21"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40Glk6EeO2Uo-v-XmjOg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40G1k6EeO2Uo-v-XmjOg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40HFk6EeO2Uo-v-XmjOg" key="Date" value="2013-11-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wp40HVk6EeO2Uo-v-XmjOg" key="Author" value=""/>
+            </eAnnotations>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_wp1wwlk6EeO2Uo-v-XmjOg" name="EnableTransactionManagement">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1ww1k6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_m_ku4FadEeOeZfQylqZysA"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1wxFk6EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EClass" xmi:id="_wp1wxlk6EeO2Uo-v-XmjOg" name="PropertySource">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wp1wx1k6EeO2Uo-v-XmjOg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+              <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wp1wyFk6EeO2Uo-v-XmjOg" name="base_Class" ordered="false" lowerBound="1">
+                <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              </eStructuralFeatures>
+              <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_wp1wylk6EeO2Uo-v-XmjOg" name="value" ordered="false" upperBound="-1">
+                <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/4.0.0/Types#//String"/>
+              </eStructuralFeatures>
+            </eClassifiers>
+          </contents>
           <contents xmi:type="ecore:EPackage" xmi:id="_t9jNpFadEeOeZfQylqZysA" name="annotation" nsURI="http://org.springframework.transaction/schemas/annotation/_t9jNoladEeOeZfQylqZysA/0" nsPrefix="annotation">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9m4AFadEeOeZfQylqZysA" source="PapyrusVersion">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t9m4AVadEeOeZfQylqZysA" key="Version" value="0.0.20"/>

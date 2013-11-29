@@ -37,8 +37,10 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
 [templateDatabaseDriverClassDependency() /]
+[templateDataSourceDependency() /]
 [/if]
 	</dependencies>
 	<build>
@@ -73,6 +75,23 @@
 			<groupId>net.sourceforge.jtds</groupId>
 			<artifactId>jtds</artifactId>
 			<version>${jtds.version}</version>
+		</dependency>
+	[else]
+		ERROR
+	[/if]
+[/template]
+
+[**
+ * 產生連結資料庫的dataSource的dependency。
+ * @param anOclAny
+ */]
+[template private templateDataSourceDependency(anOclAny : OclAny)]
+	[if (queryProperty('database', 'dataSourceType') = 'c3p0')]
+		<!-- C3p0 -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>[queryProperty('database', 'dataSourceType.version') /]</version>
 		</dependency>
 	[else]
 		ERROR

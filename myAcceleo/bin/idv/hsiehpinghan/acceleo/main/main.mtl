@@ -15,12 +15,12 @@
  * 程式進入點。
  * @param aModel
  */]
-[template public main_test(aClass : Class) ? (aClass.name = 'AppConfig')]
+[template public main_test(aClass : Class) ? (aClass.name = 'DataSourceConfigurationImplement')]
 [comment @main /]
 [file ('test.txt', false, 'UTF-8')]
-hh
-	[aClass.name /]
+zz
 	[aClass.getApplicableStereotypes() /]
+	[aClass.getAppliedStereotypes() /]
 [/file]
 [/template]
 
