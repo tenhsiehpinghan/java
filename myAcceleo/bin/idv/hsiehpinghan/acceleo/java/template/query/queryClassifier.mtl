@@ -113,7 +113,7 @@
  * 取得某個operation有那些parameter。
  * @param anOperation
  */]
-[query public queryParameters(anOperation : Operation) : Set(Parameter) = 
+[query public queryParameters(anOperation : Operation) : OrderedSet(Parameter) = 
 	anOperation.ownedParameter->select(aParameter : Parameter | aParameter.direction = ParameterDirectionKind::_in)
 /]
 

@@ -14,7 +14,7 @@
  * @param aClassifier
  */]
 [template public templateClassifierFileNameWithFolderAndExtension(aClassifier : Classifier) post (self.trim())]
-	[queryProperty('main', 'sourceFolderPath') /]/[aClassifier.templateClassifierFolderPath() /]/[aClassifier.queryName() /].java
+	[queryProperty('java', 'sourceFolderPath') /]/[aClassifier.templateClassifierFolderPath() /]/[aClassifier.queryName() /].java
 [/template]
 
 
@@ -110,7 +110,7 @@
  * @param anOperation
  */]
 [template protected templateOperationSectionWithoutModifiers(anOperation : Operation)]
-[anOperation.queryTypeName() /] [templateOperationSectionWithoutModifiersAndTypeName() /]
+[anOperation.queryTypeName() /] [anOperation.templateOperationSectionWithoutModifiersAndTypeName() /]
 [/template]
 
 [**
@@ -159,6 +159,14 @@ import [aClassifier.templateClassifierFullName() /];
  */]
 [template protected templateExtendsSection(aClassifier : Classifier)]
 [for (aClassifier : Classifier | aClassifier.queryClassifierExtends()) before (' extends ') separator (', ') after (' ')][aClassifier.queryName() /][/for]
+[/template]
+
+[**
+ * 取得某個classifier的資料夾路徑。
+ * @param anInterface
+ */]
+[template protected templateClassifierFolderPath(aClassifier : Classifier) post (self.trim())]
+	[aClassifier.ancestors(Package)->reject(aPackage : Package | aPackage.oclIsTypeOf(Model))->reverse().queryName()->sep('/') /]
 [/template]
 
 [**
@@ -226,11 +234,5 @@ import [aClassifier.templateClassifierFullName() /];
 [/if]
 [/template]
 
-[**
- * 取得某個classifier的資料夾路徑。
- * @param anInterface
- */]
-[template private templateClassifierFolderPath(aClassifier : Classifier) post (self.trim())]
-	[aClassifier.ancestors(Package)->reject(aPackage : Package | aPackage.oclIsTypeOf(Model))->reverse().queryName()->sep('/') /]
-[/template]
+
 

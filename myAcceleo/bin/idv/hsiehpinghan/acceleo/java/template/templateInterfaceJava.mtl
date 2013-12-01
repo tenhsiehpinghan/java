@@ -60,7 +60,6 @@
  * @param anInterface
  */]
 [template private templateOperationsSection(anInterface : Interface)]
-[comment][for (anOperation : Operation | anInterface.queryOperations())][/comment]
 [for (anOperation : Operation | anInterface.queryOperations())]
 	[anOperation.templateOperationJavadocSection() /]
 	[anOperation.templateOperationSection() /]

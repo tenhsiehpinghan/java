@@ -4,15 +4,15 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <extends href="templateClassifier.emtl#/0"/>
-    <imports href="query/queryInterfaceJava.emtl#/0"/>
+    <extends href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryInterfaceJava.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="269" endPosition="329" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateInterfaceJava" visibility="Public">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templatePackageSection"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJava/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -53,7 +53,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJavadocSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -64,7 +64,7 @@
           <source xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Comment)">
-              <definition href="query/queryClassifier.emtl#/0/queryOwnedComments"/>
+              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOwnedComments"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJavadocSection/anInterface">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
               </argument>
@@ -98,7 +98,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -106,14 +106,14 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="interface "/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="query/queryClassifier.emtl#/0/queryName"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateExtendsSection"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -148,7 +148,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -156,7 +156,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -166,7 +166,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Property)">
-          <definition href="query/queryClassifier.emtl#/0/queryProperties"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryProperties"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templatePropertiesSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -187,7 +187,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateOperationJavadocSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationJavadocSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationsSection/%/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
           </argument>
@@ -204,7 +204,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Operation)">
-          <definition href="query/queryClassifier.emtl#/0/queryOperations"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOperations"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateOperationsSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -223,14 +223,14 @@
     <ownedModuleElement xsi:type="mtl:Template" name="templateOperationSection">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationSection/anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </argument>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="2212" endPosition="2266" value="&#xD;&#xA;產生java檔案中的operation部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="2128" endPosition="2182" value="&#xD;&#xA;產生java檔案中的operation部份。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -243,7 +243,7 @@
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateImportSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/%/aClassifier">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
           </argument>
@@ -254,14 +254,14 @@
         </loopVariable>
         <iterSet xsi:type="ocl.ecore:IteratorExp" name="sortedBy" eType="/13/OrderedSet(Classifier)">
           <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Classifier)">
-            <definition href="query/queryClassifier.emtl#/0/queryClassifierImports"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryClassifierImports"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/aClassifier">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
             </argument>
           </source>
           <body xsi:type="mtl:QueryInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/%/sortedBy/aClassifier">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
             </argument>
@@ -272,7 +272,7 @@
         </iterSet>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="2419" endPosition="2471" value="&#xD;&#xA;產生java檔案中的imports部份。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="2335" endPosition="2387" value="&#xD;&#xA;產生java檔案中的imports部份。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -387,7 +387,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anElement">
@@ -399,7 +399,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertyJavadocSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -411,7 +411,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateOperationJavadocSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationJavadocSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -423,7 +423,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -435,7 +435,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -447,7 +447,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templatePackageSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -459,7 +459,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateImportSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -471,7 +471,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -483,7 +483,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateExtendsSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -1109,62 +1109,62 @@
     </eAnnotations>
     <eAnnotations source="positions.67" references="/0/templateOperationsSection">
       <details key="start" value="1869"/>
-      <details key="end" value="2205"/>
+      <details key="end" value="2121"/>
       <details key="line" value="62"/>
     </eAnnotations>
     <eAnnotations source="positions.68" references="/0/templateOperationsSection/%">
-      <details key="start" value="2024"/>
-      <details key="end" value="2192"/>
-      <details key="line" value="64"/>
+      <details key="start" value="1940"/>
+      <details key="end" value="2108"/>
+      <details key="line" value="63"/>
     </eAnnotations>
     <eAnnotations source="positions.69" references="/0/templateOperationsSection/%/%">
-      <details key="start" value="2089"/>
-      <details key="end" value="2090"/>
-      <details key="line" value="65"/>
+      <details key="start" value="2005"/>
+      <details key="end" value="2006"/>
+      <details key="line" value="64"/>
     </eAnnotations>
     <eAnnotations source="positions.70" references="/0/templateOperationsSection/%/%.1">
-      <details key="start" value="2091"/>
-      <details key="end" value="2136"/>
+      <details key="start" value="2007"/>
+      <details key="end" value="2052"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.71" references="/0/templateOperationsSection/%/%.1/anOperation">
-      <details key="start" value="2091"/>
-      <details key="end" value="2102"/>
+      <details key="start" value="2007"/>
+      <details key="end" value="2018"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.72" references="/0/templateOperationsSection/%/%.2">
-      <details key="start" value="2139"/>
-      <details key="end" value="2142"/>
-      <details key="line" value="66"/>
+      <details key="start" value="2055"/>
+      <details key="end" value="2058"/>
+      <details key="line" value="65"/>
     </eAnnotations>
     <eAnnotations source="positions.73" references="/0/templateOperationsSection/%/%.3">
-      <details key="start" value="2143"/>
-      <details key="end" value="2181"/>
+      <details key="start" value="2059"/>
+      <details key="end" value="2097"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.74" references="/0/templateOperationsSection/%/%.3/anOperation">
-      <details key="start" value="2143"/>
-      <details key="end" value="2154"/>
+      <details key="start" value="2059"/>
+      <details key="end" value="2070"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.75" references="/0/templateOperationsSection/%/%.4">
-      <details key="start" value="2184"/>
-      <details key="end" value="2186"/>
-      <details key="line" value="67"/>
+      <details key="start" value="2100"/>
+      <details key="end" value="2102"/>
+      <details key="line" value="66"/>
     </eAnnotations>
     <eAnnotations source="positions.76" references="/0/templateOperationsSection/%/anOperation">
-      <details key="start" value="2030"/>
-      <details key="end" value="2053"/>
-      <details key="line" value="64"/>
+      <details key="start" value="1946"/>
+      <details key="end" value="1969"/>
+      <details key="line" value="63"/>
     </eAnnotations>
     <eAnnotations source="positions.77" references="/0/templateOperationsSection/%/%.5">
-      <details key="start" value="2056"/>
-      <details key="end" value="2085"/>
+      <details key="start" value="1972"/>
+      <details key="end" value="2001"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.78" references="/0/templateOperationsSection/%/%.5/anInterface">
-      <details key="start" value="2056"/>
-      <details key="end" value="2067"/>
+      <details key="start" value="1972"/>
+      <details key="end" value="1983"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.79" references="/0/templateOperationsSection/%.1">
@@ -1183,28 +1183,28 @@
       <details key="line" value="62"/>
     </eAnnotations>
     <eAnnotations source="positions.82" references="/0/templateOperationSection">
-      <details key="start" value="2270"/>
-      <details key="end" value="2412"/>
-      <details key="line" value="74"/>
+      <details key="start" value="2186"/>
+      <details key="end" value="2328"/>
+      <details key="line" value="73"/>
     </eAnnotations>
     <eAnnotations source="positions.83" references="/0/templateOperationSection/%">
-      <details key="start" value="2341"/>
-      <details key="end" value="2395"/>
+      <details key="start" value="2257"/>
+      <details key="end" value="2311"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.84" references="/0/templateOperationSection/%/anOperation">
-      <details key="start" value="2341"/>
-      <details key="end" value="2352"/>
+      <details key="start" value="2257"/>
+      <details key="end" value="2268"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.85" references="/0/templateOperationSection/%.1">
-      <details key="start" value="2398"/>
-      <details key="end" value="2399"/>
-      <details key="line" value="75"/>
+      <details key="start" value="2314"/>
+      <details key="end" value="2315"/>
+      <details key="line" value="74"/>
     </eAnnotations>
     <eAnnotations source="positions.86" references="/0/templateOperationSection/%.2">
-      <details key="start" value="2209"/>
-      <details key="end" value="2268"/>
+      <details key="start" value="2125"/>
+      <details key="end" value="2184"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.87" references="/0/templateOperationSection/%.2/anOperation">
@@ -1213,73 +1213,73 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.88" references="/0/templateOperationSection/anOperation">
-      <details key="start" value="2313"/>
-      <details key="end" value="2336"/>
-      <details key="line" value="74"/>
+      <details key="start" value="2229"/>
+      <details key="end" value="2252"/>
+      <details key="line" value="73"/>
     </eAnnotations>
     <eAnnotations source="positions.89" references="/0/templateInterfaceImportsSection">
-      <details key="start" value="2475"/>
-      <details key="end" value="2775"/>
-      <details key="line" value="82"/>
+      <details key="start" value="2391"/>
+      <details key="end" value="2691"/>
+      <details key="line" value="81"/>
     </eAnnotations>
     <eAnnotations source="positions.90" references="/0/templateInterfaceImportsSection/%">
-      <details key="start" value="2571"/>
-      <details key="end" value="2762"/>
-      <details key="line" value="83"/>
+      <details key="start" value="2487"/>
+      <details key="end" value="2678"/>
+      <details key="line" value="82"/>
     </eAnnotations>
     <eAnnotations source="positions.91" references="/0/templateInterfaceImportsSection/%/%">
-      <details key="start" value="2716"/>
-      <details key="end" value="2751"/>
+      <details key="start" value="2632"/>
+      <details key="end" value="2667"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.92" references="/0/templateInterfaceImportsSection/%/%/aClassifier">
-      <details key="start" value="2716"/>
-      <details key="end" value="2727"/>
+      <details key="start" value="2632"/>
+      <details key="end" value="2643"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.93" references="/0/templateInterfaceImportsSection/%/%.1">
-      <details key="start" value="2754"/>
-      <details key="end" value="2756"/>
-      <details key="line" value="85"/>
+      <details key="start" value="2670"/>
+      <details key="end" value="2672"/>
+      <details key="line" value="84"/>
     </eAnnotations>
     <eAnnotations source="positions.94" references="/0/templateInterfaceImportsSection/%/aClassifier">
-      <details key="start" value="2577"/>
-      <details key="end" value="2601"/>
-      <details key="line" value="83"/>
+      <details key="start" value="2493"/>
+      <details key="end" value="2517"/>
+      <details key="line" value="82"/>
     </eAnnotations>
     <eAnnotations source="positions.95" references="/0/templateInterfaceImportsSection/%/sortedBy">
-      <details key="start" value="2604"/>
-      <details key="end" value="2711"/>
+      <details key="start" value="2520"/>
+      <details key="end" value="2627"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.96" references="/0/templateInterfaceImportsSection/%/sortedBy/%">
-      <details key="start" value="2604"/>
-      <details key="end" value="2640"/>
+      <details key="start" value="2520"/>
+      <details key="end" value="2556"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.97" references="/0/templateInterfaceImportsSection/%/sortedBy/%/aClassifier">
-      <details key="start" value="2604"/>
-      <details key="end" value="2615"/>
+      <details key="start" value="2520"/>
+      <details key="end" value="2531"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.98" references="/0/templateInterfaceImportsSection/%/sortedBy/%.1">
-      <details key="start" value="2678"/>
-      <details key="end" value="2710"/>
+      <details key="start" value="2594"/>
+      <details key="end" value="2626"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.99" references="/0/templateInterfaceImportsSection/%/sortedBy/%.1/aClassifier">
-      <details key="start" value="2678"/>
-      <details key="end" value="2689"/>
+      <details key="start" value="2594"/>
+      <details key="end" value="2605"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.100" references="/0/templateInterfaceImportsSection/%/sortedBy/aClassifier">
-      <details key="start" value="2651"/>
-      <details key="end" value="2675"/>
+      <details key="start" value="2567"/>
+      <details key="end" value="2591"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.101" references="/0/templateInterfaceImportsSection/%.1">
-      <details key="start" value="2416"/>
-      <details key="end" value="2473"/>
+      <details key="start" value="2332"/>
+      <details key="end" value="2389"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.102" references="/0/templateInterfaceImportsSection/%.1/aClassifier">
@@ -1288,18 +1288,18 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.103" references="/0/templateInterfaceImportsSection/aClassifier">
-      <details key="start" value="2525"/>
-      <details key="end" value="2549"/>
-      <details key="line" value="82"/>
+      <details key="start" value="2441"/>
+      <details key="end" value="2465"/>
+      <details key="line" value="81"/>
     </eAnnotations>
     <eAnnotations source="positions.104" references="/0/templateInterfaceImportsSection/%.2">
-      <details key="start" value="2556"/>
-      <details key="end" value="2567"/>
+      <details key="start" value="2472"/>
+      <details key="end" value="2483"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.105" references="/0/templateInterfaceImportsSection/%.2/self">
-      <details key="start" value="2556"/>
-      <details key="end" value="2560"/>
+      <details key="start" value="2472"/>
+      <details key="end" value="2476"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

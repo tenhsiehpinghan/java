@@ -75,6 +75,10 @@
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Of_iwFjbEeOaALCw18o0JQ" source="PapyrusCSSForceValue">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Of_iwVjbEeOaALCw18o0JQ" key="showTitle" value="true"/>
               </eAnnotations>
+              <children xmi:type="notation:Shape" xmi:id="_BtB9QFlBEeOEmdV00u7thw" type="3012">
+                <element xmi:type="uml:Property" href="model.uml#_Bs-58FlBEeOEmdV00u7thw"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_BtB9QVlBEeOEmdV00u7thw"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_Of5cIljbEeOaALCw18o0JQ"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_Of5cI1jbEeOaALCw18o0JQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_Of5cJFjbEeOaALCw18o0JQ"/>
@@ -84,6 +88,17 @@
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OgAw4FjbEeOaALCw18o0JQ" source="PapyrusCSSForceValue">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OgAw4VjbEeOaALCw18o0JQ" key="showTitle" value="true"/>
               </eAnnotations>
+              <children xmi:type="notation:Shape" xmi:id="_JpBjcFlBEeOEmdV00u7thw" type="3013">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XcKtwFlCEeOprbXOUgM2Gw" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcKtwVlCEeOprbXOUgM2Gw" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0FlCEeOprbXOUgM2Gw" key="StereotypeList" value="javax::inject::Inject"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0VlCEeOprbXOUgM2Gw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0llCEeOprbXOUgM2Gw" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU01lCEeOprbXOUgM2Gw" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
+                <element xmi:type="uml:Operation" href="model.uml#_Jo7c0FlBEeOEmdV00u7thw"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_JpBjcVlBEeOEmdV00u7thw"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_Of5cJ1jbEeOaALCw18o0JQ"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_Of5cKFjbEeOaALCw18o0JQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_Of5cKVjbEeOaALCw18o0JQ"/>

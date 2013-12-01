@@ -70,7 +70,7 @@
 
 [**
  * 產生java檔案中的operations部份。
- * @param anOperation
+ * @param aClass
  */]
 [template private templateOperationsSection(aClass : Class)]
 [for (anOperation : Operation | aClass.queryOperations())]
@@ -81,7 +81,6 @@
 	[if (aClass.queryName() = anOperation.queryName())][anOperation.templateOperationSectionWithoutTypeName() /][else][anOperation.templateOperationSection() /][/if] [anOperation.templateOperationBodySection() /]
 [/for]
 
-[comment]realize interface所需實做的operation[/comment]
 	/***********************
 	 * Implemented methods *
 	 **********************/
@@ -219,6 +218,8 @@ return null;
 [anOperation.templateOperationValueAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Bean')]
 [anOperation.templateOperationBeanAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'javax::inject::Inject')]
+[anOperation.templateOperationInjectAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -263,4 +264,12 @@ ERROR
  */]
 [template private templateOperationBeanAnnotation(anOperation : Operation)]
 @Bean
+[/template]
+
+[**
+ * 產生operation的InjectAnnotation。
+ * @param anOperation
+ */]
+[template private templateOperationInjectAnnotation(anOperation : Operation)]
+@Inject
 [/template]

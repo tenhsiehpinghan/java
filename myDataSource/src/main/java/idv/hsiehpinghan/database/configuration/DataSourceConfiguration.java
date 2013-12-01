@@ -4,7 +4,7 @@ import javax.sql.DataSource;
 
 /**
  * Spring用的configuration interface，
- * 用來建立datasource的資料庫連線。
+ * 用來建立dataSource的資料庫連線。
  */
 public interface DataSourceConfiguration{
 

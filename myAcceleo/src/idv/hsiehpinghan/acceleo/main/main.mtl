@@ -10,27 +10,32 @@
 [import idv::hsiehpinghan::acceleo::web::generateWebFiles /]
 [import idv::hsiehpinghan::acceleo::spring::generateSpringFiles /]
 [import idv::hsiehpinghan::acceleo::java::generateJavaFiles /]
+[import idv::hsiehpinghan::acceleo::testng::generateTestngFiles /]
 
 [**
  * 程式進入點。
  * @param aModel
  */]
 [template public main_test(aClass : Class) ? (aClass.name = 'DataSourceConfigurationImplement')]
-[comment @main /]
+
 [file ('test.txt', false, 'UTF-8')]
 zz
 	[aClass.getApplicableStereotypes() /]
+bb
 	[aClass.getAppliedStereotypes() /]
 [/file]
 [/template]
 
 
 [template public main(aModel : Model) ? (aModel.owner.oclIsUndefined())]
-
+[comment @main /]
 [generateMavenFiles() /]
 [if (queryProperty('main', 'applicationType') = 'war')]
 	[generateWebFiles() /]
 [/if]
 [generateSpringFiles() /]
-[generateJavaFiles(aModel) /]
+[aModel.generateJavaFiles() /]
+[if (queryProperty('main', 'isGenerateTestFiles') = 'Y')]
+	[aModel.generateTestngFiles() /]
+[/if]
 [/template]

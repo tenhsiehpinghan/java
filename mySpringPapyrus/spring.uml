@@ -14,6 +14,11 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_0vUMYFTcEeODIvpCmSWK3Q" name="PropertySourcesPlaceholderConfigurer"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_2rN1oFlAEeOEmdV00u7thw" name="core">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5u1XoFlAEeOEmdV00u7thw" name="env">
+          <packagedElement xmi:type="uml:Class" xmi:id="_7nRf8FlAEeOEmdV00u7thw" name="Environment"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_tpZ90FTVEeODIvpCmSWK3Q" name="void"/>

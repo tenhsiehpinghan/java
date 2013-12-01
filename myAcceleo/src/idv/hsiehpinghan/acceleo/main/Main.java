@@ -42,7 +42,7 @@ public class Main extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "main_test" };
+    public static final String[] TEMPLATE_NAMES = { "main" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).
@@ -308,6 +308,7 @@ public class Main extends AbstractAcceleoGenerator {
     	propertiesFiles.add("pomXml.properties");
     	propertiesFiles.add("spring.properties");
     	propertiesFiles.add("database.properties");
+    	propertiesFiles.add("testng.properties");
     	
     	
     	propertiesFiles.add("struts2.properties");
