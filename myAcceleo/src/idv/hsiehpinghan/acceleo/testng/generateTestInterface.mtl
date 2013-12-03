@@ -2,7 +2,7 @@
 [**
  * 負責產生testng的testInterface檔。
  */]
-[module generateTestngInterface('http://www.eclipse.org/uml2/4.0.0/UML')]
+[module generateTestInterface('http://www.eclipse.org/uml2/4.0.0/UML')]
 
 [import idv::hsiehpinghan::acceleo::testng::template::templateTestInterface /]
 
@@ -10,7 +10,7 @@
  * 產生testng的testInterface檔。
  * @param aClass
  */]
-[template public generateTestngInterface(aClass : Class)]
+[template public generateTestInterface(aClass : Class)]
 [file (aClass.templateTestInterfaceFileNameWithFolderAndExtension(), false, 'UTF-8')]
 [aClass.templateTestInterface() /]
 [/file]

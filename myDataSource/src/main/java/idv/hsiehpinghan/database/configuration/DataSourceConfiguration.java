@@ -1,5 +1,7 @@
 package idv.hsiehpinghan.database.configuration;
 
+import java.beans.PropertyVetoException;
+
 import javax.sql.DataSource;
 
 /**
@@ -11,6 +13,6 @@ public interface DataSourceConfiguration{
 	/**
 	 * 取得dataSource的operation。
 	 */
-	DataSource dataSource();
+	DataSource dataSource() throws PropertyVetoException;
 
 }

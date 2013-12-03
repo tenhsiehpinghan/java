@@ -33,7 +33,7 @@
 [/for]
 [/template]
 
-[**
+[comment][**
  * 產生property的javadocSection。
  * @param aProperty
  */]
@@ -42,10 +42,12 @@
 [if (aProperty.queryOwnedComments()->isEmpty() = false)]
  [aProperty.templateJavadocCommentsSection() /]
 [/if]
+ *
+ * @generated NOT
  */
-[/template]
+[/template][/comment]
 
-[**
+[comment][**
  * 產生operation的javadocSection。
  * @param anOperation
  */]
@@ -54,8 +56,10 @@
 [if (anOperation.queryOwnedComments()->isEmpty() = false)]
  [anOperation.templateJavadocCommentsSection() /]
 [/if]
+ *
+ * @generated NOT
  */
-[/template]
+[/template][/comment]
 
 [**
  * 產生property的modifiers section。

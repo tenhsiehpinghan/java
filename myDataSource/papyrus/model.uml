@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:annotation="http://org.springframework.context/schemas/annotation/_wp1JsFk6EeO2Uo-v-XmjOg/5" xmlns:annotation_1="http://org.springframework.context/schemas/annotation/_BL_pkFk9EeO2Uo-v-XmjOg/7" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:inject="http://javax/schemas/inject/_8-t-mFlBEeOEmdV00u7thw/0" xmlns:lang="http://java/schemas/lang/_vNxgkFRGEeOCfbWM6ALyWg/19" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://org.springframework.context/schemas/annotation/_wp1JsFk6EeO2Uo-v-XmjOg/5 file:/C:/Users/Daniel/git/mine/mySpringPapyrus/spring.profile.uml#_wp1JsVk6EeO2Uo-v-XmjOg http://org.springframework.context/schemas/annotation/_BL_pkFk9EeO2Uo-v-XmjOg/7 file:/C:/Users/Daniel/git/mine/mySpringPapyrus/spring.profile.uml#_BL_pkVk9EeO2Uo-v-XmjOg http://javax/schemas/inject/_8-t-mFlBEeOEmdV00u7thw/0 ../../myJavaxPapyrus/javax.profile.uml#_8-uloVlBEeOEmdV00u7thw http://java/schemas/lang/_vNxgkFRGEeOCfbWM6ALyWg/19 platform:/myJavaPapyrus/java.profile.uml#_vNxgkVRGEeOCfbWM6ALyWg">
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:annotation="http://org.springframework.context/schemas/annotation/_wp1JsFk6EeO2Uo-v-XmjOg/5" xmlns:annotation_1="http://org.springframework.context/schemas/annotation/_BL_pkFk9EeO2Uo-v-XmjOg/7" xmlns:annotation_2="http://org.springframework.beans.factory/schemas/annotation/_2hKxsFvFEeOYYaybW-fzNQ/12" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:inject="http://javax/schemas/inject/_8-t-mFlBEeOEmdV00u7thw/0" xmlns:lang="http://java/schemas/lang/_vNxgkFRGEeOCfbWM6ALyWg/19" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://org.springframework.context/schemas/annotation/_wp1JsFk6EeO2Uo-v-XmjOg/5 file:/C:/Users/Daniel/git/mine/mySpringPapyrus/spring.profile.uml#_wp1JsVk6EeO2Uo-v-XmjOg http://org.springframework.context/schemas/annotation/_BL_pkFk9EeO2Uo-v-XmjOg/7 file:/C:/Users/Daniel/git/mine/mySpringPapyrus/spring.profile.uml#_BL_pkVk9EeO2Uo-v-XmjOg http://org.springframework.beans.factory/schemas/annotation/_2hKxsFvFEeOYYaybW-fzNQ/12 ../../mySpringPapyrus/spring.profile.uml#_2hKxsVvFEeOYYaybW-fzNQ http://javax/schemas/inject/_8-t-mFlBEeOEmdV00u7thw/0 ../../myJavaxPapyrus/javax.profile.uml#_8-uloVlBEeOEmdV00u7thw http://java/schemas/lang/_vNxgkFRGEeOCfbWM6ALyWg/19 platform:/myJavaPapyrus/java.profile.uml#_vNxgkVRGEeOCfbWM6ALyWg">
   <uml:Model xmi:id="_HGkB4Fg9EeOKEM0it3m00A" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_-UOewFjaEeOaALCw18o0JQ">
       <importedPackage xmi:type="uml:Package" href="../../myJavaPapyrus/java.uml#_oKsTwDo5EeOc5JJV1BgsAQ"/>
@@ -72,73 +72,73 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_78YBIFjbEeOaALCw18o0JQ" name="void"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A0zlIFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1N00FjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../myJavaxPapyrus/javax.profile.uml#_8-tXgVlBEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../myJavaxPapyrus/javax.profile.uml#_fsWWEFvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../myJavaxPapyrus/javax.profile.uml#_BYPNQFREEeOCfbWM6ALyWg"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A1PC8FjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1h94FjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../myJavaxPapyrus/javax.profile.uml#_8-t-kVlBEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../myJavaxPapyrus/javax.profile.uml#_fsh8QFvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../myJavaxPapyrus/javax.profile.uml#_Tud9sFREEeOCfbWM6ALyWg"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A1mPUFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A10RwFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_ug9xAFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hI8gVvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_Dwz0gEVZEeOJQ7MMJvWMaA"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A1040FjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1_Q4FjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_ug-_IFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hJjkFvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_Z64C8EVZEeOJQ7MMJvWMaA"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A1_38FjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A2KQAFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhBbYFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hJjk1vFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_iOlhwFRQEeOq541rAuwblw"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A2K3EFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A2UoEFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhCpgFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hKKoVvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_nbH6QFRfEeOtTvtvygUeqQ"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A2VPIFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A2g1UFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhCpg1lAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hKKpFvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_qpbCQFRfEeOtTvtvygUeqQ"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A2hcYFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A2r0cFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhEesFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hKxsVvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_tKZxQFRfEeOtTvtvygUeqQ"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A2sbgFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A22MgFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhFFwVlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hKxvVvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_3i5p8FS-EeOumf_KnQcSsw"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A22zkFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A3BLoFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhGT4VlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hL_0VvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_DsQocFS_EeOumf_KnQcSsw"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A3BysFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A3LjsFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhHiAFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hL_51vFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_fqFvEFadEeOeZfQylqZysA"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A3MKwFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A3V7wFjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_uhIJEFlAEeOEmdV00u7thw"/>
+        <references xmi:type="ecore:EPackage" href="../../mySpringPapyrus/spring.profile.uml#_2hMm4VvFEeOYYaybW-fzNQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../../mySpringPapyrus/spring.profile.uml#_hXKU4FadEeOeZfQylqZysA"/>
     </profileApplication>
@@ -154,4 +154,5 @@
   <annotation:Bean xmi:id="_fVWocFj-EeOFxNpOrHkJsg" base_Operation="_EaG34FjbEeOaALCw18o0JQ"/>
   <annotation_1:PropertySource xmi:id="_FSm5oFk9EeO2Uo-v-XmjOg" base_Class="_Ofsn0FjbEeOaALCw18o0JQ"/>
   <inject:Inject xmi:id="_Xb_uoFlCEeOprbXOUgM2Gw" base_Operation="_Jo7c0FlBEeOEmdV00u7thw"/>
+  <annotation_2:Autowired xmi:id="_q9q8gFvJEeOYYaybW-fzNQ" base_Operation="_Jo7c0FlBEeOEmdV00u7thw"/>
 </xmi:XMI>

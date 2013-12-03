@@ -21,6 +21,20 @@
 
 [comment]---------------------------private--------------------------[/comment]
 [**
+ * 產生property的javadocSection。
+ * @param aProperty
+ */]
+[template private templatePropertyJavadocSection(aProperty : Property)]
+/**
+[if (aProperty.queryOwnedComments()->isEmpty() = false)]
+ [aProperty.templateJavadocCommentsSection() /]
+[/if]
+ *
+ * @generated NOT
+ */
+[/template]
+
+[**
  * 產生class的javadocSection。
  * @param aClass
  */]
@@ -29,8 +43,6 @@
 [if (aClass.queryOwnedComments()->isEmpty() = false)]
  [aClass.templateJavadocCommentsSection() /]
 [/if]
- *
- * @generated NOT
  */
 [/template]
 
@@ -83,8 +95,11 @@
 
 	/***********************
 	 * Implemented methods *
-	 **********************/
+	 ***********************/
 [for (anOperation : Operation | aClass.queryClassImplementsOperations())]
+	/**
+	 * @generated NOT
+	 */
 	@Override
 	[if (anOperation.getAppliedStereotypes()->isEmpty() = false)]
 	[anOperation.templateOperationAnnotationSection() /]
@@ -95,7 +110,7 @@
 
 [**
  * 產生java檔案中的import部份。
- * @param aClassifier
+ * @param aClass
  */]
 [template private templateClassImportSection(aClass : Class) post(self.trim())]
 // [protected ('for import section')]
@@ -176,6 +191,20 @@ ERROR
 [/template]
 
 [**
+ * 產生operation的javadocSection。
+ * @param anOperation
+ */]
+[template private templateOperationJavadocSection(anOperation : Operation)]
+/**
+[if (anOperation.queryOwnedComments()->isEmpty() = false)]
+ [anOperation.templateJavadocCommentsSection() /]
+[/if]
+ *
+ * @generated NOT
+ */
+[/template]
+
+[**
  * 產生java檔案中的operation部份。
  * @param anOperation
  */]
@@ -218,8 +247,8 @@ return null;
 [anOperation.templateOperationValueAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Bean')]
 [anOperation.templateOperationBeanAnnotation() /]
-	[elseif (aStereotype.queryQualifiedName() = 'javax::inject::Inject')]
-[anOperation.templateOperationInjectAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Autowired')]
+[anOperation.templateOperationAutowiredAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -267,9 +296,9 @@ ERROR
 [/template]
 
 [**
- * 產生operation的InjectAnnotation。
+ * 產生operation的AutowiredAnnotation。
  * @param anOperation
  */]
-[template private templateOperationInjectAnnotation(anOperation : Operation)]
-@Inject
+[template private templateOperationAutowiredAnnotation(anOperation : Operation)]
+@Autowired
 [/template]

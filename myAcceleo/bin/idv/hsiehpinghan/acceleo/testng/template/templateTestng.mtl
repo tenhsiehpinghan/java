@@ -6,13 +6,12 @@
 
 [comment]---------------------------public---------------------------[/comment]
 [**
- * 取得testInterng的operations section。
- * @param anOperation
+ * 取得testInterface的interface名稱。
+ * @param aClass
  */]
-[template public templateTestngOperationSection(anOperation : Operation) post(self.trim())]
-	void [anOperation.queryName() /][anOperation.templateOperationParametersSeparatedString() /]()
+[template public templateTestInterfaceInterfaceName(aClass : Class)]
+[aClass.queryName() /]_TestInterface
 [/template]
-
 [comment]--------------------------protected-------------------------[/comment]
 
 

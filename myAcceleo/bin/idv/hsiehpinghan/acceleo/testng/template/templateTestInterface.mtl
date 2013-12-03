@@ -31,11 +31,23 @@
 
 [comment]---------------------------private--------------------------[/comment]
 [**
- * 取得testInterface的interface名稱。
- * @param aClass
+ * 產生operation的javadocSection。
+ * @param anOperation
  */]
-[template private templateTestInterfaceInterfaceName(aClass : Class)]
-[aClass.queryName() /]_TestInterface
+[template private templateOperationJavadocSection(anOperation : Operation)]
+/**
+[if (anOperation.queryOwnedComments()->isEmpty() = false)]
+ [anOperation.templateJavadocCommentsSection() /]
+[/if]
+ */
+[/template]
+
+[**
+ * 取得operations section。
+ * @param anOperation
+ */]
+[template private templateOperationSection(anOperation : Operation) post(self.trim())]
+	void [anOperation.queryName() /][anOperation.templateOperationParametersSeparatedString() /]()
 [/template]
 
 [**
@@ -55,16 +67,15 @@ public interface [aClass.templateTestInterfaceInterfaceName() /] {
 [template private templateTestInterfaceOperationsSection(aClass : Class)]
 [for (anOperation : Operation | aClass.queryOperations())]
 	[anOperation.templateOperationJavadocSection() /]
-	[anOperation.templateTestngOperationSection() /];
+	[anOperation.templateOperationSection() /];
 [/for]
-
 
 	/***********************
 	 * Implemented methods *
 	 **********************/
 [for (anOperation : Operation | aClass.queryClassImplementsOperations())]
 	[anOperation.templateOperationJavadocSection() /]
-	[anOperation.templateTestngOperationSection() /];
+	[anOperation.templateOperationSection() /];
 [/for]
 [/template]
 

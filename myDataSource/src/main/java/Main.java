@@ -17,7 +17,7 @@ public class Main {
          
         DataSource newDataSource =applicationContext.getBean(DataSource.class);
         
-        System.out.println("DataSource Connected: " + newDataSource.getConnection().isClosed());
+        System.out.println("DataSource isClosed: " + newDataSource.getConnection().isClosed());
         newDataSource.getConnection().close();
     }
 }

@@ -9,43 +9,30 @@
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="251" endPosition="311" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
-    <ownedModuleElement xsi:type="mtl:Template" name="templateTestngOperationSection" visibility="Public">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;void "/>
+    <ownedModuleElement xsi:type="mtl:Template" name="templateTestInterfaceInterfaceName" visibility="Public">
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateTestngOperationSection/anOperation">
-          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateTestInterfaceInterfaceName/aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
       </body>
-      <body xsi:type="mtl:TemplateInvocation" definition="/0/templateOperationParametersSeparatedString">
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateTestngOperationSection/anOperation">
-          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
-        </argument>
-      </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="()"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_TestInterface"/>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="326" endPosition="391" value="&#xD;&#xA;取得testInterng的operations section。&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
-        <parametersDocumentation name="anOperation">
+        <body startPosition="326" endPosition="381" value="&#xD;&#xA;取得testInterface的interface名稱。&#xD;&#xA;@param aClass&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aClass">
           <body value=""/>
         </parametersDocumentation>
       </documentation>
-      <parameter name="anOperation">
-        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+      <parameter name="aClass">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
       </parameter>
-      <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/5">
-          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        </source>
-      </post>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="609" endPosition="669" value="--------------------------protected-------------------------"/>
+      <body startPosition="515" endPosition="575" value="--------------------------protected-------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="694" endPosition="754" value="---------------------------private--------------------------"/>
+      <body startPosition="600" endPosition="660" value="---------------------------private--------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateOperationParametersSeparatedString" visibility="Public">
       <body xsi:type="mtl:ForBlock">
@@ -56,7 +43,7 @@
         <loopVariable name="aString">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </loopVariable>
-        <iterSet xsi:type="mtl:QueryInvocation" eType="/14/Sequence(String)">
+        <iterSet xsi:type="mtl:QueryInvocation" eType="/12/Sequence(String)">
           <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/template/query/queryTestng.emtl#/0/queryOperatonTypeNames"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationParametersSeparatedString/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
@@ -70,7 +57,7 @@
         </each>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="769" endPosition="830" value="&#xD;&#xA;取得operations以_為開頭及分隔的template&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="675" endPosition="736" value="&#xD;&#xA;取得operations以_為開頭及分隔的template&#xD;&#xA;@param anOperation&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="anOperation">
           <body value=""/>
         </parametersDocumentation>
@@ -80,7 +67,7 @@
       </parameter>
       <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/trim">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/12">
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/10">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </source>
       </post>
@@ -110,14 +97,14 @@
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
       </eAnnotations>
-      <eOperations name="templateTestngOperationSection">
+      <eOperations name="templateTestInterfaceInterfaceName">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
-        <eAnnotations source="MTL" references="/0/templateTestngOperationSection"/>
+        <eAnnotations source="MTL" references="/0/templateTestInterfaceInterfaceName"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="anOperation">
-          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+        <eParameters name="aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </eParameters>
       </eOperations>
       <eOperations name="templateOperationParametersSeparatedString">
@@ -161,6 +148,11 @@
     <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Class_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Operation_Class">
@@ -223,22 +215,16 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
-  </ocl.ecore:Variable>
-  <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -290,144 +276,119 @@
       <details key="end" value="321"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.1" references="/0/templateTestngOperationSection">
-      <details key="start" value="395"/>
-      <details key="end" value="596"/>
+    <eAnnotations source="positions.1" references="/0/templateTestInterfaceInterfaceName">
+      <details key="start" value="385"/>
+      <details key="end" value="504"/>
       <details key="line" value="12"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/templateTestngOperationSection/%">
-      <details key="start" value="488"/>
-      <details key="end" value="494"/>
+    <eAnnotations source="positions.2" references="/0/templateTestInterfaceInterfaceName/%">
+      <details key="start" value="456"/>
+      <details key="end" value="474"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/templateTestInterfaceInterfaceName/%/aClass">
+      <details key="start" value="456"/>
+      <details key="end" value="462"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/templateTestInterfaceInterfaceName/%.1">
+      <details key="start" value="477"/>
+      <details key="end" value="491"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/templateTestngOperationSection/%.1">
-      <details key="start" value="495"/>
-      <details key="end" value="518"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/templateTestngOperationSection/%.1/anOperation">
-      <details key="start" value="495"/>
-      <details key="end" value="506"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/templateTestngOperationSection/%.2">
-      <details key="start" value="522"/>
-      <details key="end" value="578"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/templateTestngOperationSection/%.2/anOperation">
-      <details key="start" value="522"/>
-      <details key="end" value="533"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/templateTestngOperationSection/%.3">
-      <details key="start" value="581"/>
-      <details key="end" value="583"/>
-      <details key="line" value="13"/>
-    </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/templateTestngOperationSection/%.4">
+    <eAnnotations source="positions.5" references="/0/templateTestInterfaceInterfaceName/%.2">
       <details key="start" value="323"/>
-      <details key="end" value="393"/>
+      <details key="end" value="383"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/templateTestngOperationSection/%.4/anOperation">
+    <eAnnotations source="positions.6" references="/0/templateTestInterfaceInterfaceName/%.2/aClass">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/templateTestngOperationSection/anOperation">
-      <details key="start" value="443"/>
-      <details key="end" value="466"/>
+    <eAnnotations source="positions.7" references="/0/templateTestInterfaceInterfaceName/aClass">
+      <details key="start" value="437"/>
+      <details key="end" value="451"/>
       <details key="line" value="12"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/templateTestngOperationSection/%.5">
-      <details key="start" value="473"/>
-      <details key="end" value="484"/>
+    <eAnnotations source="positions.8" references="/0/%.1">
+      <details key="start" value="506"/>
+      <details key="end" value="585"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/templateTestngOperationSection/%.5/self">
-      <details key="start" value="473"/>
-      <details key="end" value="477"/>
+    <eAnnotations source="positions.9" references="/0/%.2">
+      <details key="start" value="591"/>
+      <details key="end" value="670"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/%.1">
-      <details key="start" value="600"/>
-      <details key="end" value="679"/>
-      <details key="line" value="0"/>
+    <eAnnotations source="positions.10" references="/0/templateOperationParametersSeparatedString">
+      <details key="start" value="740"/>
+      <details key="end" value="970"/>
+      <details key="line" value="23"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/%.2">
-      <details key="start" value="685"/>
-      <details key="end" value="764"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/templateOperationParametersSeparatedString">
-      <details key="start" value="834"/>
-      <details key="end" value="1064"/>
+    <eAnnotations source="positions.11" references="/0/templateOperationParametersSeparatedString/%">
+      <details key="start" value="845"/>
+      <details key="end" value="957"/>
       <details key="line" value="24"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/templateOperationParametersSeparatedString/%">
+    <eAnnotations source="positions.12" references="/0/templateOperationParametersSeparatedString/%/aString">
       <details key="start" value="939"/>
-      <details key="end" value="1051"/>
-      <details key="line" value="25"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/templateOperationParametersSeparatedString/%/aString">
-      <details key="start" value="1033"/>
-      <details key="end" value="1040"/>
+      <details key="end" value="946"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/templateOperationParametersSeparatedString/%/%">
-      <details key="start" value="1043"/>
-      <details key="end" value="1045"/>
-      <details key="line" value="27"/>
+    <eAnnotations source="positions.13" references="/0/templateOperationParametersSeparatedString/%/%">
+      <details key="start" value="949"/>
+      <details key="end" value="951"/>
+      <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/templateOperationParametersSeparatedString/%/aString.1">
-      <details key="start" value="945"/>
-      <details key="end" value="961"/>
-      <details key="line" value="25"/>
+    <eAnnotations source="positions.14" references="/0/templateOperationParametersSeparatedString/%/aString.1">
+      <details key="start" value="851"/>
+      <details key="end" value="867"/>
+      <details key="line" value="24"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/templateOperationParametersSeparatedString/%/%.1">
-      <details key="start" value="964"/>
-      <details key="end" value="1000"/>
+    <eAnnotations source="positions.15" references="/0/templateOperationParametersSeparatedString/%/%.1">
+      <details key="start" value="870"/>
+      <details key="end" value="906"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/templateOperationParametersSeparatedString/%/%.1/anOperation">
-      <details key="start" value="964"/>
-      <details key="end" value="975"/>
+    <eAnnotations source="positions.16" references="/0/templateOperationParametersSeparatedString/%/%.1/anOperation">
+      <details key="start" value="870"/>
+      <details key="end" value="881"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/templateOperationParametersSeparatedString/%/%.2">
-      <details key="start" value="1009"/>
-      <details key="end" value="1012"/>
+    <eAnnotations source="positions.17" references="/0/templateOperationParametersSeparatedString/%/%.2">
+      <details key="start" value="915"/>
+      <details key="end" value="918"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/templateOperationParametersSeparatedString/%/%.3">
-      <details key="start" value="1025"/>
-      <details key="end" value="1028"/>
+    <eAnnotations source="positions.18" references="/0/templateOperationParametersSeparatedString/%/%.3">
+      <details key="start" value="931"/>
+      <details key="end" value="934"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/templateOperationParametersSeparatedString/%.1">
-      <details key="start" value="766"/>
-      <details key="end" value="832"/>
+    <eAnnotations source="positions.19" references="/0/templateOperationParametersSeparatedString/%.1">
+      <details key="start" value="672"/>
+      <details key="end" value="738"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/templateOperationParametersSeparatedString/%.1/anOperation">
+    <eAnnotations source="positions.20" references="/0/templateOperationParametersSeparatedString/%.1/anOperation">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/templateOperationParametersSeparatedString/anOperation">
-      <details key="start" value="894"/>
-      <details key="end" value="917"/>
-      <details key="line" value="24"/>
+    <eAnnotations source="positions.21" references="/0/templateOperationParametersSeparatedString/anOperation">
+      <details key="start" value="800"/>
+      <details key="end" value="823"/>
+      <details key="line" value="23"/>
     </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/templateOperationParametersSeparatedString/%.2">
-      <details key="start" value="924"/>
-      <details key="end" value="935"/>
+    <eAnnotations source="positions.22" references="/0/templateOperationParametersSeparatedString/%.2">
+      <details key="start" value="830"/>
+      <details key="end" value="841"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/templateOperationParametersSeparatedString/%.2/self">
-      <details key="start" value="924"/>
-      <details key="end" value="928"/>
+    <eAnnotations source="positions.23" references="/0/templateOperationParametersSeparatedString/%.2/self">
+      <details key="start" value="830"/>
+      <details key="end" value="834"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

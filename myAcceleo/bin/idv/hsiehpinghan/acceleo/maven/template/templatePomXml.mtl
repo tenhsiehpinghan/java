@@ -27,8 +27,9 @@
 		<maven.compiler.target>[queryProperty('java', 'version') /]</maven.compiler.target>
 		<testng.version>6.8.7</testng.version>
 		<spring.version>[queryProperty('spring', 'version') /].RELEASE</spring.version>
-		<javax.inject.version>1</javax.inject.version>
+		<commons-io.version>2.4</commons-io.version>
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+		<commons-dbutils.version>1.5</commons-dbutils.version>
 		[templateDatabaseDriverClassVersion() /]
 [/if]
 	</properties>
@@ -47,14 +48,21 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- javax.inject -->
+		<!-- commons-io -->
 		<dependency>
-			<groupId>javax.inject</groupId>
-			<artifactId>javax.inject</artifactId>
-			<version>${javax.inject.version}</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
 		</dependency>
-            
+
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+		<!-- commons-dbutils -->
+		<dependency>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>${commons-dbutils.version}</version>
+		</dependency>
+
 [templateDatabaseDriverClassDependency() /]
 [templateDataSourceDependency() /]
 [/if]

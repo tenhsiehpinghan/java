@@ -90,11 +90,11 @@
               </eAnnotations>
               <children xmi:type="notation:Shape" xmi:id="_JpBjcFlBEeOEmdV00u7thw" type="3013">
                 <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XcKtwFlCEeOprbXOUgM2Gw" source="Stereotype_Annotation">
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcKtwVlCEeOprbXOUgM2Gw" key="StereotypeWithQualifiedNameList" value=""/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0FlCEeOprbXOUgM2Gw" key="StereotypeList" value="javax::inject::Inject"/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0VlCEeOprbXOUgM2Gw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU0llCEeOprbXOUgM2Gw" key="PropStereoDisplay" value=""/>
-                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcLU01lCEeOprbXOUgM2Gw" key="StereotypePropertyLocation" value="Compartment"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q90GcFvJEeOYYaybW-fzNQ" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q90GcVvJEeOYYaybW-fzNQ" key="StereotypeList" value="org::springframework::beans::factory::annotation::Autowired"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q90GclvJEeOYYaybW-fzNQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q90Gc1vJEeOYYaybW-fzNQ" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q90GdFvJEeOYYaybW-fzNQ" key="StereotypePropertyLocation" value="Compartment"/>
                 </eAnnotations>
                 <element xmi:type="uml:Operation" href="model.uml#_Jo7c0FlBEeOEmdV00u7thw"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_JpBjcVlBEeOEmdV00u7thw"/>

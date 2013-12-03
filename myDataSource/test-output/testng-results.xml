@@ -2,60 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24" started-at="2013-11-30T08:12:42Z" finished-at="2013-11-30T08:12:42Z">
+  <suite name="Default suite" duration-ms="905" started-at="2013-12-03T07:10:26Z" finished-at="2013-12-03T07:10:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24" started-at="2013-11-30T08:12:42Z" finished-at="2013-11-30T08:12:42Z">
-      <class name="idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
+    <test name="Default test" duration-ms="905" started-at="2013-12-03T07:10:26Z" finished-at="2013-12-03T07:10:27Z">
+      <class name="idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test">
+        <test-method status="PASS" signature="dataSource()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="dataSource" duration-ms="890" started-at="2013-12-03T15:10:26Z" finished-at="2013-12-03T15:10:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
+        </test-method> <!-- dataSource -->
+        <test-method status="PASS" signature="setEnvironment_Environment()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="setEnvironment_Environment" duration-ms="1" started-at="2013-12-03T15:10:27Z" finished-at="2013-12-03T15:10:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dataSourceTest()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="dataSourceTest" duration-ms="7" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataSourceTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setEnvironmentTest()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="setEnvironmentTest" duration-ms="1" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setEnvironmentTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="afterClass" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="afterTest" is-config="true" duration-ms="0" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest@1641529e]" name="afterSuite" is-config="true" duration-ms="1" started-at="2013-11-30T16:12:42Z" finished-at="2013-11-30T16:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplementTest -->
+        </test-method> <!-- setEnvironment_Environment -->
+      </class> <!-- idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

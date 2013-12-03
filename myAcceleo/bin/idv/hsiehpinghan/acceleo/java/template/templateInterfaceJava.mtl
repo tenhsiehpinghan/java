@@ -21,6 +21,18 @@
 
 [comment]---------------------------private--------------------------[/comment]
 [**
+ * 產生property的javadocSection。
+ * @param aProperty
+ */]
+[template private templatePropertyJavadocSection(aProperty : Property)]
+/**
+[if (aProperty.queryOwnedComments()->isEmpty() = false)]
+ [aProperty.templateJavadocCommentsSection() /]
+[/if]
+ */
+[/template]
+
+[**
  * 產生interface的javadocSection。
  * @param anInterface
  */]
@@ -64,6 +76,18 @@
 	[anOperation.templateOperationJavadocSection() /]
 	[anOperation.templateOperationSection() /]
 [/for]
+[/template]
+
+[**
+ * 產生operation的javadocSection。
+ * @param anOperation
+ */]
+[template private templateOperationJavadocSection(anOperation : Operation)]
+/**
+[if (anOperation.queryOwnedComments()->isEmpty() = false)]
+ [anOperation.templateJavadocCommentsSection() /]
+[/if]
+ */
 [/template]
 
 [**

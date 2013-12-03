@@ -5,7 +5,6 @@ public interface DataSourceConfigurationImplement_TestInterface {
 	 */
 	void setEnvironment_Environment();
 
-
 	/***********************
 	 * Implemented methods *
 	 **********************/
