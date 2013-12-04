@@ -1,5 +1,9 @@
 import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
 import idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement;
+import idv.hsiehpinghan.database.configuration.implement.JpaConfiguration;
+import idv.hsiehpinghan.database.model.User;
+import idv.hsiehpinghan.database.service.UserService;
+import idv.hsiehpinghan.database.service.implement.UserServiceImpl;
 
 import java.sql.SQLException;
 
@@ -9,15 +13,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  
 public class Main {
     public static void main(String[] args) throws SQLException {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(JpaConfiguration.class);
 //        applicationContext.getEnvironment().setActiveProfiles("default");
-        System.out.println(DataSourceConfiguration.class.getPackage().getName());
-        applicationContext.scan(DataSourceConfiguration.class.getPackage().getName());
-        applicationContext.refresh();
+//        System.out.println(DataSourceConfiguration.class.getPackage().getName());
+//        applicationContext.scan(DataSourceConfiguration.class.getPackage().getName());
+//        applicationContext.refresh();
          
-        DataSource newDataSource =applicationContext.getBean(DataSource.class);
-        
-        System.out.println("DataSource isClosed: " + newDataSource.getConnection().isClosed());
-        newDataSource.getConnection().close();
+        UserService userService =applicationContext.getBean("aa", UserServiceImpl.class);
+        User user = new User();
+        user.setPersonalId("personalId");
+        user.setEmail("email");
+        user.setMobilePhoneNumber("mobilePhoneNumber");
+        user.setPassword("password");
+        userService.save(user);
+        applicationContext.close();
     }
 }

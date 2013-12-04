@@ -61,6 +61,7 @@ public class DataSourceConfigurationImplement_Test implements DataSourceConfigur
 	 * @generated NOT
 	 */
 	@Test
+	@Override
 	public void setEnvironment_Environment() {
 		// TODO : need be to implemented
 	}
@@ -74,18 +75,17 @@ public class DataSourceConfigurationImplement_Test implements DataSourceConfigur
 	 * @generated NOT
 	 */
 	@Test
+	@Override
 	public void dataSource() {
-		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
-		applicationContext.scan(DataSourceConfiguration.class.getPackage().getName());
-		applicationContext.refresh();
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(DataSourceConfigurationImplement.class);
        
-		DataSource dataSource = applicationContext.getBean(DataSource.class);
+		DataSource dataSource = applicationContext.getBean("dataSource", DataSource.class);
 		Connection connection = null;
 		try {
 			connection = dataSource.getConnection();
+			// 測試是否能正常連線。
 			Assert.assertFalse(connection.isClosed());
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			DbUtils.closeQuietly(connection);

@@ -58,6 +58,7 @@
  */]
 [template private templateOperationAnnotationSection(anOperation : Operation)]
 @Test
+@Override
 [/template]
 
 [**
