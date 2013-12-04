@@ -20,7 +20,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <fileUrl xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateClassifierFileNameWithFolderAndExtension"/>
+          <definition href="template/templateClassifier.emtl#/0/templateClassifierFileNameWithFolderAndExtension"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/generateInterfaceJava/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>

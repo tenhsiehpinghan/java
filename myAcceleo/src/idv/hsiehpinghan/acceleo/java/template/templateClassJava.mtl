@@ -136,6 +136,8 @@
 [aClass.templateClassEnableTransactionManagementScanAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::PropertySource')]
 [aClass.templateClassPropertySourceAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Import')]
+[aClass.templateClassImportAnnotation(aStereotype) /]
 	[else]
 ERROR
 	[/if]
@@ -155,7 +157,7 @@ ERROR
  * @param aClass, aStereotype
  */]
 [template private templateClassConfigurationAnnotation(aClass : Class)]
-@Configuration
+@Configuration("[aClass.templateClassifierFullName() /]")
 [/template]
 
 [**
@@ -186,6 +188,18 @@ ERROR
 @PropertySource({
 [for (aString : String | aClass.getValue(aStereotype, 'value')) separator (',')]
 	"[aString /]"
+[/for]
+})
+[/template]
+
+[**
+ * 產生class的importtAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassImportAnnotation(aClass : Class, aStereotype : Stereotype)]
+@Import({
+[for (aClass : Class | aClass.getValue(aStereotype, 'value')) separator (',')]
+	"[aClass.templateClassifierFullName() /]"
 [/for]
 })
 [/template]

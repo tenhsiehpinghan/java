@@ -198,35 +198,39 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rSPbIFvFEeOYYaybW-fzNQ" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rSQCMFvFEeOYYaybW-fzNQ" key="showTitle" value="true"/>
       </eAnnotations>
-      <children xmi:type="notation:Shape" xmi:id="_tAH5QFvFEeOYYaybW-fzNQ" type="1023">
-        <children xmi:type="notation:DecorationNode" xmi:id="_tAIgUFvFEeOYYaybW-fzNQ" type="1046"/>
-        <children xmi:type="notation:BasicCompartment" xmi:id="_tAIgUVvFEeOYYaybW-fzNQ" type="1052">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tAJHYFvFEeOYYaybW-fzNQ" source="PapyrusCSSForceValue">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tAJucFvFEeOYYaybW-fzNQ" key="showTitle" value="true"/>
+      <children xmi:type="notation:Shape" xmi:id="_hzNUAFy5EeOl8_Q9WuMAbw" type="1023">
+        <children xmi:type="notation:DecorationNode" xmi:id="_hzN7EFy5EeOl8_Q9WuMAbw" type="1046"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_hzOiIFy5EeOl8_Q9WuMAbw" type="1052">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hzPJMFy5EeOl8_Q9WuMAbw" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hzPJMVy5EeOl8_Q9WuMAbw" key="showTitle" value="true"/>
           </eAnnotations>
-          <styles xmi:type="notation:TitleStyle" xmi:id="_tAIgUlvFEeOYYaybW-fzNQ"/>
-          <styles xmi:type="notation:SortingStyle" xmi:id="_tAIgU1vFEeOYYaybW-fzNQ"/>
-          <styles xmi:type="notation:FilteringStyle" xmi:id="_tAIgVFvFEeOYYaybW-fzNQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tAIgVVvFEeOYYaybW-fzNQ"/>
+          <children xmi:type="notation:Shape" xmi:id="_uyNhEFy5EeOl8_Q9WuMAbw" type="3002">
+            <element xmi:type="uml:Property" href="spring.profile.uml#_uxERkFy5EeOl8_Q9WuMAbw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uyNhEVy5EeOl8_Q9WuMAbw"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_hzOiIVy5EeOl8_Q9WuMAbw"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_hzOiIly5EeOl8_Q9WuMAbw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_hzOiI1y5EeOl8_Q9WuMAbw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hzOiJFy5EeOl8_Q9WuMAbw"/>
         </children>
-        <children xmi:type="notation:BasicCompartment" xmi:id="_tAIgVlvFEeOYYaybW-fzNQ" visible="false" type="1053">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tALjoFvFEeOYYaybW-fzNQ" source="PapyrusCSSForceValue">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tALjoVvFEeOYYaybW-fzNQ" key="showTitle" value="true"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_hzOiJVy5EeOl8_Q9WuMAbw" visible="false" type="1053">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hzRlcFy5EeOl8_Q9WuMAbw" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hzRlcVy5EeOl8_Q9WuMAbw" key="showTitle" value="true"/>
           </eAnnotations>
-          <styles xmi:type="notation:TitleStyle" xmi:id="_tAIgV1vFEeOYYaybW-fzNQ"/>
-          <styles xmi:type="notation:SortingStyle" xmi:id="_tAIgWFvFEeOYYaybW-fzNQ"/>
-          <styles xmi:type="notation:FilteringStyle" xmi:id="_tAIgWVvFEeOYYaybW-fzNQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tAIgWlvFEeOYYaybW-fzNQ"/>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_hzOiJly5EeOl8_Q9WuMAbw"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_hzOiJ1y5EeOl8_Q9WuMAbw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_hzOiKFy5EeOl8_Q9WuMAbw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hzOiKVy5EeOl8_Q9WuMAbw"/>
         </children>
-        <children xmi:type="notation:BasicCompartment" xmi:id="_tAWiwFvFEeOYYaybW-fzNQ" visible="false" type="compartment_shape_display">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tAWiw1vFEeOYYaybW-fzNQ" source="PapyrusCSSForceValue">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tAXJ0FvFEeOYYaybW-fzNQ" key="mutable" value="true"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_hzgO8Fy5EeOl8_Q9WuMAbw" visible="false" type="compartment_shape_display">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hzgO81y5EeOl8_Q9WuMAbw" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hzgO9Fy5EeOl8_Q9WuMAbw" key="mutable" value="true"/>
           </eAnnotations>
-          <styles xmi:type="notation:TitleStyle" xmi:id="_tAWiwVvFEeOYYaybW-fzNQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tAWiwlvFEeOYYaybW-fzNQ"/>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_hzgO8Vy5EeOl8_Q9WuMAbw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hzgO8ly5EeOl8_Q9WuMAbw"/>
         </children>
-        <element xmi:type="uml:Stereotype" href="spring.profile.uml#_s_5PwFvFEeOYYaybW-fzNQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tAH5QVvFEeOYYaybW-fzNQ" x="108" y="46"/>
+        <element xmi:type="uml:Stereotype" href="spring.profile.uml#_hzEKEFy5EeOl8_Q9WuMAbw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hzNUAVy5EeOl8_Q9WuMAbw" x="106" y="39"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_rSO0ElvFEeOYYaybW-fzNQ"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rSO0E1vFEeOYYaybW-fzNQ"/>
@@ -243,9 +247,9 @@
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_Rm4zgUVZEeOJQ7MMJvWMaA"/>
   <element xmi:type="uml:Profile" href="spring.profile.uml#_Dwz0gEVZEeOJQ7MMJvWMaA"/>
-  <edges xmi:type="notation:Connector" xmi:id="_1zfzYFvFEeOYYaybW-fzNQ" type="1013" source="_tAH5QFvFEeOYYaybW-fzNQ" target="_sOP3MEVaEeOJQ7MMJvWMaA">
-    <styles xmi:type="notation:FontStyle" xmi:id="_1zfzYVvFEeOYYaybW-fzNQ"/>
-    <element xmi:type="uml:Extension" href="spring.profile.uml#_1zbh8VvFEeOYYaybW-fzNQ"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1zfzYlvFEeOYYaybW-fzNQ" points="[50, -6, -292, 28]$[292, -33, -50, 1]"/>
+  <edges xmi:type="notation:Connector" xmi:id="_jvqZoFy5EeOl8_Q9WuMAbw" type="1013" source="_hzNUAFy5EeOl8_Q9WuMAbw" target="_hwKuxkVaEeOJQ7MMJvWMaA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jvqZoVy5EeOl8_Q9WuMAbw"/>
+    <element xmi:type="uml:Extension" href="spring.profile.uml#_jvWQkFy5EeOl8_Q9WuMAbw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jvqZoly5EeOl8_Q9WuMAbw" points="[-50, -17, 186, 50]$[-186, -70, 50, -3]"/>
   </edges>
 </notation:Diagram>

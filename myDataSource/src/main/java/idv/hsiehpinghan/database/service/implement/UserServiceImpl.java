@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 
-@Service("aa")
+@Service("aabbcczz")
 @Transactional
 public class UserServiceImpl implements UserService {
 	@Resource

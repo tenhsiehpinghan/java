@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="905" started-at="2013-12-03T07:10:26Z" finished-at="2013-12-03T07:10:27Z">
+  <suite name="Default suite" duration-ms="836" started-at="2013-12-03T14:44:25Z" finished-at="2013-12-03T14:44:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="905" started-at="2013-12-03T07:10:26Z" finished-at="2013-12-03T07:10:27Z">
+    <test name="Default test" duration-ms="836" started-at="2013-12-03T14:44:25Z" finished-at="2013-12-03T14:44:25Z">
       <class name="idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test">
-        <test-method status="PASS" signature="dataSource()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="dataSource" duration-ms="890" started-at="2013-12-03T15:10:26Z" finished-at="2013-12-03T15:10:27Z">
+        <test-method status="PASS" signature="dataSource()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="dataSource" duration-ms="823" started-at="2013-12-03T22:44:25Z" finished-at="2013-12-03T22:44:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataSource -->
-        <test-method status="PASS" signature="setEnvironment_Environment()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="setEnvironment_Environment" duration-ms="1" started-at="2013-12-03T15:10:27Z" finished-at="2013-12-03T15:10:27Z">
+        <test-method status="PASS" signature="setEnvironment_Environment()[pri:0, instance:idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement_Test@4426a725]" name="setEnvironment_Environment" duration-ms="1" started-at="2013-12-03T22:44:25Z" finished-at="2013-12-03T22:44:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment_Environment -->

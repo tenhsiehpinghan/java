@@ -19,9 +19,9 @@ public class Main {
 //        applicationContext.scan(DataSourceConfiguration.class.getPackage().getName());
 //        applicationContext.refresh();
          
-        UserService userService =applicationContext.getBean("aa", UserServiceImpl.class);
+        UserService userService =applicationContext.getBean("aabbcczz", UserService.class);
         User user = new User();
-        user.setPersonalId("personalId");
+        user.setPersonalId("personalId_5");
         user.setEmail("email");
         user.setMobilePhoneNumber("mobilePhoneNumber");
         user.setPassword("password");

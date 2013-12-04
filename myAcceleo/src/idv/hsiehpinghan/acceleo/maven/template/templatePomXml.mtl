@@ -29,8 +29,10 @@
 		<spring.version>[queryProperty('spring', 'version') /].RELEASE</spring.version>
 		<commons-io.version>2.4</commons-io.version>
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
-		<commons-dbutils.version>1.5</commons-dbutils.version>
 		[templateDatabaseDriverClassVersion() /]
+		<hibernate-entitymanager.version>4.2.7.Final</hibernate-entitymanager.version>
+		<spring-data-jpa.version>1.4.2.RELEASE</spring-data-jpa.version>
+		<commons-dbutils.version>1.5</commons-dbutils.version>
 [/if]
 	</properties>
 	<dependencies>
@@ -56,6 +58,22 @@
 		</dependency>
 
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+[templateDatabaseDriverClassDependency() /]
+[templateDataSourceDependency() /]
+		<!-- hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-entitymanager.version}</version>
+		</dependency>
+
+		<!-- spring-data-jpa -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${spring-data-jpa.version}</version>
+		</dependency>
+
 		<!-- commons-dbutils -->
 		<dependency>
 			<groupId>commons-dbutils</groupId>
@@ -63,8 +81,6 @@
 			<version>${commons-dbutils.version}</version>
 		</dependency>
 
-[templateDatabaseDriverClassDependency() /]
-[templateDataSourceDependency() /]
 [/if]
 	</dependencies>
 	<build>

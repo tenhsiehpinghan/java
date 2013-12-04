@@ -19,6 +19,11 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_7nRf8FlAEeOEmdV00u7thw" name="Environment"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jBpSgFy4EeOl8_Q9WuMAbw" name="orm">
+        <packagedElement xmi:type="uml:Package" xmi:id="_j6GkgFy4EeOl8_Q9WuMAbw" name="jpa">
+          <packagedElement xmi:type="uml:Class" xmi:id="_lpVGcFy4EeOl8_Q9WuMAbw" name="LocalContainerEntityManagerFactoryBean"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_tpZ90FTVEeODIvpCmSWK3Q" name="void"/>

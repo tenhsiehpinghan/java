@@ -20,9 +20,9 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 /**
  * 實作DataSourceConfiguration interface的class。
  */
-@Configuration
+@Configuration("idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement")
 @PropertySource({
-	"test.properties"
+	"dataSource.properties"
 })
 public class DataSourceConfigurationImplement implements DataSourceConfiguration  {
 	/**
@@ -51,10 +51,10 @@ public class DataSourceConfigurationImplement implements DataSourceConfiguration
 	@Override
 	@Bean
 	public DataSource dataSource() throws PropertyVetoException {
-		String driverClass = environment.getProperty("myDriverClass");
-		String jdbcUrl = environment.getProperty("myJdbcUrl");
-		String user = environment.getProperty("myUser");
-		String password = environment.getProperty("myPassword");
+		String driverClass = environment.getProperty("mssql.driverClass");
+		String jdbcUrl = environment.getProperty("mssql.jdbcUrl");
+		String user = environment.getProperty("mssql.user");
+		String password = environment.getProperty("mssql.password");
 		
 		ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
 		comboPooledDataSource.setDriverClass(driverClass);

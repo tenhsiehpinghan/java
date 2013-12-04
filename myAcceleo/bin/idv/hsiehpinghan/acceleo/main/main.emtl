@@ -7,12 +7,12 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/maven/generateMavenFiles.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/web/generateWebFiles.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/spring/generateSpringFiles.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/generateJavaFiles.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestngFiles.emtl#/0"/>
+    <imports href="../utility/propertyUtility.emtl#/0"/>
+    <imports href="../maven/generateMavenFiles.emtl#/0"/>
+    <imports href="../web/generateWebFiles.emtl#/0"/>
+    <imports href="../spring/generateSpringFiles.emtl#/0"/>
+    <imports href="../java/generateJavaFiles.emtl#/0"/>
+    <imports href="../testng/generateTestngFiles.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="main_test" visibility="Public">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
@@ -65,7 +65,7 @@
     <ownedModuleElement xsi:type="mtl:Template" name="main" visibility="Public" main="true">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/maven/generateMavenFiles.emtl#/0/generateMavenFiles"/>
+        <definition href="../maven/generateMavenFiles.emtl#/0/generateMavenFiles"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/17">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
         </argument>
@@ -75,7 +75,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/web/generateWebFiles.emtl#/0/generateWebFiles"/>
+          <definition href="../web/generateWebFiles.emtl#/0/generateWebFiles"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/19">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
           </argument>
@@ -85,7 +85,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="mtl:QueryInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <definition href="../utility/propertyUtility.emtl#/0/queryProperty"/>
             <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="main">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             </argument>
@@ -101,7 +101,7 @@
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/spring/generateSpringFiles.emtl#/0/generateSpringFiles"/>
+        <definition href="../spring/generateSpringFiles.emtl#/0/generateSpringFiles"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/20">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
         </argument>
@@ -109,7 +109,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/generateJavaFiles.emtl#/0/generateJavaFiles"/>
+        <definition href="../java/generateJavaFiles.emtl#/0/generateJavaFiles"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aModel" referredVariable="/0/main/aModel">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
         </argument>
@@ -119,7 +119,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestngFiles.emtl#/0/generateTestngFiles"/>
+          <definition href="../testng/generateTestngFiles.emtl#/0/generateTestngFiles"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aModel" referredVariable="/0/main/aModel">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
           </argument>
@@ -129,7 +129,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="mtl:QueryInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+            <definition href="../utility/propertyUtility.emtl#/0/queryProperty"/>
             <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="main">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             </argument>
@@ -204,7 +204,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0/queryProperty"/>
+          <references href="../utility/propertyUtility.emtl#/0/queryProperty"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="propertiesFileName">
@@ -219,7 +219,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/maven/generateMavenFiles.emtl#/0/generateMavenFiles"/>
+          <references href="../maven/generateMavenFiles.emtl#/0/generateMavenFiles"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOclAny">
@@ -231,7 +231,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/web/generateWebFiles.emtl#/0/generateWebFiles"/>
+          <references href="../web/generateWebFiles.emtl#/0/generateWebFiles"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOclAny">
@@ -243,7 +243,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/spring/generateSpringFiles.emtl#/0/generateSpringFiles"/>
+          <references href="../spring/generateSpringFiles.emtl#/0/generateSpringFiles"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOclAny">
@@ -255,7 +255,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/generateJavaFiles.emtl#/0/generateJavaFiles"/>
+          <references href="../java/generateJavaFiles.emtl#/0/generateJavaFiles"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aModel">
@@ -267,7 +267,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestngFiles.emtl#/0/generateTestngFiles"/>
+          <references href="../testng/generateTestngFiles.emtl#/0/generateTestngFiles"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aModel">

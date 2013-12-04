@@ -24,18 +24,18 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 
+
+import javax.annotation.Resource;
 //import javax.inject.Inject;
 import javax.persistence.EntityManagerFactory;
  
  
 @Configuration
-@EnableTransactionManagement
 @Import( { DataSourceConfigurationImplement.class })
 @ComponentScan(basePackages={"idv.hsiehpinghan.database.service.implement"})
-@EnableJpaRepositories("idv.hsiehpinghan.database.repository")
+@EnableTransactionManagement
+@EnableJpaRepositories(basePackages = {"idv.hsiehpinghan.database.repository"})
 public class JpaConfiguration {
- 
-    @Autowired
     private DataSourceConfiguration dataSourceConfiguration;
 
     @Bean
@@ -57,5 +57,10 @@ public class JpaConfiguration {
     public JpaTransactionManager transactionManager() throws Exception {
         EntityManagerFactory entityManagerFactory = entityManagerFactory().getObject();
         return new JpaTransactionManager(entityManagerFactory);
-    }   
+    } 
+    
+    @Resource(name = "idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement")
+    public void setDataSourceConfiguration(DataSourceConfiguration dataSourceConfiguration) {
+    	this.dataSourceConfiguration = dataSourceConfiguration;
+    }
 }

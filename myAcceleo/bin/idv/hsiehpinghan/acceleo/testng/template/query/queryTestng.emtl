@@ -7,7 +7,7 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <extends href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0"/>
+    <extends href="../../../java/template/query/queryClassifier.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="214" endPosition="274" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
@@ -23,14 +23,14 @@
       </parameter>
       <expression xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/3/Sequence(String)">
         <source xsi:type="mtl:QueryInvocation" eType="/3/OrderedSet(Parameter)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryParameters"/>
+          <definition href="../../../java/template/query/queryClassifier.emtl#/0/queryParameters"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/queryOperatonTypeNames/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
           </argument>
         </source>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryTypeName"/>
+          <definition href="../../../java/template/query/queryClassifier.emtl#/0/queryTypeName"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/queryOperatonTypeNames/collect/temp1">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
           </argument>
@@ -81,7 +81,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryTypeName"/>
+          <references href="../../../java/template/query/queryClassifier.emtl#/0/queryTypeName"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aTypedElement">
@@ -93,9 +93,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryParameters"/>
+          <references href="../../../java/template/query/queryClassifier.emtl#/0/queryParameters"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:OrderedSetType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/3/OrderedSet(Parameter)"/>
+        <eType xsi:type="ocl.ecore:OrderedSetType" href="../../../java/template/query/queryClassifier.emtl#/3/OrderedSet(Parameter)"/>
         <eParameters name="anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </eParameters>
@@ -178,7 +178,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Set(Classifier)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/3/Set(Classifier)"/>
+        <references href="../../../java/template/query/queryClassifier.emtl#/3/Set(Classifier)"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>

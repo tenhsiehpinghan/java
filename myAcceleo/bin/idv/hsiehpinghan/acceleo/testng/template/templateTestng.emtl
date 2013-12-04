@@ -4,15 +4,15 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/utility/propertyUtility.emtl#/0"/>
-    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/template/query/queryTestng.emtl#/0"/>
+    <imports href="../../utility/propertyUtility.emtl#/0"/>
+    <imports href="query/queryTestng.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="251" endPosition="311" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateTestInterfaceInterfaceName" visibility="Public">
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
+        <definition href="../../java/template/query/queryClassifier.emtl#/0/queryName"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/templateTestInterfaceInterfaceName/aClass">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
         </argument>
@@ -44,7 +44,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/12/Sequence(String)">
-          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/template/query/queryTestng.emtl#/0/queryOperatonTypeNames"/>
+          <definition href="query/queryTestng.emtl#/0/queryOperatonTypeNames"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationParametersSeparatedString/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
           </argument>
@@ -122,9 +122,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/template/query/queryTestng.emtl#/0/queryOperatonTypeNames"/>
+          <references href="query/queryTestng.emtl#/0/queryOperatonTypeNames"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SequenceType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/template/query/queryTestng.emtl#/3/Sequence(String)"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="query/queryTestng.emtl#/3/Sequence(String)"/>
         <eParameters name="anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </eParameters>
