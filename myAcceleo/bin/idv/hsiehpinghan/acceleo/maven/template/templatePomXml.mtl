@@ -29,8 +29,11 @@
 		<spring.version>[queryProperty('spring', 'version') /].RELEASE</spring.version>
 		<commons-io.version>2.4</commons-io.version>
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
-		<commons-dbutils.version>1.5</commons-dbutils.version>
+		<c3p0.version>[queryProperty('database', 'dataSourceType.version') /]</c3p0.version>
 		[templateDatabaseDriverClassVersion() /]
+		<hibernate-entitymanager.version>4.2.7.Final</hibernate-entitymanager.version>
+		<spring-data-jpa.version>1.4.2.RELEASE</spring-data-jpa.version>
+		<commons-dbutils.version>1.5</commons-dbutils.version>
 [/if]
 	</properties>
 	<dependencies>
@@ -56,6 +59,22 @@
 		</dependency>
 
 [if (queryProperty('database', 'isDatabaseActive') = 'Y')]
+[templateDatabaseDriverClassDependency() /]
+[templateDataSourceDependency() /]
+		<!-- hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-entitymanager.version}</version>
+		</dependency>
+
+		<!-- spring-data-jpa -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${spring-data-jpa.version}</version>
+		</dependency>
+
 		<!-- commons-dbutils -->
 		<dependency>
 			<groupId>commons-dbutils</groupId>
@@ -63,8 +82,6 @@
 			<version>${commons-dbutils.version}</version>
 		</dependency>
 
-[templateDatabaseDriverClassDependency() /]
-[templateDataSourceDependency() /]
 [/if]
 	</dependencies>
 	<build>
@@ -111,11 +128,11 @@
  */]
 [template private templateDataSourceDependency(anOclAny : OclAny)]
 	[if (queryProperty('database', 'dataSourceType') = 'c3p0')]
-		<!-- C3p0 -->
+		<!-- c3p0 -->
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
-			<version>[queryProperty('database', 'dataSourceType.version') /]</version>
+			<version>${c3p0.version}</version>
 		</dependency>
 	[else]
 		ERROR

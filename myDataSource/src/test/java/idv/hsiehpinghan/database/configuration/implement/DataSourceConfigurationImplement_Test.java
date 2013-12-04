@@ -66,7 +66,17 @@ public class DataSourceConfigurationImplement_Test implements DataSourceConfigur
 		// TODO : need be to implemented
 	}
 
-	/***********************
+	/**
+   *
+   * @generated NOT
+   */
+  @Test
+  @Override
+  public void Operation1() {
+    // TODO : need be to implemented
+  }
+
+  /***********************
 	 * Implemented methods *
 	 **********************/
 	/**

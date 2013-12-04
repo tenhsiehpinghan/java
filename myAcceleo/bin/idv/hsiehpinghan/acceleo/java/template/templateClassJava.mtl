@@ -85,6 +85,9 @@
  * @param aClass
  */]
 [template private templateOperationsSection(aClass : Class)]
+	/**************
+	 * operations *
+	 **************/
 [for (anOperation : Operation | aClass.queryOperations())]
 	[anOperation.templateOperationJavadocSection() /]
 	[if (anOperation.getAppliedStereotypes()->isEmpty() = false)]
@@ -93,9 +96,9 @@
 	[if (aClass.queryName() = anOperation.queryName())][anOperation.templateOperationSectionWithoutTypeName() /][else][anOperation.templateOperationSection() /][/if] [anOperation.templateOperationBodySection() /]
 [/for]
 
-	/***********************
-	 * Implemented methods *
-	 ***********************/
+	/**************************
+	 * Implemented operations *
+	 **************************/
 [for (anOperation : Operation | aClass.queryClassImplementsOperations())]
 	/**
 	 * @generated NOT
@@ -138,6 +141,8 @@
 [aClass.templateClassPropertySourceAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Import')]
 [aClass.templateClassImportAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::data::jpa::repository::config::EnableJpaRepositories')]
+[aClass.templateClassEnableJpaRepositoriesAnnotation(aStereotype) /]
 	[else]
 ERROR
 	[/if]
@@ -199,7 +204,19 @@ ERROR
 [template private templateClassImportAnnotation(aClass : Class, aStereotype : Stereotype)]
 @Import({
 [for (aClass : Class | aClass.getValue(aStereotype, 'value')) separator (',')]
-	"[aClass.templateClassifierFullName() /]"
+	[aClass.queryName() /].class
+[/for]
+})
+[/template]
+
+[**
+ * 產生class的enableJpaRepositoriesAnnotation。
+ * @param aClass, aStereotype
+ */]
+[template private templateClassEnableJpaRepositoriesAnnotation(aClass : Class, aStereotype : Stereotype)]
+@EnableJpaRepositories(basePackages = {
+[for (aPackage : Package | aClass.getValue(aStereotype, 'basePackages')) separator (',')]
+	"[aPackage.templatePackageFullName() /]"
 [/for]
 })
 [/template]
