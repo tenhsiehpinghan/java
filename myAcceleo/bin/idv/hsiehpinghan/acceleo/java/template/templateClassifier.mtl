@@ -114,7 +114,7 @@
  * @param anOperation
  */]
 [template protected templateOperationSectionWithoutModifiers(anOperation : Operation)]
-[anOperation.queryTypeName() /] [anOperation.templateOperationSectionWithoutModifiersAndTypeName() /]
+[anOperation.templateReturnParameterSection() /] [anOperation.templateOperationSectionWithoutModifiersAndTypeName() /]
 [/template]
 
 [**
@@ -238,5 +238,36 @@ import [aClassifier.templateClassifierFullName() /];
 [/if]
 [/template]
 
+[**
+ * 產生returnParameterSection。
+ * @param anOperation
+ */]
+[template private templateReturnParameterSection(anOperation : Operation) post(self.trim())]
+[for (aParameter : Parameter | anOperation.queryReturnParameters())]
+	[if (aParameter.getAppliedStereotypes()->isEmpty() = false)][aParameter.templateParameterGenericsOrAnnotationSection() /] [/if][anOperation.queryTypeName() /]
+[/for]
+[/template]
+
+[**
+ * 產生parameter的genericsOrAnnotationSection。
+ * @param aParameter
+ */]
+[template private templateParameterGenericsOrAnnotationSection(aParameter : Parameter) post (self.trim())]
+[for (aStereotype : Stereotype | aParameter.getAppliedStereotypes())]
+	[if (aStereotype.queryQualifiedName() = 'idv::hsiehpinghan::Generics')]
+[aParameter.templateParameterGenerics(aStereotype) /]
+	[else]
+ERROR
+	[/if]
+[/for]
+[/template]
+
+[**
+ * 產生parameter的generics。
+ * @param aParameter, aStereotype
+ */]
+[template private templateParameterGenerics(aParameter : Parameter, aStereotype : Stereotype)]
+[for (aClassifier : Classifier | aParameter.getValue(aStereotype, 'extends')) before ('<') separator (', ') after ('>')][aClassifier.queryName() /]Extends extends [aClassifier.queryName() /][/for]
+[/template]
 
 

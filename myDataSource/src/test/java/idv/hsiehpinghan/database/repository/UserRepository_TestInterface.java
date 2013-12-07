@@ -1,6 +1,6 @@
 package idv.hsiehpinghan.database.repository;
 
-public interface Class1_TestInterface {
+public interface UserRepository_TestInterface {
 
 	/***********************
 	 * Implemented methods *

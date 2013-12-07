@@ -1,9 +1,18 @@
 package idv.hsiehpinghan.database.repository;
 
-import idv.hsiehpinghan.database.model.User;
+// Start of user code for import section
+// End of user code
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Component;
+/**
+ */
+public class UserRepository {
 
-public interface UserRepository extends CrudRepository<User, String> {
+	/**************
+	 * operations *
+	 **************/
+
+	/**************************
+	 * Implemented operations *
+	 **************************/
+
 }

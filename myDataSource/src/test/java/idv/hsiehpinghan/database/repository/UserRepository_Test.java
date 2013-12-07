@@ -4,11 +4,11 @@ package idv.hsiehpinghan.database.repository;
 import org.testng.annotations.Test;
 // End of user code
 
-public class Class1_Test implements Class1_TestInterface {
+public class UserRepository_Test implements UserRepository_TestInterface {
 	/**
 	 * @generated NOT
 	 */
-	private Class1 class1 = new Class1();
+	private UserRepository userRepository = new UserRepository();
 
 //	/**
 //	 * @generated NOT

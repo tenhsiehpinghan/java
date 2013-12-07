@@ -11,20 +11,48 @@
 [import idv::hsiehpinghan::acceleo::spring::generateSpringFiles /]
 [import idv::hsiehpinghan::acceleo::java::generateJavaFiles /]
 [import idv::hsiehpinghan::acceleo::testng::generateTestngFiles /]
+[import idv::hsiehpinghan::acceleo::java::template::query::queryClassifier /]
 
 [**
  * 程式進入點。
  * @param aModel
  */]
-[template public main_test(aClass : Class) ? (aClass.name = 'DataSourceConfigurationImplement')]
+[template public main_test(aClassifier : Classifier) ? (aClassifier.name = 'UserService')]
 
 [file ('test.txt', false, 'UTF-8')]
-zz
-	[aClass.getApplicableStereotypes() /]
+	[aClassifier.name /]
+aa
+[comment][for (aParameter : Parameter | aClassifier.queryOperations().ownedParameter)]
+	[aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends') /]
+[/for][/comment]
+	[aClassifier.queryOperations().ownedParameter /]
 bb
-	[aClass.getAppliedStereotypes() /]
+	[aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()) /]
+cc
+	[aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()).queryParameterGenericsClassifier() /]
+	[comment][for (aParameter : Parameter | aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()))]
+		[aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends') /]
+	[/for][/comment]
+
+dd
+[comment]	[aClassifier.queryOperations().ownedParameter.getValue(getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends')->filter(Classifier) /][/comment]
+[comment]	[aClassifier.queryOperations().ownedParameter->filter(Classifier)->asSet() /][/comment]
+
+[comment]zz
+	[aParameter.getApplicableStereotypes() /]
+bb
+	[aParameter.getAppliedStereotypes() /][/comment]
 [/file]
 [/template]
+
+[**
+ * 取得某個parameter的generics使用了那些classifier。
+ * @param aClassifier
+ */]
+[query private queryParameterGenericsClassifier(aParameter : Parameter) : Set(Classifier) = 
+	aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends')
+/]
+
 
 
 [template public main(aModel : Model) ? (aModel.owner.oclIsUndefined())]

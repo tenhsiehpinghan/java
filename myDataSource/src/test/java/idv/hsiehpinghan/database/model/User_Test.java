@@ -1,14 +1,14 @@
-package idv.hsiehpinghan.database.configuration.implement;
+package idv.hsiehpinghan.database.model;
 
 // Start of user code for import section
 import org.testng.annotations.Test;
 // End of user code
 
-public class DataSourceConfigurationImplement_Test implements DataSourceConfigurationImplement_TestInterface {
+public class User_Test implements User_TestInterface {
 	/**
 	 * @generated NOT
 	 */
-	private DataSourceConfigurationImplement dataSourceConfigurationImplement = new DataSourceConfigurationImplement();
+	private User user = new User();
 
 //	/**
 //	 * @generated NOT
@@ -46,29 +46,10 @@ public class DataSourceConfigurationImplement_Test implements DataSourceConfigur
 //	public void beforeMethod() {
 //	}
 
-	/**
-	 *
-	 * @generated NOT
-	 */
-	@Test
-	@Override
-	public void setEnvironment_Environment() {
-		// TODO : need be to implemented
-	}
 
 	/***********************
 	 * Implemented methods *
 	 **********************/
-	/**
-	 * 取得dataSource的operation。
-	 *
-	 * @generated NOT
-	 */
-	@Test
-	@Override
-	public void dataSource() {
-		// TODO : need be to implemented
-	}
 
 
 //	/**

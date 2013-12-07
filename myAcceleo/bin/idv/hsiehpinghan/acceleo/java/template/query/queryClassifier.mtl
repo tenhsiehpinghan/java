@@ -110,6 +110,14 @@
 /]
 
 [**
+ * 取得某個operation的return parameter是什麼。
+ * @param anOperation
+ */]
+[query public queryReturnParameters(anOperation : Operation) : OrderedSet(Parameter) = 
+	anOperation.ownedParameter->select(aParameter : Parameter | aParameter.direction = ParameterDirectionKind::return)
+/]
+
+[**
  * 取得某個operation有那些parameter。
  * @param anOperation
  */]
@@ -204,6 +212,7 @@
 	->addAll(aClassifier.queryOperationsParametersClassifiers())
 	->addAll(aClassifier.queryOperationsParametersClassifiers().queryRedefinedClassifier())
 	->addAll(aClassifier.queryOperationsParametersClassifiers().queryParameterSubstitution())
+	->addAll(aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()).queryParameterGenericsClassifier())
 /]
 
 [**
@@ -253,4 +262,12 @@
 [query private queryUsedClassifiersInDifferentPackages(aClassifier : Classifier) : Set(Classifier) = 
 	aClassifier.queryUsedClassifiers()
 	->reject(aUsedClassifier : Classifier | aClassifier.queryPackage() = aUsedClassifier.queryPackage())
+/]
+
+[**
+ * 取得某個parameter的generics使用了那些classifier。
+ * @param aClassifier
+ */]
+[query private queryParameterGenericsClassifier(aParameter : Parameter) : Set(Classifier) = 
+	aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends')
 /]

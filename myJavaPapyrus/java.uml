@@ -11,8 +11,20 @@
       <packagedElement xmi:type="uml:Interface" xmi:id="_9CLGsDo-EeOc5JJV1BgsAQ" name="Cloneable">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1Md4UE9_EeOaH-j49z2GKg" name="B"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="__E82wDo-EeOc5JJV1BgsAQ" name="Comparable"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_BNB9kDo_EeOc5JJV1BgsAQ" name="Iterable"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="__E82wDo-EeOc5JJV1BgsAQ" name="Comparable">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_XdLm4F7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_aoRp4F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_aoRp4F7TEeOJ9-d_Ri6rxQ" parameteredElement="_gfriIF7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_gfriIF7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_aoRp4F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_BNB9kDo_EeOc5JJV1BgsAQ" name="Iterable">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_XyPQ4F7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_bHPd0F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_bHPd0F7TEeOJ9-d_Ri6rxQ" parameteredElement="_hdnKAF7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_hdnKAF7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_bHPd0F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_CZHWMDo_EeOc5JJV1BgsAQ" name="Readable"/>
       <packagedElement xmi:type="uml:Interface" xmi:id="_GJDysDo_EeOc5JJV1BgsAQ" name="Runnable"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_OgU_oDo_EeOc5JJV1BgsAQ" name="Boolean"/>
@@ -22,14 +34,38 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_8XhuwDpgEeOEEZAkIA9aBQ" name="UnicodeBlock"/>
         <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_t_fcwDphEeOEEZAkIA9aBQ" name="UnicodeScript"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UHcZIDo_EeOc5JJV1BgsAQ" name="Class"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UHcZIDo_EeOc5JJV1BgsAQ" name="Class">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YVfH4F7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_bho60F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_bho60F7TEeOJ9-d_Ri6rxQ" parameteredElement="_jEu40F7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jEu40F7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_bho60F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VNc-8Do_EeOc5JJV1BgsAQ" name="ClassLoader"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_WY3CIDo_EeOc5JJV1BgsAQ" name="ClassValue"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WY3CIDo_EeOc5JJV1BgsAQ" name="ClassValue">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_YtSj4F7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_cMEX4F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_cMEX4F7TEeOJ9-d_Ri6rxQ" parameteredElement="_mHJg8F7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mHJg8F7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_cMEX4F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_XhCLIDo_EeOc5JJV1BgsAQ" name="Compiler"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_YsfRoDo_EeOc5JJV1BgsAQ" name="Double"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_anx5oDo_EeOc5JJV1BgsAQ" name="Enum"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_anx5oDo_EeOc5JJV1BgsAQ" name="Enum">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ZAvrYF7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_c4A34F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_c4A34F7TEeOJ9-d_Ri6rxQ" parameteredElement="_o_yiAF7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_o_yiAF7TEeOJ9-d_Ri6rxQ" name="E" templateParameter="_c4A34F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_b-cKkDo_EeOc5JJV1BgsAQ" name="Float"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Sn6noDphEeOEEZAkIA9aBQ" name="InheritableThreadLocal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Sn6noDphEeOEEZAkIA9aBQ" name="InheritableThreadLocal">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_Zpj-4F7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_dhWv0F7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_dhWv0F7TEeOJ9-d_Ri6rxQ" parameteredElement="_p8aiUF7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_p8aiUF7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_dhWv0F7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ff0moDo_EeOc5JJV1BgsAQ" name="Integer"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_g18sEDo_EeOc5JJV1BgsAQ" name="Long"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_iHSYIDo_EeOc5JJV1BgsAQ" name="Math"/>
@@ -57,7 +93,13 @@
         <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_z9KVEDphEeOEEZAkIA9aBQ" name="State"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_3_aiADo_EeOc5JJV1BgsAQ" name="ThreadGroup"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_5APs4Do_EeOc5JJV1BgsAQ" name="ThreadLocal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5APs4Do_EeOc5JJV1BgsAQ" name="ThreadLocal">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_aA45wF7TEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_eE1QUF7TEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eE1QUF7TEeOJ9-d_Ri6rxQ" parameteredElement="_rYoosF7TEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_rYoosF7TEeOJ9-d_Ri6rxQ" name="T" templateParameter="_eE1QUF7TEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_6HTbkDo_EeOc5JJV1BgsAQ" name="Throwable"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_7LgDgDo_EeOc5JJV1BgsAQ" name="Void"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_enam4DpeEeOEEZAkIA9aBQ" name="ArithmeticException"/>
@@ -171,15 +213,41 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_Csg8cDrFEeOrJYWW0tjQSQ" name="util">
       <packagedElement xmi:type="uml:Interface" xmi:id="_IY-I8DrFEeOrJYWW0tjQSQ" name="Collection">
         <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_vlW7UE9-EeOaH-j49z2GKg" name="RedefinableTemplateSignature1" parameter="_HFV-YE-AEeOaH-j49z2GKg">
-          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_HFV-YE-AEeOaH-j49z2GKg"/>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_HFV-YE-AEeOaH-j49z2GKg" parameteredElement="_q4wBAF7OEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_q4wBAF7OEeOJ9-d_Ri6rxQ" name="E" templateParameter="_HFV-YE-AEeOaH-j49z2GKg"/>
+          </ownedParameter>
         </ownedTemplateSignature>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_J8r-cDrFEeOrJYWW0tjQSQ" name="Comparator"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_KI-RgDrGEeOrJYWW0tjQSQ" name="Deque"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_MQKngDrGEeOrJYWW0tjQSQ" name="Enumeration"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_J8r-cDrFEeOrJYWW0tjQSQ" name="Comparator">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_42XLYF7OEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_6uDs0F7OEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_6uDs0F7OEeOJ9-d_Ri6rxQ" parameteredElement="_C4FH8F7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_C4FH8F7PEeOJ9-d_Ri6rxQ" name="T" templateParameter="_6uDs0F7OEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_KI-RgDrGEeOrJYWW0tjQSQ" name="Deque">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_KYF8wF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_LQUlQF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_LQUlQF7PEeOJ9-d_Ri6rxQ" parameteredElement="_NnkJcF7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_NnkJcF7PEeOJ9-d_Ri6rxQ" name="E" templateParameter="_LQUlQF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_MQKngDrGEeOrJYWW0tjQSQ" name="Enumeration">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_KsYxwF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_LtvhEF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_LtvhEF7PEeOJ9-d_Ri6rxQ" parameteredElement="_O-MlMF7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_O-MlMF7PEeOJ9-d_Ri6rxQ" name="E" templateParameter="_LtvhEF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_OAUWgDrGEeOrJYWW0tjQSQ" name="EventListener"/>
       <packagedElement xmi:type="uml:Interface" xmi:id="_PL6m8DrGEeOrJYWW0tjQSQ" name="Formattable"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_QSRLADrGEeOrJYWW0tjQSQ" name="Iterator"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_QSRLADrGEeOrJYWW0tjQSQ" name="Iterator">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_a_ZGMF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_d7cnoF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d7cnoF7PEeOJ9-d_Ri6rxQ" parameteredElement="_mTsE8F7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mTsE8F7PEeOJ9-d_Ri6rxQ" name="E" templateParameter="_d7cnoF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_JJWYAE6EEeOSO7xF-ZF34g" name="List">
         <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ls92sE96EeOaH-j49z2GKg" name="RedefinableTemplateSignature1" parameter="_8c2VsE9_EeOaH-j49z2GKg">
           <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8c2VsE9_EeOaH-j49z2GKg" parameteredElement="_F3LiIE-AEeOaH-j49z2GKg">
@@ -187,52 +255,269 @@
           </ownedParameter>
         </ownedTemplateSignature>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_TIZqoDrGEeOrJYWW0tjQSQ" name="ListIterator"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TIZqoDrGEeOrJYWW0tjQSQ" name="ListIterator">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_bQZWoF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_eRHVoF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eRHVoF7PEeOJ9-d_Ri6rxQ" parameteredElement="_obOZMF7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_obOZMF7PEeOJ9-d_Ri6rxQ" name="E" templateParameter="_eRHVoF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_UPToUDrGEeOrJYWW0tjQSQ" name="Map">
-        <nestedClassifier xmi:type="uml:Interface" xmi:id="_XDxUADrGEeOrJYWW0tjQSQ" name="Entry"/>
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_xdqqEF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_yNWakF7PEeOJ9-d_Ri6rxQ _0XHjcF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_yNWakF7PEeOJ9-d_Ri6rxQ" parameteredElement="_31K-sF7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_31K-sF7PEeOJ9-d_Ri6rxQ" name="K" templateParameter="_yNWakF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0XHjcF7PEeOJ9-d_Ri6rxQ" parameteredElement="_5Ei74F7PEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_5Ei74F7PEeOJ9-d_Ri6rxQ" name="V" templateParameter="_0XHjcF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_XDxUADrGEeOrJYWW0tjQSQ" name="Entry">
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_xt2bIF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_yq88kF7PEeOJ9-d_Ri6rxQ _1JuFEF7PEeOJ9-d_Ri6rxQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_yq88kF7PEeOJ9-d_Ri6rxQ" parameteredElement="_6Yq2MF7PEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_6Yq2MF7PEeOJ9-d_Ri6rxQ" name="K" templateParameter="_yq88kF7PEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_1JuFEF7PEeOJ9-d_Ri6rxQ" parameteredElement="_7c_Z8F7PEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_7c_Z8F7PEeOJ9-d_Ri6rxQ" name="V" templateParameter="_1JuFEF7PEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+        </nestedClassifier>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_bo0MgDrGEeOrJYWW0tjQSQ" name="NavigableMap"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_dYqZgDrGEeOrJYWW0tjQSQ" name="NavigableSet"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_bo0MgDrGEeOrJYWW0tjQSQ" name="NavigableMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_bhGsIF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_eoO1IF7PEeOJ9-d_Ri6rxQ __POVcF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eoO1IF7PEeOJ9-d_Ri6rxQ" parameteredElement="_Avt30F7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Avt30F7QEeOJ9-d_Ri6rxQ" name="K" templateParameter="_eoO1IF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="__POVcF7PEeOJ9-d_Ri6rxQ" parameteredElement="_CU8wQF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CU8wQF7QEeOJ9-d_Ri6rxQ" name="V" templateParameter="__POVcF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dYqZgDrGEeOrJYWW0tjQSQ" name="NavigableSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_bwImoF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_e_vWMF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_e_vWMF7PEeOJ9-d_Ri6rxQ" parameteredElement="_FKZTYF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_FKZTYF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_e_vWMF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_fGX4gDrGEeOrJYWW0tjQSQ" name="Observer"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_gRN7ADrGEeOrJYWW0tjQSQ" name="Queue"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_hlg0cDrGEeOrJYWW0tjQSQ" name="RandomAccess"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_iq36ADrGEeOrJYWW0tjQSQ" name="Set"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_jzZoUDrGEeOrJYWW0tjQSQ" name="SortedMap"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_lAo3gDrGEeOrJYWW0tjQSQ" name="SortedSet"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_n3vngDrGEeOrJYWW0tjQSQ" name="AbstractCollection"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_pEMMgDrGEeOrJYWW0tjQSQ" name="AbstractList"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_p_FugDrGEeOrJYWW0tjQSQ" name="AbstractMap">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_sLOO4DrGEeOrJYWW0tjQSQ" name="SimpleEntry"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_u3SMgDrGEeOrJYWW0tjQSQ" name="SimpleImmutableEntry"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_gRN7ADrGEeOrJYWW0tjQSQ" name="Queue">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_cJdsoF7PEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_fq5MAF7PEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_fq5MAF7PEeOJ9-d_Ri6rxQ" parameteredElement="_ISJugF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_ISJugF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_fq5MAF7PEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wdv0ADrGEeOrJYWW0tjQSQ" name="AbstractQueue"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_xYMqEDrGEeOrJYWW0tjQSQ" name="AbstractSequentialList"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_yRQZADrGEeOrJYWW0tjQSQ" name="AbstractSet"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zNOSADrGEeOrJYWW0tjQSQ" name="ArrayDeque"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_0NKFADrGEeOrJYWW0tjQSQ" name="ArrayList"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_hlg0cDrGEeOrJYWW0tjQSQ" name="RandomAccess"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_iq36ADrGEeOrJYWW0tjQSQ" name="Set">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_cWZf8F7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_fiPw4F7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_fiPw4F7QEeOJ9-d_Ri6rxQ" parameteredElement="_of8EoF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_of8EoF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_fiPw4F7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_jzZoUDrGEeOrJYWW0tjQSQ" name="SortedMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_criCcF7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_gAZFcF7QEeOJ9-d_Ri6rxQ _gg-C8F7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_gAZFcF7QEeOJ9-d_Ri6rxQ" parameteredElement="_p4Lp8F7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_p4Lp8F7QEeOJ9-d_Ri6rxQ" name="K" templateParameter="_gAZFcF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_gg-C8F7QEeOJ9-d_Ri6rxQ" parameteredElement="_rfRjkF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_rfRjkF7QEeOJ9-d_Ri6rxQ" name="V" templateParameter="_gg-C8F7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_lAo3gDrGEeOrJYWW0tjQSQ" name="SortedSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_c6tt8F7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_hF8YQF7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hF8YQF7QEeOJ9-d_Ri6rxQ" parameteredElement="_s1wOUF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_s1wOUF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_hF8YQF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_n3vngDrGEeOrJYWW0tjQSQ" name="AbstractCollection">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_diF3AF7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_hhSQcF7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_hhSQcF7QEeOJ9-d_Ri6rxQ" parameteredElement="_ui00IF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_ui00IF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_hhSQcF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pEMMgDrGEeOrJYWW0tjQSQ" name="AbstractList">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_dzB2AF7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_h8EH8F7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_h8EH8F7QEeOJ9-d_Ri6rxQ" parameteredElement="_vlvCoF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_vlvCoF7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_h8EH8F7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p_FugDrGEeOrJYWW0tjQSQ" name="AbstractMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eGPs8F7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_iVmpUF7QEeOJ9-d_Ri6rxQ _i6QOgF7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_iVmpUF7QEeOJ9-d_Ri6rxQ" parameteredElement="_xH4K0F7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_xH4K0F7QEeOJ9-d_Ri6rxQ" name="K" templateParameter="_iVmpUF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_i6QOgF7QEeOJ9-d_Ri6rxQ" parameteredElement="_yA7SsF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_yA7SsF7QEeOJ9-d_Ri6rxQ" name="V" templateParameter="_i6QOgF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_sLOO4DrGEeOrJYWW0tjQSQ" name="SimpleEntry">
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eZUZ8F7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_jWYw4F7QEeOJ9-d_Ri6rxQ _j4k38F7QEeOJ9-d_Ri6rxQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jWYw4F7QEeOJ9-d_Ri6rxQ" parameteredElement="_0ZJHQF7QEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_0ZJHQF7QEeOJ9-d_Ri6rxQ" name="K" templateParameter="_jWYw4F7QEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_j4k38F7QEeOJ9-d_Ri6rxQ" parameteredElement="_1NBbQF7QEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_1NBbQF7QEeOJ9-d_Ri6rxQ" name="V" templateParameter="_j4k38F7QEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_u3SMgDrGEeOrJYWW0tjQSQ" name="SimpleImmutableEntry">
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_eobM8F7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_kbgl4F7QEeOJ9-d_Ri6rxQ _5H8YsF7QEeOJ9-d_Ri6rxQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_kbgl4F7QEeOJ9-d_Ri6rxQ" parameteredElement="_6dSbAF7QEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_6dSbAF7QEeOJ9-d_Ri6rxQ" name="K" templateParameter="_kbgl4F7QEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_5H8YsF7QEeOJ9-d_Ri6rxQ" parameteredElement="_7WMY8F7QEeOJ9-d_Ri6rxQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_7WMY8F7QEeOJ9-d_Ri6rxQ" name="V" templateParameter="_5H8YsF7QEeOJ9-d_Ri6rxQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wdv0ADrGEeOrJYWW0tjQSQ" name="AbstractQueue">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_e5l1cF7QEeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_lM6NoF7QEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_lM6NoF7QEeOJ9-d_Ri6rxQ" parameteredElement="_8s2C0F7QEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_8s2C0F7QEeOJ9-d_Ri6rxQ" name="E" templateParameter="_lM6NoF7QEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xYMqEDrGEeOrJYWW0tjQSQ" name="AbstractSequentialList">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sxTWsF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_18nPsF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_18nPsF7REeOJ9-d_Ri6rxQ" parameteredElement="_IR16kF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_IR16kF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_18nPsF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yRQZADrGEeOrJYWW0tjQSQ" name="AbstractSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_tH4qsF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_2amMMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_2amMMF7REeOJ9-d_Ri6rxQ" parameteredElement="_JgFPUF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_JgFPUF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_2amMMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_zNOSADrGEeOrJYWW0tjQSQ" name="ArrayDeque">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_tdoRMF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_2ytKMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_2ytKMF7REeOJ9-d_Ri6rxQ" parameteredElement="_K2rO0F7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_K2rO0F7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_2ytKMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0NKFADrGEeOrJYWW0tjQSQ" name="ArrayList">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_t24esF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_3NaJMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_3NaJMF7REeOJ9-d_Ri6rxQ" parameteredElement="_MYKPsF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_MYKPsF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_3NaJMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_1TMgADrGEeOrJYWW0tjQSQ" name="Arrays"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_2lcyEDrGEeOrJYWW0tjQSQ" name="BitSet"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_3iykEDrGEeOrJYWW0tjQSQ" name="Calendar"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_4mTPgDrGEeOrJYWW0tjQSQ" name="Collections"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_5qScEDrGEeOrJYWW0tjQSQ" name="Currency"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_64yPgDrGEeOrJYWW0tjQSQ" name="Date"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8DkAkDrGEeOrJYWW0tjQSQ" name="Dictionary"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Fo4VADrHEeOrJYWW0tjQSQ" name="EnumMap"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Gj6Z4DrHEeOrJYWW0tjQSQ" name="EnumSet"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_HjBtgDrHEeOrJYWW0tjQSQ" name="EventListenerProxy"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8DkAkDrGEeOrJYWW0tjQSQ" name="Dictionary">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_uMGgwF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_3lhHMF7REeOJ9-d_Ri6rxQ _4No3IF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_3lhHMF7REeOJ9-d_Ri6rxQ" parameteredElement="_Og3BkF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Og3BkF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_3lhHMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_4No3IF7REeOJ9-d_Ri6rxQ" parameteredElement="_PwxKQF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_PwxKQF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_4No3IF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Fo4VADrHEeOrJYWW0tjQSQ" name="EnumMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ugxwQF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_4oHzsF7REeOJ9-d_Ri6rxQ _5HepMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_4oHzsF7REeOJ9-d_Ri6rxQ" parameteredElement="_SVdUkF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_SVdUkF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_4oHzsF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_5HepMF7REeOJ9-d_Ri6rxQ" parameteredElement="_TvKScF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_TvKScF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_5HepMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Gj6Z4DrHEeOrJYWW0tjQSQ" name="EnumSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_u0mrMF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_5iB3MF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_5iB3MF7REeOJ9-d_Ri6rxQ" parameteredElement="_XqT5YF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_XqT5YF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_5iB3MF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HjBtgDrHEeOrJYWW0tjQSQ" name="EventListenerProxy">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_vMql4F7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_6AswMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_6AswMF7REeOJ9-d_Ri6rxQ" parameteredElement="_Z38OkF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_Z38OkF7SEeOJ9-d_Ri6rxQ" name="T" templateParameter="_6AswMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JnQPEDrHEeOrJYWW0tjQSQ" name="EventObject"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Kg7CADrHEeOrJYWW0tjQSQ" name="FormattableFlags"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_La6lEDrHEeOrJYWW0tjQSQ" name="Formatter">
         <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_OWqvEDrIEeOrJYWW0tjQSQ" name="BigDecimalLayoutForm"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_MY8TkDrHEeOrJYWW0tjQSQ" name="GregorianCalendar"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_NoblgDrHEeOrJYWW0tjQSQ" name="HashMap"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Of1HkDrHEeOrJYWW0tjQSQ" name="HashSet"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_PdFaADrHEeOrJYWW0tjQSQ" name="Hashtable"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_QeP8EDrHEeOrJYWW0tjQSQ" name="IdentityHashMap"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_RY_tEDrHEeOrJYWW0tjQSQ" name="LinkedHashMap"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SUz1EDrHEeOrJYWW0tjQSQ" name="LinkedHashSet"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_TUX0oDrHEeOrJYWW0tjQSQ" name="LinkedList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NoblgDrHEeOrJYWW0tjQSQ" name="HashMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_veG7MF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_6aP4oF7REeOJ9-d_Ri6rxQ _6vOqIF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_6aP4oF7REeOJ9-d_Ri6rxQ" parameteredElement="_bgwmgF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_bgwmgF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_6aP4oF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_6vOqIF7REeOJ9-d_Ri6rxQ" parameteredElement="_ctI6EF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_ctI6EF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_6vOqIF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Of1HkDrHEeOrJYWW0tjQSQ" name="HashSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_vxtzsF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_7IjwIF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_7IjwIF7REeOJ9-d_Ri6rxQ" parameteredElement="_eM6DsF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_eM6DsF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_7IjwIF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PdFaADrHEeOrJYWW0tjQSQ" name="Hashtable">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_wEu2UF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_7fOjsF7REeOJ9-d_Ri6rxQ _fveCoF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_7fOjsF7REeOJ9-d_Ri6rxQ" parameteredElement="_h8M_8F7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_h8M_8F7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_7fOjsF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_fveCoF7SEeOJ9-d_Ri6rxQ" parameteredElement="_kXFuAF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_kXFuAF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_fveCoF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QeP8EDrHEeOrJYWW0tjQSQ" name="IdentityHashMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_wVufsF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_73aaMF7REeOJ9-d_Ri6rxQ _8UYDAF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_73aaMF7REeOJ9-d_Ri6rxQ" parameteredElement="_mRK1EF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mRK1EF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_73aaMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_8UYDAF7REeOJ9-d_Ri6rxQ" parameteredElement="_m8qpIF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_m8qpIF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_8UYDAF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RY_tEDrHEeOrJYWW0tjQSQ" name="LinkedHashMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_wnBrEF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_9lRDIF7REeOJ9-d_Ri6rxQ _96o2MF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_9lRDIF7REeOJ9-d_Ri6rxQ" parameteredElement="_pT93sF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_pT93sF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_9lRDIF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_96o2MF7REeOJ9-d_Ri6rxQ" parameteredElement="_qGEqEF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_qGEqEF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_96o2MF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SUz1EDrHEeOrJYWW0tjQSQ" name="LinkedHashSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_w696wF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_-Qw3MF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_-Qw3MF7REeOJ9-d_Ri6rxQ" parameteredElement="_rVYV0F7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_rVYV0F7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_-Qw3MF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TUX0oDrHEeOrJYWW0tjQSQ" name="LinkedList">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_xLqpMF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_-u0sMF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_-u0sMF7REeOJ9-d_Ri6rxQ" parameteredElement="_s7EhQF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_s7EhQF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_-u0sMF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_USKSkDrHEeOrJYWW0tjQSQ" name="ListResourceBundle"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_VohokDrHEeOrJYWW0tjQSQ" name="Locale">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_aBqzEDrHEeOrJYWW0tjQSQ" name="Builder"/>
@@ -240,7 +525,13 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bVDtkDrHEeOrJYWW0tjQSQ" name="Objects"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_cdFFkDrHEeOrJYWW0tjQSQ" name="Observable"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ddKpkDrHEeOrJYWW0tjQSQ" name="PriorityQueue"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ddKpkDrHEeOrJYWW0tjQSQ" name="PriorityQueue">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_xioXsF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="__rX0AF7REeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="__rX0AF7REeOJ9-d_Ri6rxQ" parameteredElement="_uqc0MF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_uqc0MF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="__rX0AF7REeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ek4fkDrHEeOrJYWW0tjQSQ" name="Properties"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_gvIJkDrHEeOrJYWW0tjQSQ" name="PropertyPermission"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_hyV6EDrHEeOrJYWW0tjQSQ" name="PropertyResourceBundle"/>
@@ -249,18 +540,60 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_lejGEDrHEeOrJYWW0tjQSQ" name="Control"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mwfPEDrHEeOrJYWW0tjQSQ" name="Scanner"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_uMo3kDrHEeOrJYWW0tjQSQ" name="ServiceLoader"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uMo3kDrHEeOrJYWW0tjQSQ" name="ServiceLoader">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_x6MjIF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_AC48IF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AC48IF7SEeOJ9-d_Ri6rxQ" parameteredElement="_wxeyIF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_wxeyIF7SEeOJ9-d_Ri6rxQ" name="S" templateParameter="_AC48IF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vRm7kDrHEeOrJYWW0tjQSQ" name="SimpleTimeZone"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wbTukDrHEeOrJYWW0tjQSQ" name="Stack"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wbTukDrHEeOrJYWW0tjQSQ" name="Stack">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_yQVLMF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_AgbMsF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_AgbMsF7SEeOJ9-d_Ri6rxQ" parameteredElement="_yRU0QF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_yRU0QF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_AgbMsF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xfvnEDrHEeOrJYWW0tjQSQ" name="StringTokenizer"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_y7JOEDrHEeOrJYWW0tjQSQ" name="Timer"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_z932YDrHEeOrJYWW0tjQSQ" name="TimerTask"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_1Xi_EDrHEeOrJYWW0tjQSQ" name="TimeZone"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4HIKwDrHEeOrJYWW0tjQSQ" name="TreeMap"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7RvFkDrHEeOrJYWW0tjQSQ" name="TreeSet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4HIKwDrHEeOrJYWW0tjQSQ" name="TreeMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_yjU_sF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_A3xVsF7SEeOJ9-d_Ri6rxQ _BOudIF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_A3xVsF7SEeOJ9-d_Ri6rxQ" parameteredElement="_z5sgQF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z5sgQF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_A3xVsF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_BOudIF7SEeOJ9-d_Ri6rxQ" parameteredElement="_0zWsIF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_0zWsIF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_BOudIF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7RvFkDrHEeOrJYWW0tjQSQ" name="TreeSet">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_y0CVMF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_BpaOAF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_BpaOAF7SEeOJ9-d_Ri6rxQ" parameteredElement="_2fhTAF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_2fhTAF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_BpaOAF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFF-4DrIEeOrJYWW0tjQSQ" name="UUID"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_IQlhoDrIEeOrJYWW0tjQSQ" name="Vector"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_JWbvYDrIEeOrJYWW0tjQSQ" name="WeakHashMap"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IQlhoDrIEeOrJYWW0tjQSQ" name="Vector">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_zFR2MF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_CT2SIF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CT2SIF7SEeOJ9-d_Ri6rxQ" parameteredElement="_4a_hMF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_4a_hMF7SEeOJ9-d_Ri6rxQ" name="E" templateParameter="_CT2SIF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JWbvYDrIEeOrJYWW0tjQSQ" name="WeakHashMap">
+        <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_zY4usF7REeOJ9-d_Ri6rxQ" name="RedefinableTemplateSignature1" parameter="_CwJzoF7SEeOJ9-d_Ri6rxQ _DLUFoF7SEeOJ9-d_Ri6rxQ">
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CwJzoF7SEeOJ9-d_Ri6rxQ" parameteredElement="_5qL4MF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_5qL4MF7SEeOJ9-d_Ri6rxQ" name="K" templateParameter="_CwJzoF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_DLUFoF7SEeOJ9-d_Ri6rxQ" parameteredElement="_6aViwF7SEeOJ9-d_Ri6rxQ">
+            <ownedParameteredElement xmi:type="uml:Class" xmi:id="_6aViwF7SEeOJ9-d_Ri6rxQ" name="V" templateParameter="_DLUFoF7SEeOJ9-d_Ri6rxQ"/>
+          </ownedParameter>
+        </ownedTemplateSignature>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VUEmEDrIEeOrJYWW0tjQSQ" name="ConcurrentModificationException"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_WUFRkDrIEeOrJYWW0tjQSQ" name="DuplicateFormatFlagsException"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_XRR5oDrIEeOrJYWW0tjQSQ" name="EmptyStackException"/>

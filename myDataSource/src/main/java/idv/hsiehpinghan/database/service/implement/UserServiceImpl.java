@@ -1,41 +1,28 @@
 package idv.hsiehpinghan.database.service.implement;
 
-import idv.hsiehpinghan.database.model.User;
-import idv.hsiehpinghan.database.repository.UserRepository;
+// Start of user code for import section
 import idv.hsiehpinghan.database.service.UserService;
+// End of user code
 
-import javax.annotation.Resource;
+/**
+ */
+public class UserServiceImpl implements UserService  {
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
+	/**************
+	 * operations *
+	 **************/
 
-
-@Service("aabbcczz")
-@Transactional
-public class UserServiceImpl implements UserService {
-	@Resource
-	private UserRepository userRepository;
-
+	/**************************
+	 * Implemented operations *
+	 **************************/
+	/**
+	 * @generated NOT
+	 */
 	@Override
-	public <S extends User> S save(S entity) {
-		return userRepository.save(entity);
+	public <UserExtends extends User, UserRepositoryExtends extends UserRepository> UserExtends save(UserExtends entity) {
+		// TODO : need be to implemented
+		return null;
 	}
-
-	@Override
-	public void deleteAll() {
-		userRepository.deleteAll();
-	}
-
-	@Transactional(readOnly = true, propagation = Propagation.NOT_SUPPORTED)
-	@Override
-	public boolean exists(String id) {
-		return userRepository.exists(id);
-	}
-
-	@Override
-	public User findOne(String id) {
-		return userRepository.findOne(id);
-	}
+	
 
 }

@@ -1,4 +1,10 @@
-zz
-	org.eclipse.uml2.uml.internal.impl.StereotypeImpl@1e05aa26 (name: Service, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@5509b26b (name: PropertySource, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@7e737041 (name: Configuration, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@2bf6e393 (name: EnableTransactionManagement, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@7a27a0c8 (name: ComponentScan, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+	UserService
+aa
+	org.eclipse.uml2.uml.internal.impl.ParameterImpl@61aecd49 (name: rrr, visibility: <unset>) (isOrdered: false, isUnique: true, direction: return, effect: <unset>, isException: false, isStream: false)org.eclipse.uml2.uml.internal.impl.ParameterImpl@1b27a5b9 (name: entity, visibility: <unset>) (isOrdered: false, isUnique: true, direction: in, effect: <unset>, isException: false, isStream: false)
 bb
-	org.eclipse.uml2.uml.internal.impl.StereotypeImpl@5509b26b (name: PropertySource, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.StereotypeImpl@7e737041 (name: Configuration, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+	org.eclipse.uml2.uml.internal.impl.ParameterImpl@61aecd49 (name: rrr, visibility: <unset>) (isOrdered: false, isUnique: true, direction: return, effect: <unset>, isException: false, isStream: false)
+cc
+	org.eclipse.uml2.uml.internal.impl.ClassImpl@76a4c31d (name: User, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+
+dd
+
