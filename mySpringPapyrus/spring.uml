@@ -22,6 +22,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_jBpSgFy4EeOl8_Q9WuMAbw" name="orm">
         <packagedElement xmi:type="uml:Package" xmi:id="_j6GkgFy4EeOl8_Q9WuMAbw" name="jpa">
           <packagedElement xmi:type="uml:Class" xmi:id="_lpVGcFy4EeOl8_Q9WuMAbw" name="LocalContainerEntityManagerFactoryBean"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Tx9C4F_yEeOzAIigHgzBUw" name="JpaTransactionManager"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_aXOwwF_REeOMro5uES-2UQ" name="data">

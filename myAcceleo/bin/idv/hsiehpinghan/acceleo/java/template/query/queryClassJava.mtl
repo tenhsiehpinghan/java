@@ -37,6 +37,14 @@
 [query public queryClass(anOperation : Operation) : Class = 
 	anOperation.class
 /]
+
+[**
+ * 取得property的owner。
+ * @param aProperty
+ */]
+[query public queryOwner(aProperty : Property) : Element = 
+	aProperty.owner
+/]
 [comment]--------------------------protected-------------------------[/comment]
 
 

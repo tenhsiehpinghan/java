@@ -17,25 +17,10 @@
  * 程式進入點。
  * @param aModel
  */]
-[template public main_test(anInterface : Interface) ? (anInterface.name = 'CrudRepository<User, String>')]
+[template public main_test(aProperty : Property) ? (aProperty.name = 'Attribute1')]
 
 [file ('test.txt', false, 'UTF-8')]
-aaa
-
-[comment]1 [anInterface.templateBinding.boundElement /]
-2 [anInterface.templateBinding.signature /]
-3 [anInterface.templateBinding.source /]
-4 [anInterface.templateBinding.target /]
-5 [anInterface.templateBinding.signature.owner /]
-6 [anInterface.templateBinding.signature.template /][/comment]
-7 [anInterface.templateBinding->isEmpty() /]
-cc
-[anInterface.templateBinding.parameterSubstitution.actual /]
-
-	[comment]->addAll(aClassifier.queryPropertiesClassifiers().queryRedefinedClassifier())
-	->addAll(aClassifier.queryPropertiesClassifiers().queryParameterSubstitution())[/comment]
-
-zzz
+	[aProperty.owner.getAppliedStereotype('javax::persistence::Entity').oclIsUndefined() /]
 [/file]
 [/template]
 

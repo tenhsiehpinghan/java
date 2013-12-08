@@ -3,21 +3,24 @@ package idv.hsiehpinghan.database.service.implement;
 // Start of user code for import section
 import idv.hsiehpinghan.database.service.UserService;
 import org.springframework.transaction.annotation.Transactional;
-import javax.annotation.Resource;
 import idv.hsiehpinghan.database.repository.UserRepository;
+import org.springframework.stereotype.Service;
 import idv.hsiehpinghan.database.model.User;
+import javax.annotation.Resource;
 import org.springframework.transaction.annotation.Propagation;
 // End of user code
 
 /**
  */
 @Transactional(readOnly = true, propagation = Propagation.NOT_SUPPORTED)
-public class UserServiceImpl implements UserService  {
+@Service("idv.hsiehpinghan.database.service.implement.UserServiceImpl")
+public class UserServiceImpl implements UserService {
 	/**
 	 *
 	 * @generated NOT
 	 */
-	@Resource(name="idv.hsiehpinghan.database.configuration.implement.MssqlDataSourceConfigurationImplement")
+//	@Resource(name="idv.hsiehpinghan.database.repository.implement.userRepositoryImplement")
+	@Resource
 	private UserRepository userRepository;
 
 	/**************
@@ -32,18 +35,7 @@ public class UserServiceImpl implements UserService  {
 	 */
 	@Override
 	public boolean exists(String id) {
-		// TODO : need be to implemented
-		return false;
-	}
-	
-	/**
-	 * @generated NOT
-	 */
-	@Override
-	@Transactional
-	public void deleteAll() {
-		// TODO : need be to implemented
-		
+		return userRepository.exists(id);
 	}
 	
 	/**
@@ -51,8 +43,7 @@ public class UserServiceImpl implements UserService  {
 	 */
 	@Override
 	public User findOne(String id) {
-		// TODO : need be to implemented
-		return null;
+		return userRepository.findOne(id);
 	}
 	
 	/**
@@ -61,9 +52,21 @@ public class UserServiceImpl implements UserService  {
 	@Override
 	@Transactional
 	public <UserExtends extends User> UserExtends save(UserExtends entity) {
-		// TODO : need be to implemented
-		return null;
+		return userRepository.save(entity);
 	}
 	
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	@Transactional
+	public void deleteAll() {
+		userRepository.deleteAll();
+	}
+	
+
+	/*****************************
+	 * Auto generated operations *
+	 *****************************/
 
 }

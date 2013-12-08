@@ -166,7 +166,7 @@
  * @param aClassifier
  */]
 [query public queryClassifierExtends(aClassifier : Classifier) : Set(Classifier) = 
-	aClassifier.getGenerals()->select(aClassifier : Classifier | aClassifier.queryPackage()->notEmpty())
+	aClassifier.getGenerals()
 /]
 
 
@@ -210,6 +210,11 @@
  */]
 [query private queryUsedClassifiers(aClassifier : Classifier) : Set(Classifier) = 
 	aClassifier.queryClassifierExtends()
+
+	->addAll(aClassifier.queryClassifierExtends().queryClassifierTemplate())
+	->addAll(aClassifier.queryClassifierExtends().queryParameterSubstitution())
+
+
 	->addAll(aClassifier.queryPropertiesClassifiers())
 	->addAll(aClassifier.queryPropertiesClassifiers().queryClassifierTemplate())
 	->addAll(aClassifier.queryPropertiesClassifiers().queryParameterSubstitution())

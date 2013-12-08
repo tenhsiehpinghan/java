@@ -30,7 +30,9 @@
  [aProperty.templateJavadocCommentsSection() /]
 [/if]
  *
+[if (aProperty.queryOwner().getAppliedStereotype('javax::persistence::Entity').oclIsUndefined() = true)]
  * @generated NOT
+[/if]
  */
 [/template]
 
@@ -44,6 +46,8 @@
 [aProperty.templatePropertyResourceAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Autowired')]
 [aProperty.templatePropertyAutowiredAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'javax::persistence::Id')]
+[aProperty.templatePropertyIdAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -71,7 +75,7 @@ ERROR
 [if (aClass.getAppliedStereotypes()->isEmpty() = false)]
 [aClass.templateClassAnnotationSection() /]
 [/if]
-[aClass.templateVisibilityName() /]class [aClass.queryName() /][aClass.templateExtendsSection() /][aClass.templateImplementsSection() /] {
+[aClass.templateVisibilityName() /]class [aClass.queryName() /][aClass.templateExtendsSection() /][aClass.templateImplementsSection() /]{
 [aClass.templatePropertiesSection() /]
 [aClass.templateOperationsSection() /]
 }
@@ -134,6 +138,22 @@ ERROR
 	[/if]
 	[anOperation.templateOperationSection() /] [anOperation.templateOperationBodySection() /]
 [/for]
+
+	/*****************************
+	 * Auto generated operations *
+	 *****************************/
+[if (aClass.getAppliedStereotype('javax::persistence::Entity').oclIsUndefined() = false)]
+	[for (aProperty : Property | aClass.queryProperties())]
+	public [aProperty.queryTypeName() /] get[aProperty.queryName().toUpperFirst() /]() {
+		return [aProperty.queryName() /];
+	}
+
+	public void set[aProperty.queryName().toUpperFirst() /]([aProperty.queryTypeName() /] [aProperty.queryName() /]) {
+		this.[aProperty.queryName() /] = [aProperty.queryName() /];
+	}
+
+	[/for]
+[/if]
 [/template]
 
 [**
@@ -167,13 +187,15 @@ import org.springframework.transaction.annotation.Propagation;
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::EnableTransactionManagement')]
 [aClass.templateClassEnableTransactionManagementAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::PropertySource')]
-[aClass.templateClassPropertySourceAnnotation(aStereotype) /]
+[aClass.templateClassPropertySourceAnnotation() /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Import')]
 [aClass.templateClassImportAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::data::jpa::repository::config::EnableJpaRepositories')]
 [aClass.templateClassEnableJpaRepositoriesAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::Transactional')]
 [aClass.templateClassTransactionalAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'javax::persistence::Entity')]
+[aClass.templateClassEntityAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -225,15 +247,19 @@ ERROR
 [/template]
 
 [**
- * 產生class的propertySourceAnnotation。
- * @param aClass, aStereotype
+ * 產生class的entityAnnotation。
+ * @param aClass
  */]
-[template private templateClassPropertySourceAnnotation(aClass : Class, aStereotype : Stereotype)]
-@PropertySource({
-[for (aString : String | aClass.getValue(aStereotype, 'value')) separator (',')]
-	"[aString /]"
-[/for]
-})
+[template private templateClassEntityAnnotation(aClass : Class)]
+@Entity(name = "['[' /][aClass.queryName() /][']' /]")
+[/template]
+
+[**
+ * 產生class的propertySourceAnnotation。
+ * @param aClass
+ */]
+[template private templateClassPropertySourceAnnotation(aClass : Class)]
+@PropertySource({"[aClass.queryName().toLowerFirst() /].properties"})
 [/template]
 
 [**
@@ -371,9 +397,18 @@ ERROR
 [/template]
 
 [**
- * 產生property的AutowiredAnnotation。
+ * 產生property的autowiredAnnotation。
  * @param aProperty
  */]
 [template private templatePropertyAutowiredAnnotation(aProperty : Property)]
 @Autowired
 [/template]
+
+[**
+ * 產生property的idAnnotation。
+ * @param aProperty
+ */]
+[template private templatePropertyIdAnnotation(aProperty : Property)]
+@Id
+[/template]
+

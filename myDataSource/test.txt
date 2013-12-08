@@ -1,8 +1,1 @@
-aaa
-
-7 false
-cc
-org.eclipse.uml2.uml.internal.impl.ClassImpl@1363c36 (name: String, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)org.eclipse.uml2.uml.internal.impl.ClassImpl@751c8e96 (name: User, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
-
-
-zzz
+	true

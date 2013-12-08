@@ -617,5 +617,8 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_s34OoDrIEeOrJYWW0tjQSQ" name="UnknownFormatFlagsException"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uMpCIDrIEeOrJYWW0tjQSQ" name="ServiceConfigurationError"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CxBkYF_lEeO406zkfSFJHA" name="io">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_FRPeYF_lEeO406zkfSFJHA" name="Serializable"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

@@ -1,5 +1,4 @@
 import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
-import idv.hsiehpinghan.database.configuration.implement.DataSourceConfigurationImplement;
 import idv.hsiehpinghan.database.configuration.implement.JpaConfiguration;
 import idv.hsiehpinghan.database.model.User;
 import idv.hsiehpinghan.database.service.UserService;
@@ -19,11 +18,9 @@ public class Main {
 //        applicationContext.scan(DataSourceConfiguration.class.getPackage().getName());
 //        applicationContext.refresh();
          
-        UserService userService =applicationContext.getBean("aabbcczz", UserService.class);
+        UserService userService =applicationContext.getBean("idv.hsiehpinghan.database.service.implement.UserServiceImpl", UserService.class);
         User user = new User();
-        user.setPersonalId("personalId_5");
-        user.setEmail("email");
-        user.setMobilePhoneNumber("mobilePhoneNumber");
+        user.setPersonalId("personalId_1");
         user.setPassword("password");
         userService.save(user);
         applicationContext.close();
