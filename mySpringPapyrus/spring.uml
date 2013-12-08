@@ -24,6 +24,20 @@
           <packagedElement xmi:type="uml:Class" xmi:id="_lpVGcFy4EeOl8_Q9WuMAbw" name="LocalContainerEntityManagerFactoryBean"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_aXOwwF_REeOMro5uES-2UQ" name="data">
+        <packagedElement xmi:type="uml:Package" xmi:id="_gSdZEF_REeOMro5uES-2UQ" name="repository">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_WYDI8F_SEeOMro5uES-2UQ" name="CrudRepository">
+            <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_dUJYYF_SEeOMro5uES-2UQ" name="RedefinableTemplateSignature1" parameter="_d3YoUF_SEeOMro5uES-2UQ _eVrt4F_SEeOMro5uES-2UQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_d3YoUF_SEeOMro5uES-2UQ" parameteredElement="_kDPGkF_SEeOMro5uES-2UQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_kDPGkF_SEeOMro5uES-2UQ" name="T" templateParameter="_d3YoUF_SEeOMro5uES-2UQ"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_eVrt4F_SEeOMro5uES-2UQ" parameteredElement="_lF5dcF_SEeOMro5uES-2UQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_lF5dcF_SEeOMro5uES-2UQ" name="ID" templateParameter="_eVrt4F_SEeOMro5uES-2UQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_tpZ90FTVEeODIvpCmSWK3Q" name="void"/>

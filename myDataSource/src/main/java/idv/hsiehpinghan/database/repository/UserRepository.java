@@ -1,18 +1,10 @@
 package idv.hsiehpinghan.database.repository;
 
-// Start of user code for import section
-// End of user code
+import org.springframework.data.repository.CrudRepository<User, String>;
 
 /**
  */
-public class UserRepository {
+public interface UserRepository extends CrudRepository<User, String> {
 
-	/**************
-	 * operations *
-	 **************/
-
-	/**************************
-	 * Implemented operations *
-	 **************************/
 
 }

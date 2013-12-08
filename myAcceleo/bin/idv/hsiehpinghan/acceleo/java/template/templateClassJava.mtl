@@ -35,6 +35,22 @@
 [/template]
 
 [**
+ * 產生property的annotationSection。
+ * @param aProperty
+ */]
+[template private templatePropertyAnnotationSection(aProperty : Property) post (self.trim())]
+[for (aStereotype : Stereotype | aProperty.getAppliedStereotypes())]
+	[if (aStereotype.queryQualifiedName() = 'javax::annotation::Resource')]
+[aProperty.templatePropertyResourceAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Autowired')]
+[aProperty.templatePropertyAutowiredAnnotation() /]
+	[else]
+ERROR
+	[/if]
+[/for]
+[/template]
+
+[**
  * 產生class的javadocSection。
  * @param aClass
  */]
@@ -76,6 +92,9 @@
 [template private templatePropertiesSection(aClass : Class)]
 [for (aProperty : Property | aClass.queryProperties())]
 	[aProperty.templatePropertyJavadocSection() /]
+	[if (aProperty.getAppliedStereotypes()->isEmpty() = false)]
+	[aProperty.templatePropertyAnnotationSection() /]
+	[/if]
 	[aProperty.templatePropertyModifiersSection() /][aProperty.templatePropertySectionWithoutModifiers() /]
 [/for]
 [/template]
@@ -107,6 +126,12 @@
 	[if (anOperation.getAppliedStereotypes()->isEmpty() = false)]
 	[anOperation.templateOperationAnnotationSection() /]
 	[/if]
+	[comment]若是save或delete開頭的operation，則加上@Transational的annotation[/comment]
+	[if (aClass.getAppliedStereotype('org::springframework::transaction::annotation::Transactional').oclIsUndefined() = false)]
+		[if (anOperation.queryName().startsWith('save') or anOperation.queryName().startsWith('delete'))]
+	@Transactional
+		[/if]
+	[/if]
 	[anOperation.templateOperationSection() /] [anOperation.templateOperationBodySection() /]
 [/for]
 [/template]
@@ -120,6 +145,10 @@
 [for (aClassifier : Classifier | aClass.queryClassImports())]
 [aClassifier.templateImportSection() /]
 [/for]
+[comment]額外import非直接在uml圖上顯示的classifier[/comment]
+[if (aClass.getAppliedStereotype('org::springframework::transaction::annotation::Transactional').oclIsUndefined() = false)]
+import org.springframework.transaction.annotation.Propagation;
+[/if]
 // [/protected]
 [/template]
 
@@ -136,13 +165,15 @@
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::ComponentScan')]
 [aClass.templateClassComponentScanAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::EnableTransactionManagement')]
-[aClass.templateClassEnableTransactionManagementScanAnnotation(aStereotype) /]
+[aClass.templateClassEnableTransactionManagementAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::PropertySource')]
 [aClass.templateClassPropertySourceAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Import')]
 [aClass.templateClassImportAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::data::jpa::repository::config::EnableJpaRepositories')]
 [aClass.templateClassEnableJpaRepositoriesAnnotation(aStereotype) /]
+	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::transaction::annotation::Transactional')]
+[aClass.templateClassTransactionalAnnotation(aStereotype) /]
 	[else]
 ERROR
 	[/if]
@@ -181,8 +212,16 @@ ERROR
  * 產生class的configurationAnnotation。
  * @param aClass, aStereotype
  */]
-[template private templateClassEnableTransactionManagementScanAnnotation(aClass : Class)]
+[template private templateClassEnableTransactionManagementAnnotation(aClass : Class)]
 @EnableTransactionManagement
+[/template]
+
+[**
+ * 產生class的transactionalAnnotation。
+ * @param aClass
+ */]
+[template private templateClassTransactionalAnnotation(aClass : Class)]
+@Transactional(readOnly = true, propagation = Propagation.NOT_SUPPORTED)
 [/template]
 
 [**
@@ -259,10 +298,31 @@ ERROR
  * 產生java檔案中的operation body的return部份。
  * @param anOperation
  */]
-[template private templateOperationBodyReturnSection(anOperation : Operation) post(self.trim())] 
-	[if (anOperation.queryType().oclIsUndefined() = true or anOperation.queryTypeName() = 'void')]
+[template private templateOperationBodyReturnSection(anOperation : Operation) post(self.trim())]
+	[if (anOperation.queryType().oclIsUndefined() = true)]
 	[else]
-return null;
+		[let typeName : String = anOperation.queryTypeName()]
+			[if (typeName = 'void')]
+			[elseif (typeName = 'boolean')]
+				return false;
+			[elseif (typeName = 'byte')]
+				return 0;
+			[elseif (typeName = 'char')]
+				return ' ';
+			[elseif (typeName = 'double')]
+				return 0;
+			[elseif (typeName = 'float')]
+				return 0;
+			[elseif (typeName = 'int')]
+				return 0;
+			[elseif (typeName = 'long')]
+				return 0;
+			[elseif (typeName = 'short')]
+				return 0;
+			[else]
+				return null;
+			[/if]
+		[/let]
 	[/if]
 [/template]
 
@@ -272,14 +332,8 @@ return null;
  */]
 [template private templateOperationAnnotationSection(anOperation : Operation) post (self.trim())]
 [for (aStereotype : Stereotype | anOperation.getAppliedStereotypes())]
-	[if (aStereotype.queryQualifiedName() = 'javax::annotation::Resource')]
-[anOperation.templateOperationResourceAnnotation(aStereotype) /]
-	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Value')]
-[anOperation.templateOperationValueAnnotation(aStereotype) /]
-	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Bean')]
+	[if (aStereotype.queryQualifiedName() = 'org::springframework::context::annotation::Bean')]
 [anOperation.templateOperationBeanAnnotation() /]
-	[elseif (aStereotype.queryQualifiedName() = 'org::springframework::beans::factory::annotation::Autowired')]
-[anOperation.templateOperationAutowiredAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -287,35 +341,25 @@ ERROR
 [/template]
 
 [**
- * 產生operation的resourceAnnotation。
- * @param anOperation, aStereotype
+ * 產生property的resourceAnnotation。
+ * @param aProperty, aStereotype
  */]
-[template private templateOperationResourceAnnotation(anOperation : Operation, aStereotype : Stereotype)]
-@Resource(name="[anOperation.templateOperationResourceAnnotationNameElement(aStereotype) /]")
+[template private templatePropertyResourceAnnotation(aProperty : Property, aStereotype : Stereotype)]
+@Resource(name="[aProperty.templateOperationResourceAnnotationNameElement(aStereotype) /]")
 [/template]
 
 [**
- * 產生operation的resourceAnnotation的name元素內容。
- * @param anOperation, aStereotype
+ * 產生property的resourceAnnotation的name元素內容。
+ * @param aProperty, aStereotype
  */]
-[template private templateOperationResourceAnnotationNameElement(anOperation : Operation, aStereotype : Stereotype) post (self.trim())]
-[if (anOperation.getValue(aStereotype, 'name').oclIsUndefined() = true)]
-	[for (aType : Type | anOperation.queryParameters().queryType())]
-		[aType.queryPackage()->append('.')->append('implement')->append('.')->append(aType.queryName().concat('Implement')) /]
-	[/for]
+[template private templateOperationResourceAnnotationNameElement(aProperty : Property, aStereotype : Stereotype) post (self.trim())]
+[if (aProperty.getValue(aStereotype, 'name').oclIsUndefined() = true)]
+	[aProperty.queryType().queryPackage()->append('.')->append('implement')->append('.')->append(aProperty.queryName().concat('Implement')) /]
 [else]
-	[let aClass : Class = anOperation.getValue(aStereotype, 'name').oclAsType(Class)]
+	[let aClass : Class = aProperty.getValue(aStereotype, 'name').oclAsType(Class)]
 		[aClass.queryPackage()->append('.') /][aClass.queryName() /]
 	[/let]
 [/if]
-[/template]
-
-[**
- * 產生operation的valueAnnotation。
- * @param anOperation, aStereotype
- */]
-[template private templateOperationValueAnnotation(anOperation : Operation, aStereotype : Stereotype)]
-@Value("[anOperation.getValue(aStereotype, 'value') /]")
 [/template]
 
 [**
@@ -327,9 +371,9 @@ ERROR
 [/template]
 
 [**
- * 產生operation的AutowiredAnnotation。
- * @param anOperation
+ * 產生property的AutowiredAnnotation。
+ * @param aProperty
  */]
-[template private templateOperationAutowiredAnnotation(anOperation : Operation)]
+[template private templatePropertyAutowiredAnnotation(aProperty : Property)]
 @Autowired
 [/template]

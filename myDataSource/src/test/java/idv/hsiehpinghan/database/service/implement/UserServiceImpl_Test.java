@@ -16,6 +16,36 @@ public class UserServiceImpl_Test implements UserServiceImpl_TestInterface {
    */
   @Test
   @Override
+  public void findOne_String() {
+    // TODO : need be to implemented
+  }
+
+  /**
+   *
+   * @generated NOT
+   */
+  @Test
+  @Override
+  public void exists_String() {
+    // TODO : need be to implemented
+  }
+
+  /**
+   *
+   * @generated NOT
+   */
+  @Test
+  @Override
+  public void deleteAll() {
+    // TODO : need be to implemented
+  }
+
+  /**
+   *
+   * @generated NOT
+   */
+  @Test
+  @Override
   public void save_UserExtends() {
     // TODO : need be to implemented
   }

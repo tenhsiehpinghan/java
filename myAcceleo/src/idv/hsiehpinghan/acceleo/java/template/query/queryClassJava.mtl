@@ -49,8 +49,9 @@
 	aClass.queryClassifierImports()
 	->addAll(aClass.queryClassImplements())
 	->addAll(aClass.queryClassImplements().queryOperations().ownedParameter.queryType()->filter(Classifier))
-	->addAll(aClass.getAppliedStereotypes())
 	->addAll(aClass.queryClassImplements().queryOperations().getAppliedStereotypes())
+	->addAll(aClass.getAppliedStereotypes())
+	->addAll(aClass.queryProperties().getAppliedStereotypes())
 	->addAll(aClass.queryOperations().getAppliedStereotypes())
 /]
 

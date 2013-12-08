@@ -17,42 +17,23 @@
  * 程式進入點。
  * @param aModel
  */]
-[template public main_test(aClassifier : Classifier) ? (aClassifier.name = 'UserService')]
+[template public main_test(aClass : Class) ? (aClass.name = 'UserServiceImpl')]
 
 [file ('test.txt', false, 'UTF-8')]
-	[aClassifier.name /]
-aa
-[comment][for (aParameter : Parameter | aClassifier.queryOperations().ownedParameter)]
-	[aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends') /]
-[/for][/comment]
-	[aClassifier.queryOperations().ownedParameter /]
-bb
-	[aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()) /]
-cc
-	[aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()).queryParameterGenericsClassifier() /]
-	[comment][for (aParameter : Parameter | aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()))]
-		[aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends') /]
-	[/for][/comment]
+aaa
 
-dd
-[comment]	[aClassifier.queryOperations().ownedParameter.getValue(getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends')->filter(Classifier) /][/comment]
-[comment]	[aClassifier.queryOperations().ownedParameter->filter(Classifier)->asSet() /][/comment]
+[for (anOperation : Operation | aClass.queryOperations())]
+	[comment]若是save或delete開頭的operation，則加上@Transational的annotation[/comment]
+	[if (aClass.getAppliedStereotype('org::springframework::transaction::annotation::Transactional').oclIsUndefined() = false)]
+		[if (anOperation.queryName().startsWith('save') or anOperation.queryName().startsWith('delete'))]
+	@Transactional
+		[/if]
+	[/if]
+[/for]
 
-[comment]zz
-	[aParameter.getApplicableStereotypes() /]
-bb
-	[aParameter.getAppliedStereotypes() /][/comment]
+zzz
 [/file]
 [/template]
-
-[**
- * 取得某個parameter的generics使用了那些classifier。
- * @param aClassifier
- */]
-[query private queryParameterGenericsClassifier(aParameter : Parameter) : Set(Classifier) = 
-	aParameter.getValue(self.getAppliedStereotype('idv::hsiehpinghan::Generics'), 'extends')
-/]
-
 
 
 [template public main(aModel : Model) ? (aModel.owner.oclIsUndefined())]
