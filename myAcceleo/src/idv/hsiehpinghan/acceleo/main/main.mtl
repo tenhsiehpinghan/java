@@ -17,19 +17,23 @@
  * 程式進入點。
  * @param aModel
  */]
-[template public main_test(aClass : Class) ? (aClass.name = 'UserServiceImpl')]
+[template public main_test(anInterface : Interface) ? (anInterface.name = 'CrudRepository<User, String>')]
 
 [file ('test.txt', false, 'UTF-8')]
 aaa
 
-[for (anOperation : Operation | aClass.queryOperations())]
-	[comment]若是save或delete開頭的operation，則加上@Transational的annotation[/comment]
-	[if (aClass.getAppliedStereotype('org::springframework::transaction::annotation::Transactional').oclIsUndefined() = false)]
-		[if (anOperation.queryName().startsWith('save') or anOperation.queryName().startsWith('delete'))]
-	@Transactional
-		[/if]
-	[/if]
-[/for]
+[comment]1 [anInterface.templateBinding.boundElement /]
+2 [anInterface.templateBinding.signature /]
+3 [anInterface.templateBinding.source /]
+4 [anInterface.templateBinding.target /]
+5 [anInterface.templateBinding.signature.owner /]
+6 [anInterface.templateBinding.signature.template /][/comment]
+7 [anInterface.templateBinding->isEmpty() /]
+cc
+[anInterface.templateBinding.parameterSubstitution.actual /]
+
+	[comment]->addAll(aClassifier.queryPropertiesClassifiers().queryRedefinedClassifier())
+	->addAll(aClassifier.queryPropertiesClassifiers().queryParameterSubstitution())[/comment]
 
 zzz
 [/file]

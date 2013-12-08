@@ -1,9 +1,9 @@
 package idv.hsiehpinghan.database.service.implement;
 
 // Start of user code for import section
+import idv.hsiehpinghan.database.service.UserService;
 import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
-import idv.hsiehpinghan.database.service.UserService;
 import idv.hsiehpinghan.database.repository.UserRepository;
 import idv.hsiehpinghan.database.model.User;
 import org.springframework.transaction.annotation.Propagation;
@@ -31,9 +31,9 @@ public class UserServiceImpl implements UserService  {
 	 * @generated NOT
 	 */
 	@Override
-	public User findOne(String id) {
+	public boolean exists(String id) {
 		// TODO : need be to implemented
-		return null;
+		return false;
 	}
 	
 	/**
@@ -50,9 +50,9 @@ public class UserServiceImpl implements UserService  {
 	 * @generated NOT
 	 */
 	@Override
-	public boolean exists(String id) {
+	public User findOne(String id) {
 		// TODO : need be to implemented
-		return false;
+		return null;
 	}
 	
 	/**

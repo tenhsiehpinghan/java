@@ -8,13 +8,13 @@ public interface UserService{
 
 	/**
 	 */
-	User findOne(String id);
+	boolean exists(String id);
 	/**
 	 */
 	void deleteAll();
 	/**
 	 */
-	boolean exists(String id);
+	User findOne(String id);
 	/**
 	 */
 	<UserExtends extends User> UserExtends save(UserExtends entity);

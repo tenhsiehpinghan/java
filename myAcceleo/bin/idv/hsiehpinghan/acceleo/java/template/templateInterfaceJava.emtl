@@ -4,15 +4,15 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <extends href="templateClassifier.emtl#/0"/>
-    <imports href="query/queryInterfaceJava.emtl#/0"/>
+    <extends href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryInterfaceJava.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="269" endPosition="329" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="templateInterfaceJava" visibility="Public">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templatePackageSection"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJava/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -53,7 +53,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertyJavadocSection/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -64,7 +64,7 @@
           <source xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Comment)">
-              <definition href="query/queryClassifier.emtl#/0/queryOwnedComments"/>
+              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOwnedComments"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertyJavadocSection/aProperty">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
               </argument>
@@ -94,7 +94,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJavadocSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -105,7 +105,7 @@
           <source xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Comment)">
-              <definition href="query/queryClassifier.emtl#/0/queryOwnedComments"/>
+              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOwnedComments"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceJavadocSection/anInterface">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
               </argument>
@@ -139,7 +139,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -147,14 +147,14 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="interface "/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="query/queryClassifier.emtl#/0/queryName"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryName"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
       </body>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateExtendsSection"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateInterfaceSection/anInterface">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
         </argument>
@@ -196,7 +196,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aProperty" referredVariable="/0/templatePropertiesSection/%/aProperty">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
           </argument>
@@ -206,7 +206,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Property)">
-          <definition href="query/queryClassifier.emtl#/0/queryProperties"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryProperties"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templatePropertiesSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -243,7 +243,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </loopVariable>
         <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Operation)">
-          <definition href="query/queryClassifier.emtl#/0/queryOperations"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOperations"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anInterface" referredVariable="/0/templateOperationsSection/anInterface">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
           </argument>
@@ -265,7 +265,7 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationJavadocSection/anOperation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
           </argument>
@@ -276,7 +276,7 @@
           <source xsi:type="ocl.ecore:OperationCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
             <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Comment)">
-              <definition href="query/queryClassifier.emtl#/0/queryOwnedComments"/>
+              <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryOwnedComments"/>
               <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationJavadocSection/anOperation">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
               </argument>
@@ -303,7 +303,7 @@
     <ownedModuleElement xsi:type="mtl:Template" name="templateOperationSection">
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+        <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="anOperation" referredVariable="/0/templateOperationSection/anOperation">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
         </argument>
@@ -323,7 +323,7 @@
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:TemplateInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="templateClassifier.emtl#/0/templateImportSection"/>
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/%/aClassifier">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
           </argument>
@@ -332,23 +332,11 @@
         <loopVariable name="aClassifier">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
         </loopVariable>
-        <iterSet xsi:type="ocl.ecore:IteratorExp" name="sortedBy" eType="/13/OrderedSet(Classifier)">
-          <source xsi:type="mtl:QueryInvocation" eType="/13/Set(Classifier)">
-            <definition href="query/queryClassifier.emtl#/0/queryClassifierImports"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/aClassifier">
-              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
-            </argument>
-          </source>
-          <body xsi:type="mtl:QueryInvocation">
-            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="query/queryClassifier.emtl#/0/queryQualifiedName.1"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/%/sortedBy/aClassifier">
-              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
-            </argument>
-          </body>
-          <iterator xsi:type="ocl.ecore:Variable" name="aClassifier">
+        <iterSet xsi:type="mtl:QueryInvocation" eType="/13/Set(Classifier)">
+          <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryClassifierImports"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/templateInterfaceImportsSection/aClassifier">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
-          </iterator>
+          </argument>
         </iterSet>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
@@ -487,7 +475,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateJavadocCommentsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anElement">
@@ -499,7 +487,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePropertySectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aProperty">
@@ -511,7 +499,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateOperationSectionWithoutModifiers"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="anOperation">
@@ -523,7 +511,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templatePackageSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templatePackageSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -535,7 +523,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateImportSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateImportSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -547,7 +535,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateVisibilityName.1"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateVisibilityName.1"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -559,7 +547,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="templateClassifier.emtl#/0/templateExtendsSection"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/templateClassifier.emtl#/0/templateExtendsSection"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClassifier">
@@ -697,9 +685,6 @@
       <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Operation"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Classifier)" instanceClassName="java.util.Set">
-      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Classifier)" instanceClassName="java.util.LinkedHashSet">
       <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
     </eClassifiers>
   </ecore:EPackage>
@@ -1491,27 +1476,27 @@
     </eAnnotations>
     <eAnnotations source="positions.121" references="/0/templateInterfaceImportsSection">
       <details key="start" value="2952"/>
-      <details key="end" value="3252"/>
+      <details key="end" value="3181"/>
       <details key="line" value="105"/>
     </eAnnotations>
     <eAnnotations source="positions.122" references="/0/templateInterfaceImportsSection/%">
       <details key="start" value="3048"/>
-      <details key="end" value="3239"/>
+      <details key="end" value="3168"/>
       <details key="line" value="106"/>
     </eAnnotations>
     <eAnnotations source="positions.123" references="/0/templateInterfaceImportsSection/%/%">
-      <details key="start" value="3193"/>
-      <details key="end" value="3228"/>
+      <details key="start" value="3122"/>
+      <details key="end" value="3157"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.124" references="/0/templateInterfaceImportsSection/%/%/aClassifier">
-      <details key="start" value="3193"/>
-      <details key="end" value="3204"/>
+      <details key="start" value="3122"/>
+      <details key="end" value="3133"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.125" references="/0/templateInterfaceImportsSection/%/%.1">
-      <details key="start" value="3231"/>
-      <details key="end" value="3233"/>
+      <details key="start" value="3160"/>
+      <details key="end" value="3162"/>
       <details key="line" value="108"/>
     </eAnnotations>
     <eAnnotations source="positions.126" references="/0/templateInterfaceImportsSection/%/aClassifier">
@@ -1519,57 +1504,37 @@
       <details key="end" value="3078"/>
       <details key="line" value="106"/>
     </eAnnotations>
-    <eAnnotations source="positions.127" references="/0/templateInterfaceImportsSection/%/sortedBy">
-      <details key="start" value="3081"/>
-      <details key="end" value="3188"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.128" references="/0/templateInterfaceImportsSection/%/sortedBy/%">
+    <eAnnotations source="positions.127" references="/0/templateInterfaceImportsSection/%/%.2">
       <details key="start" value="3081"/>
       <details key="end" value="3117"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.129" references="/0/templateInterfaceImportsSection/%/sortedBy/%/aClassifier">
+    <eAnnotations source="positions.128" references="/0/templateInterfaceImportsSection/%/%.2/aClassifier">
       <details key="start" value="3081"/>
       <details key="end" value="3092"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.130" references="/0/templateInterfaceImportsSection/%/sortedBy/%.1">
-      <details key="start" value="3155"/>
-      <details key="end" value="3187"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.131" references="/0/templateInterfaceImportsSection/%/sortedBy/%.1/aClassifier">
-      <details key="start" value="3155"/>
-      <details key="end" value="3166"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.132" references="/0/templateInterfaceImportsSection/%/sortedBy/aClassifier">
-      <details key="start" value="3128"/>
-      <details key="end" value="3152"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.133" references="/0/templateInterfaceImportsSection/%.1">
+    <eAnnotations source="positions.129" references="/0/templateInterfaceImportsSection/%.1">
       <details key="start" value="2893"/>
       <details key="end" value="2950"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.134" references="/0/templateInterfaceImportsSection/%.1/aClassifier">
+    <eAnnotations source="positions.130" references="/0/templateInterfaceImportsSection/%.1/aClassifier">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.135" references="/0/templateInterfaceImportsSection/aClassifier">
+    <eAnnotations source="positions.131" references="/0/templateInterfaceImportsSection/aClassifier">
       <details key="start" value="3002"/>
       <details key="end" value="3026"/>
       <details key="line" value="105"/>
     </eAnnotations>
-    <eAnnotations source="positions.136" references="/0/templateInterfaceImportsSection/%.2">
+    <eAnnotations source="positions.132" references="/0/templateInterfaceImportsSection/%.2">
       <details key="start" value="3033"/>
       <details key="end" value="3044"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.137" references="/0/templateInterfaceImportsSection/%.2/self">
+    <eAnnotations source="positions.133" references="/0/templateInterfaceImportsSection/%.2/self">
       <details key="start" value="3033"/>
       <details key="end" value="3037"/>
       <details key="line" value="0"/>

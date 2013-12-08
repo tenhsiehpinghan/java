@@ -7,17 +7,17 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <imports href="../main/query/queryMain.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/main/query/queryMain.emtl#/0"/>
     <imports href="../java/template/query/queryClassifier.emtl#/0"/>
-    <imports href="generateTestInterface.emtl#/0"/>
-    <imports href="generateTest.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestInterface.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTest.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateTestngFiles" visibility="Public">
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:IfBlock">
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="generateTestInterface.emtl#/0/generateTestInterface"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestInterface.emtl#/0/generateTestInterface"/>
             <argument xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
               <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/generateTestngFiles/%/aClassifier">
@@ -32,7 +32,7 @@
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#x9;&#x9;"/>
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="generateTest.emtl#/0/generateTest"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTest.emtl#/0/generateTest"/>
             <argument xsi:type="ocl.ecore:OperationCallExp">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
               <source xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/generateTestngFiles/%/aClassifier">
@@ -76,7 +76,7 @@
             </argument>
           </source>
           <argument xsi:type="mtl:QueryInvocation" eType="/7/Sequence(String)">
-            <definition href="../main/query/queryMain.emtl#/0/queryBasePackage"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/main/query/queryMain.emtl#/0/queryBasePackage"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/10">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
             </argument>
@@ -136,9 +136,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../main/query/queryMain.emtl#/0/queryBasePackage"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/main/query/queryMain.emtl#/0/queryBasePackage"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SequenceType" href="../main/query/queryMain.emtl#/3/Sequence(String)"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/main/query/queryMain.emtl#/3/Sequence(String)"/>
         <eParameters name="anOclAny">
           <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
         </eParameters>
@@ -160,7 +160,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="generateTestInterface.emtl#/0/generateTestInterface"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestInterface.emtl#/0/generateTestInterface"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClass">
@@ -172,7 +172,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="generateTest.emtl#/0/generateTest"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTest.emtl#/0/generateTest"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="aClass">

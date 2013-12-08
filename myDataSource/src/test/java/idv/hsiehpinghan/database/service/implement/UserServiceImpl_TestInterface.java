@@ -7,13 +7,13 @@ public interface UserServiceImpl_TestInterface {
 	 **********************/
 	/**
 	 */
-	void findOne_String();
+	void exists_String();
 	/**
 	 */
 	void deleteAll();
 	/**
 	 */
-	void exists_String();
+	void findOne_String();
 	/**
 	 */
 	void save_UserExtends();

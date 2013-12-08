@@ -158,13 +158,20 @@
 	->filterClassifiers()
 /]
 
+
+
+
 [**
  * 取得某個classifier generalize了那些classifier。
  * @param aClassifier
  */]
 [query public queryClassifierExtends(aClassifier : Classifier) : Set(Classifier) = 
-	aClassifier.getGenerals()
+	aClassifier.getGenerals()->select(aClassifier : Classifier | aClassifier.queryPackage()->notEmpty())
 /]
+
+
+
+
 
 [**
  * 取得某個classifier有那些property。
@@ -204,13 +211,13 @@
 [query private queryUsedClassifiers(aClassifier : Classifier) : Set(Classifier) = 
 	aClassifier.queryClassifierExtends()
 	->addAll(aClassifier.queryPropertiesClassifiers())
-	->addAll(aClassifier.queryPropertiesClassifiers().queryRedefinedClassifier())
+	->addAll(aClassifier.queryPropertiesClassifiers().queryClassifierTemplate())
 	->addAll(aClassifier.queryPropertiesClassifiers().queryParameterSubstitution())
 	->addAll(aClassifier.queryOperationsClassifiers())
-	->addAll(aClassifier.queryOperationsClassifiers().queryRedefinedClassifier())
+	->addAll(aClassifier.queryOperationsClassifiers().queryClassifierTemplate())
 	->addAll(aClassifier.queryOperationsClassifiers().queryParameterSubstitution())
 	->addAll(aClassifier.queryOperationsParametersClassifiers())
-	->addAll(aClassifier.queryOperationsParametersClassifiers().queryRedefinedClassifier())
+	->addAll(aClassifier.queryOperationsParametersClassifiers().queryClassifierTemplate())
 	->addAll(aClassifier.queryOperationsParametersClassifiers().queryParameterSubstitution())
 	->addAll(aClassifier.queryOperations().ownedParameter->select(aParameter : Parameter | not aParameter.getAppliedStereotype('idv::hsiehpinghan::Generics').oclIsUndefined()).queryParameterGenericsClassifier())
 /]
@@ -240,19 +247,43 @@
 /]
 
 [**
+ * 取得某個classifier的templateBinding有那些。
+ * @param aClassifier
+ */]
+[query private queryTemplateBinding(aClassifier : Classifier) : Set(TemplateBinding) = 
+	aClassifier.templateBinding
+/]
+
+[**
  * 取得某個classifier的parameterSubstitution有那些。
  * @param aClassifier
  */]
 [query private queryParameterSubstitution(aClassifier : Classifier) : Set(Classifier) = 
-	(aClassifier.templateBinding.parameterSubstitution.actual)->asSet()
+	(aClassifier.queryTemplateBinding().parameterSubstitution.actual)->asSet()
 /]
 
 [**
- * 取得某個classifier的redefinedClassifier有那些。
+ * 取得某個templateBinding的signature有那些。
+ * @param aTemplateBinding
+ */]
+[query private queryTemplateSignature(aTemplateBinding : TemplateBinding) : TemplateSignature = 
+	aTemplateBinding.signature
+/]
+
+[**
+ * 取得某個templateSignature的templateableElement。
+ * @param aTemplateSignature
+ */]
+[query private queryTemplate(aTemplateSignature : TemplateSignature) : TemplateableElement = 
+	aTemplateSignature.template
+/]
+
+[**
+ * 取得某個templateSignature的templateableElement。
  * @param aClassifier
  */]
-[query private queryRedefinedClassifier(aClassifier : Classifier) : Set(Classifier) = 
-	aClassifier.redefinedClassifier
+[query private queryClassifierTemplate(aClassifier : Classifier) : Set(TemplateableElement) = 
+	(aClassifier.queryTemplateBinding().queryTemplateSignature().queryTemplate())->asSet()
 /]
 
 [**

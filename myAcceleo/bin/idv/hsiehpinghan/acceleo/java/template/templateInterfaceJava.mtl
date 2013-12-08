@@ -103,7 +103,7 @@
  * @param aClassifier
  */]
 [template private templateInterfaceImportsSection(aClassifier : Classifier) post(self.trim())]
-[for (aClassifier : Classifier | aClassifier.queryClassifierImports()->sortedBy(aClassifier : Classifier | aClassifier.queryQualifiedName()))]
+[for (aClassifier : Classifier | aClassifier.queryClassifierImports())]
 [aClassifier.templateImportSection() /]
 [/for]
 [/template]

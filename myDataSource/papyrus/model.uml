@@ -126,25 +126,17 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KkvbMF7bEeOPHs0eOf1R9Q" name="UserExtends"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_XM3UQF_WEeO406zkfSFJHA" name="org">
-      <packagedElement xmi:type="uml:Package" xmi:id="_ZOBTsF_WEeO406zkfSFJHA" name="springframework">
-        <packagedElement xmi:type="uml:Package" xmi:id="_aglHwF_WEeO406zkfSFJHA" name="data">
-          <packagedElement xmi:type="uml:Package" xmi:id="_cLApQF_WEeO406zkfSFJHA" name="repository">
-            <packagedElement xmi:type="uml:Interface" xmi:id="_SXb9wF_TEeOMro5uES-2UQ" name="CrudRepository&lt;User, String>">
-              <templateBinding xmi:type="uml:TemplateBinding" xmi:id="_VpLbUF_TEeOMro5uES-2UQ">
-                <parameterSubstitution xmi:type="uml:TemplateParameterSubstitution" xmi:id="_YYiIEF_UEeOEL94kA6w7uA" actual="_qOFu4F7YEeOJ9-d_Ri6rxQ">
-                  <formal xmi:type="uml:ClassifierTemplateParameter" href="../../mySpringPapyrus/spring.uml#_d3YoUF_SEeOMro5uES-2UQ"/>
-                </parameterSubstitution>
-                <parameterSubstitution xmi:type="uml:TemplateParameterSubstitution" xmi:id="_jdfDQF_UEeOEL94kA6w7uA">
-                  <actual xmi:type="uml:Class" href="../../myJavaPapyrus/java.uml#_yZTOEDo_EeOc5JJV1BgsAQ"/>
-                  <formal xmi:type="uml:ClassifierTemplateParameter" href="../../mySpringPapyrus/spring.uml#_eVrt4F_SEeOMro5uES-2UQ"/>
-                </parameterSubstitution>
-                <signature xmi:type="uml:RedefinableTemplateSignature" href="../../mySpringPapyrus/spring.uml#_dUJYYF_SEeOMro5uES-2UQ"/>
-              </templateBinding>
-            </packagedElement>
-          </packagedElement>
-        </packagedElement>
-      </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_SXb9wF_TEeOMro5uES-2UQ" name="CrudRepository&lt;User, String>">
+      <templateBinding xmi:type="uml:TemplateBinding" xmi:id="_VpLbUF_TEeOMro5uES-2UQ">
+        <parameterSubstitution xmi:type="uml:TemplateParameterSubstitution" xmi:id="_YYiIEF_UEeOEL94kA6w7uA" actual="_qOFu4F7YEeOJ9-d_Ri6rxQ">
+          <formal xmi:type="uml:ClassifierTemplateParameter" href="../../mySpringPapyrus/spring.uml#_d3YoUF_SEeOMro5uES-2UQ"/>
+        </parameterSubstitution>
+        <parameterSubstitution xmi:type="uml:TemplateParameterSubstitution" xmi:id="_jdfDQF_UEeOEL94kA6w7uA">
+          <actual xmi:type="uml:Class" href="../../myJavaPapyrus/java.uml#_yZTOEDo_EeOc5JJV1BgsAQ"/>
+          <formal xmi:type="uml:ClassifierTemplateParameter" href="../../mySpringPapyrus/spring.uml#_eVrt4F_SEeOMro5uES-2UQ"/>
+        </parameterSubstitution>
+        <signature xmi:type="uml:RedefinableTemplateSignature" href="../../mySpringPapyrus/spring.uml#_dUJYYF_SEeOMro5uES-2UQ"/>
+      </templateBinding>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A0zlIFjbEeOaALCw18o0JQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1N00FjbEeOaALCw18o0JQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

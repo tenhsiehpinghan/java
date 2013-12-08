@@ -2,9 +2,9 @@ package idv.hsiehpinghan.database.configuration.implement;
 
 // Start of user code for import section
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import javax.sql.DataSource;
 import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
-import org.springframework.core.env.Environment;
 // End of user code
 
 /**

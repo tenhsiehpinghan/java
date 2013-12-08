@@ -3,9 +3,9 @@ package idv.hsiehpinghan.database.configuration.implement;
 // Start of user code for import section
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import javax.annotation.Resource;
-import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 // End of user code
