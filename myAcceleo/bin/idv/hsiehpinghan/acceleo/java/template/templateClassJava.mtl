@@ -29,10 +29,6 @@
 [if (aProperty.queryOwnedComments()->isEmpty() = false)]
  [aProperty.templateJavadocCommentsSection() /]
 [/if]
- *
-[if (aProperty.queryOwner().getAppliedStereotype('javax::persistence::Entity').oclIsUndefined() = true)]
- * @generated NOT
-[/if]
  */
 [/template]
 
@@ -75,7 +71,7 @@ ERROR
 [if (aClass.getAppliedStereotypes()->isEmpty() = false)]
 [aClass.templateClassAnnotationSection() /]
 [/if]
-[aClass.templateVisibilityName() /]class [aClass.queryName() /][aClass.templateExtendsSection() /][aClass.templateImplementsSection() /]{
+[aClass.templateVisibilityName() /]class [aClass.queryName() /][aClass.templateExtendsSection() /][aClass.templateImplementsSection() /] {
 [aClass.templatePropertiesSection() /]
 [aClass.templateOperationsSection() /]
 }
@@ -86,7 +82,7 @@ ERROR
  * @param aClass
  */]
 [template protected templateImplementsSection(aClass : Class)]
-[for (anInterface : Interface | aClass.queryClassImplements()) before (' implements ') separator (', ') after (' ')][anInterface.queryName() /][/for]
+[for (anInterface : Interface | aClass.queryClassImplements()->addAll(aClass.queryClassAdditionalImplements())) before (' implements ') separator (', ')][anInterface.queryName() /][/for]
 [/template]
 
 [**
@@ -98,6 +94,9 @@ ERROR
 	[aProperty.templatePropertyJavadocSection() /]
 	[if (aProperty.getAppliedStereotypes()->isEmpty() = false)]
 	[aProperty.templatePropertyAnnotationSection() /]
+	[/if]
+	[if (aProperty.queryType().getAppliedStereotype('javax::persistence::Embeddable').oclIsUndefined() = false)]
+	[aProperty.templatePropertyEmbeddableAnnotation() /]
 	[/if]
 	[aProperty.templatePropertyModifiersSection() /][aProperty.templatePropertySectionWithoutModifiers() /]
 [/for]
@@ -142,7 +141,7 @@ ERROR
 	/*****************************
 	 * Auto generated operations *
 	 *****************************/
-[if (aClass.getAppliedStereotype('javax::persistence::Entity').oclIsUndefined() = false)]
+[if (aClass.queryIsAutoGenerateGetterAndSetterElement() = true)]
 	[for (aProperty : Property | aClass.queryProperties())]
 	public [aProperty.queryTypeName() /] get[aProperty.queryName().toUpperFirst() /]() {
 		return [aProperty.queryName() /];
@@ -161,15 +160,23 @@ ERROR
  * @param aClass
  */]
 [template private templateClassImportSection(aClass : Class) post(self.trim())]
+[if (aClass.queryIsAutoGenerateGetterAndSetterElement() = true)]
+[aClass.templateClassImportSectionWithoutProtected() /]
+[else]
 // [protected ('for import section')]
-[for (aClassifier : Classifier | aClass.queryClassImports())]
+[aClass.templateClassImportSectionWithoutProtected() /]
+// [/protected]	
+[/if]
+[/template]
+
+[**
+ * 產生java檔案中未加上protected的import部份。
+ * @param aClass
+ */]
+[template private templateClassImportSectionWithoutProtected(aClass : Class) post(self.trim())]
+[for (aClassifier : Classifier | aClass.queryClassImports()->addAll(aClass.queryClassAdditionalImports()))]
 [aClassifier.templateImportSection() /]
 [/for]
-[comment]額外import非直接在uml圖上顯示的classifier[/comment]
-[if (aClass.getAppliedStereotype('org::springframework::transaction::annotation::Transactional').oclIsUndefined() = false)]
-import org.springframework.transaction.annotation.Propagation;
-[/if]
-// [/protected]
 [/template]
 
 [**
@@ -196,6 +203,8 @@ import org.springframework.transaction.annotation.Propagation;
 [aClass.templateClassTransactionalAnnotation(aStereotype) /]
 	[elseif (aStereotype.queryQualifiedName() = 'javax::persistence::Entity')]
 [aClass.templateClassEntityAnnotation() /]
+	[elseif (aStereotype.queryQualifiedName() = 'javax::persistence::Embeddable')]
+[aClass.templateClassEmbeddableAnnotation() /]
 	[else]
 ERROR
 	[/if]
@@ -252,6 +261,14 @@ ERROR
  */]
 [template private templateClassEntityAnnotation(aClass : Class)]
 @Entity(name = "['[' /][aClass.queryName() /][']' /]")
+[/template]
+
+[**
+ * 產生class的embeddableAnnotation。
+ * @param aClass
+ */]
+[template private templateClassEmbeddableAnnotation(aClass : Class)]
+@Embeddable
 [/template]
 
 [**
@@ -412,3 +429,10 @@ ERROR
 @Id
 [/template]
 
+[**
+ * 產生property的embeddableAnnotation。
+ * @param aProperty
+ */]
+[template private templatePropertyEmbeddableAnnotation(aProperty : Property)]
+@Embedded
+[/template]

@@ -8,7 +8,7 @@
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
     <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/main/query/queryMain.emtl#/0"/>
-    <imports href="../java/template/query/queryClassifier.emtl#/0"/>
+    <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0"/>
     <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTestInterface.emtl#/0"/>
     <imports href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/testng/generateTest.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateTestngFiles" visibility="Public">
@@ -70,7 +70,7 @@
         <guard xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/Sequence(T)_Class/startsWith">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="mtl:QueryInvocation" eType="/7/Sequence(String)">
-            <definition href="../java/template/query/queryClassifier.emtl#/0/queryPackage"/>
+            <definition href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryPackage"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="aClassifier" referredVariable="/0/generateTestngFiles/%/aClassifier">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
             </argument>
@@ -148,9 +148,9 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="../java/template/query/queryClassifier.emtl#/0/queryPackage"/>
+          <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0/queryPackage"/>
         </eAnnotations>
-        <eType xsi:type="ocl.ecore:SequenceType" href="../java/template/query/queryClassifier.emtl#/3/Sequence(String)"/>
+        <eType xsi:type="ocl.ecore:SequenceType" href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/3/Sequence(String)"/>
         <eParameters name="aType">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Type"/>
         </eParameters>

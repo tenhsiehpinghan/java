@@ -162,7 +162,7 @@ import [aClassifier.templateClassifierFullName() /];
  * @param aClassifier
  */]
 [template protected templateExtendsSection(aClassifier : Classifier)]
-[for (aClassifier : Classifier | aClassifier.queryClassifierExtends()) before (' extends ') separator (', ') after (' ')][aClassifier.queryName() /][/for]
+[for (aClassifier : Classifier | aClassifier.queryClassifierExtends()) before (' extends ') separator (', ')][aClassifier.queryName() /][/for]
 [/template]
 
 [**
@@ -220,21 +220,23 @@ import [aClassifier.templateClassifierFullName() /];
  * @param aProperty
  */]
 [template private templatePropertyDefault(aProperty : Property) post (self.trim()) { aValueSpecification : ValueSpecification = aProperty.defaultValue; }]
-[if (aValueSpecification.oclIsTypeOf(LiteralString) = true)]
-	[if (aProperty.queryDefault().oclIsUndefined() = true)]
+[if (aValueSpecification.oclIsUndefined() = false)]
+	[if (aValueSpecification.oclIsTypeOf(LiteralString) = true)]
+		[if (aProperty.queryDefault().oclIsUndefined() = true)]
+		[else]
+			= "[aProperty.queryDefault() /]"
+		[/if]
+	[elseif (aValueSpecification.oclIsTypeOf(LiteralBoolean) = true)]
+		= [aProperty.queryDefault() /]
+	[elseif (aValueSpecification.oclIsTypeOf(LiteralInteger) = true)]
+		= [aProperty.queryDefault() /]
+	[elseif (aValueSpecification.oclIsTypeOf(LiteralNull) = true)]
+		= [aProperty.queryDefault() /]
+	[elseif (aValueSpecification.oclIsTypeOf(LiteralReal) = true)]
+		= [aProperty.queryDefault() /]
 	[else]
-		= "[aProperty.queryDefault() /]"
+		= ERROR
 	[/if]
-[elseif (aValueSpecification.oclIsTypeOf(LiteralBoolean) = true)]
-	= [aProperty.queryDefault() /]
-[elseif (aValueSpecification.oclIsTypeOf(LiteralInteger) = true)]
-	= [aProperty.queryDefault() /]
-[elseif (aValueSpecification.oclIsTypeOf(LiteralNull) = true)]
-	= [aProperty.queryDefault() /]
-[elseif (aValueSpecification.oclIsTypeOf(LiteralReal) = true)]
-	= [aProperty.queryDefault() /]
-[else]
-	= ERROR
 [/if]
 [/template]
 
@@ -267,7 +269,7 @@ ERROR
  * @param aParameter, aStereotype
  */]
 [template private templateParameterGenerics(aParameter : Parameter, aStereotype : Stereotype)]
-[for (aClassifier : Classifier | aParameter.getValue(aStereotype, 'extends')) before ('<') separator (', ') after ('>')][aClassifier.queryName() /]Extends extends [aClassifier.queryName() /][/for]
+[for (aClassifier : Classifier | aParameter.getValue(aStereotype, 'extends')) before ('<') separator (', ') after ('>')][aClassifier.queryName() /]Extend extends [aClassifier.queryName() /][/for]
 [/template]
 
 

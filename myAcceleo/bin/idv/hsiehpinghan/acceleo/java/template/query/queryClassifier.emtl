@@ -445,7 +445,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryClassifierExtends" visibility="Public" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="3742" endPosition="3813" value="&#xD;&#xA;取得某個classifier generalize了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="3736" endPosition="3807" value="&#xD;&#xA;取得某個classifier generalize了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -462,7 +462,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryProperties" visibility="Public" type="/3/Set(Property)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="3947" endPosition="4005" value="&#xD;&#xA;取得某個classifier有那些property。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="3933" endPosition="3991" value="&#xD;&#xA;取得某個classifier有那些property。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -479,7 +479,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryOperations" visibility="Public" type="/3/Set(Operation)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4118" endPosition="4177" value="&#xD;&#xA;取得某個classifier有那些operation。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="4104" endPosition="4163" value="&#xD;&#xA;取得某個classifier有那些operation。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -496,7 +496,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="filterClassifiers" visibility="Protected" type="/3/Collection(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="4297" endPosition="4385" value="&#xD;&#xA;過濾不要的classifier。(排除java.lang及default package的classifier)&#xD;&#xA;@param aCollection&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="4283" endPosition="4371" value="&#xD;&#xA;過濾不要的classifier。(排除java.lang及default package的classifier)&#xD;&#xA;@param aCollection&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aCollection">
           <body value=""/>
         </parametersDocumentation>
@@ -612,14 +612,239 @@
       </expression>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="4843" endPosition="4903" value="--------------------------protected-------------------------"/>
+      <body startPosition="4829" endPosition="4889" value="--------------------------protected-------------------------"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryModelOwnImportedPackages" visibility="Protected" type="/3/Set(Package)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="4904" endPosition="4989" value="&#xD;&#xA;取得某個model下的importedPackage。&#xD;&#xA;@param aModel&#xD;&#xA;@param importedPackageName&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aModel">
+          <body value=""/>
+        </parametersDocumentation>
+        <parametersDocumentation name="importedPackageName">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aModel">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+      </parameter>
+      <parameter name="importedPackageName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/Set(Package)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Package)">
+          <source xsi:type="ocl.ecore:VariableExp" name="aModel" referredVariable="/0/queryModelOwnImportedPackages/aModel">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Namespace/getImportedPackages"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/queryModelOwnImportedPackages/select/aPackage">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:VariableExp" name="importedPackageName" referredVariable="/0/queryModelOwnImportedPackages/importedPackageName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryPackageOwnPackages" visibility="Protected" type="/3/Set(Package)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5211" endPosition="5284" value="&#xD;&#xA;取得某個package下的package。&#xD;&#xA;@param aPackage&#xD;&#xA;@param packageName&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aPackage">
+          <body value=""/>
+        </parametersDocumentation>
+        <parametersDocumentation name="packageName">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aPackage">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </parameter>
+      <parameter name="packageName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/Set(Package)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Package)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(NamedElement)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/queryPackageOwnPackages/aPackage">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Namespace/getOwnedMembers"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Package">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+          </argument>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/queryPackageOwnPackages/select/aPackage">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:VariableExp" name="packageName" referredVariable="/0/queryPackageOwnPackages/packageName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryPackageOwnInterfaces" visibility="Protected" type="/3/Set(Interface)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5503" endPosition="5580" value="&#xD;&#xA;取得某個package下的interface。&#xD;&#xA;@param aPackage&#xD;&#xA;@param interfaceName&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aPackage">
+          <body value=""/>
+        </parametersDocumentation>
+        <parametersDocumentation name="interfaceName">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aPackage">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </parameter>
+      <parameter name="interfaceName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/Set(Interface)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Interface)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(NamedElement)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/queryPackageOwnInterfaces/aPackage">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Namespace/getOwnedMembers"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Interface">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+          </argument>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aInterface" referredVariable="/0/queryPackageOwnInterfaces/select/aInterface">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:VariableExp" name="interfaceName" referredVariable="/0/queryPackageOwnInterfaces/interfaceName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aInterface">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryModelAppliedProfiles" visibility="Protected" type="/3/Set(Profile)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="5815" endPosition="5890" value="&#xD;&#xA;取得某個model applied的profile&#xD;&#xA;@param aModel&#xD;&#xA;@param profileName&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aModel">
+          <body value=""/>
+        </parametersDocumentation>
+        <parametersDocumentation name="profileName">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aModel">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+      </parameter>
+      <parameter name="profileName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/Set(Profile)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Profile)">
+          <source xsi:type="ocl.ecore:VariableExp" name="aModel" referredVariable="/0/queryModelAppliedProfiles/aModel">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package/getAllAppliedProfiles"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aProfile" referredVariable="/0/queryModelAppliedProfiles/select/aProfile">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/qualifiedName"/>
+          </source>
+          <argument xsi:type="ocl.ecore:VariableExp" name="profileName" referredVariable="/0/queryModelAppliedProfiles/profileName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aProfile">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+        </iterator>
+      </expression>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="queryProfileOwnStereotype" visibility="Protected" type="/3/Set(Stereotype)">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="6103" endPosition="6182" value="&#xD;&#xA;取得某個profile下的stereotype。&#xD;&#xA;@param aProfile&#xD;&#xA;@param stereotypeName&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aProfile">
+          <body value=""/>
+        </parametersDocumentation>
+        <parametersDocumentation name="stereotypeName">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aProfile">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+      </parameter>
+      <parameter name="stereotypeName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IteratorExp" name="select" eType="/3/Set(Stereotype)">
+        <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Stereotype)" referredOperation="/1/Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:OperationCallExp" eType="/3/Set(Element)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aProfile" referredVariable="/0/queryProfileOwnStereotype/aProfile">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element/allOwnedElements"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/29/Stereotype">
+            <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+          </argument>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aStereotype" referredVariable="/0/queryProfileOwnStereotype/select/aStereotype">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:VariableExp" name="stereotypeName" referredVariable="/0/queryProfileOwnStereotype/stereotypeName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" name="aStereotype">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+        </iterator>
+      </expression>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="4928" endPosition="4988" value="---------------------------private--------------------------"/>
+      <body startPosition="6433" endPosition="6493" value="---------------------------private--------------------------"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryUsedClassifiers" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="5003" endPosition="5056" value="&#xD;&#xA;取得有那些classifier有被使用到。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="6508" endPosition="6561" value="&#xD;&#xA;取得有那些classifier有被使用到。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -843,7 +1068,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryOperationsParametersClassifiers" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="6233" endPosition="6306" value="&#xD;&#xA;取得某個classifier的operations使用了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="7732" endPosition="7805" value="&#xD;&#xA;取得某個classifier的operations使用了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -889,7 +1114,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryOperationsClassifiers" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="6507" endPosition="6583" value="&#xD;&#xA;取得某個classifier的operations的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8006" endPosition="8082" value="&#xD;&#xA;取得某個classifier的operations的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -924,7 +1149,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryPropertiesClassifiers" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="6759" endPosition="6835" value="&#xD;&#xA;取得某個classifier的properties的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8258" endPosition="8334" value="&#xD;&#xA;取得某個classifier的properties的type有那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -959,7 +1184,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryTemplateBinding" type="/3/Set(TemplateBinding)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7011" endPosition="7077" value="&#xD;&#xA;取得某個classifier的templateBinding有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8510" endPosition="8576" value="&#xD;&#xA;取得某個classifier的templateBinding有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -976,7 +1201,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryParameterSubstitution" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7209" endPosition="7281" value="&#xD;&#xA;取得某個classifier的parameterSubstitution有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8708" endPosition="8780" value="&#xD;&#xA;取得某個classifier的parameterSubstitution有那些。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -1018,7 +1243,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryTemplateSignature">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7461" endPosition="7531" value="&#xD;&#xA;取得某個templateBinding的signature有那些。&#xD;&#xA;@param aTemplateBinding&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="8960" endPosition="9030" value="&#xD;&#xA;取得某個templateBinding的signature有那些。&#xD;&#xA;@param aTemplateBinding&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aTemplateBinding">
           <body value=""/>
         </parametersDocumentation>
@@ -1037,7 +1262,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryTemplate">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7671" endPosition="7752" value="&#xD;&#xA;取得某個templateSignature的templateableElement。&#xD;&#xA;@param aTemplateSignature&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="9170" endPosition="9251" value="&#xD;&#xA;取得某個templateSignature的templateableElement。&#xD;&#xA;@param aTemplateSignature&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aTemplateSignature">
           <body value=""/>
         </parametersDocumentation>
@@ -1056,7 +1281,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryClassifierTemplate" type="/3/Set(TemplateableElement)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="7890" endPosition="7964" value="&#xD;&#xA;取得某個templateSignature的templateableElement。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="9389" endPosition="9463" value="&#xD;&#xA;取得某個templateSignature的templateableElement。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -1097,7 +1322,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryUsedClassifiersInDifferentPackages" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="8162" endPosition="8225" value="&#xD;&#xA;取得不在同一個package但有使用到的classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="9661" endPosition="9724" value="&#xD;&#xA;取得不在同一個package但有使用到的classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -1132,7 +1357,7 @@
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="queryParameterGenericsClassifier" type="/3/Set(Classifier)">
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="8481" endPosition="8551" value="&#xD;&#xA;取得某個parameter的generics使用了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="9980" endPosition="10050" value="&#xD;&#xA;取得某個parameter的generics使用了那些classifier。&#xD;&#xA;@param aClassifier&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="aClassifier">
           <body value=""/>
         </parametersDocumentation>
@@ -1147,7 +1372,7 @@
         </source>
         <argument xsi:type="ocl.ecore:OperationCallExp">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
-          <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/105">
+          <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/120">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Parameter"/>
           </source>
           <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="idv::hsiehpinghan::Generics">
@@ -1408,6 +1633,66 @@
         <eAnnotations source="MTL" references="/0/filterClassifiers"/>
         <eParameters name="aCollection" eType="/3/Set(Classifier)"/>
       </eOperations>
+      <eOperations name="queryModelOwnImportedPackages" eType="/3/Set(Package)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryModelOwnImportedPackages"/>
+        <eParameters name="aModel">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+        </eParameters>
+        <eParameters name="importedPackageName">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryPackageOwnPackages" eType="/3/Set(Package)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryPackageOwnPackages"/>
+        <eParameters name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+        </eParameters>
+        <eParameters name="packageName">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryPackageOwnInterfaces" eType="/3/Set(Interface)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryPackageOwnInterfaces"/>
+        <eParameters name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+        </eParameters>
+        <eParameters name="interfaceName">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryModelAppliedProfiles" eType="/3/Set(Profile)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryModelAppliedProfiles"/>
+        <eParameters name="aModel">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+        </eParameters>
+        <eParameters name="profileName">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="queryProfileOwnStereotype" eType="/3/Set(Stereotype)">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/queryProfileOwnStereotype"/>
+        <eParameters name="aProfile">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+        </eParameters>
+        <eParameters name="stereotypeName">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
       <eOperations name="queryUsedClassifiers" eType="/3/Set(Classifier)">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
@@ -1613,6 +1898,21 @@
     <eClassifiers xsi:type="ecore:EClass" name="Set(Classifier)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL" references="/3/Set(Classifier)"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Model_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Package_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Profile_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+      </eAnnotations>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="TemplateBinding_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding"/>
@@ -1654,6 +1954,18 @@
     <eClassifiers xsi:type="ocl.ecore:CollectionType" name="Collection(Classifier)">
       <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Package)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Interface)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Profile)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Stereotype)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(TemplateBinding)" instanceClassName="java.util.Set">
       <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateBinding"/>
     </eClassifiers>
@@ -1671,6 +1983,12 @@
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(OclVoid)" instanceClassName="java.util.List">
       <elementType xsi:type="ocl.ecore:VoidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclVoid"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(NamedElement)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//NamedElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Element)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Element"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(TemplateableElement)" instanceClassName="org.eclipse.ocl.util.Bag">
       <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//TemplateableElement"/>
@@ -1781,6 +2099,12 @@
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="Model">
       <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Interface">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Interface"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Stereotype">
+      <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Stereotype"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="Classifier">
       <referredType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier"/>
@@ -1911,6 +2235,51 @@
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self" eType="/3/Set(Classifier)"/>
   <ocl.ecore:Variable name="self" eType="/3/Set(Classifier)"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
+  </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
@@ -2735,13 +3104,13 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.144" references="/0/queryClassifierExtends">
-      <details key="start" value="3817"/>
-      <details key="end" value="3932"/>
-      <details key="line" value="168"/>
+      <details key="start" value="3811"/>
+      <details key="end" value="3926"/>
+      <details key="line" value="165"/>
     </eAnnotations>
     <eAnnotations source="positions.145" references="/0/queryClassifierExtends/%">
-      <details key="start" value="3739"/>
-      <details key="end" value="3815"/>
+      <details key="start" value="3733"/>
+      <details key="end" value="3809"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.146" references="/0/queryClassifierExtends/%/aClassifier">
@@ -2750,28 +3119,28 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.147" references="/0/queryClassifierExtends/aClassifier">
-      <details key="start" value="3854"/>
-      <details key="end" value="3878"/>
-      <details key="line" value="168"/>
+      <details key="start" value="3848"/>
+      <details key="end" value="3872"/>
+      <details key="line" value="165"/>
     </eAnnotations>
     <eAnnotations source="positions.148" references="/0/queryClassifierExtends/%.1">
-      <details key="start" value="3903"/>
-      <details key="end" value="3928"/>
+      <details key="start" value="3897"/>
+      <details key="end" value="3922"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.149" references="/0/queryClassifierExtends/%.1/aClassifier">
-      <details key="start" value="3903"/>
-      <details key="end" value="3914"/>
+      <details key="start" value="3897"/>
+      <details key="end" value="3908"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.150" references="/0/queryProperties">
-      <details key="start" value="4009"/>
-      <details key="end" value="4111"/>
-      <details key="line" value="180"/>
+      <details key="start" value="3995"/>
+      <details key="end" value="4097"/>
+      <details key="line" value="173"/>
     </eAnnotations>
     <eAnnotations source="positions.151" references="/0/queryProperties/%">
-      <details key="start" value="3944"/>
-      <details key="end" value="4007"/>
+      <details key="start" value="3930"/>
+      <details key="end" value="3993"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.152" references="/0/queryProperties/%/aClassifier">
@@ -2780,28 +3149,28 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.153" references="/0/queryProperties/aClassifier">
-      <details key="start" value="4039"/>
-      <details key="end" value="4063"/>
-      <details key="line" value="180"/>
+      <details key="start" value="4025"/>
+      <details key="end" value="4049"/>
+      <details key="line" value="173"/>
     </eAnnotations>
     <eAnnotations source="positions.154" references="/0/queryProperties/%.1">
-      <details key="start" value="4086"/>
-      <details key="end" value="4107"/>
+      <details key="start" value="4072"/>
+      <details key="end" value="4093"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.155" references="/0/queryProperties/%.1/aClassifier">
-      <details key="start" value="4086"/>
-      <details key="end" value="4097"/>
+      <details key="start" value="4072"/>
+      <details key="end" value="4083"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.156" references="/0/queryOperations">
-      <details key="start" value="4181"/>
-      <details key="end" value="4290"/>
-      <details key="line" value="188"/>
+      <details key="start" value="4167"/>
+      <details key="end" value="4276"/>
+      <details key="line" value="181"/>
     </eAnnotations>
     <eAnnotations source="positions.157" references="/0/queryOperations/%">
-      <details key="start" value="4115"/>
-      <details key="end" value="4179"/>
+      <details key="start" value="4101"/>
+      <details key="end" value="4165"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.158" references="/0/queryOperations/%/aClassifier">
@@ -2810,28 +3179,28 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.159" references="/0/queryOperations/aClassifier">
-      <details key="start" value="4211"/>
-      <details key="end" value="4235"/>
-      <details key="line" value="188"/>
+      <details key="start" value="4197"/>
+      <details key="end" value="4221"/>
+      <details key="line" value="181"/>
     </eAnnotations>
     <eAnnotations source="positions.160" references="/0/queryOperations/%.1">
-      <details key="start" value="4259"/>
-      <details key="end" value="4286"/>
+      <details key="start" value="4245"/>
+      <details key="end" value="4272"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.161" references="/0/queryOperations/%.1/aClassifier">
-      <details key="start" value="4259"/>
-      <details key="end" value="4270"/>
+      <details key="start" value="4245"/>
+      <details key="end" value="4256"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.162" references="/0/filterClassifiers">
-      <details key="start" value="4389"/>
-      <details key="end" value="4828"/>
-      <details key="line" value="196"/>
+      <details key="start" value="4375"/>
+      <details key="end" value="4814"/>
+      <details key="line" value="189"/>
     </eAnnotations>
     <eAnnotations source="positions.163" references="/0/filterClassifiers/%">
-      <details key="start" value="4294"/>
-      <details key="end" value="4387"/>
+      <details key="start" value="4280"/>
+      <details key="end" value="4373"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.164" references="/0/filterClassifiers/%/aCollection">
@@ -2840,83 +3209,83 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.165" references="/0/filterClassifiers/aCollection">
-      <details key="start" value="4424"/>
-      <details key="end" value="4453"/>
-      <details key="line" value="196"/>
+      <details key="start" value="4410"/>
+      <details key="end" value="4439"/>
+      <details key="line" value="189"/>
     </eAnnotations>
     <eAnnotations source="positions.166" references="/0/filterClassifiers/reject">
-      <details key="start" value="4485"/>
-      <details key="end" value="4824"/>
+      <details key="start" value="4471"/>
+      <details key="end" value="4810"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.167" references="/0/filterClassifiers/reject/reject">
-      <details key="start" value="4485"/>
-      <details key="end" value="4667"/>
+      <details key="start" value="4471"/>
+      <details key="end" value="4653"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.168" references="/0/filterClassifiers/reject/reject/aCollection">
-      <details key="start" value="4485"/>
-      <details key="end" value="4496"/>
+      <details key="start" value="4471"/>
+      <details key="end" value="4482"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.169" references="/0/filterClassifiers/reject/reject/%">
-      <details key="start" value="4535"/>
-      <details key="end" value="4666"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4652"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.170" references="/0/filterClassifiers/reject/reject/%/collect">
-      <details key="start" value="4535"/>
-      <details key="end" value="4639"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4625"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.171" references="/0/filterClassifiers/reject/reject/%/collect/%">
-      <details key="start" value="4535"/>
-      <details key="end" value="4634"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4620"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.172" references="/0/filterClassifiers/reject/reject/%/collect/%/reject">
-      <details key="start" value="4535"/>
-      <details key="end" value="4623"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4609"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.173" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%">
-      <details key="start" value="4535"/>
-      <details key="end" value="4565"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4551"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.174" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%/aClassifier">
-      <details key="start" value="4535"/>
-      <details key="end" value="4546"/>
+      <details key="start" value="4521"/>
+      <details key="end" value="4532"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.175" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%/%">
-      <details key="start" value="4557"/>
-      <details key="end" value="4564"/>
+      <details key="start" value="4543"/>
+      <details key="end" value="4550"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.176" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1">
-      <details key="start" value="4595"/>
-      <details key="end" value="4622"/>
+      <details key="start" value="4581"/>
+      <details key="end" value="4608"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.177" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1/aPackage">
-      <details key="start" value="4595"/>
-      <details key="end" value="4603"/>
+      <details key="start" value="4581"/>
+      <details key="end" value="4589"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.178" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/%.1/%">
-      <details key="start" value="4616"/>
-      <details key="end" value="4621"/>
+      <details key="start" value="4602"/>
+      <details key="end" value="4607"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.179" references="/0/filterClassifiers/reject/reject/%/collect/%/reject/aPackage">
-      <details key="start" value="4574"/>
-      <details key="end" value="4592"/>
+      <details key="start" value="4560"/>
+      <details key="end" value="4578"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.180" references="/0/filterClassifiers/reject/reject/%/collect/%.1">
-      <details key="start" value="4635"/>
-      <details key="end" value="4639"/>
+      <details key="start" value="4621"/>
+      <details key="end" value="4625"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.181" references="/0/filterClassifiers/reject/reject/%/collect/%.1/temp1">
@@ -2930,83 +3299,83 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.183" references="/0/filterClassifiers/reject/reject/%/%">
-      <details key="start" value="4642"/>
-      <details key="end" value="4666"/>
+      <details key="start" value="4628"/>
+      <details key="end" value="4652"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.184" references="/0/filterClassifiers/reject/reject/%/%/%/%">
-      <details key="start" value="4651"/>
-      <details key="end" value="4657"/>
+      <details key="start" value="4637"/>
+      <details key="end" value="4643"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.185" references="/0/filterClassifiers/reject/reject/%/%/%.1/%">
-      <details key="start" value="4659"/>
-      <details key="end" value="4665"/>
+      <details key="start" value="4645"/>
+      <details key="end" value="4651"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.186" references="/0/filterClassifiers/reject/reject/aClassifier">
-      <details key="start" value="4508"/>
-      <details key="end" value="4532"/>
+      <details key="start" value="4494"/>
+      <details key="end" value="4518"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.187" references="/0/filterClassifiers/reject/%">
-      <details key="start" value="4706"/>
-      <details key="end" value="4823"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4809"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.188" references="/0/filterClassifiers/reject/%/collect">
-      <details key="start" value="4706"/>
-      <details key="end" value="4810"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4796"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.189" references="/0/filterClassifiers/reject/%/collect/%">
-      <details key="start" value="4706"/>
-      <details key="end" value="4805"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4791"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.190" references="/0/filterClassifiers/reject/%/collect/%/reject">
-      <details key="start" value="4706"/>
-      <details key="end" value="4794"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4780"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.191" references="/0/filterClassifiers/reject/%/collect/%/reject/%">
-      <details key="start" value="4706"/>
-      <details key="end" value="4736"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4722"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.192" references="/0/filterClassifiers/reject/%/collect/%/reject/%/aClassifier">
-      <details key="start" value="4706"/>
-      <details key="end" value="4717"/>
+      <details key="start" value="4692"/>
+      <details key="end" value="4703"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.193" references="/0/filterClassifiers/reject/%/collect/%/reject/%/%">
-      <details key="start" value="4728"/>
-      <details key="end" value="4735"/>
+      <details key="start" value="4714"/>
+      <details key="end" value="4721"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.194" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1">
-      <details key="start" value="4766"/>
-      <details key="end" value="4793"/>
+      <details key="start" value="4752"/>
+      <details key="end" value="4779"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.195" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1/aPackage">
-      <details key="start" value="4766"/>
-      <details key="end" value="4774"/>
+      <details key="start" value="4752"/>
+      <details key="end" value="4760"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.196" references="/0/filterClassifiers/reject/%/collect/%/reject/%.1/%">
-      <details key="start" value="4787"/>
-      <details key="end" value="4792"/>
+      <details key="start" value="4773"/>
+      <details key="end" value="4778"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.197" references="/0/filterClassifiers/reject/%/collect/%/reject/aPackage">
-      <details key="start" value="4745"/>
-      <details key="end" value="4763"/>
+      <details key="start" value="4731"/>
+      <details key="end" value="4749"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.198" references="/0/filterClassifiers/reject/%/collect/%.1">
-      <details key="start" value="4806"/>
-      <details key="end" value="4810"/>
+      <details key="start" value="4792"/>
+      <details key="end" value="4796"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.199" references="/0/filterClassifiers/reject/%/collect/%.1/temp2">
@@ -3020,1038 +3389,1418 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.201" references="/0/filterClassifiers/reject/%/%">
-      <details key="start" value="4813"/>
-      <details key="end" value="4823"/>
+      <details key="start" value="4799"/>
+      <details key="end" value="4809"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.202" references="/0/filterClassifiers/reject/aClassifier">
-      <details key="start" value="4679"/>
-      <details key="end" value="4703"/>
+      <details key="start" value="4665"/>
+      <details key="end" value="4689"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.203" references="/0/%.2">
-      <details key="start" value="4834"/>
-      <details key="end" value="4913"/>
+      <details key="start" value="4820"/>
+      <details key="end" value="4899"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.204" references="/0/%.3">
-      <details key="start" value="4919"/>
-      <details key="end" value="4998"/>
+    <eAnnotations source="positions.204" references="/0/queryModelOwnImportedPackages">
+      <details key="start" value="4993"/>
+      <details key="end" value="5204"/>
+      <details key="line" value="202"/>
+    </eAnnotations>
+    <eAnnotations source="positions.205" references="/0/queryModelOwnImportedPackages/%">
+      <details key="start" value="4901"/>
+      <details key="end" value="4991"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.205" references="/0/queryUsedClassifiers">
-      <details key="start" value="5060"/>
-      <details key="end" value="6226"/>
-      <details key="line" value="211"/>
-    </eAnnotations>
-    <eAnnotations source="positions.206" references="/0/queryUsedClassifiers/%">
-      <details key="start" value="5000"/>
-      <details key="end" value="5058"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.207" references="/0/queryUsedClassifiers/%/aClassifier">
+    <eAnnotations source="positions.206" references="/0/queryModelOwnImportedPackages/%/aModel">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.208" references="/0/queryUsedClassifiers/aClassifier">
-      <details key="start" value="5096"/>
-      <details key="end" value="5120"/>
+    <eAnnotations source="positions.207" references="/0/queryModelOwnImportedPackages/%/importedPackageName">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.208" references="/0/queryModelOwnImportedPackages/aModel">
+      <details key="start" value="5040"/>
+      <details key="end" value="5054"/>
+      <details key="line" value="202"/>
+    </eAnnotations>
+    <eAnnotations source="positions.209" references="/0/queryModelOwnImportedPackages/importedPackageName">
+      <details key="start" value="5056"/>
+      <details key="end" value="5084"/>
+      <details key="line" value="202"/>
+    </eAnnotations>
+    <eAnnotations source="positions.210" references="/0/queryModelOwnImportedPackages/select">
+      <details key="start" value="5106"/>
+      <details key="end" value="5200"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.211" references="/0/queryModelOwnImportedPackages/select/%">
+      <details key="start" value="5106"/>
+      <details key="end" value="5134"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.212" references="/0/queryModelOwnImportedPackages/select/%/aModel">
+      <details key="start" value="5106"/>
+      <details key="end" value="5112"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.213" references="/0/queryModelOwnImportedPackages/select/%.1">
+      <details key="start" value="5164"/>
+      <details key="end" value="5199"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.214" references="/0/queryModelOwnImportedPackages/select/%.1/%">
+      <details key="start" value="5164"/>
+      <details key="end" value="5177"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.215" references="/0/queryModelOwnImportedPackages/select/%.1/%/aPackage">
+      <details key="start" value="5164"/>
+      <details key="end" value="5172"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.216" references="/0/queryModelOwnImportedPackages/select/%.1/importedPackageName">
+      <details key="start" value="5180"/>
+      <details key="end" value="5199"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.217" references="/0/queryModelOwnImportedPackages/select/aPackage">
+      <details key="start" value="5143"/>
+      <details key="end" value="5161"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.218" references="/0/queryPackageOwnPackages">
+      <details key="start" value="5288"/>
+      <details key="end" value="5496"/>
       <details key="line" value="211"/>
     </eAnnotations>
-    <eAnnotations source="positions.209" references="/0/queryUsedClassifiers/%.1">
-      <details key="start" value="5145"/>
-      <details key="end" value="6222"/>
+    <eAnnotations source="positions.219" references="/0/queryPackageOwnPackages/%">
+      <details key="start" value="5208"/>
+      <details key="end" value="5286"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.210" references="/0/queryUsedClassifiers/%.1/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="6012"/>
+    <eAnnotations source="positions.220" references="/0/queryPackageOwnPackages/%/aPackage">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.211" references="/0/queryUsedClassifiers/%.1/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5920"/>
+    <eAnnotations source="positions.221" references="/0/queryPackageOwnPackages/%/packageName">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.212" references="/0/queryUsedClassifiers/%.1/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5831"/>
+    <eAnnotations source="positions.222" references="/0/queryPackageOwnPackages/aPackage">
+      <details key="start" value="5329"/>
+      <details key="end" value="5347"/>
+      <details key="line" value="211"/>
+    </eAnnotations>
+    <eAnnotations source="positions.223" references="/0/queryPackageOwnPackages/packageName">
+      <details key="start" value="5349"/>
+      <details key="end" value="5369"/>
+      <details key="line" value="211"/>
+    </eAnnotations>
+    <eAnnotations source="positions.224" references="/0/queryPackageOwnPackages/select">
+      <details key="start" value="5391"/>
+      <details key="end" value="5492"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.213" references="/0/queryUsedClassifiers/%.1/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5768"/>
+    <eAnnotations source="positions.225" references="/0/queryPackageOwnPackages/select/%">
+      <details key="start" value="5391"/>
+      <details key="end" value="5434"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.214" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5686"/>
+    <eAnnotations source="positions.226" references="/0/queryPackageOwnPackages/select/%/%">
+      <details key="start" value="5391"/>
+      <details key="end" value="5417"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.215" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5607"/>
+    <eAnnotations source="positions.227" references="/0/queryPackageOwnPackages/select/%/%/aPackage">
+      <details key="start" value="5391"/>
+      <details key="end" value="5399"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.216" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5554"/>
+    <eAnnotations source="positions.228" references="/0/queryPackageOwnPackages/select/%/%.1">
+      <details key="start" value="5426"/>
+      <details key="end" value="5433"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.217" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
+    <eAnnotations source="positions.229" references="/0/queryPackageOwnPackages/select/%.1">
+      <details key="start" value="5464"/>
+      <details key="end" value="5491"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.230" references="/0/queryPackageOwnPackages/select/%.1/%">
+      <details key="start" value="5464"/>
+      <details key="end" value="5477"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.231" references="/0/queryPackageOwnPackages/select/%.1/%/aPackage">
+      <details key="start" value="5464"/>
       <details key="end" value="5472"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.218" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5393"/>
+    <eAnnotations source="positions.232" references="/0/queryPackageOwnPackages/select/%.1/packageName">
+      <details key="start" value="5480"/>
+      <details key="end" value="5491"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.219" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5336"/>
+    <eAnnotations source="positions.233" references="/0/queryPackageOwnPackages/select/aPackage">
+      <details key="start" value="5443"/>
+      <details key="end" value="5461"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.220" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5258"/>
+    <eAnnotations source="positions.234" references="/0/queryPackageOwnInterfaces">
+      <details key="start" value="5584"/>
+      <details key="end" value="5808"/>
+      <details key="line" value="220"/>
+    </eAnnotations>
+    <eAnnotations source="positions.235" references="/0/queryPackageOwnInterfaces/%">
+      <details key="start" value="5500"/>
+      <details key="end" value="5582"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.221" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/%">
-      <details key="start" value="5145"/>
-      <details key="end" value="5181"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.222" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/%/aClassifier">
-      <details key="start" value="5145"/>
-      <details key="end" value="5156"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.223" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect">
-      <details key="start" value="5195"/>
-      <details key="end" value="5257"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.224" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%">
-      <details key="start" value="5195"/>
-      <details key="end" value="5231"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.225" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5195"/>
-      <details key="end" value="5206"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.226" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%.1">
+    <eAnnotations source="positions.236" references="/0/queryPackageOwnInterfaces/%/aPackage">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.227" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%.1/temp1">
+    <eAnnotations source="positions.237" references="/0/queryPackageOwnInterfaces/%/interfaceName">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.228" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/temp4">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.238" references="/0/queryPackageOwnInterfaces/aPackage">
+      <details key="start" value="5627"/>
+      <details key="end" value="5645"/>
+      <details key="line" value="220"/>
+    </eAnnotations>
+    <eAnnotations source="positions.239" references="/0/queryPackageOwnInterfaces/interfaceName">
+      <details key="start" value="5647"/>
+      <details key="end" value="5669"/>
+      <details key="line" value="220"/>
+    </eAnnotations>
+    <eAnnotations source="positions.240" references="/0/queryPackageOwnInterfaces/select">
+      <details key="start" value="5693"/>
+      <details key="end" value="5804"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.229" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect">
-      <details key="start" value="5270"/>
-      <details key="end" value="5335"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.230" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%">
-      <details key="start" value="5270"/>
-      <details key="end" value="5306"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.231" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5270"/>
-      <details key="end" value="5281"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.232" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.233" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%.1/temp2">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.234" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/temp5">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.235" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%.1">
-      <details key="start" value="5352"/>
-      <details key="end" value="5392"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.236" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%.1/aClassifier">
-      <details key="start" value="5352"/>
-      <details key="end" value="5363"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.237" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect">
-      <details key="start" value="5405"/>
-      <details key="end" value="5471"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.238" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%">
-      <details key="start" value="5405"/>
-      <details key="end" value="5445"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.239" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5405"/>
-      <details key="end" value="5416"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.240" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.241" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%.1/temp3">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.242" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/temp6">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.243" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect">
-      <details key="start" value="5484"/>
-      <details key="end" value="5553"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.244" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%">
-      <details key="start" value="5484"/>
-      <details key="end" value="5524"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.245" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5484"/>
-      <details key="end" value="5495"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.246" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.247" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1/temp4">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.248" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/temp7">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.249" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%.1">
-      <details key="start" value="5566"/>
-      <details key="end" value="5606"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.250" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%.1/aClassifier">
-      <details key="start" value="5566"/>
-      <details key="end" value="5577"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.251" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect">
-      <details key="start" value="5619"/>
-      <details key="end" value="5685"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.252" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%">
-      <details key="start" value="5619"/>
-      <details key="end" value="5659"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.253" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5619"/>
-      <details key="end" value="5630"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.254" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.255" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%.1/temp5">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.256" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/temp8">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.257" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect">
-      <details key="start" value="5698"/>
-      <details key="end" value="5767"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.258" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%">
-      <details key="start" value="5698"/>
+    <eAnnotations source="positions.241" references="/0/queryPackageOwnInterfaces/select/%">
+      <details key="start" value="5693"/>
       <details key="end" value="5738"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.259" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%/aClassifier">
-      <details key="start" value="5698"/>
-      <details key="end" value="5709"/>
+    <eAnnotations source="positions.242" references="/0/queryPackageOwnInterfaces/select/%/%">
+      <details key="start" value="5693"/>
+      <details key="end" value="5719"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.260" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1">
+    <eAnnotations source="positions.243" references="/0/queryPackageOwnInterfaces/select/%/%/aPackage">
+      <details key="start" value="5693"/>
+      <details key="end" value="5701"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.244" references="/0/queryPackageOwnInterfaces/select/%/%.1">
+      <details key="start" value="5728"/>
+      <details key="end" value="5737"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.245" references="/0/queryPackageOwnInterfaces/select/%.1">
+      <details key="start" value="5772"/>
+      <details key="end" value="5803"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.246" references="/0/queryPackageOwnInterfaces/select/%.1/%">
+      <details key="start" value="5772"/>
+      <details key="end" value="5787"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.247" references="/0/queryPackageOwnInterfaces/select/%.1/%/aInterface">
+      <details key="start" value="5772"/>
+      <details key="end" value="5782"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.248" references="/0/queryPackageOwnInterfaces/select/%.1/interfaceName">
+      <details key="start" value="5790"/>
+      <details key="end" value="5803"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.249" references="/0/queryPackageOwnInterfaces/select/aInterface">
+      <details key="start" value="5747"/>
+      <details key="end" value="5769"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.250" references="/0/queryModelAppliedProfiles">
+      <details key="start" value="5894"/>
+      <details key="end" value="6096"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.251" references="/0/queryModelAppliedProfiles/%">
+      <details key="start" value="5812"/>
+      <details key="end" value="5892"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.252" references="/0/queryModelAppliedProfiles/%/aModel">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.261" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1/temp6">
+    <eAnnotations source="positions.253" references="/0/queryModelAppliedProfiles/%/profileName">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.262" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/temp9">
+    <eAnnotations source="positions.254" references="/0/queryModelAppliedProfiles/aModel">
+      <details key="start" value="5937"/>
+      <details key="end" value="5951"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.255" references="/0/queryModelAppliedProfiles/profileName">
+      <details key="start" value="5953"/>
+      <details key="end" value="5973"/>
+      <details key="line" value="229"/>
+    </eAnnotations>
+    <eAnnotations source="positions.256" references="/0/queryModelAppliedProfiles/select">
+      <details key="start" value="5995"/>
+      <details key="end" value="6092"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.257" references="/0/queryModelAppliedProfiles/select/%">
+      <details key="start" value="5995"/>
+      <details key="end" value="6025"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.258" references="/0/queryModelAppliedProfiles/select/%/aModel">
+      <details key="start" value="5995"/>
+      <details key="end" value="6001"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.259" references="/0/queryModelAppliedProfiles/select/%.1">
+      <details key="start" value="6055"/>
+      <details key="end" value="6091"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.260" references="/0/queryModelAppliedProfiles/select/%.1/%">
+      <details key="start" value="6055"/>
+      <details key="end" value="6077"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.261" references="/0/queryModelAppliedProfiles/select/%.1/%/aProfile">
+      <details key="start" value="6055"/>
+      <details key="end" value="6063"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.262" references="/0/queryModelAppliedProfiles/select/%.1/profileName">
+      <details key="start" value="6080"/>
+      <details key="end" value="6091"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.263" references="/0/queryModelAppliedProfiles/select/aProfile">
+      <details key="start" value="6034"/>
+      <details key="end" value="6052"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.264" references="/0/queryProfileOwnStereotype">
+      <details key="start" value="6186"/>
+      <details key="end" value="6418"/>
+      <details key="line" value="238"/>
+    </eAnnotations>
+    <eAnnotations source="positions.265" references="/0/queryProfileOwnStereotype/%">
+      <details key="start" value="6100"/>
+      <details key="end" value="6184"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.266" references="/0/queryProfileOwnStereotype/%/aProfile">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.263" references="/0/queryUsedClassifiers/%.1/%/%/%/%.1">
-      <details key="start" value="5780"/>
-      <details key="end" value="5830"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.264" references="/0/queryUsedClassifiers/%.1/%/%/%/%.1/aClassifier">
-      <details key="start" value="5780"/>
-      <details key="end" value="5791"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.265" references="/0/queryUsedClassifiers/%.1/%/%/collect">
-      <details key="start" value="5843"/>
-      <details key="end" value="5919"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.266" references="/0/queryUsedClassifiers/%.1/%/%/collect/%">
-      <details key="start" value="5843"/>
-      <details key="end" value="5893"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.267" references="/0/queryUsedClassifiers/%.1/%/%/collect/%/aClassifier">
-      <details key="start" value="5843"/>
-      <details key="end" value="5854"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.268" references="/0/queryUsedClassifiers/%.1/%/%/collect/%.1">
+    <eAnnotations source="positions.267" references="/0/queryProfileOwnStereotype/%/stereotypeName">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.269" references="/0/queryUsedClassifiers/%.1/%/%/collect/%.1/temp7">
+    <eAnnotations source="positions.268" references="/0/queryProfileOwnStereotype/aProfile">
+      <details key="start" value="6229"/>
+      <details key="end" value="6247"/>
+      <details key="line" value="238"/>
+    </eAnnotations>
+    <eAnnotations source="positions.269" references="/0/queryProfileOwnStereotype/stereotypeName">
+      <details key="start" value="6249"/>
+      <details key="end" value="6272"/>
+      <details key="line" value="238"/>
+    </eAnnotations>
+    <eAnnotations source="positions.270" references="/0/queryProfileOwnStereotype/select">
+      <details key="start" value="6297"/>
+      <details key="end" value="6414"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.271" references="/0/queryProfileOwnStereotype/select/%">
+      <details key="start" value="6297"/>
+      <details key="end" value="6344"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.272" references="/0/queryProfileOwnStereotype/select/%/%">
+      <details key="start" value="6297"/>
+      <details key="end" value="6324"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.273" references="/0/queryProfileOwnStereotype/select/%/%/aProfile">
+      <details key="start" value="6297"/>
+      <details key="end" value="6305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.274" references="/0/queryProfileOwnStereotype/select/%/%.1">
+      <details key="start" value="6333"/>
+      <details key="end" value="6343"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.275" references="/0/queryProfileOwnStereotype/select/%.1">
+      <details key="start" value="6380"/>
+      <details key="end" value="6413"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.276" references="/0/queryProfileOwnStereotype/select/%.1/%">
+      <details key="start" value="6380"/>
+      <details key="end" value="6396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.277" references="/0/queryProfileOwnStereotype/select/%.1/%/aStereotype">
+      <details key="start" value="6380"/>
+      <details key="end" value="6391"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.278" references="/0/queryProfileOwnStereotype/select/%.1/stereotypeName">
+      <details key="start" value="6399"/>
+      <details key="end" value="6413"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.279" references="/0/queryProfileOwnStereotype/select/aStereotype">
+      <details key="start" value="6353"/>
+      <details key="end" value="6377"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.280" references="/0/%.3">
+      <details key="start" value="6424"/>
+      <details key="end" value="6503"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.281" references="/0/queryUsedClassifiers">
+      <details key="start" value="6565"/>
+      <details key="end" value="7725"/>
+      <details key="line" value="248"/>
+    </eAnnotations>
+    <eAnnotations source="positions.282" references="/0/queryUsedClassifiers/%">
+      <details key="start" value="6505"/>
+      <details key="end" value="6563"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.283" references="/0/queryUsedClassifiers/%/aClassifier">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.270" references="/0/queryUsedClassifiers/%.1/%/%/collect/temp10">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.284" references="/0/queryUsedClassifiers/aClassifier">
+      <details key="start" value="6601"/>
+      <details key="end" value="6625"/>
+      <details key="line" value="248"/>
+    </eAnnotations>
+    <eAnnotations source="positions.285" references="/0/queryUsedClassifiers/%.1">
+      <details key="start" value="6650"/>
+      <details key="end" value="7721"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.271" references="/0/queryUsedClassifiers/%.1/%/collect">
-      <details key="start" value="5932"/>
-      <details key="end" value="6011"/>
+    <eAnnotations source="positions.286" references="/0/queryUsedClassifiers/%.1/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7511"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.272" references="/0/queryUsedClassifiers/%.1/%/collect/%">
-      <details key="start" value="5932"/>
-      <details key="end" value="5982"/>
+    <eAnnotations source="positions.287" references="/0/queryUsedClassifiers/%.1/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7419"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.273" references="/0/queryUsedClassifiers/%.1/%/collect/%/aClassifier">
-      <details key="start" value="5932"/>
-      <details key="end" value="5943"/>
+    <eAnnotations source="positions.288" references="/0/queryUsedClassifiers/%.1/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7330"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.274" references="/0/queryUsedClassifiers/%.1/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.289" references="/0/queryUsedClassifiers/%.1/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7267"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.275" references="/0/queryUsedClassifiers/%.1/%/collect/%.1/temp8">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.290" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7185"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.276" references="/0/queryUsedClassifiers/%.1/%/collect/temp11">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.291" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7106"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.277" references="/0/queryUsedClassifiers/%.1/collect">
-      <details key="start" value="6024"/>
-      <details key="end" value="6221"/>
+    <eAnnotations source="positions.292" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="7053"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.278" references="/0/queryUsedClassifiers/%.1/collect/select">
-      <details key="start" value="6024"/>
-      <details key="end" value="6186"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.279" references="/0/queryUsedClassifiers/%.1/collect/select/collect">
-      <details key="start" value="6024"/>
-      <details key="end" value="6068"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.280" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%">
-      <details key="start" value="6024"/>
-      <details key="end" value="6053"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.281" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%/aClassifier">
-      <details key="start" value="6024"/>
-      <details key="end" value="6035"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.282" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%.1">
-      <details key="start" value="6054"/>
-      <details key="end" value="6068"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.283" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%.1/temp9">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.284" references="/0/queryUsedClassifiers/%.1/collect/select/collect/temp12">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.285" references="/0/queryUsedClassifiers/%.1/collect/select/%">
-      <details key="start" value="6102"/>
-      <details key="end" value="6185"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.286" references="/0/queryUsedClassifiers/%.1/collect/select/%/%">
-      <details key="start" value="6106"/>
-      <details key="end" value="6185"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.287" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%">
-      <details key="start" value="6106"/>
-      <details key="end" value="6168"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.288" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%/aParameter">
-      <details key="start" value="6106"/>
-      <details key="end" value="6116"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.289" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%/%">
-      <details key="start" value="6138"/>
-      <details key="end" value="6167"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.290" references="/0/queryUsedClassifiers/%.1/collect/select/aParameter">
-      <details key="start" value="6077"/>
-      <details key="end" value="6099"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.291" references="/0/queryUsedClassifiers/%.1/collect/%">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.292" references="/0/queryUsedClassifiers/%.1/collect/%/temp10">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.293" references="/0/queryUsedClassifiers/%.1/collect/temp13">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.294" references="/0/queryOperationsParametersClassifiers">
-      <details key="start" value="6310"/>
-      <details key="end" value="6500"/>
-      <details key="line" value="234"/>
-    </eAnnotations>
-    <eAnnotations source="positions.295" references="/0/queryOperationsParametersClassifiers/%">
-      <details key="start" value="6230"/>
-      <details key="end" value="6308"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.296" references="/0/queryOperationsParametersClassifiers/%/aClassifier">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.297" references="/0/queryOperationsParametersClassifiers/aClassifier">
-      <details key="start" value="6362"/>
-      <details key="end" value="6386"/>
-      <details key="line" value="234"/>
-    </eAnnotations>
-    <eAnnotations source="positions.298" references="/0/queryOperationsParametersClassifiers/%.1">
-      <details key="start" value="6411"/>
-      <details key="end" value="6496"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.299" references="/0/queryOperationsParametersClassifiers/%.1/%">
-      <details key="start" value="6411"/>
-      <details key="end" value="6487"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.300" references="/0/queryOperationsParametersClassifiers/%.1/%/collect">
-      <details key="start" value="6411"/>
-      <details key="end" value="6467"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.301" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect">
-      <details key="start" value="6411"/>
-      <details key="end" value="6455"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.302" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%">
-      <details key="start" value="6411"/>
-      <details key="end" value="6440"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.303" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%/aClassifier">
-      <details key="start" value="6411"/>
-      <details key="end" value="6422"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.304" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1">
-      <details key="start" value="6441"/>
-      <details key="end" value="6455"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.305" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1/temp1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.306" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/temp14">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.307" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.308" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%/temp2">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.309" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/temp15">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.310" references="/0/queryOperationsParametersClassifiers/%.1/%/%">
-      <details key="start" value="6476"/>
-      <details key="end" value="6486"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.311" references="/0/queryOperationsClassifiers">
-      <details key="start" value="6587"/>
-      <details key="end" value="6752"/>
-      <details key="line" value="242"/>
-    </eAnnotations>
-    <eAnnotations source="positions.312" references="/0/queryOperationsClassifiers/%">
-      <details key="start" value="6504"/>
-      <details key="end" value="6585"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.313" references="/0/queryOperationsClassifiers/%/aClassifier">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.314" references="/0/queryOperationsClassifiers/aClassifier">
-      <details key="start" value="6629"/>
-      <details key="end" value="6653"/>
-      <details key="line" value="242"/>
-    </eAnnotations>
-    <eAnnotations source="positions.315" references="/0/queryOperationsClassifiers/%.1">
-      <details key="start" value="6678"/>
-      <details key="end" value="6748"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.316" references="/0/queryOperationsClassifiers/%.1/%">
-      <details key="start" value="6678"/>
-      <details key="end" value="6739"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.317" references="/0/queryOperationsClassifiers/%.1/%/collect">
-      <details key="start" value="6678"/>
-      <details key="end" value="6719"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.318" references="/0/queryOperationsClassifiers/%.1/%/collect/%">
-      <details key="start" value="6678"/>
-      <details key="end" value="6707"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.319" references="/0/queryOperationsClassifiers/%.1/%/collect/%/aClassifier">
-      <details key="start" value="6678"/>
-      <details key="end" value="6689"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.320" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.321" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1/temp1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.322" references="/0/queryOperationsClassifiers/%.1/%/collect/temp16">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.323" references="/0/queryOperationsClassifiers/%.1/%/%">
-      <details key="start" value="6728"/>
-      <details key="end" value="6738"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.324" references="/0/queryPropertiesClassifiers">
-      <details key="start" value="6839"/>
-      <details key="end" value="7004"/>
-      <details key="line" value="250"/>
-    </eAnnotations>
-    <eAnnotations source="positions.325" references="/0/queryPropertiesClassifiers/%">
-      <details key="start" value="6756"/>
-      <details key="end" value="6837"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.326" references="/0/queryPropertiesClassifiers/%/aClassifier">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.327" references="/0/queryPropertiesClassifiers/aClassifier">
-      <details key="start" value="6881"/>
-      <details key="end" value="6905"/>
-      <details key="line" value="250"/>
-    </eAnnotations>
-    <eAnnotations source="positions.328" references="/0/queryPropertiesClassifiers/%.1">
-      <details key="start" value="6930"/>
-      <details key="end" value="7000"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.329" references="/0/queryPropertiesClassifiers/%.1/%">
-      <details key="start" value="6930"/>
-      <details key="end" value="6991"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.330" references="/0/queryPropertiesClassifiers/%.1/%/collect">
-      <details key="start" value="6930"/>
+    <eAnnotations source="positions.293" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
       <details key="end" value="6971"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.331" references="/0/queryPropertiesClassifiers/%.1/%/collect/%">
-      <details key="start" value="6930"/>
-      <details key="end" value="6959"/>
+    <eAnnotations source="positions.294" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="6892"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.332" references="/0/queryPropertiesClassifiers/%.1/%/collect/%/aClassifier">
-      <details key="start" value="6930"/>
-      <details key="end" value="6941"/>
+    <eAnnotations source="positions.295" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="6839"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.333" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1">
+    <eAnnotations source="positions.296" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="6761"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.297" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/%">
+      <details key="start" value="6650"/>
+      <details key="end" value="6686"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.298" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/%/aClassifier">
+      <details key="start" value="6650"/>
+      <details key="end" value="6661"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.299" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect">
+      <details key="start" value="6698"/>
+      <details key="end" value="6760"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.300" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="6698"/>
+      <details key="end" value="6734"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.301" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="6698"/>
+      <details key="end" value="6709"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.302" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.334" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1/temp1">
+    <eAnnotations source="positions.303" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.335" references="/0/queryPropertiesClassifiers/%.1/%/collect/temp17">
+    <eAnnotations source="positions.304" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/%/collect/temp4">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.336" references="/0/queryPropertiesClassifiers/%.1/%/%">
-      <details key="start" value="6980"/>
-      <details key="end" value="6990"/>
+    <eAnnotations source="positions.305" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect">
+      <details key="start" value="6773"/>
+      <details key="end" value="6838"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.337" references="/0/queryTemplateBinding">
-      <details key="start" value="7081"/>
-      <details key="end" value="7202"/>
-      <details key="line" value="258"/>
-    </eAnnotations>
-    <eAnnotations source="positions.338" references="/0/queryTemplateBinding/%">
-      <details key="start" value="7008"/>
-      <details key="end" value="7079"/>
+    <eAnnotations source="positions.306" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="6773"/>
+      <details key="end" value="6809"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.339" references="/0/queryTemplateBinding/%/aClassifier">
+    <eAnnotations source="positions.307" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="6773"/>
+      <details key="end" value="6784"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.308" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.340" references="/0/queryTemplateBinding/aClassifier">
-      <details key="start" value="7117"/>
-      <details key="end" value="7141"/>
-      <details key="line" value="258"/>
-    </eAnnotations>
-    <eAnnotations source="positions.341" references="/0/queryTemplateBinding/%.1">
-      <details key="start" value="7171"/>
-      <details key="end" value="7198"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.342" references="/0/queryTemplateBinding/%.1/aClassifier">
-      <details key="start" value="7171"/>
-      <details key="end" value="7182"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.343" references="/0/queryParameterSubstitution">
-      <details key="start" value="7285"/>
-      <details key="end" value="7454"/>
-      <details key="line" value="266"/>
-    </eAnnotations>
-    <eAnnotations source="positions.344" references="/0/queryParameterSubstitution/%">
-      <details key="start" value="7206"/>
-      <details key="end" value="7283"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.345" references="/0/queryParameterSubstitution/%/aClassifier">
+    <eAnnotations source="positions.309" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/%.1/temp2">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.346" references="/0/queryParameterSubstitution/aClassifier">
-      <details key="start" value="7327"/>
-      <details key="end" value="7351"/>
-      <details key="line" value="266"/>
-    </eAnnotations>
-    <eAnnotations source="positions.347" references="/0/queryParameterSubstitution/%.1">
-      <details key="start" value="7376"/>
-      <details key="end" value="7450"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.348" references="/0/queryParameterSubstitution/%.1/collect">
-      <details key="start" value="7376"/>
-      <details key="end" value="7441"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.349" references="/0/queryParameterSubstitution/%.1/collect/collect">
-      <details key="start" value="7377"/>
-      <details key="end" value="7433"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.350" references="/0/queryParameterSubstitution/%.1/collect/collect/%">
-      <details key="start" value="7377"/>
-      <details key="end" value="7411"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.351" references="/0/queryParameterSubstitution/%.1/collect/collect/%/aClassifier">
-      <details key="start" value="7377"/>
-      <details key="end" value="7388"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.352" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1">
-      <details key="start" value="7412"/>
-      <details key="end" value="7433"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.353" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1/temp1">
+    <eAnnotations source="positions.310" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%/collect/temp5">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.354" references="/0/queryParameterSubstitution/%.1/collect/collect/temp18">
+    <eAnnotations source="positions.311" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%.1">
+      <details key="start" value="6851"/>
+      <details key="end" value="6891"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.312" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/%/%.1/aClassifier">
+      <details key="start" value="6851"/>
+      <details key="end" value="6862"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.313" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect">
+      <details key="start" value="6904"/>
+      <details key="end" value="6970"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.314" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="6904"/>
+      <details key="end" value="6944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.315" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="6904"/>
+      <details key="end" value="6915"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.316" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.355" references="/0/queryParameterSubstitution/%.1/collect/%">
-      <details key="start" value="7434"/>
-      <details key="end" value="7440"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.356" references="/0/queryParameterSubstitution/%.1/collect/%/temp2">
+    <eAnnotations source="positions.317" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/%.1/temp3">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.357" references="/0/queryParameterSubstitution/%.1/collect/temp19">
+    <eAnnotations source="positions.318" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/%/collect/temp6">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.358" references="/0/queryTemplateSignature">
-      <details key="start" value="7535"/>
-      <details key="end" value="7664"/>
-      <details key="line" value="274"/>
-    </eAnnotations>
-    <eAnnotations source="positions.359" references="/0/queryTemplateSignature/%">
-      <details key="start" value="7458"/>
-      <details key="end" value="7533"/>
+    <eAnnotations source="positions.319" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect">
+      <details key="start" value="6983"/>
+      <details key="end" value="7052"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.360" references="/0/queryTemplateSignature/%/aTemplateBinding">
+    <eAnnotations source="positions.320" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="6983"/>
+      <details key="end" value="7023"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.321" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="6983"/>
+      <details key="end" value="6994"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.322" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.361" references="/0/queryTemplateSignature/aTemplateBinding">
-      <details key="start" value="7573"/>
-      <details key="end" value="7607"/>
-      <details key="line" value="274"/>
-    </eAnnotations>
-    <eAnnotations source="positions.362" references="/0/queryTemplateSignature/%.1">
-      <details key="start" value="7634"/>
-      <details key="end" value="7660"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.363" references="/0/queryTemplateSignature/%.1/aTemplateBinding">
-      <details key="start" value="7634"/>
-      <details key="end" value="7650"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.364" references="/0/queryTemplate">
-      <details key="start" value="7756"/>
-      <details key="end" value="7883"/>
-      <details key="line" value="282"/>
-    </eAnnotations>
-    <eAnnotations source="positions.365" references="/0/queryTemplate/%">
-      <details key="start" value="7668"/>
-      <details key="end" value="7754"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.366" references="/0/queryTemplate/%/aTemplateSignature">
+    <eAnnotations source="positions.323" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/%.1/temp4">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.367" references="/0/queryTemplate/aTemplateSignature">
-      <details key="start" value="7785"/>
-      <details key="end" value="7823"/>
-      <details key="line" value="282"/>
-    </eAnnotations>
-    <eAnnotations source="positions.368" references="/0/queryTemplate/%.1">
-      <details key="start" value="7852"/>
-      <details key="end" value="7879"/>
+    <eAnnotations source="positions.324" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%/collect/temp7">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.369" references="/0/queryTemplate/%.1/aTemplateSignature">
-      <details key="start" value="7852"/>
-      <details key="end" value="7870"/>
+    <eAnnotations source="positions.325" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%.1">
+      <details key="start" value="7065"/>
+      <details key="end" value="7105"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.370" references="/0/queryClassifierTemplate">
-      <details key="start" value="7968"/>
-      <details key="end" value="8155"/>
-      <details key="line" value="290"/>
+    <eAnnotations source="positions.326" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/%/%.1/aClassifier">
+      <details key="start" value="7065"/>
+      <details key="end" value="7076"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.371" references="/0/queryClassifierTemplate/%">
-      <details key="start" value="7887"/>
+    <eAnnotations source="positions.327" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect">
+      <details key="start" value="7118"/>
+      <details key="end" value="7184"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.328" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%">
+      <details key="start" value="7118"/>
+      <details key="end" value="7158"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.329" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="7118"/>
+      <details key="end" value="7129"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.330" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.331" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/%.1/temp5">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.332" references="/0/queryUsedClassifiers/%.1/%/%/%/%/%/collect/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.333" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect">
+      <details key="start" value="7197"/>
+      <details key="end" value="7266"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.334" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%">
+      <details key="start" value="7197"/>
+      <details key="end" value="7237"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.335" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%/aClassifier">
+      <details key="start" value="7197"/>
+      <details key="end" value="7208"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.336" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.337" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/%.1/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.338" references="/0/queryUsedClassifiers/%.1/%/%/%/%/collect/temp9">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.339" references="/0/queryUsedClassifiers/%.1/%/%/%/%.1">
+      <details key="start" value="7279"/>
+      <details key="end" value="7329"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.340" references="/0/queryUsedClassifiers/%.1/%/%/%/%.1/aClassifier">
+      <details key="start" value="7279"/>
+      <details key="end" value="7290"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.341" references="/0/queryUsedClassifiers/%.1/%/%/collect">
+      <details key="start" value="7342"/>
+      <details key="end" value="7418"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.342" references="/0/queryUsedClassifiers/%.1/%/%/collect/%">
+      <details key="start" value="7342"/>
+      <details key="end" value="7392"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.343" references="/0/queryUsedClassifiers/%.1/%/%/collect/%/aClassifier">
+      <details key="start" value="7342"/>
+      <details key="end" value="7353"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.344" references="/0/queryUsedClassifiers/%.1/%/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.345" references="/0/queryUsedClassifiers/%.1/%/%/collect/%.1/temp7">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.346" references="/0/queryUsedClassifiers/%.1/%/%/collect/temp10">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.347" references="/0/queryUsedClassifiers/%.1/%/collect">
+      <details key="start" value="7431"/>
+      <details key="end" value="7510"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.348" references="/0/queryUsedClassifiers/%.1/%/collect/%">
+      <details key="start" value="7431"/>
+      <details key="end" value="7481"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.349" references="/0/queryUsedClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="7431"/>
+      <details key="end" value="7442"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.350" references="/0/queryUsedClassifiers/%.1/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.351" references="/0/queryUsedClassifiers/%.1/%/collect/%.1/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.352" references="/0/queryUsedClassifiers/%.1/%/collect/temp11">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.353" references="/0/queryUsedClassifiers/%.1/collect">
+      <details key="start" value="7523"/>
+      <details key="end" value="7720"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.354" references="/0/queryUsedClassifiers/%.1/collect/select">
+      <details key="start" value="7523"/>
+      <details key="end" value="7685"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.355" references="/0/queryUsedClassifiers/%.1/collect/select/collect">
+      <details key="start" value="7523"/>
+      <details key="end" value="7567"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.356" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%">
+      <details key="start" value="7523"/>
+      <details key="end" value="7552"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.357" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%/aClassifier">
+      <details key="start" value="7523"/>
+      <details key="end" value="7534"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.358" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%.1">
+      <details key="start" value="7553"/>
+      <details key="end" value="7567"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.359" references="/0/queryUsedClassifiers/%.1/collect/select/collect/%.1/temp9">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.360" references="/0/queryUsedClassifiers/%.1/collect/select/collect/temp12">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.361" references="/0/queryUsedClassifiers/%.1/collect/select/%">
+      <details key="start" value="7601"/>
+      <details key="end" value="7684"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.362" references="/0/queryUsedClassifiers/%.1/collect/select/%/%">
+      <details key="start" value="7605"/>
+      <details key="end" value="7684"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.363" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%">
+      <details key="start" value="7605"/>
+      <details key="end" value="7667"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.364" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%/aParameter">
+      <details key="start" value="7605"/>
+      <details key="end" value="7615"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.365" references="/0/queryUsedClassifiers/%.1/collect/select/%/%/%/%">
+      <details key="start" value="7637"/>
+      <details key="end" value="7666"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.366" references="/0/queryUsedClassifiers/%.1/collect/select/aParameter">
+      <details key="start" value="7576"/>
+      <details key="end" value="7598"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.367" references="/0/queryUsedClassifiers/%.1/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.368" references="/0/queryUsedClassifiers/%.1/collect/%/temp10">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.369" references="/0/queryUsedClassifiers/%.1/collect/temp13">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.370" references="/0/queryOperationsParametersClassifiers">
+      <details key="start" value="7809"/>
+      <details key="end" value="7999"/>
+      <details key="line" value="268"/>
+    </eAnnotations>
+    <eAnnotations source="positions.371" references="/0/queryOperationsParametersClassifiers/%">
+      <details key="start" value="7729"/>
+      <details key="end" value="7807"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.372" references="/0/queryOperationsParametersClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.373" references="/0/queryOperationsParametersClassifiers/aClassifier">
+      <details key="start" value="7861"/>
+      <details key="end" value="7885"/>
+      <details key="line" value="268"/>
+    </eAnnotations>
+    <eAnnotations source="positions.374" references="/0/queryOperationsParametersClassifiers/%.1">
+      <details key="start" value="7910"/>
+      <details key="end" value="7995"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.375" references="/0/queryOperationsParametersClassifiers/%.1/%">
+      <details key="start" value="7910"/>
+      <details key="end" value="7986"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.376" references="/0/queryOperationsParametersClassifiers/%.1/%/collect">
+      <details key="start" value="7910"/>
       <details key="end" value="7966"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.372" references="/0/queryClassifierTemplate/%/aClassifier">
+    <eAnnotations source="positions.377" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect">
+      <details key="start" value="7910"/>
+      <details key="end" value="7954"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.378" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%">
+      <details key="start" value="7910"/>
+      <details key="end" value="7939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.379" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%/aClassifier">
+      <details key="start" value="7910"/>
+      <details key="end" value="7921"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.380" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1">
+      <details key="start" value="7940"/>
+      <details key="end" value="7954"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.381" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.373" references="/0/queryClassifierTemplate/aClassifier">
-      <details key="start" value="8007"/>
-      <details key="end" value="8031"/>
-      <details key="line" value="290"/>
-    </eAnnotations>
-    <eAnnotations source="positions.374" references="/0/queryClassifierTemplate/%.1">
-      <details key="start" value="8065"/>
-      <details key="end" value="8151"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.375" references="/0/queryClassifierTemplate/%.1/collect">
-      <details key="start" value="8065"/>
-      <details key="end" value="8142"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.376" references="/0/queryClassifierTemplate/%.1/collect/collect">
-      <details key="start" value="8066"/>
-      <details key="end" value="8125"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.377" references="/0/queryClassifierTemplate/%.1/collect/collect/%">
-      <details key="start" value="8066"/>
-      <details key="end" value="8100"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.378" references="/0/queryClassifierTemplate/%.1/collect/collect/%/aClassifier">
-      <details key="start" value="8066"/>
-      <details key="end" value="8077"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.379" references="/0/queryClassifierTemplate/%.1/collect/collect/%.1">
+    <eAnnotations source="positions.382" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/collect/temp14">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.380" references="/0/queryClassifierTemplate/%.1/collect/collect/%.1/temp1">
+    <eAnnotations source="positions.383" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.381" references="/0/queryClassifierTemplate/%.1/collect/collect/temp20">
+    <eAnnotations source="positions.384" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/%/temp2">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.382" references="/0/queryClassifierTemplate/%.1/collect/%">
+    <eAnnotations source="positions.385" references="/0/queryOperationsParametersClassifiers/%.1/%/collect/temp15">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.383" references="/0/queryClassifierTemplate/%.1/collect/%/temp2">
+    <eAnnotations source="positions.386" references="/0/queryOperationsParametersClassifiers/%.1/%/%">
+      <details key="start" value="7975"/>
+      <details key="end" value="7985"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.387" references="/0/queryOperationsClassifiers">
+      <details key="start" value="8086"/>
+      <details key="end" value="8251"/>
+      <details key="line" value="276"/>
+    </eAnnotations>
+    <eAnnotations source="positions.388" references="/0/queryOperationsClassifiers/%">
+      <details key="start" value="8003"/>
+      <details key="end" value="8084"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.389" references="/0/queryOperationsClassifiers/%/aClassifier">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.384" references="/0/queryClassifierTemplate/%.1/collect/temp21">
+    <eAnnotations source="positions.390" references="/0/queryOperationsClassifiers/aClassifier">
+      <details key="start" value="8128"/>
+      <details key="end" value="8152"/>
+      <details key="line" value="276"/>
+    </eAnnotations>
+    <eAnnotations source="positions.391" references="/0/queryOperationsClassifiers/%.1">
+      <details key="start" value="8177"/>
+      <details key="end" value="8247"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.392" references="/0/queryOperationsClassifiers/%.1/%">
+      <details key="start" value="8177"/>
+      <details key="end" value="8238"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.393" references="/0/queryOperationsClassifiers/%.1/%/collect">
+      <details key="start" value="8177"/>
+      <details key="end" value="8218"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.394" references="/0/queryOperationsClassifiers/%.1/%/collect/%">
+      <details key="start" value="8177"/>
+      <details key="end" value="8206"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.395" references="/0/queryOperationsClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="8177"/>
+      <details key="end" value="8188"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.396" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.385" references="/0/queryUsedClassifiersInDifferentPackages">
-      <details key="start" value="8229"/>
-      <details key="end" value="8474"/>
-      <details key="line" value="298"/>
-    </eAnnotations>
-    <eAnnotations source="positions.386" references="/0/queryUsedClassifiersInDifferentPackages/%">
-      <details key="start" value="8159"/>
-      <details key="end" value="8227"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.387" references="/0/queryUsedClassifiersInDifferentPackages/%/aClassifier">
+    <eAnnotations source="positions.397" references="/0/queryOperationsClassifiers/%.1/%/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.388" references="/0/queryUsedClassifiersInDifferentPackages/aClassifier">
-      <details key="start" value="8284"/>
-      <details key="end" value="8308"/>
-      <details key="line" value="298"/>
+    <eAnnotations source="positions.398" references="/0/queryOperationsClassifiers/%.1/%/collect/temp16">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.389" references="/0/queryUsedClassifiersInDifferentPackages/reject">
-      <details key="start" value="8333"/>
+    <eAnnotations source="positions.399" references="/0/queryOperationsClassifiers/%.1/%/%">
+      <details key="start" value="8227"/>
+      <details key="end" value="8237"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.400" references="/0/queryPropertiesClassifiers">
+      <details key="start" value="8338"/>
+      <details key="end" value="8503"/>
+      <details key="line" value="284"/>
+    </eAnnotations>
+    <eAnnotations source="positions.401" references="/0/queryPropertiesClassifiers/%">
+      <details key="start" value="8255"/>
+      <details key="end" value="8336"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.402" references="/0/queryPropertiesClassifiers/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.403" references="/0/queryPropertiesClassifiers/aClassifier">
+      <details key="start" value="8380"/>
+      <details key="end" value="8404"/>
+      <details key="line" value="284"/>
+    </eAnnotations>
+    <eAnnotations source="positions.404" references="/0/queryPropertiesClassifiers/%.1">
+      <details key="start" value="8429"/>
+      <details key="end" value="8499"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.405" references="/0/queryPropertiesClassifiers/%.1/%">
+      <details key="start" value="8429"/>
+      <details key="end" value="8490"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.406" references="/0/queryPropertiesClassifiers/%.1/%/collect">
+      <details key="start" value="8429"/>
       <details key="end" value="8470"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.390" references="/0/queryUsedClassifiersInDifferentPackages/reject/%">
-      <details key="start" value="8333"/>
-      <details key="end" value="8367"/>
+    <eAnnotations source="positions.407" references="/0/queryPropertiesClassifiers/%.1/%/collect/%">
+      <details key="start" value="8429"/>
+      <details key="end" value="8458"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.391" references="/0/queryUsedClassifiersInDifferentPackages/reject/%/aClassifier">
-      <details key="start" value="8333"/>
-      <details key="end" value="8344"/>
+    <eAnnotations source="positions.408" references="/0/queryPropertiesClassifiers/%.1/%/collect/%/aClassifier">
+      <details key="start" value="8429"/>
+      <details key="end" value="8440"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.392" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1">
-      <details key="start" value="8410"/>
-      <details key="end" value="8469"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.393" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%">
-      <details key="start" value="8410"/>
-      <details key="end" value="8436"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.394" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%/aClassifier">
-      <details key="start" value="8410"/>
-      <details key="end" value="8421"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.395" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1">
-      <details key="start" value="8439"/>
-      <details key="end" value="8469"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.396" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1/aUsedClassifier">
-      <details key="start" value="8439"/>
-      <details key="end" value="8454"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.397" references="/0/queryUsedClassifiersInDifferentPackages/reject/aUsedClassifier">
-      <details key="start" value="8379"/>
-      <details key="end" value="8407"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.398" references="/0/queryParameterGenericsClassifier">
-      <details key="start" value="8555"/>
-      <details key="end" value="8742"/>
-      <details key="line" value="307"/>
-    </eAnnotations>
-    <eAnnotations source="positions.399" references="/0/queryParameterGenericsClassifier/%">
-      <details key="start" value="8478"/>
-      <details key="end" value="8553"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.400" references="/0/queryParameterGenericsClassifier/%/aClassifier">
+    <eAnnotations source="positions.409" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.401" references="/0/queryParameterGenericsClassifier/aParameter">
-      <details key="start" value="8603"/>
-      <details key="end" value="8625"/>
-      <details key="line" value="307"/>
-    </eAnnotations>
-    <eAnnotations source="positions.402" references="/0/queryParameterGenericsClassifier/%.1">
-      <details key="start" value="8650"/>
-      <details key="end" value="8738"/>
+    <eAnnotations source="positions.410" references="/0/queryPropertiesClassifiers/%.1/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.403" references="/0/queryParameterGenericsClassifier/%.1/aParameter">
-      <details key="start" value="8650"/>
-      <details key="end" value="8660"/>
+    <eAnnotations source="positions.411" references="/0/queryPropertiesClassifiers/%.1/%/collect/temp17">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.404" references="/0/queryParameterGenericsClassifier/%.1/%">
+    <eAnnotations source="positions.412" references="/0/queryPropertiesClassifiers/%.1/%/%">
+      <details key="start" value="8479"/>
+      <details key="end" value="8489"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.413" references="/0/queryTemplateBinding">
+      <details key="start" value="8580"/>
+      <details key="end" value="8701"/>
+      <details key="line" value="292"/>
+    </eAnnotations>
+    <eAnnotations source="positions.414" references="/0/queryTemplateBinding/%">
+      <details key="start" value="8507"/>
+      <details key="end" value="8578"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.415" references="/0/queryTemplateBinding/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.416" references="/0/queryTemplateBinding/aClassifier">
+      <details key="start" value="8616"/>
+      <details key="end" value="8640"/>
+      <details key="line" value="292"/>
+    </eAnnotations>
+    <eAnnotations source="positions.417" references="/0/queryTemplateBinding/%.1">
       <details key="start" value="8670"/>
-      <details key="end" value="8726"/>
+      <details key="end" value="8697"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.405" references="/0/queryParameterGenericsClassifier/%.1/%/self">
+    <eAnnotations source="positions.418" references="/0/queryTemplateBinding/%.1/aClassifier">
       <details key="start" value="8670"/>
-      <details key="end" value="8674"/>
+      <details key="end" value="8681"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.406" references="/0/queryParameterGenericsClassifier/%.1/%/%">
-      <details key="start" value="8696"/>
-      <details key="end" value="8725"/>
+    <eAnnotations source="positions.419" references="/0/queryParameterSubstitution">
+      <details key="start" value="8784"/>
+      <details key="end" value="8953"/>
+      <details key="line" value="300"/>
+    </eAnnotations>
+    <eAnnotations source="positions.420" references="/0/queryParameterSubstitution/%">
+      <details key="start" value="8705"/>
+      <details key="end" value="8782"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.407" references="/0/queryParameterGenericsClassifier/%.1/%.1">
-      <details key="start" value="8728"/>
-      <details key="end" value="8737"/>
+    <eAnnotations source="positions.421" references="/0/queryParameterSubstitution/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.422" references="/0/queryParameterSubstitution/aClassifier">
+      <details key="start" value="8826"/>
+      <details key="end" value="8850"/>
+      <details key="line" value="300"/>
+    </eAnnotations>
+    <eAnnotations source="positions.423" references="/0/queryParameterSubstitution/%.1">
+      <details key="start" value="8875"/>
+      <details key="end" value="8949"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.424" references="/0/queryParameterSubstitution/%.1/collect">
+      <details key="start" value="8875"/>
+      <details key="end" value="8940"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.425" references="/0/queryParameterSubstitution/%.1/collect/collect">
+      <details key="start" value="8876"/>
+      <details key="end" value="8932"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.426" references="/0/queryParameterSubstitution/%.1/collect/collect/%">
+      <details key="start" value="8876"/>
+      <details key="end" value="8910"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.427" references="/0/queryParameterSubstitution/%.1/collect/collect/%/aClassifier">
+      <details key="start" value="8876"/>
+      <details key="end" value="8887"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.428" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1">
+      <details key="start" value="8911"/>
+      <details key="end" value="8932"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.429" references="/0/queryParameterSubstitution/%.1/collect/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.430" references="/0/queryParameterSubstitution/%.1/collect/collect/temp18">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.431" references="/0/queryParameterSubstitution/%.1/collect/%">
+      <details key="start" value="8933"/>
+      <details key="end" value="8939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.432" references="/0/queryParameterSubstitution/%.1/collect/%/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.433" references="/0/queryParameterSubstitution/%.1/collect/temp19">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.434" references="/0/queryTemplateSignature">
+      <details key="start" value="9034"/>
+      <details key="end" value="9163"/>
+      <details key="line" value="308"/>
+    </eAnnotations>
+    <eAnnotations source="positions.435" references="/0/queryTemplateSignature/%">
+      <details key="start" value="8957"/>
+      <details key="end" value="9032"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.436" references="/0/queryTemplateSignature/%/aTemplateBinding">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.437" references="/0/queryTemplateSignature/aTemplateBinding">
+      <details key="start" value="9072"/>
+      <details key="end" value="9106"/>
+      <details key="line" value="308"/>
+    </eAnnotations>
+    <eAnnotations source="positions.438" references="/0/queryTemplateSignature/%.1">
+      <details key="start" value="9133"/>
+      <details key="end" value="9159"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.439" references="/0/queryTemplateSignature/%.1/aTemplateBinding">
+      <details key="start" value="9133"/>
+      <details key="end" value="9149"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.440" references="/0/queryTemplate">
+      <details key="start" value="9255"/>
+      <details key="end" value="9382"/>
+      <details key="line" value="316"/>
+    </eAnnotations>
+    <eAnnotations source="positions.441" references="/0/queryTemplate/%">
+      <details key="start" value="9167"/>
+      <details key="end" value="9253"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.442" references="/0/queryTemplate/%/aTemplateSignature">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.443" references="/0/queryTemplate/aTemplateSignature">
+      <details key="start" value="9284"/>
+      <details key="end" value="9322"/>
+      <details key="line" value="316"/>
+    </eAnnotations>
+    <eAnnotations source="positions.444" references="/0/queryTemplate/%.1">
+      <details key="start" value="9351"/>
+      <details key="end" value="9378"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.445" references="/0/queryTemplate/%.1/aTemplateSignature">
+      <details key="start" value="9351"/>
+      <details key="end" value="9369"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.446" references="/0/queryClassifierTemplate">
+      <details key="start" value="9467"/>
+      <details key="end" value="9654"/>
+      <details key="line" value="324"/>
+    </eAnnotations>
+    <eAnnotations source="positions.447" references="/0/queryClassifierTemplate/%">
+      <details key="start" value="9386"/>
+      <details key="end" value="9465"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.448" references="/0/queryClassifierTemplate/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.449" references="/0/queryClassifierTemplate/aClassifier">
+      <details key="start" value="9506"/>
+      <details key="end" value="9530"/>
+      <details key="line" value="324"/>
+    </eAnnotations>
+    <eAnnotations source="positions.450" references="/0/queryClassifierTemplate/%.1">
+      <details key="start" value="9564"/>
+      <details key="end" value="9650"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.451" references="/0/queryClassifierTemplate/%.1/collect">
+      <details key="start" value="9564"/>
+      <details key="end" value="9641"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.452" references="/0/queryClassifierTemplate/%.1/collect/collect">
+      <details key="start" value="9565"/>
+      <details key="end" value="9624"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.453" references="/0/queryClassifierTemplate/%.1/collect/collect/%">
+      <details key="start" value="9565"/>
+      <details key="end" value="9599"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.454" references="/0/queryClassifierTemplate/%.1/collect/collect/%/aClassifier">
+      <details key="start" value="9565"/>
+      <details key="end" value="9576"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.455" references="/0/queryClassifierTemplate/%.1/collect/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.456" references="/0/queryClassifierTemplate/%.1/collect/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.457" references="/0/queryClassifierTemplate/%.1/collect/collect/temp20">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.458" references="/0/queryClassifierTemplate/%.1/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.459" references="/0/queryClassifierTemplate/%.1/collect/%/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.460" references="/0/queryClassifierTemplate/%.1/collect/temp21">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.461" references="/0/queryUsedClassifiersInDifferentPackages">
+      <details key="start" value="9728"/>
+      <details key="end" value="9973"/>
+      <details key="line" value="332"/>
+    </eAnnotations>
+    <eAnnotations source="positions.462" references="/0/queryUsedClassifiersInDifferentPackages/%">
+      <details key="start" value="9658"/>
+      <details key="end" value="9726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.463" references="/0/queryUsedClassifiersInDifferentPackages/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.464" references="/0/queryUsedClassifiersInDifferentPackages/aClassifier">
+      <details key="start" value="9783"/>
+      <details key="end" value="9807"/>
+      <details key="line" value="332"/>
+    </eAnnotations>
+    <eAnnotations source="positions.465" references="/0/queryUsedClassifiersInDifferentPackages/reject">
+      <details key="start" value="9832"/>
+      <details key="end" value="9969"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.466" references="/0/queryUsedClassifiersInDifferentPackages/reject/%">
+      <details key="start" value="9832"/>
+      <details key="end" value="9866"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.467" references="/0/queryUsedClassifiersInDifferentPackages/reject/%/aClassifier">
+      <details key="start" value="9832"/>
+      <details key="end" value="9843"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.468" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1">
+      <details key="start" value="9909"/>
+      <details key="end" value="9968"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.469" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%">
+      <details key="start" value="9909"/>
+      <details key="end" value="9935"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.470" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%/aClassifier">
+      <details key="start" value="9909"/>
+      <details key="end" value="9920"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.471" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1">
+      <details key="start" value="9938"/>
+      <details key="end" value="9968"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.472" references="/0/queryUsedClassifiersInDifferentPackages/reject/%.1/%.1/aUsedClassifier">
+      <details key="start" value="9938"/>
+      <details key="end" value="9953"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.473" references="/0/queryUsedClassifiersInDifferentPackages/reject/aUsedClassifier">
+      <details key="start" value="9878"/>
+      <details key="end" value="9906"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.474" references="/0/queryParameterGenericsClassifier">
+      <details key="start" value="10054"/>
+      <details key="end" value="10241"/>
+      <details key="line" value="341"/>
+    </eAnnotations>
+    <eAnnotations source="positions.475" references="/0/queryParameterGenericsClassifier/%">
+      <details key="start" value="9977"/>
+      <details key="end" value="10052"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.476" references="/0/queryParameterGenericsClassifier/%/aClassifier">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.477" references="/0/queryParameterGenericsClassifier/aParameter">
+      <details key="start" value="10102"/>
+      <details key="end" value="10124"/>
+      <details key="line" value="341"/>
+    </eAnnotations>
+    <eAnnotations source="positions.478" references="/0/queryParameterGenericsClassifier/%.1">
+      <details key="start" value="10149"/>
+      <details key="end" value="10237"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.479" references="/0/queryParameterGenericsClassifier/%.1/aParameter">
+      <details key="start" value="10149"/>
+      <details key="end" value="10159"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.480" references="/0/queryParameterGenericsClassifier/%.1/%">
+      <details key="start" value="10169"/>
+      <details key="end" value="10225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.481" references="/0/queryParameterGenericsClassifier/%.1/%/self">
+      <details key="start" value="10169"/>
+      <details key="end" value="10173"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.482" references="/0/queryParameterGenericsClassifier/%.1/%/%">
+      <details key="start" value="10195"/>
+      <details key="end" value="10224"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.483" references="/0/queryParameterGenericsClassifier/%.1/%.1">
+      <details key="start" value="10227"/>
+      <details key="end" value="10236"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

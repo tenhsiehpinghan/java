@@ -1,8 +1,8 @@
 import idv.hsiehpinghan.database.configuration.DataSourceConfiguration;
 import idv.hsiehpinghan.database.configuration.implement.JpaConfiguration;
-import idv.hsiehpinghan.database.model.User;
+import idv.hsiehpinghan.database.model.Address;
+import idv.hsiehpinghan.database.model.Student;
 import idv.hsiehpinghan.database.service.UserService;
-import idv.hsiehpinghan.database.service.implement.UserServiceImpl;
 
 import java.sql.SQLException;
 
@@ -19,10 +19,13 @@ public class Main {
 //        applicationContext.refresh();
          
         UserService userService =applicationContext.getBean("idv.hsiehpinghan.database.service.implement.UserServiceImpl", UserService.class);
-        User user = new User();
-        user.setPersonalId("personalId_1");
-        user.setPassword("password");
-        userService.save(user);
+        Student student = new Student();
+        student.setMId(3333L);
+        Address mAddress = new Address();
+        mAddress.setNumber("number_1");
+        mAddress.setStreet("street_1");
+        student.setMAddress(mAddress);
+        userService.save(student);
         applicationContext.close();
     }
 }

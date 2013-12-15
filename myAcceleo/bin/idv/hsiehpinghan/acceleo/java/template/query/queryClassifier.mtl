@@ -158,9 +158,6 @@
 	->filterClassifiers()
 /]
 
-
-
-
 [**
  * 取得某個classifier generalize了那些classifier。
  * @param aClassifier
@@ -168,10 +165,6 @@
 [query public queryClassifierExtends(aClassifier : Classifier) : Set(Classifier) = 
 	aClassifier.getGenerals()
 /]
-
-
-
-
 
 [**
  * 取得某個classifier有那些property。
@@ -201,6 +194,50 @@
 
 
 [comment]--------------------------protected-------------------------[/comment]
+[**
+ * 取得某個model下的importedPackage。
+ * @param aModel
+ * @param importedPackageName
+ */]
+[query protected queryModelOwnImportedPackages(aModel : Model, importedPackageName : String) : Set(Package) = 
+	aModel.getImportedPackages()->select(aPackage : Package | aPackage.name = importedPackageName)
+/]
+
+[**
+ * 取得某個package下的package。
+ * @param aPackage
+ * @param packageName
+ */]
+[query protected queryPackageOwnPackages(aPackage : Package, packageName : String) : Set(Package) = 
+	aPackage.getOwnedMembers()->filter(Package)->select(aPackage : Package | aPackage.name = packageName)
+/]
+
+[**
+ * 取得某個package下的interface。
+ * @param aPackage
+ * @param interfaceName
+ */]
+[query protected queryPackageOwnInterfaces(aPackage : Package, interfaceName : String) : Set(Interface) = 
+	aPackage.getOwnedMembers()->filter(Interface)->select(aInterface : Interface | aInterface.name = interfaceName)
+/]
+
+[**
+ * 取得某個model applied的profile
+ * @param aModel
+ * @param profileName
+ */]
+[query protected queryModelAppliedProfiles(aModel : Model, profileName : String) : Set(Profile) = 
+	aModel.getAllAppliedProfiles()->select(aProfile : Profile | aProfile.qualifiedName = profileName)
+/]
+
+[**
+ * 取得某個profile下的stereotype。
+ * @param aProfile
+ * @param stereotypeName
+ */]
+[query protected queryProfileOwnStereotype(aProfile : Profile, stereotypeName : String) : Set(Stereotype) = 
+	aProfile.allOwnedElements()->filter(Stereotype)->select(aStereotype : Stereotype | aStereotype.name = stereotypeName)
+/]
 
 
 [comment]---------------------------private--------------------------[/comment]
@@ -210,11 +247,8 @@
  */]
 [query private queryUsedClassifiers(aClassifier : Classifier) : Set(Classifier) = 
 	aClassifier.queryClassifierExtends()
-
 	->addAll(aClassifier.queryClassifierExtends().queryClassifierTemplate())
 	->addAll(aClassifier.queryClassifierExtends().queryParameterSubstitution())
-
-
 	->addAll(aClassifier.queryPropertiesClassifiers())
 	->addAll(aClassifier.queryPropertiesClassifiers().queryClassifierTemplate())
 	->addAll(aClassifier.queryPropertiesClassifiers().queryParameterSubstitution())

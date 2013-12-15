@@ -1,6 +1,6 @@
 package idv.hsiehpinghan.database.service;
 
-import idv.hsiehpinghan.database.model.User;
+import idv.hsiehpinghan.database.model.Student;
 
 /**
  */
@@ -8,15 +8,15 @@ public interface UserService{
 
 	/**
 	 */
-	User findOne(String id);
-	/**
-	 */
-	void deleteAll();
+	Student findOne(String id);
 	/**
 	 */
 	boolean exists(String id);
 	/**
 	 */
-	<UserExtends extends User> UserExtends save(UserExtends entity);
+	void deleteAll();
+	/**
+	 */
+	<StudentExtend extends Student> StudentExtend save(StudentExtend entity);
 
 }

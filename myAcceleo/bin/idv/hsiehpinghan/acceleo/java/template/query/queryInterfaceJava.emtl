@@ -7,7 +7,7 @@
     <input>
       <takesTypesFrom href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
     </input>
-    <extends href="queryClassifier.emtl#/0"/>
+    <extends href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
       <body startPosition="230" endPosition="290" value="---------------------------public---------------------------"/>
     </ownedModuleElement>
@@ -116,7 +116,22 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Set(Classifier)_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="queryClassifier.emtl#/3/Set(Classifier)"/>
+        <references href="platform:/resource/myAcceleo/bin/idv/hsiehpinghan/acceleo/java/template/query/queryClassifier.emtl#/3/Set(Classifier)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Model_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Model"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Package_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Profile_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/4.0.0/UML#//Profile"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>

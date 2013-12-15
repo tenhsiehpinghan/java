@@ -12,35 +12,35 @@
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VTF78F_mEeO406zkfSFJHA" source="PapyrusCSSForceValue">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VTF78V_mEeO406zkfSFJHA" key="showTitle" value="true"/>
           </eAnnotations>
-          <children xmi:type="notation:Shape" xmi:id="_malBUF_mEeO406zkfSFJHA" type="1023">
-            <children xmi:type="notation:DecorationNode" xmi:id="_maloYF_mEeO406zkfSFJHA" type="1046"/>
-            <children xmi:type="notation:BasicCompartment" xmi:id="_maloYV_mEeO406zkfSFJHA" type="1052">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mamPcF_mEeO406zkfSFJHA" source="PapyrusCSSForceValue">
-                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mamPcV_mEeO406zkfSFJHA" key="showTitle" value="true"/>
+          <children xmi:type="notation:Shape" xmi:id="_EZk4sGWaEeOXhpqoKToxtg" type="1023">
+            <children xmi:type="notation:DecorationNode" xmi:id="_EZmt4GWaEeOXhpqoKToxtg" type="1046"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_EZmt4WWaEeOXhpqoKToxtg" type="1052">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EZn8AGWaEeOXhpqoKToxtg" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EZn8AWWaEeOXhpqoKToxtg" key="showTitle" value="true"/>
               </eAnnotations>
-              <styles xmi:type="notation:TitleStyle" xmi:id="_maloYl_mEeO406zkfSFJHA"/>
-              <styles xmi:type="notation:SortingStyle" xmi:id="_maloY1_mEeO406zkfSFJHA"/>
-              <styles xmi:type="notation:FilteringStyle" xmi:id="_maloZF_mEeO406zkfSFJHA"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_maloZV_mEeO406zkfSFJHA"/>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_EZmt4mWaEeOXhpqoKToxtg"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_EZmt42WaEeOXhpqoKToxtg"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_EZmt5GWaEeOXhpqoKToxtg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZmt5WWaEeOXhpqoKToxtg"/>
             </children>
-            <children xmi:type="notation:BasicCompartment" xmi:id="_maloZl_mEeO406zkfSFJHA" visible="false" type="1053">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mam2gF_mEeO406zkfSFJHA" source="PapyrusCSSForceValue">
-                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mam2gV_mEeO406zkfSFJHA" key="showTitle" value="true"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_EZnU8GWaEeOXhpqoKToxtg" visible="false" type="1053">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EZpKIGWaEeOXhpqoKToxtg" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EZpKIWWaEeOXhpqoKToxtg" key="showTitle" value="true"/>
               </eAnnotations>
-              <styles xmi:type="notation:TitleStyle" xmi:id="_maloZ1_mEeO406zkfSFJHA"/>
-              <styles xmi:type="notation:SortingStyle" xmi:id="_maloaF_mEeO406zkfSFJHA"/>
-              <styles xmi:type="notation:FilteringStyle" xmi:id="_maloaV_mEeO406zkfSFJHA"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_maloal_mEeO406zkfSFJHA"/>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_EZnU8WWaEeOXhpqoKToxtg"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_EZnU8mWaEeOXhpqoKToxtg"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_EZnU82WaEeOXhpqoKToxtg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZnU9GWaEeOXhpqoKToxtg"/>
             </children>
-            <children xmi:type="notation:BasicCompartment" xmi:id="_ma048F_mEeO406zkfSFJHA" visible="false" type="compartment_shape_display">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ma1gAF_mEeO406zkfSFJHA" source="PapyrusCSSForceValue">
-                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ma1gAV_mEeO406zkfSFJHA" key="mutable" value="true"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_EZv30GWaEeOXhpqoKToxtg" visible="false" type="compartment_shape_display">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EZv302WaEeOXhpqoKToxtg" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EZv31GWaEeOXhpqoKToxtg" key="mutable" value="true"/>
               </eAnnotations>
-              <styles xmi:type="notation:TitleStyle" xmi:id="_ma048V_mEeO406zkfSFJHA"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ma048l_mEeO406zkfSFJHA"/>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_EZv30WWaEeOXhpqoKToxtg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZv30mWaEeOXhpqoKToxtg"/>
             </children>
-            <element xmi:type="uml:Stereotype" href="javax.profile.uml#_mailEF_mEeO406zkfSFJHA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_malBUV_mEeO406zkfSFJHA" x="93" y="13"/>
+            <element xmi:type="uml:Stereotype" href="javax.profile.uml#_EZLQEGWaEeOXhpqoKToxtg"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZk4sWWaEeOXhpqoKToxtg" x="117" y="15"/>
           </children>
           <styles xmi:type="notation:TitleStyle" xmi:id="_VTFU4V_mEeO406zkfSFJHA"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VTFU4l_mEeO406zkfSFJHA"/>
@@ -262,9 +262,4 @@
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_BY3fYVREEeOCfbWM6ALyWg"/>
   <element xmi:type="uml:Profile" href="javax.profile.uml#_BYPNQFREEeOCfbWM6ALyWg"/>
-  <edges xmi:type="notation:Connector" xmi:id="_vkGxoF_mEeO406zkfSFJHA" type="1013" source="_malBUF_mEeO406zkfSFJHA" target="_QKv7MF-8EeOfzYTkrnOjpQ">
-    <styles xmi:type="notation:FontStyle" xmi:id="_vkGxoV_mEeO406zkfSFJHA"/>
-    <element xmi:type="uml:Extension" href="javax.profile.uml#_vkDHQF_mEeO406zkfSFJHA"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vkGxol_mEeO406zkfSFJHA" points="[-14, 37, 44, -132]$[-59, 150, -1, -19]"/>
-  </edges>
 </notation:Diagram>
